@@ -75,6 +75,7 @@ EN_SITE = {
 zh_cn_extra = {
   "navCases":"案件板","navCharacters":"角色档案","caseFile":"案件卷宗","evidence":"证据",
   "sealed":"已封存","latest":"最新攻略","updated":"目录","explore":"深入调查暗潮市的离奇案件",
+  "startPlaying":"在 Steam 获取 →","getOnSteam":"在 Steam 获取 ↗",
 }
 zh_cn.update(zh_cn_extra)
 for k, v in EN_SITE.items():
@@ -85,6 +86,7 @@ ja = site_i18n.pop("ja", {})
 ja_extra = {
   "navCases":"事件ボード","navCharacters":"キャラクター","caseFile":"事件ファイル","evidence":"証拠",
   "sealed":"封印済み","latest":"最新ガイド","updated":"目次","explore":"暗潮市の事件を調査しよう",
+  "startPlaying":"Steam で入手 →","getOnSteam":"Steam で入手 ↗",
 }
 ja.update(ja_extra)
 for k, v in EN_SITE.items():
