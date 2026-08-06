@@ -7,6 +7,7 @@ import sys
 sys.path.insert(0, str(Path(__file__).parent))
 import ko_content as KO
 import walkthrough_v2 as WT
+import content_v2 as C2
 
 ROOT = Path(__file__).parent
 # 始终从已提交的原始站点数据重建（幂等）；site.json 是输出文件
@@ -444,6 +445,21 @@ for p in d["pages"]:
             ko = dict(ko)
             ksec = next((sec for sec in ko.get("sections", []) if sec.get("type")=="faq"), None)
             if ksec: ksec["items"] = ksec.get("items", []) + list(WT.FAQ_ADD_KO)
+
+    # content_v2 deepening: how-to-play / investigation / choices / tips
+    V2MAP = {
+      "how-to-play": ("HTP2_EN","HTP2_ZH","HTP2_JA","HTP2_KO"),
+      "investigation": ("INV2_EN","INV2_ZH","INV2_JA","INV2_KO"),
+      "choices": ("CHO2_EN","CHO2_ZH","CHO2_JA","CHO2_KO"),
+      "tips-and-tricks": ("TIPS2_EN","TIPS2_ZH","TIPS2_JA","TIPS2_KO"),
+    }
+    if p["slug"] in V2MAP:
+        e, z, j, k = V2MAP[p["slug"]]
+        p["sections"] = p["sections"] + list(getattr(C2, e))
+        zh = dict(zh); zh["sections"] = list(zh.get("sections", [])) + list(getattr(C2, z))
+        ja = dict(ja); ja["sections"] = list(ja.get("sections", [])) + list(getattr(C2, j))
+        if ko is not None:
+            ko = dict(ko); ko["sections"] = list(ko.get("sections", [])) + list(getattr(C2, k))
 
     # enrich: append extra sections to en/zh/ja/ko
     if p["slug"] in EXTRAS:

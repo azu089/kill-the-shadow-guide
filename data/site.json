@@ -509,6 +509,44 @@
       "Read the letter: Lynn DaHandt asks you to find a band called The Gentle Rogues at the Factory",
       "The station catches fire — grab the front-door Key and escape through the entrance"
      ]
+    },
+    {
+     "type": "table",
+     "heading": "Ability Growth: Strength, Spirit, Charm",
+     "body": "Confirmed by the official store description — you choose how Lucas grows, and the path you invest in changes which case approaches feel reliable.",
+     "rows": [
+      [
+       "Strength (力量)",
+       "Physical options: violence, intimidation, punching through deadlocks",
+       "Unlocks brute-force routes; raises the Shadow corruption meter faster on dark choices"
+      ],
+      [
+       "Spirit (精神)",
+       "The Shadow's power: stronger death-reconstruction, better time-rewind",
+       "Deepens the investigation pillar; the core of the reconstruction fantasy"
+      ],
+      [
+       "Charm (魅力)",
+       "Dialogue and persuasion: bribery, lies, charisma checks",
+       "Opens non-violent paths and relationship-friendly outcomes"
+      ]
+     ],
+     "columns": [
+      "Stat",
+      "What it unlocks",
+      "How it shapes play"
+     ]
+    },
+    {
+     "type": "list",
+     "heading": "Case Approaches in Practice",
+     "body": "The store description says cases can be solved with eloquence, intelligence, time rewind — or even violence. In practice:",
+     "items": [
+      "Eloquence: charm and bribery let you walk into rooms others cannot",
+      "Intelligence: chain the clues and let contradictions convict the guilty",
+      "Time rewind + reconstruction: replay the death until the scene confesses",
+      "Violence: fast and brutal, but it moves the corruption meter and burns relationships"
+     ]
     }
    ],
    "sources": [
@@ -637,6 +675,44 @@
         "读信：Lynn DaHandt 请你去工厂寻找一支叫「温柔无赖」的乐队",
         "警察局起火——拿上前门钥匙，从入口逃走"
        ]
+      },
+      {
+       "type": "table",
+       "heading": "能力成长：力量 / 精神 / 魅力",
+       "body": "官方商店页确认——你选择 Lucas 如何成长，投入的路线决定哪些案件途径更可靠。",
+       "rows": [
+        [
+         "力量",
+         "物理选项：暴力、威慑、用拳头打破僵局",
+         "解锁强攻路线；黑暗选择会更快推高影子黑化度"
+        ],
+        [
+         "精神",
+         "影子的力量：更强的死亡重建、更好的时间回溯",
+         "加深调查支柱；是重建玩法幻想的核心"
+        ],
+        [
+         "魅力",
+         "对话与说服：贿赂、谎言、魅力检定",
+         "打开非暴力路线与关系友好的结局"
+        ]
+       ],
+       "columns": [
+        "属性",
+        "解锁什么",
+        "如何塑造游玩"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "案件途径的实际运用",
+       "body": "商店页描述：案件可以用口才、智慧、时间回溯——甚至暴力解决。实际中：",
+       "items": [
+        "口才：魅力与贿赂让你走进别人进不去的房间",
+        "智慧：串联线索，让矛盾为有罪者定罪",
+        "时间回溯 + 重建：反复回放死亡，直到现场「坦白」",
+        "暴力：快速而粗暴，但会推高黑化度、烧毁关系"
+       ]
       }
      ]
     },
@@ -740,6 +816,44 @@
         "打開郵件室，檢查剪貼板，找到神祕信件",
         "讀信：Lynn DaHandt 請你去工廠尋找一支叫「溫柔無賴」的樂隊",
         "警察局起火——拿上前門鑰匙，從入口逃走"
+       ]
+      },
+      {
+       "type": "table",
+       "heading": "能力成長：力量 / 精神 / 魅力",
+       "body": "官方商店頁確認——你選擇 Lucas 如何成長，投入的路線決定哪些案件途徑更可靠。",
+       "rows": [
+        [
+         "力量",
+         "物理選項：暴力、威懾、用拳頭打破僵局",
+         "解鎖強攻路線；黑暗選擇會更快推高影子黑化度"
+        ],
+        [
+         "精神",
+         "影子的力量：更強的死亡重建、更好的時間回溯",
+         "加深調查支柱；是重建玩法幻想的核心"
+        ],
+        [
+         "魅力",
+         "對話與說服：賄賂、謊言、魅力檢定",
+         "打開非暴力路線與關係友好的結局"
+        ]
+       ],
+       "columns": [
+        "屬性",
+        "解鎖什麼",
+        "如何塑造遊玩"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "案件途徑的實際運用",
+       "body": "商店頁描述：案件可以用口才、智慧、時間回溯——甚至暴力解決。實際中：",
+       "items": [
+        "口才：魅力與賄賂讓你走進別人進不去的房間",
+        "智慧：串聯線索，讓矛盾爲有罪者定罪",
+        "時間回溯 + 重建：反覆回放死亡，直到現場「坦白」",
+        "暴力：快速而粗暴，但會推高黑化度、燒燬關係"
        ]
       }
      ]
@@ -845,6 +959,44 @@
         "手紙を読む：リン・ダハントが工場で「ザ・ジェントルローグス」を探すよう依頼",
         "警察署が炎上——正面玄関の鍵を取り、入口から脱出"
        ]
+      },
+      {
+       "type": "table",
+       "heading": "能力成長：筋力 / 精神 / 魅力",
+       "body": "公式ストアで確認——ルーカスの成長を選び、投資した道によって頼れる事件の進め方が変わります。",
+       "rows": [
+        [
+         "筋力",
+         "物理的な選択肢：暴力、威嚇、拳で膠着を破る",
+         "強硬ルートを解放；暗い選択で汚染度が上がりやすい"
+        ],
+        [
+         "精神",
+         "シャドウの力：より強い死亡再現、より良い時間巻き戻し",
+         "調査の柱を深める；再現体験の中核"
+        ],
+        [
+         "魅力",
+         "対話と説得：賄賂、嘘、カリスマ判定",
+         "非暴力ルートと関係良好な結末を開く"
+        ]
+       ],
+       "columns": [
+        "ステータス",
+        "解放されるもの",
+        "プレイへの影響"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "事件の進め方・実践",
+       "body": "ストアの説明では、事件は口才・知性・時間巻き戻し、あるいは暴力で解決できます。実際には：",
+       "items": [
+        "口才：魅力と賄賂で、他の人が入れない部屋へ入れる",
+        "知性：手がかりを繋ぎ、矛盾に有罪者を告発させる",
+        "時間巻き戻し＋再現：死を何度も再生し、現場に「自白」させる",
+        "暴力：速くて粗いが、汚染度が上がり関係を損なう"
+       ]
       }
      ],
      "heroImage": "/images/how-to-play.jpg"
@@ -949,6 +1101,44 @@
         "우편실을 열고 클립보드를 조사해 '수수께끼의 편지'를 찾습니다",
         "편지를 읽습니다: 린 다한트가 공장에서 '젠틀 로그스' 밴드를 찾아달라고 합니다",
         "경찰서가 불탑니다 — 정문 열쇠를 챙기고 입구로 탈출합니다"
+       ]
+      },
+      {
+       "type": "table",
+       "heading": "능력 성장: 힘 / 정신 / 매력",
+       "body": "공식 스토어 설명으로 확인 — 루카스가 어떻게 성장할지 선택하며, 투자한 길에 따라 믿을 수 있는 사건 진행 방식이 달라집니다.",
+       "rows": [
+        [
+         "힘",
+         "물리적 선택지: 폭력, 협박, 주먹으로 교착 돌파",
+         "강경 루트 해금; 어두운 선택 시 오염도가 더 빨리 오름"
+        ],
+        [
+         "정신",
+         "섀도우의 힘: 더 강한 죽음 재구성, 더 나은 시간 되감기",
+         "수사 기둥을 깊게 함; 재구성 경험의 핵심"
+        ],
+        [
+         "매력",
+         "대화와 설득: 뇌물, 거짓말, 카리스마 판정",
+         "비폭력 루트와 관계 친화적 결말을 엶"
+        ]
+       ],
+       "columns": [
+        "스탯",
+        "해금되는 것",
+        "플레이에 미치는 영향"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "사건 접근법 실전",
+       "body": "스토어 설명: 사건은 말솜씨·지혜·시간 되감기, 심지어 폭력으로 해결할 수 있습니다. 실제로는:",
+       "items": [
+        "말솜씨: 매력과 뇌물로 남이 못 들어가는 방에 들어갑니다",
+        "지혜: 단서를 엮고 모순이 유죄자를 고발하게 만듭니다",
+        "시간 되감기 + 재구성: 죽음을 반복 재생해 현장이 '자백'하게 합니다",
+        "폭력: 빠르고 거칠지만 오염도를 올리고 관계를 태웁니다"
        ]
       }
      ]
@@ -1906,6 +2096,33 @@
       "Keep a mental note of who told you what — contradictions are the game's bread and butter",
       "If you want to see everything, plan a second playthrough with an opposite moral stance"
      ]
+    },
+    {
+     "type": "table",
+     "heading": "What Choices Change, Layer by Layer",
+     "body": "The publisher's description names three things choices change — here is how each layer shows up in play.",
+     "rows": [
+      [
+       "Relationship layer",
+       "How you treat each character now",
+       "They remember. A worker you punched will not open the same doors; a friend you protected returns the favor"
+      ],
+      [
+       "Truth layer",
+       "Which facts come to light",
+       "Some paths reveal a confession; others bury a more dangerous truth — official: 'protecting someone can leave a more dangerous truth buried'"
+      ],
+      [
+       "Ending layer",
+       "Where the story lands",
+       "Multiple endings branch from decisions made across the whole story, not just the final chapter"
+      ]
+     ],
+     "columns": [
+      "Layer",
+      "What changes",
+      "In practice"
+     ]
     }
    ],
    "sources": [
@@ -1981,6 +2198,33 @@
         "在心里记下谁对你说了什么——矛盾正是这款游戏的精髓",
         "想看完一切？二周目用相反的道德立场再来一次"
        ]
+      },
+      {
+       "type": "table",
+       "heading": "选择改变什么：分层解析",
+       "body": "官方描述指出选择改变三件事——这是每一层在实际游玩中的体现。",
+       "rows": [
+        [
+         "关系层",
+         "你现在如何对待每个角色",
+         "他们记得。你揍过的工人不会为你开同一扇门；你保护过的朋友会在你需要时回报"
+        ],
+        [
+         "真相层",
+         "哪些事实浮出水面",
+         "有些路线揭发一份供词；另一些把更危险的真相埋起来——官方：「保护某人可能让更危险的真相被埋藏」"
+        ],
+        [
+         "结局层",
+         "故事落在哪里",
+         "多结局由贯穿整个故事的选择分叉，而不仅仅是最后一章"
+        ]
+       ],
+       "columns": [
+        "层级",
+        "改变什么",
+        "实际表现"
+       ]
       }
      ]
     },
@@ -2031,6 +2275,33 @@
         "後悔了就回溯；遊戲鼓勵你嘗試",
         "在心裏記下誰對你說了什麼——矛盾正是這款遊戲的精髓",
         "想看完一切？二週目用相反的道德立場再來一次"
+       ]
+      },
+      {
+       "type": "table",
+       "heading": "選擇改變什麼：分層解析",
+       "body": "官方描述指出選擇改變三件事——這是每一層在實際遊玩中的體現。",
+       "rows": [
+        [
+         "關係層",
+         "你現在如何對待每個角色",
+         "他們記得。你揍過的工人不會爲你開同一扇門；你保護過的朋友會在你需要時回報"
+        ],
+        [
+         "真相層",
+         "哪些事實浮出水面",
+         "有些路線揭發一份供詞；另一些把更危險的真相埋起來——官方：「保護某人可能讓更危險的真相被埋藏」"
+        ],
+        [
+         "結局層",
+         "故事落在哪裏",
+         "多結局由貫穿整個故事的選擇分叉，而不僅僅是最後一章"
+        ]
+       ],
+       "columns": [
+        "層級",
+        "改變什麼",
+        "實際表現"
        ]
       }
      ]
@@ -2083,6 +2354,33 @@
         "誰が何を言ったかを心に留める——矛盾こそこのゲームの真骨頂",
         "全部見たければ、二周目は逆の道徳的立場で"
        ]
+      },
+      {
+       "type": "table",
+       "heading": "選択が変えるもの：層別の整理",
+       "body": "公式説明は選択が変える3つの要素を挙げます——各層が実際のプレイでどう現れるか。",
+       "rows": [
+        [
+         "関係層",
+         "今、各キャラクターをどう扱うか",
+         "彼らは覚えています。殴った労働者は同じ扉を開けない。守った友人は恩を返す"
+        ],
+        [
+         "真実層",
+         "どの事実が明らかになるか",
+         "ある道は自白を暴き、別の道はより危険な真実を埋める——公式：「守ることはより危険な真実を埋めることになるかもしれない」"
+        ],
+        [
+         "結末層",
+         "物語がどこに着地するか",
+         "複数エンディングは最終章だけでなく、物語全体の選択から分岐する"
+        ]
+       ],
+       "columns": [
+        "層",
+        "変わるもの",
+        "実際の様子"
+       ]
       }
      ],
      "heroImage": "/images/choices.jpg"
@@ -2134,6 +2432,33 @@
         "후회되는 선택 후 되감기 — 게임이 실험을 권장함",
         "누가 무엇을 말했는지 메모 — 모순이 게임의 핵심",
         "모든 것을 보고 싶다면 반대 도덕 입장으로 2회차 계획"
+       ]
+      },
+      {
+       "type": "table",
+       "heading": "선택이 바꾸는 것: 층위별 정리",
+       "body": "퍼블리셔 설명은 선택이 바꾸는 세 가지를 말합니다 — 각 층위가 실제 플레이에서 어떻게 나타나는지.",
+       "rows": [
+        [
+         "관계 층위",
+         "지금 각 캐릭터를 대하는 방식",
+         "그들은 기억합니다. 때린 노동자는 같은 문을 열어주지 않고, 지킨 친구는 보답합니다"
+        ],
+        [
+         "진실 층위",
+         "어떤 사실이 드러나는지",
+         "어떤 길은 자백을 드러내고, 다른 길은 더 위험한 진실을 묻습니다 — 공식: '누군가를 보호하면 더 위험한 진실이 묻힐 수 있다'"
+        ],
+        [
+         "엔딩 층위",
+         "이야기가 어디에 도달하는지",
+         "멀티 엔딩은 마지막 챕터뿐 아니라 스토리 전체의 선택에서 분기합니다"
+        ]
+       ],
+       "columns": [
+        "층위",
+        "바뀌는 것",
+        "실제 양상"
        ]
       }
      ]
@@ -3214,6 +3539,47 @@
     },
     {
      "type": "evidence",
+     "heading": "The Three Pillars in Practice",
+     "body": "How observation, reconstruction and deduction actually combine in a case, from verified coverage.",
+     "items": [
+      [
+       "P-1",
+       "Observation: read every document and scan every micro-scene — details are deliberately enlarged for you to search"
+      ],
+      [
+       "P-2",
+       "Reconstruction: trigger the death-flashback on the right object to see what really happened"
+      ],
+      [
+       "P-3",
+       "Deduction: link the contradictions into a chain — the chain, not the feeling, convicts"
+      ]
+     ]
+    },
+    {
+     "type": "list",
+     "heading": "Micro-Scenes & Free Camera",
+     "body": "Reviews highlight how the game presents evidence: the scene is broken into enlarged micro-scenes you can rotate and inspect freely, with no hand-holding.",
+     "items": [
+      "Scan each enlarged detail for interactables before moving on",
+      "Rotate the camera — clues are placed in depth, not on a flat surface",
+      "Interact with everything: a document, a gauge, a half-hidden object",
+      "The game avoids arrows and guides — curiosity is the intended tool"
+     ]
+    },
+    {
+     "type": "steps",
+     "heading": "Building a Deduction Chain",
+     "body": "The mechanic reviewers describe as the heart of the game: you do not get answers, you assemble them.",
+     "items": [
+      "Collect facts from documents, witnesses and reconstruction",
+      "Find where two facts contradict each other",
+      "Link contradictions into a logical chain toward one conclusion",
+      "Present the chain at the right moment — or rewind and try a different reading"
+     ]
+    },
+    {
+     "type": "evidence",
      "tag": "KEY EVIDENCE",
      "heading": "Evidence That Cracked Chapter 1",
      "body": "The evidence types that mattered most, pulled from our playthrough notes.",
@@ -3324,6 +3690,47 @@
       },
       {
        "type": "evidence",
+       "heading": "三支柱的实际运用",
+       "body": "根据已核实的报道，观察、重建与推理在案件中如何真正结合。",
+       "items": [
+        [
+         "P-1",
+         "观察：阅读每一份文档、扫描每一个微场景——细节被刻意放大供你搜索"
+        ],
+        [
+         "P-2",
+         "重建：在正确的物品上触发死亡回溯，看清真正发生了什么"
+        ],
+        [
+         "P-3",
+         "推理：把矛盾串联成一条逻辑链——定罪的是链条，不是感觉"
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "微场景与自由视角",
+       "body": "评测强调游戏呈现证据的方式：场景被拆成可自由旋转、放大检查的微场景，没有任何引导。",
+       "items": [
+        "继续前先扫描每个放大的细节，寻找可交互物",
+        "旋转视角——线索在纵深里，不在平面上",
+        "与一切交互：文档、计量器、半隐藏的物体",
+        "游戏不用箭头和引导——好奇心就是设计好的工具"
+       ]
+      },
+      {
+       "type": "steps",
+       "heading": "构建推理链",
+       "body": "评测所描述的玩法核心：你得不到答案，你组装答案。",
+       "items": [
+        "从文档、证人、重建中收集事实",
+        "找出两个事实互相矛盾之处",
+        "把矛盾串联成指向一个结论的逻辑链",
+        "在正确的时机呈现链条——或回溯，尝试另一种解读"
+       ]
+      },
+      {
+       "type": "evidence",
        "tag": "关键证据",
        "heading": "破解第一章的证据",
        "body": "根据我们的通关笔记，最重要的证据类型。",
@@ -3406,6 +3813,47 @@
         "提前離開區域而漏掉文檔——有新信息後要回去",
         "忽略證人與證據之間的矛盾",
         "卡住時忘了還有時間回溯可用"
+       ]
+      },
+      {
+       "type": "evidence",
+       "heading": "三支柱的實際運用",
+       "body": "根據已覈實的報道，觀察、重建與推理在案件中如何真正結合。",
+       "items": [
+        [
+         "P-1",
+         "觀察：閱讀每一份文檔、掃描每一個微場景——細節被刻意放大供你搜索"
+        ],
+        [
+         "P-2",
+         "重建：在正確的物品上觸發死亡回溯，看清真正發生了什麼"
+        ],
+        [
+         "P-3",
+         "推理：把矛盾串聯成一條邏輯鏈——定罪的是鏈條，不是感覺"
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "微場景與自由視角",
+       "body": "評測強調遊戲呈現證據的方式：場景被拆成可自由旋轉、放大檢查的微場景，沒有任何引導。",
+       "items": [
+        "繼續前先掃描每個放大的細節，尋找可交互物",
+        "旋轉視角——線索在縱深裏，不在平面上",
+        "與一切交互：文檔、計量器、半隱藏的物體",
+        "遊戲不用箭頭和引導——好奇心就是設計好的工具"
+       ]
+      },
+      {
+       "type": "steps",
+       "heading": "構建推理鏈",
+       "body": "評測所描述的玩法核心：你得不到答案，你組裝答案。",
+       "items": [
+        "從文檔、證人、重建中收集事實",
+        "找出兩個事實互相矛盾之處",
+        "把矛盾串聯成指向一個結論的邏輯鏈",
+        "在正確的時機呈現鏈條——或回溯，嘗試另一種解讀"
        ]
       },
       {
@@ -3496,6 +3944,47 @@
       },
       {
        "type": "evidence",
+       "heading": "三本柱の実践",
+       "body": "検証済みの報道によれば、観察・再現・推理は実際の事件でこう組み合わさります。",
+       "items": [
+        [
+         "P-1",
+         "観察：すべての文書を読み、すべてのミニシーンを調べる——細部は意図的に拡大されている"
+        ],
+        [
+         "P-2",
+         "再現：正しい物体で死亡フラッシュバックを発動し、実際に起きたことを見る"
+        ],
+        [
+         "P-3",
+         "推理：矛盾を論理の連鎖に繋ぐ——有罪にするのは感覚ではなく連鎖"
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "ミニシーンと自由視点",
+       "body": "レビューが強調する証拠の提示方法：シーンは拡大されたミニシーンに分解され、自由に回転・検査でき、手引きはありません。",
+       "items": [
+        "進む前に、拡大された細部をすべてスキャンする",
+        "視点を回す——手がかりは平面ではなく奥行きに置かれている",
+        "すべてとインタラクトする：書類、ゲージ、半ば隠れた物体",
+        "矢印もガイドもない——好奇心こそ意図されたツール"
+       ]
+      },
+      {
+       "type": "steps",
+       "heading": "推理の連鎖を組む",
+       "body": "レビューが「本作の核心」と評する仕組み：答えは与えられず、組み立てるものです。",
+       "items": [
+        "文書・目撃者・再現から事実を集める",
+        "二つの事実が矛盾する箇所を見つける",
+        "矛盾を一つの結論へ向かう論理の連鎖に繋ぐ",
+        "正しいタイミングで連鎖を提示する——あるいは巻き戻して別の読み方を試す"
+       ]
+      },
+      {
+       "type": "evidence",
        "tag": "重要証拠",
        "heading": "第1章を解いた証拠",
        "body": "プレイノートから抽出した、最も重要だった証拠の種類。",
@@ -3579,6 +4068,47 @@
         "일찍 떠나 문서를 놓침 — 새 정보 후 다시 방문",
         "목격자와 증거 사이의 모순 무시",
         "막혔을 때 되감기가 가능하다는 것을 잊음"
+       ]
+      },
+      {
+       "type": "evidence",
+       "heading": "세 기둥의 실제 운용",
+       "body": "검증된 보도에 따르면, 관찰·재구성·추리는 사건에서 이렇게 결합합니다.",
+       "items": [
+        [
+         "P-1",
+         "관찰: 모든 문서를 읽고 모든 마이크로 씬을 조사하세요 — 세부는 의도적으로 확대되어 있습니다"
+        ],
+        [
+         "P-2",
+         "재구성: 올바른 물건에서 죽음 플래시백을 발동해 실제로 일어난 일을 보세요"
+        ],
+        [
+         "P-3",
+         "추리: 모순을 논리 사슬로 연결하세요 — 유죄를 만드는 것은 감정이 아니라 사슬입니다"
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "마이크로 씬과 자유 시점",
+       "body": "리뷰가 강조하는 증거 제시 방식: 장면은 확대된 마이크로 씬으로 분해되며 자유롭게 회전·검사할 수 있고 안내가 없습니다.",
+       "items": [
+        "넘어가기 전에 확대된 세부를 모두 스캔하세요",
+        "시점을 회전하세요 — 단서는 평면이 아니라 깊이에 있습니다",
+        "모든 것과 상호작용하세요: 문서, 게이지, 반쯤 숨은 물체",
+        "화살표도 가이드도 없습니다 — 호기심이 의도된 도구입니다"
+       ]
+      },
+      {
+       "type": "steps",
+       "heading": "추리 사슬 만들기",
+       "body": "리뷰가 '이 게임의 핵심'이라 부르는 방식: 답을 주지 않고, 답을 조립하게 합니다.",
+       "items": [
+        "문서·목격자·재구성에서 사실을 모으세요",
+        "두 사실이 서로 모순되는 지점을 찾으세요",
+        "모순을 하나의 결론으로 향하는 논리 사슬로 연결하세요",
+        "올바른 순간에 사슬을 제시하세요 — 또는 되감아 다른 해석을 시도하세요"
        ]
       },
       {
@@ -4878,6 +5408,19 @@
      ]
     },
     {
+     "type": "list",
+     "heading": "Advanced Detective Habits",
+     "body": "Beyond the basics — the habits that separate a first playthrough from a complete one.",
+     "items": [
+      "Scan every micro-scene with the camera fully rotated before you leave — clues hide in depth",
+      "Cross-examine witnesses against each other, not just against evidence",
+      "Keep a two-column note: what people say vs what reconstruction shows",
+      "Spend stat points deliberately: Strength, Spirit and Charm open different routes",
+      "Use rewind as information-gathering, not a reset — the game remembers what you learned",
+      "Before the chapter-end choice, revisit everyone with new information — dialogue updates"
+     ]
+    },
+    {
      "type": "note",
      "tag": "FIELD NOTE",
      "heading": "Detective's Field Notes",
@@ -4949,6 +5492,19 @@
        ]
       },
       {
+       "type": "list",
+       "heading": "进阶侦探习惯",
+       "body": "超越基础——把「第一遍通关」和「完整通关」区分开的习惯。",
+       "items": [
+        "离开前把每个微场景的视角完全旋转扫描一遍——线索藏在纵深里",
+        "让目击者之间互相质证，而不仅仅是和证据对照",
+        "记两栏笔记：人们说了什么 vs 重建显示了什么",
+        "有意识地分配属性点：力量、精神、魅力打开不同的路线",
+        "把回溯当作收集信息而非重置——游戏记得你学到的东西",
+        "章节结尾的选择前，带着新信息重访每个人——对话会更新"
+       ]
+      },
+      {
        "type": "note",
        "tag": "现场笔记",
        "heading": "侦探现场笔记",
@@ -4993,6 +5549,19 @@
         "觸發重建前，先與現場所有可交互物互動",
         "2.5D 像素風格意味着細微的環境細節很重要——能放大就放大",
         "用相反的道德立場二週目能解鎖最多內容"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "進階偵探習慣",
+       "body": "超越基礎——把「第一遍通關」和「完整通關」區分開的習慣。",
+       "items": [
+        "離開前把每個微場景的視角完全旋轉掃描一遍——線索藏在縱深裏",
+        "讓目擊者之間互相質證，而不僅僅是和證據對照",
+        "記兩欄筆記：人們說了什麼 vs 重建顯示了什麼",
+        "有意識地分配屬性點：力量、精神、魅力打開不同的路線",
+        "把回溯當作收集信息而非重置——遊戲記得你學到的東西",
+        "章節結尾的選擇前，帶着新信息重訪每個人——對話會更新"
        ]
       },
       {
@@ -5043,6 +5612,19 @@
        ]
       },
       {
+       "type": "list",
+       "heading": "上級探偵の習慣",
+       "body": "基本を超えた——初見プレイと完全攻略を分ける習慣。",
+       "items": [
+        "離れる前に、各ミニシーンの視点を完全に回してスキャンする——手がかりは奥行きに隠れている",
+        "目撃者同士を突き合わせる——証拠とだけ比べない",
+        "2列のメモを取る：人が言ったこと vs 再現が示したこと",
+        "ステータスを意図的に振る：筋力・精神・魅力で別ルートが開く",
+        "巻き戻しをリセットではなく情報収集として使う——ゲームは学んだことを覚えている",
+        "章末の選択前に、新しい情報を持って全員を再訪する——会話が更新される"
+       ]
+      },
+      {
        "type": "note",
        "tag": "現場ノート",
        "heading": "探偵の現場ノート",
@@ -5086,6 +5668,19 @@
         "첫 회차와 반대의 도덕 입장 선택",
         "우선하는 캐릭터를 바꿔보기",
         "저장 슬롯을 분기점마다 나눠 쓰기"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "고급 형사 습관",
+       "body": "기본을 넘어서 — 첫 플레이와 완전 플레이를 가르는 습관.",
+       "items": [
+        "떠나기 전에 각 마이크로 씬의 시점을 완전히 회전해 스캔하세요 — 단서는 깊이에 숨어 있습니다",
+        "목격자들을 서로 대질시키세요 — 증거와만 비교하지 마세요",
+        "두 칸 메모를 쓰세요: 사람들이 말한 것 vs 재구성이 보여준 것",
+        "스탯을 의도적으로 투자하세요: 힘·정신·매력이 다른 루트를 엽니다",
+        "되감기를 리셋이 아닌 정보 수집으로 쓰세요 — 게임은 배운 것을 기억합니다",
+        "챕터 끝 선택 전에 새 정보를 가지고 모두를 다시 방문하세요 — 대화가 갱신됩니다"
        ]
       },
       {

@@ -156,6 +156,11 @@ function header(lang, active){
       <a href="${prefix}/cases" class="${active==="cases"?"active":""}">${esc(s.navCases)}</a>
       <a href="${prefix}/characters" class="${active==="characters"?"active":""}">${esc(s.navCharacters)}</a>
     </nav>
+    <form class="site-search" action="https://www.google.com/search" method="get" target="_blank" rel="noopener" role="search">
+      <input type="search" name="q" placeholder="${lang==="en"?"Search guides…":lang==="ja"?"ガイドを検索…":lang==="ko"?"공략 검색…":"搜索攻略…"}" aria-label="${lang==="en"?"Search guides":lang==="ja"?"ガイドを検索":lang==="ko"?"공략 검색":"搜索攻略"}" />
+      <input type="hidden" name="as_sitesearch" value="${esc(DATA.site.domain)}" />
+      <span class="search-ic" aria-hidden="true">${SVG.logo.replace('<svg viewBox="0 0 40 40"','<svg viewBox="0 0 24 24"').replace('</svg>','<circle cx="11" cy="11" r="6" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m16 16 4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>')}</span>
+    </form>
     ${langSwitcher(lang, active || "index")}
   </div>
 </header>`;
