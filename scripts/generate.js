@@ -227,40 +227,43 @@ let SEC_IDX = 0;
 function secId(){ SEC_IDX += 1; return "sec-" + SEC_IDX; }
 function renderSection(s, lang){
   const id = secId(s.heading);
-  const mono = lang !== DEF;
   switch(s.type){
     case "steps": {
-      const items = (s.items||[]).map((it,i)=>`<li><span class="step-no">${String(i+1).padStart(2,"0")}</span><div><strong>${esc(it)}</strong></div></li>`).join("");
-      return `<section class="card dossier reveal" id="${id}"><h2><span class="sec-tag">${esc(s.tag||"STEP")}</span>${esc(s.heading)}</h2>${s.body?`<p class="sec-body">${esc(s.body)}</p>`:""}<ol class="steps">${items}</ol></section>`;
+      // 讯问步骤：编号证据链（线索引）
+      const items = (s.items||[]).map((it,i)=>`<li class="interrog-step"><span class="int-no">${String(i+1).padStart(2,"0")}</span><div><strong>${esc(Array.isArray(it)?it[0]:it)}</strong>${Array.isArray(it)&&it[1]?`<p>${esc(it[1])}</p>`:""}</div></li>`).join("");
+      return `<section class="dossier-sheet reveal" id="${id}"><div class="sheet-head"><span class="sheet-tag">${esc(s.tag||"INTERROG")}</span><h2>${esc(s.heading)}</h2></div>${s.body?`<p class="sheet-lead">${esc(s.body)}</p>`:""}<ol class="interrog">${items}</ol></section>`;
     }
     case "list": {
-      const items = (s.items||[]).map(it=>`<li>${esc(it)}</li>`).join("");
-      return `<section class="card dossier reveal" id="${id}"><h2><span class="sec-tag">${esc(s.tag||"NOTE")}</span>${esc(s.heading)}</h2>${s.body?`<p class="sec-body">${esc(s.body)}</p>`:""}<ul class="checks">${items}</ul></section>`;
+      // 线索清单：证据勾选项
+      const items = (s.items||[]).map(it=>`<li class="lead-item"><span class="lead-box" aria-hidden="true"></span><p>${esc(it)}</p></li>`).join("");
+      return `<section class="dossier-sheet reveal" id="${id}"><div class="sheet-head"><span class="sheet-tag">${esc(s.tag||"LEADS")}</span><h2>${esc(s.heading)}</h2></div>${s.body?`<p class="sheet-lead">${esc(s.body)}</p>`:""}<ul class="lead-list">${items}</ul></section>`;
     }
     case "table": {
+      // 档案表：斑驳纸面表格
       const headRow = (s.columns||[]).map(c=>`<th>${esc(c)}</th>`).join("");
       const rows = (s.rows||[]).map(r=>`<tr>${r.map(c=>`<td>${esc(c)}</td>`).join("")}</tr>`).join("");
-      return `<section class="card dossier reveal" id="${id}"><h2><span class="sec-tag">${esc(s.tag||"FILE")}</span>${esc(s.heading)}</h2>${s.body?`<p class="sec-body">${esc(s.body)}</p>`:""}<div class="tbl-wrap"><table><thead><tr>${headRow}</tr></thead><tbody>${rows}</tbody></table></div></section>`;
+      return `<section class="dossier-sheet reveal" id="${id}"><div class="sheet-head"><span class="sheet-tag">${esc(s.tag||"FILE")}</span><h2>${esc(s.heading)}</h2></div>${s.body?`<p class="sheet-lead">${esc(s.body)}</p>`:""}<div class="file-table"><table><thead><tr>${headRow}</tr></thead><tbody>${rows}</tbody></table></div></section>`;
     }
     case "faq": {
-      const items = (s.items||[]).map(([q,a])=>`<details class="faq"><summary>${esc(q)}<span class="pm">+</span></summary><div class="faq-a">${esc(a)}</div></details>`).join("");
-      return `<section class="card dossier reveal" id="${id}"><h2><span class="sec-tag">${esc(s.tag||"QA")}</span>${esc(s.heading)}</h2>${items}</section>`;
+      // 审问问答
+      const items = (s.items||[]).map(([q,a])=>`<details class="interrog-faq"><summary>${esc(q)}<span class="pm">+</span></summary><div class="interrog-a">${esc(a)}</div></details>`).join("");
+      return `<section class="dossier-sheet reveal" id="${id}"><div class="sheet-head"><span class="sheet-tag">${esc(s.tag||"QA")}</span><h2>${esc(s.heading)}</h2></div>${items}</section>`;
     }
     case "evidence": {
       const items = (s.items||[]).map(([label,txt])=>`<div class="evidence"><span class="ev-tag">${esc(label)}</span><p>${esc(txt)}</p></div>`).join("");
-      return `<section class="card dossier reveal" id="${id}"><h2><span class="sec-tag">${esc(s.tag||"EVIDENCE")}</span>${esc(s.heading)}</h2>${s.body?`<p class="sec-body">${esc(s.body)}</p>`:""}<div class="evidence-stack">${items}</div></section>`;
+      return `<section class="dossier-sheet reveal" id="${id}"><div class="sheet-head"><span class="sheet-tag">${esc(s.tag||"EVIDENCE")}</span><h2>${esc(s.heading)}</h2></div>${s.body?`<p class="sheet-lead">${esc(s.body)}</p>`:""}<div class="evidence-stack">${items}</div></section>`;
     }
     case "timeline": {
       const items = (s.items||[]).map(([t,txt])=>`<li class="tl-item"><span class="tl-time">${esc(t)}</span><p>${esc(txt)}</p></li>`).join("");
-      return `<section class="card dossier reveal" id="${id}"><h2><span class="sec-tag">${esc(s.tag||"TIMELINE")}</span>${esc(s.heading)}</h2>${s.body?`<p class="sec-body">${esc(s.body)}</p>`:""}<ul class="timeline">${items}</ul></section>`;
+      return `<section class="dossier-sheet reveal" id="${id}"><div class="sheet-head"><span class="sheet-tag">${esc(s.tag||"TIMELINE")}</span><h2>${esc(s.heading)}</h2></div>${s.body?`<p class="sheet-lead">${esc(s.body)}</p>`:""}<ul class="timeline">${items}</ul></section>`;
     }
     case "note": {
-      return `<section class="card dossier reveal paper-note" id="${id}"><h2><span class="sec-tag">${esc(s.tag||"FIELD NOTE")}</span>${esc(s.heading)}</h2>${s.body?`<p class="sec-body">${esc(s.body)}</p>`:""}</section>`;
+      // 案件便签（黄纸+图钉）
+      return `<section class="dossier-sheet reveal case-note" id="${id}"><div class="case-pin" aria-hidden="true"></div><div class="sheet-head"><span class="sheet-tag">${esc(s.tag||"FIELD NOTE")}</span><h2>${esc(s.heading)}</h2></div>${s.body?`<p class="sheet-lead">${esc(s.body)}</p>`:""}</section>`;
     }
     default: return "";
   }
 }
-
 /* ---------- home ---------- */
 function renderHome(lang){
   const s = siteI18n(lang);

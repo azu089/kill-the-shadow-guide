@@ -349,3 +349,44 @@ details.faq[open] .faq-a{animation:faqIn .24s ease-out}
   .ev-row-3{grid-template-columns:1fr}
   .rel-grid{grid-template-columns:1fr}
 }
+/* ============================================================
+   KTS — Case File content components (v2 content layer)
+   内容区块：讯问步骤/线索清单/档案表/审问问答/案件便签
+   ============================================================ */
+.dossier-sheet{position:relative;border:1px solid var(--line);border-radius:11px;background:linear-gradient(165deg,#1a1e26,#14171d);padding:22px 24px;margin-bottom:20px;overflow:hidden}
+.dossier-sheet::before{content:"";position:absolute;inset:0;pointer-events:none;background-image:repeating-linear-gradient(0deg,rgba(255,255,255,.015) 0 1px,transparent 1px 3px)}
+.sheet-head{display:flex;align-items:baseline;gap:12px;margin-bottom:8px}
+.sheet-tag{font-family:var(--mono);font-size:.62rem;letter-spacing:.16em;color:#1a1200;background:var(--amber);padding:3px 8px;border-radius:4px;text-transform:uppercase;white-space:nowrap}
+.sheet-head h2{font-family:var(--display);font-size:1.2rem;color:var(--text);scroll-margin-top:90px}
+.sheet-lead{color:var(--muted);font-size:.94rem;margin-bottom:13px}
+/* 讯问步骤 */
+.interrog{list-style:none;display:flex;flex-direction:column;gap:0;padding-left:4px}
+.interrog-step{position:relative;display:flex;gap:15px;padding:0 0 18px 4px}
+.interrog-step:not(:last-child)::before{content:"";position:absolute;left:14px;top:28px;bottom:2px;width:2px;background:repeating-linear-gradient(180deg,rgba(230,57,70,.5) 0 4px,transparent 4px 8px)}
+.int-no{width:30px;height:30px;border-radius:6px;display:flex;align-items:center;justify-content:center;flex:0 0 auto;font-family:var(--mono);font-size:.74rem;font-weight:700;color:#1a1200;background:var(--amber)}
+.interrog-step strong{color:var(--text);font-size:.95rem}
+.interrog-step p{color:var(--muted);font-size:.87rem;margin-top:2px}
+/* 线索清单 */
+.lead-list{list-style:none;display:flex;flex-direction:column;gap:9px;margin-top:4px}
+.lead-item{display:flex;gap:11px;align-items:flex-start;background:rgba(255,255,255,.03);border:1px solid var(--line);border-radius:8px;padding:10px 13px}
+.lead-item:hover{border-color:rgba(242,169,0,.4)}
+.lead-box{width:14px;height:14px;border:2px solid var(--amber);border-radius:3px;flex:0 0 auto;margin-top:3px;transform:rotate(45deg)}
+.lead-item p{color:var(--muted);font-size:.9rem;line-height:1.5}
+/* 档案表 */
+.file-table{border-radius:9px;overflow:hidden;border:1px solid var(--line);margin-top:6px}
+.file-table table{width:100%;border-collapse:collapse;font-size:.86rem}
+.file-table th{text-align:left;font-family:var(--mono);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--amber-soft);background:rgba(242,169,0,.1);padding:11px 13px;border:0;white-space:nowrap}
+.file-table td{padding:11px 13px;border-bottom:1px solid var(--line);color:var(--muted);vertical-align:top}
+.file-table tbody tr:last-child td{border-bottom:0}
+.file-table tbody tr:hover td{background:rgba(230,57,70,.05)}
+/* 审问问答 */
+.interrog-faq{background:rgba(255,255,255,.03);border:1px solid var(--line);border-radius:9px;margin-top:10px;overflow:hidden}
+.interrog-faq summary{list-style:none;display:flex;align-items:center;gap:11px;cursor:pointer;padding:14px 16px;font-weight:600;color:var(--text);font-size:.92rem;transition:.15s}
+.interrog-faq summary::-webkit-details-marker{display:none}
+.interrog-faq summary:hover{background:rgba(230,57,70,.07)}
+.interrog-faq .pm{margin-left:auto;font-family:var(--mono);color:var(--amber);font-size:1.1rem;flex:0 0 auto;transition:transform .2s}
+.interrog-faq[open] .pm{transform:rotate(45deg)}
+.interrog-a{padding:0 16px 15px;color:var(--muted);font-size:.9rem;line-height:1.6}
+/* 案件便签 */
+.case-note{background:linear-gradient(160deg,rgba(242,169,0,.07),rgba(20,23,29,.6));border-left:3px solid var(--amber)}
+.case-pin{position:absolute;top:12px;right:16px;width:13px;height:13px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#f5c34c,#b8860b);box-shadow:0 2px 5px rgba(0,0,0,.4)}
