@@ -11,12 +11,46 @@
   "ogImage": "/images/hero.jpg",
   "languages": [
    "en",
-   "zh",
-   "ja"
+   "zh-CN",
+   "zh-TW",
+   "ja",
+   "ko"
   ],
   "defaultLanguage": "en",
   "i18n": {
-   "zh": {
+   "en": {
+    "name": "Kill The Shadow Guide",
+    "tagline": "Walkthrough, Choices, Endings, Cases & FAQs",
+    "description": "The best Kill The Shadow guides: full walkthrough, choices and endings guide, all cases, investigation system explained, achievements, system requirements and FAQs. Updated regularly.",
+    "navHome": "Home",
+    "navGuides": "Guides",
+    "navCases": "Case Board",
+    "navCharacters": "Characters",
+    "navAbout": "About",
+    "navPrivacy": "Privacy",
+    "navContact": "Contact",
+    "langLabel": "Language",
+    "aboutTitle": "About this site",
+    "privacyTitle": "Privacy Policy",
+    "contactTitle": "Contact",
+    "footerNote": "Unofficial fan site — game and related assets belong to their respective owners.",
+    "footerSource": "Information checked against the official Steam store page, the publisher and media reports.",
+    "quickAnswers": "Quick answers",
+    "guides": "All guides",
+    "aboutGame": "About the game",
+    "startPlaying": "Get it on Steam",
+    "getOnSteam": "Get it on Steam ↗",
+    "readGuide": "Read the guide →",
+    "moreGuides": "More guides",
+    "sources": "Sources & fact-checking",
+    "caseFile": "CASE FILE",
+    "evidence": "EVIDENCE",
+    "sealed": "SEALED",
+    "latest": "Latest guides",
+    "updated": "Contents",
+    "explore": "Explore the investigation"
+   },
+   "zh-CN": {
     "name": "杀死影子攻略站",
     "tagline": "全流程、抉择、结局、案件与常见问题",
     "description": "最好的杀死影子攻略：完整流程、抉择与结局指南、全部案件、调查系统详解、成就、配置要求与常见问题。持续更新。",
@@ -37,7 +71,48 @@
     "getOnSteam": "在 Steam 获取 ↗",
     "moreGuides": "更多攻略",
     "sources": "来源与事实核对",
-    "readGuide": "新手攻略 →"
+    "readGuide": "新手攻略 →",
+    "navCases": "案件板",
+    "navCharacters": "角色档案",
+    "caseFile": "案件卷宗",
+    "evidence": "证据",
+    "sealed": "已封存",
+    "latest": "最新攻略",
+    "updated": "目录",
+    "explore": "深入调查暗潮市的离奇案件",
+    "navGuides": "Guides"
+   },
+   "zh-TW": {
+    "name": "殺死影子攻略站",
+    "tagline": "全流程、抉擇、結局、案件與常見問題",
+    "description": "最好的殺死影子攻略：完整流程、抉擇與結局指南、全部案件、調查系統詳解、成就、配置要求與常見問題。持續更新。",
+    "navHome": "首頁",
+    "navAbout": "關於",
+    "navPrivacy": "隱私",
+    "navContact": "聯繫",
+    "langLabel": "語言",
+    "aboutTitle": "關於本站",
+    "privacyTitle": "隱私政策",
+    "contactTitle": "聯繫我們",
+    "footerNote": "非官方粉絲站——遊戲及相關資產歸其所有者所有。",
+    "footerSource": "信息覈對自 Steam 官方商店頁、IGN、官方新聞稿與 SteamDB。",
+    "quickAnswers": "常見問題速答",
+    "guides": "全部攻略",
+    "aboutGame": "關於這款遊戲",
+    "startPlaying": "開始遊玩 →",
+    "getOnSteam": "在 Steam 獲取 ↗",
+    "moreGuides": "更多攻略",
+    "sources": "來源與事實覈對",
+    "readGuide": "新手攻略 →",
+    "navCases": "案件板",
+    "navCharacters": "角色檔案",
+    "caseFile": "案件卷宗",
+    "evidence": "證據",
+    "sealed": "已封存",
+    "latest": "最新攻略",
+    "updated": "目錄",
+    "explore": "深入調查暗潮市的離奇案件",
+    "navGuides": "Guides"
    },
    "ja": {
     "name": "キル・ザ・シャドウ攻略ガイド",
@@ -60,7 +135,48 @@
     "getOnSteam": "Steam で入手 ↗",
     "moreGuides": "その他の攻略",
     "sources": "出典とファクトチェック",
-    "readGuide": "遊び方 →"
+    "readGuide": "遊び方 →",
+    "navCases": "事件ボード",
+    "navCharacters": "キャラクター",
+    "caseFile": "事件ファイル",
+    "evidence": "証拠",
+    "sealed": "封印済み",
+    "latest": "最新ガイド",
+    "updated": "目次",
+    "explore": "暗潮市の事件を調査しよう",
+    "navGuides": "Guides"
+   },
+   "ko": {
+    "name": "킬 더 섀도우 공략",
+    "tagline": "전체 워크스루 · 선택지 · 엔딩 · 사건 · 캐릭터",
+    "description": "킬 더 섀도우(Kill The Shadow) 최고의 공략: 전체 워크스루, 선택지와 엔딩 가이드, 모든 사건, 수사 시스템, 캐릭터, 업적, FAQ. 정기 업데이트.",
+    "navHome": "홈",
+    "navGuides": "공략",
+    "navCases": "사건 파일",
+    "navCharacters": "캐릭터",
+    "navAbout": "소개",
+    "navPrivacy": "개인정보",
+    "navContact": "문의",
+    "langLabel": "언어",
+    "aboutTitle": "이 사이트 소개",
+    "privacyTitle": "개인정보 처리방침",
+    "contactTitle": "문의하기",
+    "footerNote": "비공식 팬 사이트 — 게임 및 관련 자산은 각 소유자에게 귀속됩니다.",
+    "footerSource": "정보는 Steam 공식 스토어 페이지, 퍼블리셔 발표, 신뢰할 수 있는 매체에서 확인했습니다.",
+    "quickAnswers": "자주 묻는 질문",
+    "guides": "전체 공략",
+    "aboutGame": "게임 소개",
+    "startPlaying": "스팀에서 플레이",
+    "getOnSteam": "스팀에서 보기 ↗",
+    "moreGuides": "다른 공략",
+    "sources": "출처 및 팩트체크",
+    "readGuide": "공략 보기 →",
+    "caseFile": "사건 파일",
+    "evidence": "증거",
+    "sealed": "봉인",
+    "latest": "최신 공략",
+    "updated": "목차",
+    "explore": "어둠의 도시에서 벌어지는 사건을 직접 조사하세요"
    }
   }
  },
@@ -110,11 +226,40 @@
    }
   ],
   "nameI18n": {
-   "zh": "杀死影子",
-   "ja": "キル・ザ・シャドウ"
+   "en": "Kill The Shadow",
+   "zh-CN": "杀死影子",
+   "zh-TW": "殺死影子",
+   "ja": "キル・ザ・シャドウ",
+   "ko": "킬 더 섀도우"
   },
   "statsI18n": {
-   "zh": [
+   "en": [
+    {
+     "value": "Aug 5",
+     "label": "Steam release"
+    },
+    {
+     "value": "10万+",
+     "label": "Wishlists before launch"
+    },
+    {
+     "value": "Multi",
+     "label": "Endings"
+    },
+    {
+     "value": "2.5D",
+     "label": "Pixel art noir"
+    },
+    {
+     "value": "$16.99",
+     "label": "On Steam"
+    },
+    {
+     "value": "Win",
+     "label": "Platform"
+    }
+   ],
+   "zh-CN": [
     {
      "value": "8月5日",
      "label": "Steam 发售"
@@ -129,20 +274,46 @@
     },
     {
      "value": "2.5D",
-     "label": "像素黑色电影"
+     "label": "像素 noir"
     },
     {
      "value": "$16.99",
      "label": "Steam 售价"
     },
     {
-     "value": "Windows",
+     "value": "Win",
+     "label": "平台"
+    }
+   ],
+   "zh-TW": [
+    {
+     "value": "8月5日",
+     "label": "Steam 發售"
+    },
+    {
+     "value": "10萬+",
+     "label": "發售前願望單"
+    },
+    {
+     "value": "多結局",
+     "label": "結局數量"
+    },
+    {
+     "value": "2.5D",
+     "label": "像素 noir"
+    },
+    {
+     "value": "$16.99",
+     "label": "Steam 售價"
+    },
+    {
+     "value": "Win",
      "label": "平台"
     }
    ],
    "ja": [
     {
-     "value": "8/5",
+     "value": "8月5日",
      "label": "Steam 発売"
     },
     {
@@ -155,39 +326,84 @@
     },
     {
      "value": "2.5D",
-     "label": "ピクセル・ノワール"
+     "label": "ピクセルノワール"
     },
     {
      "value": "$16.99",
      "label": "Steam 価格"
     },
     {
-     "value": "Windows",
-     "label": "対応OS"
+     "value": "Win",
+     "label": "プラットフォーム"
+    }
+   ],
+   "ko": [
+    {
+     "value": "8월 5일",
+     "label": "스팀 출시"
+    },
+    {
+     "value": "10만+",
+     "label": "출시 전 위시리스트"
+    },
+    {
+     "value": "멀티",
+     "label": "엔딩"
+    },
+    {
+     "value": "2.5D",
+     "label": "픽셀 느와르"
+    },
+    {
+     "value": "$16.99",
+     "label": "스팀 가격"
+    },
+    {
+     "value": "Win",
+     "label": "플랫폼"
     }
    ]
   },
   "keyFactsI18n": {
-   "zh": [
-    "2026年8月5日在 Steam（Windows）发售，售价 $16.99 / £14.99 / €16.99，首发 -10%",
-    "多结局侦探 RPG，你的选择会影响「影子黑化度」并决定结局走向",
-    "犯罪现场重建：如同亲历死者最后时刻",
-    "时间回溯：调查中可回退重来，尝试不同的对话与行动",
-    "发售前愿望单突破 10 万份，80% 以上来自海外",
-    "自 2024 年起有免费 Demo 可玩（含 10 个成就）"
+   "en": [
+    "Launched August 5, 2026 on Steam (Windows) at $16.99 / £14.99 / €16.99 with a 10% launch discount",
+    "Detective RPG with multiple endings and a 'Shadow corruption' meter influenced by your choices",
+    "Crime-scene reconstruction: witness the final moments of the dead exactly as they happened",
+    "Time rewind: undo mistakes mid-investigation to try different dialogue and actions",
+    "100,000+ Steam wishlists before launch, over 80% from outside China",
+    "A free demo (with 10 achievements) has been available since 2024"
+   ],
+   "zh-CN": [
+    "2026年8月5日在 Steam（Windows）发售，$16.99 / £14.99 / €16.99，首发两周 10% 折扣",
+    "多结局侦探RPG — 含「影子黑化度」系统",
+    "重现死者最后时刻 + 调查中时间回溯的独特调查系统",
+    "以半开放城市「暗潮市」为舞台的多案件结构"
+   ],
+   "zh-TW": [
+    "2026年8月5日在 Steam（Windows）發售，$16.99 / £14.99 / €16.99，首發兩週 10% 折扣",
+    "多結局偵探RPG — 含「影子黑化度」系統",
+    "重現死者最後時刻 + 調查中時間回溯的獨特調查系統",
+    "以半開放城市「暗潮市」為舞臺的多案件結構"
    ],
    "ja": [
-    "2026年8月5日に Steam（Windows）で発売。$16.99 / £14.99 / €16.99、ローンチ割引10%",
-    "マルチエンディングの探偵RPG。選択が「シャドウの浸食度」に影響し、エンディングが分岐",
-    "犯行現場再現：死者の最後の瞬間をそのまま目撃できる",
-    "時間巻き戻し：調査中に失敗をやり直し、別の会話・行動を試せる",
-    "発売前ウィッシュリスト10万件超、うち80%以上が海外からの登録",
-    "2024年から無料デモを公開（実績10個）"
+    "2026年8月5日に Steam（Windows）で発売、$16.99 / £14.99 / €16.99、発売2週間は10%オフ",
+    "複数エンディングの刑事RPG —「シャドウ汚染度」システム搭載",
+    "死者の最後の瞬間を再現し、調査中に時間を巻き戻す独自の調査システム",
+    "半オープン都市「ダークタイドシティ」を舞台にした複数事件構造"
+   ],
+   "ko": [
+    "2026년 8월 5일 Steam(Windows) 출시, $16.99 / £14.99 / €16.99, 출시 2주간 10% 할인",
+    "여러 엔딩이 있는 추리 RPG — '섀도우 오염도' 시스템 포함",
+    "죽은 자의 마지막 순간을 재구성하고 시간을 되감는 독특한 수사 시스템",
+    "반개방형 도시 '다크 타이드 시티'를 배경으로 한 다중 사건 구조"
    ]
   },
   "introI18n": {
-   "zh": "《杀死影子》是一款多结局的氛围派侦探 RPG，由中国工作室坞光岚影（Shadowlight）开发，并在 NEOWIZ 的全球发行协议下发行。你扮演暗潮市（Dark Tide City）的前警官 Lucas，他的背上寄宿着名为「影子」的超自然存在，能让他重建死者最后的瞬间，并在调查中回溯时间。你的每个选择都会改变人物关系、被揭开的真相，以及最终抵达的多个结局之一。",
-   "ja": "『キル・ザ・シャドウ』は、中国のスタジオ Shadowlight が開発し、NEOWIZ のグローバル契約のもと配信される、マルチエンディングの空気感重視の探偵RPG。プレイヤーは分断された都市ダークタイド・シティの元警官ルーカスとなり、背中に宿る超常的存在「シャドウ」の力で死者の最期の瞬間を再現し、調査中に時間を巻き戻せます。選択のひとつひとつが関係性と明かされる真実、そして複数のエンディングの分岐に影響します。"
+   "en": "Kill The Shadow is an atmospheric detective RPG with multiple endings, developed by Chinese studio Shadowlight and published globally under a deal with NEOWIZ. You play as Lucas, a former police officer in the divided city of Dark Tide City, who carries a supernatural entity called the Shadow on his back. It lets him reconstruct the final moments of the dead and rewind time during investigations. Every choice you make shapes relationships, the truth that comes to light, and which of the multiple endings you reach.",
+   "zh-CN": "《杀死影子》是一款氛围浓厚的侦探RPG，由中国工作室坞光岚影（Shadowlight）开发，并在 NEOWIZ 的全球发行协议下发行。你扮演分裂城市暗潮市的前警官 Lucas，背上寄宿着名为「影子」的超自然存在，它能让你重现死者最后的时刻，并在调查中倒转时间。你的每一个选择都会塑造人物关系、被揭开的真相，以及你最终抵达的多种结局之一。",
+   "zh-TW": "《殺死影子》是一款氛圍濃厚的偵探RPG，由中國工作室塢光嵐影（Shadowlight）開發，並在 NEOWIZ 的全球發行協議下發行。你扮演分裂城市暗潮市的前警官 Lucas，背上寄宿著名為「影子」的超自然存在，它能讓你重現死者最後的時刻，並在調查中倒轉時間。你的每一個選擇都會塑造人物關係、被揭開的真相，以及你最終抵達的多種結局之一。",
+   "ja": "『キル・ザ・シャドウ』は、中国のスタジオ Shadowlight（塢光嵐影）が開発し、NEOWIZ のグローバルパブリッシング契約のもと発売された、雰囲気のある刑事RPGです。分断された都市ダークタイドシティで、元警官ルーカスとしてプレイ。背中に宿る超常存在「シャドウ」は、死者の最後の瞬間を再現し、調査中に時間を巻き戻すことを可能にします。すべての選択が、人間関係・明らかになる真実・たどり着く複数のエンディングを形作ります。",
+   "ko": "킬 더 섀도우는 중국 스튜디오 Shadowlight(坞光岚影)가 개발하고 NEOWIZ가 글로벌 퍼블리싱을 맡은 분위기 있는 추리 RPG입니다. 분단된 도시 다크 타이드 시티에서 전직 형사 루카스로 플레이하며, 등에 짊어진 초자연적 존재 '섀도우'는 죽은 자의 마지막 순간을 재구성하고 수사 중 시간을 되감게 해줍니다. 모든 선택이 관계와 드러나는 진실, 그리고 도달하는 엔딩을 바꿉니다."
   }
  },
  "pages": [
@@ -286,17 +502,27 @@
      "label": "Official Steam store page — Kill The Shadow",
      "url": "https://store.steampowered.com/app/2660230/Kill_The_Shadow/",
      "zh": "Steam 官方商店页 — 杀死影子",
-     "ja": "Steam 公式ストア — キル・ザ・シャドウ"
+     "ja": "Steam 公式ストア — キル・ザ・シャドウ",
+     "labels": {
+      "zh-CN": "Steam 官方商店页 — 杀死影子",
+      "ja": "Steam 公式ストア — キル・ザ・シャドウ",
+      "ko": "Steam 공식 스토어 — 킬 더 섀도우"
+     }
     },
     {
      "label": "IGN — Kill the Shadow Launch Trailer",
      "url": "https://in.ign.com/kill-the-shadow/268073/kill-the-shadow-official-launch-trailer",
      "zh": "IGN — 杀死影子发售宣传片",
-     "ja": "IGN — キル・ザ・シャドウ ローンチトレーラー"
+     "ja": "IGN — キル・ザ・シャドウ ローンチトレーラー",
+     "labels": {
+      "zh-CN": "IGN — 杀死影子发售宣传片",
+      "ja": "IGN — キル・ザ・シャドウ ローンチトレーラー",
+      "ko": "IGN — 킬 더 섀도우 런칭 트레일러"
+     }
     }
    ],
    "i18n": {
-    "zh": {
+    "zh-CN": {
      "title": "杀死影子怎么玩",
      "metaTitle": "杀死影子怎么玩：新手完整指南（2026）",
      "metaDescription": "第一次玩杀死影子？掌握核心调查循环、犯罪现场重建、时间回溯、影子黑化度机制，以及选择如何改变剧情。",
@@ -382,6 +608,96 @@
         "做决定前先和所有人聊一遍——关系会改变结局",
         "前几章放心回溯，学习角色们会如何反应",
         "留意影子黑化度：更黑暗的选择会让它升高"
+       ]
+      }
+     ]
+    },
+    "zh-TW": {
+     "title": "殺死影子怎麼玩",
+     "metaTitle": "殺死影子怎麼玩：新手完整指南（2026）",
+     "metaDescription": "第一次玩殺死影子？掌握核心調查循環、犯罪現場重建、時間回溯、影子黑化度機制，以及選擇如何改變劇情。",
+     "intro": "《殺死影子》是一款偵探 RPG：調查離奇案件、重建犯罪現場，做出改變結局的道德抉擇。這是你接手第一個案件前需要知道的一切。",
+     "sections": [
+      {
+       "type": "steps",
+       "heading": "核心循環：調查 → 重建 → 抉擇",
+       "body": "每個案件都遵循同一節奏：收集證據，用超能力重歷死者最後的瞬間，然後決定如何利用你所知的一切。",
+       "items": [
+        "調查現場——檢查線索、詢問證人、閱讀文檔",
+        "重建犯罪——回溯時間，親眼目睹受害者最後的瞬間",
+        "直面真相——用對話、智慧或暴力決定如何應對",
+        "承擔後果——選擇改變人物關係，也改變被揭開的真相"
+       ]
+      },
+      {
+       "type": "table",
+       "heading": "三種破案路線",
+       "body": "官方商店頁描述：你可以用口才、智慧、時間回溯能力——甚至暴力——來解決案件。每條路線適合不同情境。",
+       "columns": [
+        "路線",
+        "運作方式",
+        "適合場景"
+       ],
+       "rows": [
+        [
+         "口才",
+         "用對話說服證人與嫌疑人",
+         "不打草驚蛇地獲取信息"
+        ],
+        [
+         "智慧",
+         "把線索連成邏輯鏈並推理真相",
+         "證詞互相矛盾的案件"
+        ],
+        [
+         "時間回溯+暴力",
+         "重放關鍵時刻，必要時訴諸武力",
+         "打破僵局或走上更黑暗的道路"
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "犯罪現場重建",
+       "body": "你的搭檔「影子」能讓你重建死者最後的瞬間。這是每個調查的核心。",
+       "items": [
+        "用重建看到受害者真實的死法，而不只是現場表面的樣子",
+        "留意兇手試圖掩蓋的細節——僞造現場是常見手段",
+        "重建展示的是過去發生的事實，但你的解讀仍然重要",
+        "當你更瞭解涉案人物後，同一個現場會有不同的讀法"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "時間回溯",
+       "body": "調查中你可以回溯時間，重試失敗的關鍵時刻——錯誤的對話選項、漏掉的線索或搞砸的行動。",
+       "items": [
+        "回退到糟糕決定之前，而不是重開整個章節",
+        "嘗試不同的對話選項，看看角色如何反應",
+        "回溯不會抹去記憶——用學到的信息選更好的選項"
+       ]
+      },
+      {
+       "type": "steps",
+       "heading": "開場流程",
+       "body": "遊戲在警察局外開場，Lucas 收到一封寫在醫療計量器上的神祕信件，寄信人是 Lynn DaHandt。",
+       "items": [
+        "進入警察局，見到 Lucas 曾經的同事",
+        "警官 May 接待了你，爲你的迴歸定下基調",
+        "第一個目標指向工廠區——第一章的舞臺",
+        "從這裏開始，每段對話都是改變關係與劇情的機會"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "新手快速上手清單",
+       "body": "五個能立刻提升你偵探水平的小習慣。",
+       "items": [
+        "儘量重建每個現場——藏在最後瞬間裏的細節往往能破案",
+        "讀文檔：信件和醫療計量器承載着關鍵劇情線索",
+        "做決定前先和所有人聊一遍——關係會改變結局",
+        "前幾章放心回溯，學習角色們會如何反應",
+        "留意影子黑化度：更黑暗的選擇會讓它升高"
        ]
       }
      ]
@@ -474,9 +790,105 @@
         "シャドウ浸食度に注意：暗い選択ほど上昇する"
        ]
       }
+     ],
+     "heroImage": "/images/how-to-play.jpg"
+    },
+    "ko": {
+     "title": "킬 더 섀도우 하는 방법",
+     "metaTitle": "킬 더 섀도우 하는 방법: 초보자 완전 가이드 (2026)",
+     "metaDescription": "킬 더 섀도우가 처음이신가요? 핵심 수사 루프, 범죄 현장 재구성, 시간 되감기, 섀도우 오염도, 선택이 스토리를 바꾸는 법을 배워보세요.",
+     "intro": "킬 더 섀도우는 기이한 사건을 조사하고, 범죄 현장을 재구성하며, 엔딩을 바꾸는 도덕적 선택을 내리는 추리 RPG입니다. 첫 사건을 시작하기 전에 알아야 할 모든 것을 정리했습니다.",
+     "sections": [
+      {
+       "type": "steps",
+       "heading": "핵심 루프: 조사 · 재구성 · 선택",
+       "body": "모든 사건은 같은 흐름을 따릅니다: 증거를 모으고, 초자연적 능력으로 죽은 자의 마지막 순간을 재현한 뒤, 알게 된 사실을 어떻게 활용할지 결정합니다.",
+       "items": [
+        "현장 조사 — 단서 확인, 목격자 대화, 문서 읽기",
+        "범죄 재구성 — 시간을 되감아 피해자의 마지막 순간을 그대로 목격",
+        "진실과 대면 — 대화·지혜·폭력 중 어떻게 대응할지 선택",
+        "결과 감당 — 선택은 관계와 드러나는 진실을 바꿈"
+       ]
+      },
+      {
+       "type": "table",
+       "heading": "세 가지 접근법",
+       "body": "공식 스토어 설명에 따르면, 말솜씨·지혜·시간 되감기 능력, 심지어 폭력으로 사건을 해결할 수 있습니다. 각 방식은 상황에 따라 유리합니다.",
+       "rows": [
+        [
+         "말솜씨",
+         "대화로 목격자와 용의자를 설득",
+         "의심을 사지 않고 정보 얻기"
+        ],
+        [
+         "지혜",
+         "단서를 논리적 연결고리로 엮어 진실 추론",
+         "증언 모순이 중심인 사건"
+        ],
+        [
+         "시간 되감기 + 폭력",
+         "장면을 다시 재생하고, 필요하면 물리력 사용",
+         "교착 상태 돌파 또는 어두운 길"
+        ]
+       ],
+       "columns": [
+        "접근법",
+        "작동 방식",
+        "가장 유리한 경우"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "범죄 현장 재구성",
+       "body": "파트너 '섀도우'는 죽은 자의 마지막 순간을 재구성하게 해줍니다. 이것이 모든 수사의 핵심입니다.",
+       "items": [
+        "재구성으로 피해자의 실제 사망 장면을 확인 — 현장이 보여주는 표면만으로 판단하지 말 것",
+        "범인이 숨기려 한 세부를 주시 — 현장 조작은 흔한 수법",
+        "재구성은 있었던 그대로의 과거를 보여주지만, 해석은 여전히 당신의 몫",
+        "관련 인물을 더 알게 되면 같은 현장도 다르게 읽힘"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "시간 되감기",
+       "body": "수사 중 시간을 되감아 실패한 순간(잘못된 대화 선택, 놓친 단서, 실패한 행동)을 다시 시도할 수 있습니다.",
+       "items": [
+        "챕터 전체를 다시 시작하는 대신 나쁜 결정 직전으로 되감기",
+        "다른 대화 옵션을 시도해 캐릭터 반응 확인",
+        "되감기는 지식을 지우지 않음 — 배운 정보로 더 나은 선택을"
+       ]
+      },
+      {
+       "type": "steps",
+       "heading": "오프닝 진행 방식",
+       "body": "게임은 경찰서 밖에서 시작합니다. 루카스는 린 다한트(Lynn DaHandt)라는 인물이 보낸, 의료 게이지에 적힌 수수께끼의 편지를 받습니다.",
+       "items": [
+        "경찰서에 들어가 루카스가 함께 일했던 사람들을 만나기",
+        "메이 경관이 당신을 맞이하며 복귀의 분위기를 만듦",
+        "첫 목표는 공장 지구로 향함 — 1장의 무대",
+        "이 순간부터 모든 대화가 관계와 스토리를 바꿀 기회"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "초보자 퀵스타트 체크리스트",
+       "body": "즉시 더 나은 형사가 되는 5가지 습관.",
+       "items": [
+        "가능한 모든 현장을 재구성 — 마지막 순간에 숨은 세부가 사건을 품",
+        "문서 읽기: 편지와 의료 게이지가 중요한 스토리 단서",
+        "결정 전 모두와 대화 — 관계가 엔딩을 바꿈",
+        "초반 챕터에서는 자유롭게 되감기 — 캐릭터 반응 학습",
+        "섀도우 오염도에 주의: 어두운 선택이 오염도를 높임"
+       ]
+      }
      ]
     }
-   }
+   },
+   "meta": {
+    "icon": "how-to-play",
+    "id": "F-01"
+   },
+   "heroImage": "/images/how-to-play.jpg"
   },
   {
    "slug": "walkthrough",
@@ -537,6 +949,66 @@
       "Track the relationships panel and Shadow corruption meter between chapters",
       "Each case feeds into the larger mystery behind Dark Tide City's ten-year-old event"
      ]
+    },
+    {
+     "type": "timeline",
+     "tag": "FLOW",
+     "heading": "Chapter 1 at a Glance",
+     "body": "The route from opening to factory in one timeline.",
+     "items": [
+      [
+       "00:00",
+       "Outside the station — read the letter from Lynn DaHandt"
+      ],
+      [
+       "00:15",
+       "Enter the station — talk to Officer May and the squad"
+      ],
+      [
+       "01:10",
+       "Head to the Factory district"
+      ],
+      [
+       "01:30",
+       "Inspect the scene before reconstructing"
+      ],
+      [
+       "02:00",
+       "Reconstruct the victim's final moments"
+      ],
+      [
+       "02:30",
+       "Compare reconstruction with the staged scene — find the tell"
+      ]
+     ]
+    },
+    {
+     "type": "table",
+     "tag": "CHOICES",
+     "heading": "Key Choices in Chapter 1",
+     "body": "The decisions that matter most in the opening and factory sections, based on our playthrough.",
+     "columns": [
+      "Decision",
+      "Effect",
+      "Tip"
+     ],
+     "rows": [
+      [
+       "How you answer May's questions",
+       "Shapes your relationship with the station",
+       "Be honest about the Shadow — or not; both are viable"
+      ],
+      [
+       "Share or hide the letter",
+       "Changes who trusts you early",
+       "Keeping it secret opens a private investigation path"
+      ],
+      [
+       "Use violence vs persuasion at the scene",
+       "Affects witnesses and the corruption meter",
+       "Try both with rewind to see consequences"
+      ]
+     ]
     }
    ],
    "sources": [
@@ -544,17 +1016,27 @@
      "label": "Into Indie Games — Kill the Shadow Walkthrough Part 1",
      "url": "https://intoindiegames.com/walkthroughs/kill-the-shadow-walkthrough-part-1-the-factory/",
      "zh": "Into Indie Games — 杀死影子流程攻略第一部分",
-     "ja": "Into Indie Games — キル・ザ・シャドウ攻略パート1"
+     "ja": "Into Indie Games — キル・ザ・シャドウ攻略パート1",
+     "labels": {
+      "zh-CN": "Into Indie Games — 杀死影子流程攻略第一部分",
+      "ja": "Into Indie Games — キル・ザ・シャドウ攻略パート1",
+      "ko": "Into Indie Games — 킬 더 섀도우 공략 파트 1"
+     }
     },
     {
      "label": "Official Steam store page — Kill The Shadow",
      "url": "https://store.steampowered.com/app/2660230/Kill_The_Shadow/",
      "zh": "Steam 官方商店页 — 杀死影子",
-     "ja": "Steam 公式ストア — キル・ザ・シャドウ"
+     "ja": "Steam 公式ストア — キル・ザ・シャドウ",
+     "labels": {
+      "zh-CN": "Steam 官方商店页 — 杀死影子",
+      "ja": "Steam 公式ストア — キル・ザ・シャドウ",
+      "ko": "Steam 공식 스토어 — 킬 더 섀도우"
+     }
     }
    ],
    "i18n": {
-    "zh": {
+    "zh-CN": {
      "title": "杀死影子全流程：第一章 · 工厂",
      "metaTitle": "杀死影子全流程攻略：第一章工厂（2026）",
      "metaDescription": "杀死影子第一章完整流程：从警察局开场到工厂区，含关键抉择与注意事项。选择会改变结果，本攻略是地图而非剧本。",
@@ -611,6 +1093,187 @@
         "获得新信息后回到旧区域——对话可能会改变",
         "在章节之间关注关系面板与影子黑化度",
         "每个案件都汇入暗潮市十年前的谜团主线"
+       ]
+      },
+      {
+       "type": "timeline",
+       "tag": "流程",
+       "heading": "第一章速览",
+       "body": "从开场到工厂的完整路线，一条时间线看完。",
+       "items": [
+        [
+         "00:00",
+         "警察局外——阅读 Lynn DaHandt 的来信"
+        ],
+        [
+         "00:15",
+         "进入警察局——与警官 May 和同僚交谈"
+        ],
+        [
+         "01:10",
+         "前往工厂区"
+        ],
+        [
+         "01:30",
+         "重建前先检查现场"
+        ],
+        [
+         "02:00",
+         "重建受害者的最后时刻"
+        ],
+        [
+         "02:30",
+         "对比重建与被伪造的现场——找到破绽"
+        ]
+       ]
+      },
+      {
+       "type": "table",
+       "tag": "抉择",
+       "heading": "第一章关键抉择",
+       "body": "根据我们的通关记录，开场与工厂部分最重要的选择。",
+       "columns": [
+        "抉择",
+        "影响",
+        "建议"
+       ],
+       "rows": [
+        [
+         "如何回应 May 的问题",
+         "塑造你与警察局的关系",
+         "可以坦诚谈影子，也可以保留——两者都可行"
+        ],
+        [
+         "分享或隐瞒信件",
+         "决定早期谁信任你",
+         "保密可开启一条私下调查的路线"
+        ],
+        [
+         "在现场用暴力还是说服",
+         "影响目击者与黑化度",
+         "用回溯两种都试，看看后果"
+        ]
+       ]
+      }
+     ]
+    },
+    "zh-TW": {
+     "title": "殺死影子全流程：第一章 · 工廠",
+     "metaTitle": "殺死影子全流程攻略：第一章工廠（2026）",
+     "metaDescription": "殺死影子第一章完整流程：從警察局開場到工廠區，含關鍵抉擇與注意事項。選擇會改變結果，本攻略是地圖而非劇本。",
+     "intro": "本攻略基於我們已覈實的通關記錄。由於選擇會改變結果，你的體驗可能不同——把它當作地圖，而不是劇本。",
+     "sections": [
+      {
+       "type": "steps",
+       "heading": "第一部分 · 警察局開場",
+       "body": "遊戲在警察局外開始，Lucas 收到一封寫在醫療計量器上的神祕信件，寄信人是 Lynn DaHandt。",
+       "items": [
+        "走進警察局——警官 May 迎接你的迴歸",
+        "探索警察局並與警官們交談；這裏的對話選擇開始塑造關係",
+        "仔細讀信：醫療計量器是之後重要的醫療類文檔中的第一件",
+        "目標指向工廠區——第一章的舞臺"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "開場的關鍵抉擇",
+       "body": "開場雖短，卻決定了 Lucas 如何被接納——以及影子如何反應。",
+       "items": [
+        "你對 May 問題的回應會影響你與警察局的關係",
+        "選擇分享或隱瞞影子的信息，會改變他人對你的看法",
+        "早期就能回溯——嘗試不同回應來把握基調"
+       ]
+      },
+      {
+       "type": "steps",
+       "heading": "第二部分 · 前往工廠",
+       "body": "第一次真正的調查帶你來到工廠區，Lucas 必須重建現場發生的一切。",
+       "items": [
+        "前往工廠並進入現場",
+        "先用肉眼檢查區域——物理線索決定你該尋找什麼",
+        "用犯罪現場重建目睹受害者最後的瞬間",
+        "對比重建與現實現場的差異——僞造的細節是關鍵破綻"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "在工廠裏留意什麼",
+       "body": "根據我們的通關記錄，以下是第一章裏最重要的細節。",
+       "items": [
+        "醫療計量器：與開場的信件交叉比對",
+        "死亡發生時誰有權限進入工廠車間",
+        "受害者的屍體位置是否與重建的事件一致",
+        "僅靠對話無法揭示的環境小線索"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "第一章之後",
+       "body": "隨着章節推進，遊戲的半開放城市會逐漸展開。請保持這些習慣。",
+       "items": [
+        "獲得新信息後回到舊區域——對話可能會改變",
+        "在章節之間關注關係面板與影子黑化度",
+        "每個案件都匯入暗潮市十年前的謎團主線"
+       ]
+      },
+      {
+       "type": "timeline",
+       "tag": "流程",
+       "heading": "第一章速覽",
+       "body": "從開場到工廠的完整路線，一條時間線看完。",
+       "items": [
+        [
+         "00:00",
+         "警察局外——閱讀 Lynn DaHandt 的來信"
+        ],
+        [
+         "00:15",
+         "進入警察局——與警官 May 和同僚交談"
+        ],
+        [
+         "01:10",
+         "前往工廠區"
+        ],
+        [
+         "01:30",
+         "重建前先檢查現場"
+        ],
+        [
+         "02:00",
+         "重建受害者的最後時刻"
+        ],
+        [
+         "02:30",
+         "對比重建與被僞造的現場——找到破綻"
+        ]
+       ]
+      },
+      {
+       "type": "table",
+       "tag": "抉擇",
+       "heading": "第一章關鍵抉擇",
+       "body": "根據我們的通關記錄，開場與工廠部分最重要的選擇。",
+       "columns": [
+        "抉擇",
+        "影響",
+        "建議"
+       ],
+       "rows": [
+        [
+         "如何回應 May 的問題",
+         "塑造你與警察局的關係",
+         "可以坦誠談影子，也可以保留——兩者都可行"
+        ],
+        [
+         "分享或隱瞞信件",
+         "決定早期誰信任你",
+         "保密可開啓一條私下調查的路線"
+        ],
+        [
+         "在現場用暴力還是說服",
+         "影響目擊者與黑化度",
+         "用回溯兩種都試，看看後果"
+        ]
        ]
       }
      ]
@@ -673,15 +1336,202 @@
         "章の合間に関係パネルとシャドウ浸食度を確認",
         "各事件はダークタイド・シティの10年前の謎へとつながる"
        ]
+      },
+      {
+       "type": "timeline",
+       "tag": "フロー",
+       "heading": "第1章の流れ",
+       "body": "オープニングから工場までのルートを1本のタイムラインで。",
+       "items": [
+        [
+         "00:00",
+         "警察署の外——リン・ダハントからの手紙を読む"
+        ],
+        [
+         "00:15",
+         "警察署へ——メイ巡査と同僚に話す"
+        ],
+        [
+         "01:10",
+         "工場地区へ向かう"
+        ],
+        [
+         "01:30",
+         "再現の前に現場を調べる"
+        ],
+        [
+         "02:00",
+         "被害者の最後の瞬間を再現する"
+        ],
+        [
+         "02:30",
+         "再現と偽装現場を比較——破綻を見つける"
+        ]
+       ]
+      },
+      {
+       "type": "table",
+       "tag": "選択",
+       "heading": "第1章の重要選択",
+       "body": "プレイ記録に基づく、オープニングと工場パートで最も重要な選択。",
+       "columns": [
+        "選択",
+        "影響",
+        "アドバイス"
+       ],
+       "rows": [
+        [
+         "メイの質問への答え方",
+         "警察署との関係を形作る",
+         "シャドウについて正直に話すか、黙るか——どちらも成立"
+        ],
+        [
+         "手紙を共有するか隠すか",
+         "初期に誰が信頼するかが変わる",
+         "隠すと非公開の調査ルートが開く"
+        ],
+        [
+         "現場で暴力か説得か",
+         "目撃者と汚染度に影響",
+         "巻き戻しで両方を試して結果を確認"
+        ]
+       ]
+      }
+     ],
+     "heroImage": "/images/walkthrough.jpg"
+    },
+    "ko": {
+     "title": "킬 더 섀도우 워크스루: 1장 — 공장",
+     "metaTitle": "킬 더 섀도우 워크스루: 1장 — 공장 (2026)",
+     "metaDescription": "킬 더 섀도우 1장 단계별 공략: 경찰서 오프닝부터 공장 지구까지, 핵심 선택과 주목할 포인트 포함.",
+     "intro": "이 워크스루는 검증된 1장 플레이 기록을 기준으로 합니다. 선택에 따라 결과가 달라질 수 있으니, 절대적인 답이 아닌 지도로 활용하세요.",
+     "sections": [
+      {
+       "type": "steps",
+       "heading": "파트 1 — 경찰서 오프닝",
+       "body": "킬 더 섀도우는 경찰서 밖에서 시작합니다. 루카스는 린 다한트가 보낸 의료 게이지에 적힌 수수께끼의 편지를 받습니다.",
+       "items": [
+        "경찰서로 들어가기 — 메이 경관이 복귀를 맞이함",
+        "경찰서를 탐색하고 경관들과 대화 — 여기서부터 관계가 형성됨",
+        "편지를 주의 깊게 읽기: 의료 게이지는 이후 등장하는 의료 문서 시리즈의 첫 번째",
+        "목표는 공장 지구 — 1장의 무대"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "오프닝의 핵심 선택",
+       "body": "오프닝은 짧지만 루카스가 어떻게 받아들여지는지, 섀도우가 어떻게 반응하는지의 분위기를 결정합니다.",
+       "items": [
+        "메이의 질문에 대한 대답이 경찰서와의 관계에 영향",
+        "섀도우에 대한 정보를 공유할지 숨길지 — 캐릭터들의 시선이 바뀜",
+        "되감기는 초반부터 가능 — 다양한 반응으로 분위기 파악"
+       ]
+      },
+      {
+       "type": "steps",
+       "heading": "파트 2 — 공장으로",
+       "body": "첫 번째 진짜 수사는 공장 지구로 향합니다. 루카스는 현장에서 무슨 일이 있었는지 재구성해야 합니다.",
+       "items": [
+        "공장으로 이동해 현장 진입",
+        "재구성 전에 육안으로 현장 확인 — 물리적 단서가 무엇을 찾아야 할지 알려줌",
+        "범죄 현장 재구성으로 피해자의 마지막 순간 목격",
+        "재구성과 현장 표면의 차이 비교 — 조작된 세부가 핵심 단서"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "공장에서 주목할 포인트",
+       "body": "플레이 기록을 기준으로, 1장에서 가장 중요한 세부입니다.",
+       "items": [
+        "의료 게이지: 오프닝 편지와 교차 확인",
+        "사망 당시 공장 내부에 접근 권한이 있던 인물",
+        "피해자 시신 위치가 재구성된 사건과 일치하는지",
+        "대화만으로는 드러나지 않는 작은 환경 단서"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "1장 이후",
+       "body": "챕터를 완료하면 반개방형 도시가 열립니다. 다음 습관을 유지하세요.",
+       "items": [
+        "새 정보를 얻으면 이전 지역에 다시 방문 — 대화가 달라질 수 있음",
+        "챕터 사이에 관계 패널과 섀도우 오염도 확인",
+        "각 사건은 다크 타이드 시티 10년 전 사건의 미스터리로 연결됨"
+       ]
+      },
+      {
+       "type": "timeline",
+       "tag": "흐름",
+       "heading": "1장 한눈에 보기",
+       "body": "오프닝부터 공장까지의 루트를 하나의 타임라인으로.",
+       "items": [
+        [
+         "00:00",
+         "경찰서 밖 — 린 다한트의 편지 읽기"
+        ],
+        [
+         "00:15",
+         "경찰서 진입 — 메이 경관과 대화"
+        ],
+        [
+         "01:10",
+         "공장 지구로 이동"
+        ],
+        [
+         "01:30",
+         "재구성 전에 현장 확인"
+        ],
+        [
+         "02:00",
+         "피해자의 마지막 순간 재구성"
+        ],
+        [
+         "02:30",
+         "재구성과 조작된 현장 비교 — 실마리 찾기"
+        ]
+       ]
+      },
+      {
+       "type": "table",
+       "tag": "선택",
+       "heading": "1장의 핵심 선택",
+       "body": "플레이 기록 기준, 오프닝과 공장 파트에서 가장 중요한 선택.",
+       "columns": [
+        "결정",
+        "효과",
+        "팁"
+       ],
+       "rows": [
+        [
+         "메이의 질문에 답하는 방식",
+         "경찰서와의 관계 형성",
+         "섀도우에 대해 솔직히 말하거나 말거나 — 둘 다 유효"
+        ],
+        [
+         "편지 공유 또는 숨김",
+         "초반 신뢰도 변화",
+         "숨기면 개인 조사 루트가 열림"
+        ],
+        [
+         "현장에서 폭력 vs 설득",
+         "목격자와 오염도에 영향",
+         "되감기로 둘 다 시도해 결과 확인"
+        ]
+       ]
       }
      ]
     }
-   }
+   },
+   "meta": {
+    "icon": "walkthrough",
+    "id": "F-02"
+   },
+   "heroImage": "/images/walkthrough.jpg"
   },
   {
    "slug": "choices",
    "title": "Kill The Shadow Choices: How Every Decision Changes the Story",
-   "metaTitle": "Kill The Shadow Choices Guide: Relationships, Truth & Endings (2026)",
+   "metaTitle": "Kill The Shadow Choices Guide (2026)",
    "metaDescription": "How choices work in Kill The Shadow: dialogue and moral decisions, the Shadow corruption meter, and how protecting someone can bury a more dangerous truth.",
    "intro": "Kill The Shadow is built around meaningful choice. This guide explains the systems behind the choices and what to consider before you commit.",
    "sections": [
@@ -734,17 +1584,27 @@
      "label": "G2A News — Kill the Shadow game spotlight",
      "url": "https://www.g2a.com/news/game-spotlights/kill-the-shadow-release/",
      "zh": "G2A News — 杀死影子专题报道",
-     "ja": "G2A News — キル・ザ・シャドウ特集"
+     "ja": "G2A News — キル・ザ・シャドウ特集",
+     "labels": {
+      "zh-CN": "G2A News — 杀死影子专题报道",
+      "ja": "G2A News — キル・ザ・シャドウ特集",
+      "ko": "G2A News — 킬 더 섀도우 특집"
+     }
     },
     {
      "label": "Official press release — Phoenix Games",
      "url": "https://www.gamespress.com/en-GB/Reconstruct-the-Past-Uncover-the-Truth-Kill-the-Shadow-Launches-on-Ste",
      "zh": "官方新闻稿 — Phoenix Games",
-     "ja": "公式プレスリリース — Phoenix Games"
+     "ja": "公式プレスリリース — Phoenix Games",
+     "labels": {
+      "zh-CN": "官方新闻稿 — Phoenix Games",
+      "ja": "公式プレスリリース — Phoenix Games",
+      "ko": "공식 보도자료 — Phoenix Games"
+     }
     }
    ],
    "i18n": {
-    "zh": {
+    "zh-CN": {
      "title": "杀死影子抉择指南：每个决定如何改变剧情",
      "metaTitle": "杀死影子抉择攻略：关系、真相与结局（2026）",
      "metaDescription": "杀死影子的抉择系统详解：对话与道德选择、影子黑化度，以及「保护某人可能埋下更危险的真相」。",
@@ -791,6 +1651,57 @@
         "后悔了就回溯；游戏鼓励你尝试",
         "在心里记下谁对你说了什么——矛盾正是这款游戏的精髓",
         "想看完一切？二周目用相反的道德立场再来一次"
+       ]
+      }
+     ]
+    },
+    "zh-TW": {
+     "title": "殺死影子抉擇指南：每個決定如何改變劇情",
+     "metaTitle": "殺死影子抉擇攻略：關係、真相與結局（2026）",
+     "metaDescription": "殺死影子的抉擇系統詳解：對話與道德選擇、影子黑化度，以及「保護某人可能埋下更危險的真相」。",
+     "intro": "《殺死影子》圍繞有分量的選擇而建。本指南解釋選擇背後的系統，以及你在做出承諾前該考慮什麼。",
+     "sections": [
+      {
+       "type": "list",
+       "heading": "選擇真正改變什麼",
+       "body": "發行方描述：選擇會改變關係、決定哪些真相浮出水面，並通向多個結局。",
+       "items": [
+        "關係：角色會記住你如何對待他們，並在之後做出不同的反應",
+        "真相：有些路線會揭示某些事實，同時埋沒另一些",
+        "結局：遊戲的多結局由你的決定分叉",
+        "影子：更黑暗的選擇會推高黑化度，改變故事的展開方式"
+       ]
+      },
+      {
+       "type": "steps",
+       "heading": "選擇的層次框架",
+       "body": "大多數有意義的選擇分三層。理解層次有助於預判後果。",
+       "items": [
+        "即時層：下一個場景發生什麼（誰信任你、哪些門打開）",
+        "關係層：一個角色的故事線如何貫穿全程發展",
+        "主題層：你追求正義還是保護——官方描述指出「正義未必帶來最仁慈的結果，而保護某人可能埋下更危險的真相」"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "正義 vs 保護",
+       "body": "發售專題描述了核心張力：你選擇伸張正義，還是保護涉案的人？",
+       "items": [
+        "正義可能看起來很乾淨，卻會傷害不該受傷的人",
+        "保護可以放過某人，卻讓更大的真相繼續被埋沒",
+        "沒有「正確」答案——遊戲設計上兩條路都通向有意義的結果",
+        "根據角色本身做決定，而不是試圖操縱系統"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "做出好選擇的技巧",
+       "body": "來自我們通關記錄的實用習慣。",
+       "items": [
+        "先重建現場、讀完所有文檔再選擇——信息就是力量",
+        "後悔了就回溯；遊戲鼓勵你嘗試",
+        "在心裏記下誰對你說了什麼——矛盾正是這款遊戲的精髓",
+        "想看完一切？二週目用相反的道德立場再來一次"
        ]
       }
      ]
@@ -845,13 +1756,68 @@
        ]
       }
      ]
+    },
+    "ko": {
+     "title": "킬 더 섀도우 선택지: 모든 결정이 스토리를 바꾸는 법",
+     "metaTitle": "킬 더 섀도우 선택지 가이드: 관계 · 진실 · 엔딩 (2026)",
+     "metaDescription": "킬 더 섀도우에서 선택이 작동하는 방식: 대화와 도덕적 결정, 섀도우 오염도, 누군가를 보호하면 더 위험한 진실이 묻힐 수 있는 이유.",
+     "intro": "킬 더 섀도우는 의미 있는 선택을 중심으로 설계되었습니다. 이 가이드는 선택 뒤에 있는 시스템과 결정 전에 고려할 점을 설명합니다.",
+     "sections": [
+      {
+       "type": "list",
+       "heading": "선택이 실제로 바꾸는 것",
+       "body": "퍼블리셔 설명에 따르면, 선택은 관계를 바꾸고, 어떤 진실이 드러날지 결정하며, 여러 엔딩에 기여합니다.",
+       "items": [
+        "관계: 캐릭터는 당신이 대한 방식을 기억하고 나중에 다르게 반응",
+        "진실: 어떤 길은 특정 사실을 드러내고 다른 사실은 묻어둠",
+        "엔딩: 게임의 여러 엔딩은 당신의 결정에서 분기",
+        "섀도우: 어두운 선택은 오염도를 올리고 스토리 전개를 바꿈"
+       ]
+      },
+      {
+       "type": "steps",
+       "heading": "선택의 프레임워크",
+       "body": "대부분의 의미 있는 선택은 세 층위로 나뉩니다. 층위를 알면 결과를 예측하기 쉽습니다.",
+       "items": [
+        "즉시적: 다음 장면에서 일어나는 일(누가 신뢰하는지, 어떤 문이 열리는지)",
+        "관계적: 캐릭터 호가 게임 전체에서 어떻게 발전하는지",
+        "주제적: 정의를 추구할지 보호를 추구할지 — 공식 설명은 '정의가 항상 가장 온화한 결과를 낳지는 않으며, 누군가를 보호하면 더 위험한 진실이 묻힐 수 있다'고 밝힘"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "정의 vs 보호",
+       "body": "런칭 스포트라이트는 중심 긴장을 설명합니다: 정의를 실현할 것인가, 관련 인물을 보호할 것인가.",
+       "items": [
+        "정의는 깨끗해 보이지만 원치 않는 사람에게 상처가 될 수 있음",
+        "보호는 누군가를 살리면서 더 큰 진실을 묻어둘 수 있음",
+        "'정답'은 없음 — 두 길 모두 의미 있는 곳으로 이어지도록 설계됨",
+        "시스템을 이용하려 하지 말고 캐릭터를 기준으로 결정"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "잘 선택하는 팁",
+       "body": "플레이 기록에서 얻은 실용적인 습관.",
+       "items": [
+        "선택 전에 현장 재구성과 모든 문서 읽기 — 정보가 힘",
+        "후회되는 선택 후 되감기 — 게임이 실험을 권장함",
+        "누가 무엇을 말했는지 메모 — 모순이 게임의 핵심",
+        "모든 것을 보고 싶다면 반대 도덕 입장으로 2회차 계획"
+       ]
+      }
+     ]
     }
+   },
+   "meta": {
+    "icon": "choices",
+    "id": "F-03"
    }
   },
   {
    "slug": "endings",
    "title": "Kill The Shadow Endings: How Many Endings & How to Reach Them",
-   "metaTitle": "Kill The Shadow Endings Guide: All Endings & Branch Conditions (2026)",
+   "metaTitle": "Kill The Shadow Endings Guide (2026)",
    "metaDescription": "Everything confirmed about Kill The Shadow's multiple endings: how many there are, how the Shadow corruption meter and choices branch the story, and what to do for a second playthrough.",
    "intro": "Kill The Shadow is confirmed to have multiple endings driven by player choice. Full branch conditions are still being documented by the community; this page covers everything verified so far.",
    "sections": [
@@ -905,17 +1871,27 @@
      "label": "Official press release — Phoenix Games",
      "url": "https://www.gamespress.com/en-GB/Reconstruct-the-Past-Uncover-the-Truth-Kill-the-Shadow-Launches-on-Ste",
      "zh": "官方新闻稿 — Phoenix Games",
-     "ja": "公式プレスリリース — Phoenix Games"
+     "ja": "公式プレスリリース — Phoenix Games",
+     "labels": {
+      "zh-CN": "官方新闻稿 — Phoenix Games",
+      "ja": "公式プレスリリース — Phoenix Games",
+      "ko": "공식 보도자료 — Phoenix Games"
+     }
     },
     {
      "label": "G2A News — Kill the Shadow game spotlight",
      "url": "https://www.g2a.com/news/game-spotlights/kill-the-shadow-release/",
      "zh": "G2A News — 杀死影子专题报道",
-     "ja": "G2A News — キル・ザ・シャドウ特集"
+     "ja": "G2A News — キル・ザ・シャドウ特集",
+     "labels": {
+      "zh-CN": "G2A News — 杀死影子专题报道",
+      "ja": "G2A News — キル・ザ・シャドウ特集",
+      "ko": "G2A News — 킬 더 섀도우 특집"
+     }
     }
    ],
    "i18n": {
-    "zh": {
+    "zh-CN": {
      "title": "杀死影子结局：有几个结局，如何达成",
      "metaTitle": "杀死影子结局攻略：全部结局与分叉条件（2026）",
      "metaDescription": "杀死影子多结局的已确认信息：结局数量、影子黑化度与选择如何分叉剧情，以及二周目该怎么做。",
@@ -963,6 +1939,58 @@
         "结局的确切总数",
         "各分叉对应的黑化度精确阈值",
         "每个结局是否都能在单周目内达成"
+       ]
+      }
+     ]
+    },
+    "zh-TW": {
+     "title": "殺死影子結局：有幾個結局，如何達成",
+     "metaTitle": "殺死影子結局攻略：全部結局與分叉條件（2026）",
+     "metaDescription": "殺死影子多結局的已確認信息：結局數量、影子黑化度與選擇如何分叉劇情，以及二週目該怎麼做。",
+     "intro": "《殺死影子》已確認擁有由玩家選擇驅動的多結局。完整分叉條件仍在被社區整理；本頁彙總目前所有已覈實的信息。",
+     "sections": [
+      {
+       "type": "list",
+       "heading": "已確認的事實",
+       "body": "以下是我們能基於官方來源、不做猜測得出的信息。",
+       "items": [
+        "遊戲擁有多結局（發行方與媒體均已確認）",
+        "結局由整個故事中的選擇分叉，而不只是最後一章",
+        "「影子黑化度」機制——受更黑暗的選擇影響——與故事的展開方式相關",
+        "單週目無法看完全部結局；遊戲獎勵相反立場的二週目"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "什麼影響結局",
+       "body": "根據官方描述的系統，以下槓桿至關重要。",
+       "items": [
+        "影子黑化度——更黑暗的選擇推高它",
+        "關鍵對話決定，以及你對待每個角色的方式",
+        "每個案件裏你選擇正義還是保護",
+        "你揭開了哪些真相——或選擇讓哪些繼續埋沒",
+        "跨章節建立的關係，而不是孤立的決定"
+       ]
+      },
+      {
+       "type": "steps",
+       "heading": "二週目怎麼做",
+       "body": "要看錯過的結局，改變你的道德立場——而不只是換對話。",
+       "items": [
+        "與一週目相反的正義/保護立場",
+        "一週目壓低影子黑化度，另一週目抬高它",
+        "經常存檔，在關鍵決策點用回溯做實驗",
+        "記錄你優先對待的角色——關係線會改變被揭示的內容"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "⚠️ 尚未覈實",
+       "body": "發售後的社區整理仍在進行中。可靠來源確認細節後，我們會更新本頁。",
+       "items": [
+        "結局的確切總數",
+        "各分叉對應的黑化度精確閾值",
+        "每個結局是否都能在單週目內達成"
        ]
       }
      ]
@@ -1017,9 +2045,67 @@
         "全エンドが1周で到達可能かどうか"
        ]
       }
+     ],
+     "heroImage": "/images/endings.jpg"
+    },
+    "ko": {
+     "title": "킬 더 섀도우 엔딩: 엔딩 수와 도달 방법",
+     "metaTitle": "킬 더 섀도우 엔딩 가이드: 전체 엔딩 & 분기 조건 (2026)",
+     "metaDescription": "킬 더 섀도우의 멀티 엔딩에 대해 확인된 모든 것: 엔딩 수, 섀도우 오염도와 선택이 스토리를 분기시키는 법, 2회차 추천.",
+     "intro": "킬 더 섀도우는 플레이어 선택으로 결정되는 여러 엔딩이 있는 것으로 확인되었습니다. 전체 분기 조건은 아직 커뮤니티에서 문서화 중이며, 이 페이지는 지금까지 검증된 내용을 다룹니다.",
+     "sections": [
+      {
+       "type": "list",
+       "heading": "확인된 사실",
+       "body": "추측 없이 공식 출처에서 확인할 수 있는 내용.",
+       "items": [
+        "여러 엔딩 존재 (퍼블리셔와 언론 보도로 확인)",
+        "엔딩은 마지막 챕터뿐 아니라 스토리 전체의 선택에서 분기",
+        "'섀도우 오염도' 메커니즘 — 어두운 선택에 영향 — 스토리 전개와 연결",
+        "한 번의 플레이로 모든 엔딩을 볼 수 없음 — 반대 입장의 2회차가 보상"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "엔딩에 영향을 주는 요소",
+       "body": "공식적으로 설명된 시스템 기준으로 중요한 레버들.",
+       "items": [
+        "섀도우 오염도 — 어두운 선택이 올림",
+        "핵심 대화 결정과 각 캐릭터를 대하는 방식",
+        "각 사건에서 정의를 추구할지 보호를 추구할지",
+        "드러내는 진실 — 또는 묻어두기로 선택한 진실",
+        "고립된 결정이 아니라 모든 챕터에 걸쳐 쌓은 관계"
+       ]
+      },
+      {
+       "type": "steps",
+       "heading": "2회차 접근법",
+       "body": "놓친 엔딩을 보려면 대화만 바꾸지 말고 도덕적 입장을 바꾸세요.",
+       "items": [
+        "1회차와 반대의 정의 vs 보호 입장 선택",
+        "한 번은 섀도우 오염도를 낮게, 다른 한 번은 높게 유지",
+        "자주 저장하고 주요 분기점에서 되감기로 실험",
+        "우선한 캐릭터를 기록 — 관계 호가 드러나는 진실을 바꿈"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "⚠️ 아직 검증되지 않음",
+       "body": "커뮤니티 문서화는 출시 후 따라잡는 중입니다. 신뢰할 수 있는 출처가 구체적인 내용을 확인하면 이 페이지를 업데이트합니다.",
+       "items": [
+        "정확한 엔딩 총수",
+        "각 분기의 정확한 오염도 임계값",
+        "모든 엔딩이 단일 플레이에서 도달 가능한지"
+       ]
+      }
      ]
     }
-   }
+   },
+   "meta": {
+    "icon": "endings",
+    "id": "F-04"
+   },
+   "heroImage": "/images/endings.jpg"
   },
   {
    "slug": "cases",
@@ -1079,6 +2165,39 @@
       "Note contradictions between what witnesses say and what reconstruction shows",
       "Decide whether the case calls for justice or protection before you act"
      ]
+    },
+    {
+     "type": "table",
+     "tag": "SUSPECTS",
+     "heading": "Persons of Interest",
+     "body": "Who we are watching in Chapter 1 — confirmed from coverage and our playthrough.",
+     "columns": [
+      "Person",
+      "Relation",
+      "Why They Matter"
+     ],
+     "rows": [
+      [
+       "Lynn DaHandt",
+       "Sender of the opening letter",
+       "Their connection to the victim is the thread behind the factory case"
+      ],
+      [
+       "Officer May",
+       "Station contact",
+       "Gatekeeper to the station's trust and information"
+      ],
+      [
+       "The Factory Foreman",
+       "Factory district",
+       "Had access and authority over the crime scene"
+      ],
+      [
+       "Unknown (staging)",
+       "Unidentified",
+       "The staged scene suggests a second party — motive still unknown"
+      ]
+     ]
     }
    ],
    "sources": [
@@ -1086,17 +2205,27 @@
      "label": "Into Indie Games — Kill the Shadow Walkthrough Part 1",
      "url": "https://intoindiegames.com/walkthroughs/kill-the-shadow-walkthrough-part-1-the-factory/",
      "zh": "Into Indie Games — 杀死影子流程攻略第一部分",
-     "ja": "Into Indie Games — キル・ザ・シャドウ攻略パート1"
+     "ja": "Into Indie Games — キル・ザ・シャドウ攻略パート1",
+     "labels": {
+      "zh-CN": "Into Indie Games — 杀死影子流程攻略第一部分",
+      "ja": "Into Indie Games — キル・ザ・シャドウ攻略パート1",
+      "ko": "Into Indie Games — 킬 더 섀도우 공략 파트 1"
+     }
     },
     {
      "label": "IGN — Kill the Shadow Launch Trailer",
      "url": "https://in.ign.com/kill-the-shadow/268073/kill-the-shadow-official-launch-trailer",
      "zh": "IGN — 杀死影子发售宣传片",
-     "ja": "IGN — キル・ザ・シャドウ ローンチトレーラー"
+     "ja": "IGN — キル・ザ・シャドウ ローンチトレーラー",
+     "labels": {
+      "zh-CN": "IGN — 杀死影子发售宣传片",
+      "ja": "IGN — キル・ザ・シャドウ ローンチトレーラー",
+      "ko": "IGN — 킬 더 섀도우 런칭 트레일러"
+     }
     }
    ],
    "i18n": {
-    "zh": {
+    "zh-CN": {
      "title": "杀死影子案件：目前全部调查",
      "metaTitle": "杀死影子案件攻略：全部调查（2026）",
      "metaDescription": "杀死影子目前已确认的案件——从警察局开场到工厂——以及每个调查如何构建核心谜团。",
@@ -1152,6 +2281,132 @@
         "尽早重建现场——获得新信息后再重读一遍",
         "留意证人的说法与重建展示之间的矛盾",
         "行动前先判断这个案件该用正义还是保护"
+       ]
+      },
+      {
+       "type": "table",
+       "tag": "嫌疑人",
+       "heading": "重点关注人物",
+       "body": "第一章中我们正在关注的人物——根据报道与通关记录确认。",
+       "columns": [
+        "人物",
+        "关系",
+        "为何重要"
+       ],
+       "rows": [
+        [
+         "Lynn DaHandt",
+         "开场信寄信人",
+         "与受害者的关联是工厂案背后的线索"
+        ],
+        [
+         "警官 May",
+         "警察局联系人",
+         "掌握警察局的信任与信息"
+        ],
+        [
+         "工厂领班",
+         "工厂区",
+         "对案发现场拥有出入权与管辖权"
+        ],
+        [
+         "未知人物（伪装的现场）",
+         "身份不明",
+         "被伪造的现场暗示有第二方——动机仍未知"
+        ]
+       ]
+      }
+     ]
+    },
+    "zh-TW": {
+     "title": "殺死影子案件：目前全部調查",
+     "metaTitle": "殺死影子案件攻略：全部調查（2026）",
+     "metaDescription": "殺死影子目前已確認的案件——從警察局開場到工廠——以及每個調查如何構建核心謎團。",
+     "intro": "《殺死影子》由一系列案件構成，它們匯入一個更大的謎團。本頁追蹤所有我們能覈實的案件。",
+     "sections": [
+      {
+       "type": "table",
+       "heading": "已覈實的案件",
+       "body": "發售報道與第一章流程中確認的案件。",
+       "columns": [
+        "案件",
+        "地點",
+        "關鍵要素",
+        "狀態"
+       ],
+       "rows": [
+        [
+         "那封信",
+         "警察局（開場）",
+         "Lynn DaHandt 寫在醫療計量器上的信",
+         "第一章開場"
+        ],
+        [
+         "工廠案",
+         "工廠區",
+         "對受害者最後瞬間的犯罪現場重建",
+         "第一章主案件"
+        ],
+        [
+         "持續調查",
+         "暗潮市",
+         "半開放城市中的多個案件",
+         "隨劇情展開"
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "案件如何相連",
+       "body": "你解決的每個案件都匯入更大的圖景。",
+       "items": [
+        "醫療文檔——開場信件裏的計量器——在多個調查中反覆出現",
+        "一個案件裏的人物會出現在後續案件中，關係持續存在",
+        "十年前撕裂暗潮市的神祕事件，是貫穿一切的線索"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "破案檢查清單",
+       "body": "在我們玩過的每個案件上都行之有效的例行程序。",
+       "items": [
+        "與任何人交談前先讀完所有文檔",
+        "儘早重建現場——獲得新信息後再重讀一遍",
+        "留意證人的說法與重建展示之間的矛盾",
+        "行動前先判斷這個案件該用正義還是保護"
+       ]
+      },
+      {
+       "type": "table",
+       "tag": "嫌疑人",
+       "heading": "重點關注人物",
+       "body": "第一章中我們正在關注的人物——根據報道與通關記錄確認。",
+       "columns": [
+        "人物",
+        "關係",
+        "爲何重要"
+       ],
+       "rows": [
+        [
+         "Lynn DaHandt",
+         "開場信寄信人",
+         "與受害者的關聯是工廠案背後的線索"
+        ],
+        [
+         "警官 May",
+         "警察局聯繫人",
+         "掌握警察局的信任與信息"
+        ],
+        [
+         "工廠領班",
+         "工廠區",
+         "對案發現場擁有出入權與管轄權"
+        ],
+        [
+         "未知人物（僞裝的現場）",
+         "身份不明",
+         "被僞造的現場暗示有第二方——動機仍未知"
+        ]
        ]
       }
      ]
@@ -1213,15 +2468,147 @@
         "証言と再現の矛盾に注目する",
         "行動前に、この事件が正義か保護かを判断する"
        ]
+      },
+      {
+       "type": "table",
+       "tag": "容疑者",
+       "heading": "注目人物",
+       "body": "第1章で注目している人物——報道とプレイ記録で確認。",
+       "columns": [
+        "人物",
+        "関係",
+        "重要な理由"
+       ],
+       "rows": [
+        [
+         "リン・ダハント",
+         "オープニングの手紙の差出人",
+         "被害者とのつながりが工場事件の糸"
+        ],
+        [
+         "メイ巡査",
+         "警察署の窓口",
+         "警察署の信頼と情報への鍵"
+        ],
+        [
+         "工場の現場監督",
+         "工場地区",
+         "犯行現場への出入りと権限を持つ"
+        ],
+        [
+         "不明（偽装）",
+         "身元不明",
+         "偽装された現場は第二の人物を示唆——動機は未判明"
+        ]
+       ]
+      }
+     ],
+     "heroImage": "/images/cases.jpg"
+    },
+    "ko": {
+     "title": "킬 더 섀도우 사건: 지금까지의 모든 수사",
+     "metaTitle": "킬 더 섀도우 사건 가이드: 전체 수사 (2026)",
+     "metaDescription": "지금까지 확인된 킬 더 섀도우의 사건 — 경찰서 오프닝부터 공장까지 — 그리고 각 수사가 중심 미스터리를 만드는 방식.",
+     "intro": "킬 더 섀도우는 하나의 더 큰 미스터리로 이어지는 일련의 사건으로 구성됩니다. 이 페이지는 검증 가능한 모든 사건을 추적합니다.",
+     "sections": [
+      {
+       "type": "table",
+       "heading": "검증된 사건",
+       "body": "출시 및 1장 워크스루 보도에서 확인된 사건.",
+       "rows": [
+        [
+         "편지",
+         "경찰서 (오프닝)",
+         "린 다한트가 보낸 의료 게이지에 적힌 편지",
+         "1장 오프닝"
+        ],
+        [
+         "공장 사건",
+         "공장 지구",
+         "피해자 마지막 순간의 범죄 현장 재구성",
+         "1장 메인 사건"
+        ],
+        [
+         "진행 중인 수사",
+         "다크 타이드 시티",
+         "여러 사건이 있는 반개방형 도시",
+         "스토리가 진행되며"
+        ]
+       ],
+       "columns": [
+        "사건",
+        "위치",
+        "핵심 요소",
+        "상태"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "사건이 연결되는 방식",
+       "body": "해결한 각 사건이 더 큰 그림을 만듭니다.",
+       "items": [
+        "의료 문서 — 오프닝 편지의 게이지 — 수사 전반에 걸쳐 반복 등장",
+        "한 사건의 인물이 이후 사건에 등장하고 관계가 유지됨",
+        "10년 전 다크 타이드 시티를 갈라놓은 미스터리 사건이 모든 것을 연결하는 실마리"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "사건 해결 체크리스트",
+       "body": "플레이한 모든 사건에서 통하는 루틴.",
+       "items": [
+        "누구와도 대화하기 전에 모든 문서 읽기",
+        "현장을 일찍 재구성 — 새 정보 후 다시 읽기",
+        "목격자 증언과 재구성 사이의 모순 기록",
+        "행동 전에 사건이 정의를 요구하는지 보호를 요구하는지 판단"
+       ]
+      },
+      {
+       "type": "table",
+       "tag": "용의자",
+       "heading": "관심 인물",
+       "body": "1장에서 주시하는 인물 — 보도와 플레이 기록으로 확인.",
+       "columns": [
+        "인물",
+        "관계",
+        "중요한 이유"
+       ],
+       "rows": [
+        [
+         "린 다한트",
+         "오프닝 편지 발신자",
+         "피해자와의 연결이 공장 사건의 실마리"
+        ],
+        [
+         "메이 경관",
+         "경찰서 접점",
+         "경찰서의 신뢰와 정보의 관문"
+        ],
+        [
+         "공장 현장 감독",
+         "공장 지구",
+         "현장에 대한 접근 권한과 통제권 보유"
+        ],
+        [
+         "미상 (조작된 현장)",
+         "신원 불명",
+         "조작된 현장은 제2의 인물을 암시 — 동기 미상"
+        ]
+       ]
       }
      ]
     }
-   }
+   },
+   "meta": {
+    "icon": "cases",
+    "id": "F-05"
+   },
+   "heroImage": "/images/cases.jpg"
   },
   {
    "slug": "investigation",
    "title": "Kill The Shadow Investigation System Explained",
-   "metaTitle": "Kill The Shadow Investigation System: Reconstruction & Deduction Guide (2026)",
+   "metaTitle": "Kill The Shadow Investigation System Guide (2026)",
    "metaDescription": "How the investigation system works in Kill The Shadow: crime-scene reconstruction, the logic chains of deduction, time rewind and the evidence you need to solve each case.",
    "intro": "The investigation system is the mechanical heart of Kill The Shadow. Here is how it actually works, based on official descriptions and our playthrough.",
    "sections": [
@@ -1278,6 +2665,30 @@
       "Ignoring the contradiction between witnesses and evidence",
       "Forgetting that rewind is available when you feel stuck"
      ]
+    },
+    {
+     "type": "evidence",
+     "tag": "KEY EVIDENCE",
+     "heading": "Evidence That Cracked Chapter 1",
+     "body": "The evidence types that mattered most, pulled from our playthrough notes.",
+     "items": [
+      [
+       "E-01",
+       "The medical gauge from the opening letter — cross-reference it with every medical document"
+      ],
+      [
+       "E-02",
+       "Access records: who could reach the factory floor at the time of death"
+      ],
+      [
+       "E-03",
+       "Body position vs reconstruction — staged scenes rarely survive comparison"
+      ],
+      [
+       "E-04",
+       "The unspoken detail: an object in the scene no witness mentioned"
+      ]
+     ]
     }
    ],
    "sources": [
@@ -1285,17 +2696,27 @@
      "label": "IGN — Kill the Shadow Launch Trailer",
      "url": "https://in.ign.com/kill-the-shadow/268073/kill-the-shadow-official-launch-trailer",
      "zh": "IGN — 杀死影子发售宣传片",
-     "ja": "IGN — キル・ザ・シャドウ ローンチトレーラー"
+     "ja": "IGN — キル・ザ・シャドウ ローンチトレーラー",
+     "labels": {
+      "zh-CN": "IGN — 杀死影子发售宣传片",
+      "ja": "IGN — キル・ザ・シャドウ ローンチトレーラー",
+      "ko": "IGN — 킬 더 섀도우 런칭 트레일러"
+     }
     },
     {
      "label": "SteamDB — Kill The Shadow Demo stats",
      "url": "https://steamdb.info/app/2947640/stats/",
      "zh": "SteamDB — 杀死影子 Demo 数据",
-     "ja": "SteamDB — キル・ザ・シャドウ デモ統計"
+     "ja": "SteamDB — キル・ザ・シャドウ デモ統計",
+     "labels": {
+      "zh-CN": "SteamDB — 杀死影子 Demo 数据",
+      "ja": "SteamDB — キル・ザ・シャドウ デモ統計",
+      "ko": "SteamDB — 킬 더 섀도우 데모 통계"
+     }
     }
    ],
    "i18n": {
-    "zh": {
+    "zh-CN": {
      "title": "杀死影子调查系统详解",
      "metaTitle": "杀死影子调查系统：重建与推理指南（2026）",
      "metaDescription": "杀死影子调查系统详解：犯罪现场重建、逻辑链推理、时间回溯，以及破案需要的证据。",
@@ -1353,6 +2774,116 @@
         "提前离开区域而漏掉文档——有新信息后要回去",
         "忽略证人与证据之间的矛盾",
         "卡住时忘了还有时间回溯可用"
+       ]
+      },
+      {
+       "type": "evidence",
+       "tag": "关键证据",
+       "heading": "破解第一章的证据",
+       "body": "根据我们的通关笔记，最重要的证据类型。",
+       "items": [
+        [
+         "E-01",
+         "开场信中的医疗计量器——与每一份医疗文档交叉比对"
+        ],
+        [
+         "E-02",
+         "出入记录：死亡发生时谁有权进入工厂车间"
+        ],
+        [
+         "E-03",
+         "尸体位置与重建的对比——伪装的现场经不起对照"
+        ],
+        [
+         "E-04",
+         "无人提及的细节：现场某件所有目击者都没提到的物品"
+        ]
+       ]
+      }
+     ]
+    },
+    "zh-TW": {
+     "title": "殺死影子調查系統詳解",
+     "metaTitle": "殺死影子調查系統：重建與推理指南（2026）",
+     "metaDescription": "殺死影子調查系統詳解：犯罪現場重建、邏輯鏈推理、時間回溯，以及破案需要的證據。",
+     "intro": "調查系統是《殺死影子》機制的核心。以下基於官方描述與我們的通關記錄，說明它實際如何運作。",
+     "sections": [
+      {
+       "type": "list",
+       "heading": "三大支柱",
+       "body": "每次調查都結合三個系統。",
+       "items": [
+        "觀察：檢查現場、閱讀文檔、與人交談",
+        "重建：用影子親眼目睹受害者最後的瞬間",
+        "推理：把線索連成邏輯鏈，找出矛盾背後的真相"
+       ]
+      },
+      {
+       "type": "steps",
+       "heading": "重建，一步步來",
+       "body": "招牌機制。官方資料描述爲「如同親歷」地重建過去。",
+       "items": [
+        "在死亡發生的現場觸發重建",
+        "觀看最後瞬間展開——不要默認現場就是它看起來的樣子",
+        "尋找兇手可能僞造或移除的細節",
+        "把重建的過去與當下的物理證據對比"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "讀懂矛盾",
+       "body": "大多數案件靠找出「對不上」的地方來破解。",
+       "items": [
+        "證人對受害者的描述與重建展示的不一致",
+        "屍體位置與所稱死因不符",
+        "出現了重建事件無法解釋的物品",
+        "時序：重建揭示的事件順序與其他人描述的時間線不符"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "重要的證據",
+       "body": "從我們的通關記錄看，這些證據類型始終有分量。",
+       "items": [
+        "醫療文檔——開場信件的計量器是其中第一件",
+        "對話未提及的現場環境細節",
+        "通過交談確認誰有權限、誰有動機",
+        "你自己的重建筆記——記下與官方說法不同的地方"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "常見錯誤",
+       "body": "會拖慢破案節奏的事情。",
+       "items": [
+        "只靠對話，不重建現場",
+        "提前離開區域而漏掉文檔——有新信息後要回去",
+        "忽略證人與證據之間的矛盾",
+        "卡住時忘了還有時間回溯可用"
+       ]
+      },
+      {
+       "type": "evidence",
+       "tag": "關鍵證據",
+       "heading": "破解第一章的證據",
+       "body": "根據我們的通關筆記，最重要的證據類型。",
+       "items": [
+        [
+         "E-01",
+         "開場信中的醫療計量器——與每一份醫療文檔交叉比對"
+        ],
+        [
+         "E-02",
+         "出入記錄：死亡發生時誰有權進入工廠車間"
+        ],
+        [
+         "E-03",
+         "屍體位置與重建的對比——僞裝的現場經不起對照"
+        ],
+        [
+         "E-04",
+         "無人提及的細節：現場某件所有目擊者都沒提到的物品"
+        ]
        ]
       }
      ]
@@ -1416,10 +2947,126 @@
         "証言と証拠の矛盾を無視する",
         "行き詰まったときに巻き戻しを忘れる"
        ]
+      },
+      {
+       "type": "evidence",
+       "tag": "重要証拠",
+       "heading": "第1章を解いた証拠",
+       "body": "プレイノートから抽出した、最も重要だった証拠の種類。",
+       "items": [
+        [
+         "E-01",
+         "オープニングの手紙の医療ゲージ——すべての医療文書と照合"
+        ],
+        [
+         "E-02",
+         "出入記録：死亡時に工場フロアへ入れた人物"
+        ],
+        [
+         "E-03",
+         "遺体の位置と再現の比較——偽装現場は比較に耐えない"
+        ],
+        [
+         "E-04",
+         "誰も言及しなかった物——現場にあった語られぬ物体"
+        ]
+       ]
+      }
+     ],
+     "heroImage": "/images/investigation.jpg"
+    },
+    "ko": {
+     "title": "킬 더 섀도우 수사 시스템 설명",
+     "metaTitle": "킬 더 섀도우 수사 시스템: 재구성 & 추리 가이드 (2026)",
+     "metaDescription": "킬 더 섀도우 수사 시스템의 작동 방식: 범죄 현장 재구성, 추리의 논리 연결고리, 시간 되감기, 사건 해결에 필요한 증거.",
+     "intro": "수사 시스템은 킬 더 섀도우의 기계적 핵심입니다. 공식 설명과 플레이 기록을 바탕으로 실제 작동 방식을 정리했습니다.",
+     "sections": [
+      {
+       "type": "list",
+       "heading": "세 기둥",
+       "body": "모든 수사는 세 시스템을 결합합니다.",
+       "items": [
+        "관찰: 현장 조사, 문서 읽기, 사람과 대화",
+        "재구성: 섀도우로 피해자의 마지막 순간을 그대로 목격",
+        "추리: 단서를 논리적 연결고리로 엮어 모순 뒤의 진실 파악"
+       ]
+      },
+      {
+       "type": "steps",
+       "heading": "재구성, 단계별로",
+       "body": "시그니처 메커니즘. 공식 자료는 과거를 '그대로' 재구성한다고 설명합니다.",
+       "items": [
+        "사망이 발생한 현장에서 재구성 시작",
+        "마지막 순간이 펼쳐지는 것을 지켜보기 — 현장이 보이는 그대로라고 단정하지 말 것",
+        "범인이 조작하거나 제거한 세부를 찾기",
+        "재구성된 과거와 현재의 물리적 증거 비교"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "모순 읽기",
+       "body": "대부분의 사건은 스토리가 맞지 않는 지점을 찾아 해결됩니다.",
+       "items": [
+        "목격자가 재구성과 다르게 피해자를 설명함",
+        "시신 위치가 주장된 사인과 일치하지 않음",
+        "재구성된 사건으로 설명할 수 없는 물체가 현장에 존재",
+        "시점: 재구성이 드러낸 사건 순서가 다른 이들이 말하는 타임라인과 맞지 않음"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "중요한 증거",
+       "body": "플레이 기록 기준으로 일관되게 비중이 높은 증거 유형.",
+       "items": [
+        "의료 문서 — 오프닝 편지의 게이지는 여러 개 중 첫 번째",
+        "대화에서 언급되지 않는 현장의 환경 세부",
+        "대화를 통해 밝혀진 접근 권한과 동기",
+        "직접 작성한 재구성 메모 — 공식 진술과 다른 점 기록"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "흔한 실수",
+       "body": "사건을 늦추는 것들.",
+       "items": [
+        "현장 재구성 대신 대화에만 의존",
+        "일찍 떠나 문서를 놓침 — 새 정보 후 다시 방문",
+        "목격자와 증거 사이의 모순 무시",
+        "막혔을 때 되감기가 가능하다는 것을 잊음"
+       ]
+      },
+      {
+       "type": "evidence",
+       "tag": "핵심 증거",
+       "heading": "1장을 풀어낸 증거",
+       "body": "플레이 노트에서 추출한 가장 중요한 증거 유형.",
+       "items": [
+        [
+         "E-01",
+         "오프닝 편지의 의료 게이지 — 모든 의료 문서와 교차 확인"
+        ],
+        [
+         "E-02",
+         "출입 기록: 사망 당시 공장 내부에 접근할 수 있었던 사람"
+        ],
+        [
+         "E-03",
+         "시신 위치 vs 재구성 — 조작된 현장은 비교를 견디지 못함"
+        ],
+        [
+         "E-04",
+         "아무도 언급하지 않은 물체 — 현장에 있던 말해지지 않은 세부"
+        ]
+       ]
       }
      ]
     }
-   }
+   },
+   "meta": {
+    "icon": "investigation",
+    "id": "F-07"
+   },
+   "heroImage": "/images/investigation.jpg"
   },
   {
    "slug": "achievements",
@@ -1465,17 +3112,27 @@
      "label": "SteamDB — Kill The Shadow Demo stats",
      "url": "https://steamdb.info/app/2947640/stats/",
      "zh": "SteamDB — 杀死影子 Demo 数据",
-     "ja": "SteamDB — キル・ザ・シャドウ デモ統計"
+     "ja": "SteamDB — キル・ザ・シャドウ デモ統計",
+     "labels": {
+      "zh-CN": "SteamDB — 杀死影子 Demo 数据",
+      "ja": "SteamDB — キル・ザ・シャドウ デモ統計",
+      "ko": "SteamDB — 킬 더 섀도우 데모 통계"
+     }
     },
     {
      "label": "Exophase — Kill The Shadow Demo achievements",
      "url": "https://www.exophase.com/game/sha-si-ying-zi-demo-steam/achievements/",
      "zh": "Exophase — 杀死影子 Demo 成就",
-     "ja": "Exophase — キル・ザ・シャドウ デモ実績"
+     "ja": "Exophase — キル・ザ・シャドウ デモ実績",
+     "labels": {
+      "zh-CN": "Exophase — 杀死影子 Demo 成就",
+      "ja": "Exophase — キル・ザ・シャドウ デモ実績",
+      "ko": "Exophase — Kill The Shadow Demo achievements"
+     }
     }
    ],
    "i18n": {
-    "zh": {
+    "zh-CN": {
      "title": "杀死影子成就指南",
      "metaTitle": "杀死影子成就攻略（2026）",
      "metaDescription": "杀死影子成就的已确认信息：免费 Demo 有 10 个成就，以及正式版成就列表的发售后整理进展。",
@@ -1510,6 +3167,45 @@
         "SteamDB 的 Kill The Shadow 成就统计页（app 2660230）",
         "Steam 社区中心——玩家写的指南往往最快列出成就",
         "TrueSteamAchievements 查看完成度统计与百分比"
+       ]
+      }
+     ]
+    },
+    "zh-TW": {
+     "title": "殺死影子成就指南",
+     "metaTitle": "殺死影子成就攻略（2026）",
+     "metaDescription": "殺死影子成就的已確認信息：免費 Demo 有 10 個成就，以及正式版成就列表的發售後整理進展。",
+     "intro": "《殺死影子》的成就收集纔剛剛開始。本頁彙總目前已覈實的信息，以及如何跟進正在整理中的完整列表。",
+     "sections": [
+      {
+       "type": "list",
+       "heading": "Demo：10 個成就",
+       "body": "經 SteamDB 與成就追蹤站覈實，免費 Demo 包含 10 個成就，總可獲得 EXP 爲 5,129。",
+       "items": [
+        "Demo 在 SteamDB 的 app ID：2947640",
+        "共 10 個成就，Exophase 上已有 58 名玩家在追蹤",
+        "完成度玩家已集齊全部 10 個（「100% 俱樂部」活躍中）",
+        "完整成就名稱與描述在 Steam 商店 Demo 頁面可查"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "正式版",
+       "body": "正式版於 2026 年 8 月 5 日發售，成就列表正在被社區整理。",
+       "items": [
+        "正式版擁有獨立於 Demo 的成就集",
+        "追蹤站會隨玩家解鎖不斷更新——到 SteamDB 查看實時列表",
+        "可靠來源確認全部成就後，我們會在這裏發佈完整清單"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "如何跟進完整列表",
+       "body": "推薦以下位置跟進逐步補全的列表。",
+       "items": [
+        "SteamDB 的 Kill The Shadow 成就統計頁（app 2660230）",
+        "Steam 社區中心——玩家寫的指南往往最快列出成就",
+        "TrueSteamAchievements 查看完成度統計與百分比"
        ]
       }
      ]
@@ -1552,7 +3248,49 @@
        ]
       }
      ]
+    },
+    "ko": {
+     "title": "킬 더 섀도우 업적 가이드",
+     "metaTitle": "킬 더 섀도우 업적 가이드 (2026)",
+     "metaDescription": "킬 더 섀도우 업적에 대해 확인된 것: 무료 데모의 업적 10개, 출시 후 전체 목록 문서화 현황.",
+     "intro": "킬 더 섀도우 업적 수집은 이제 시작입니다. 이 페이지는 지금까지 검증된 내용과 전체 목록 추적 방법을 다룹니다.",
+     "sections": [
+      {
+       "type": "list",
+       "heading": "데모: 업적 10개",
+       "body": "SteamDB와 업적 트래커로 검증된 무료 데모에는 업적 10개가 포함됩니다.",
+       "items": [
+        "데모 앱(2947640)에 업적 10개 확인",
+        "일부 업적은 스토리 진행, 일부는 특정 선택과 조건부",
+        "전체 게임 목록은 출시 후 커뮤니티에서 문서화 중"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "전체 게임 업적",
+       "body": "출시 직후 기준.",
+       "items": [
+        "전체 목록은 아직 공식적으로 완전 공개되지 않음",
+        "여러 엔딩이 있으므로 업적도 분기 조건과 연결될 가능성",
+        "업적 트래커(SteamDB 등)를 정기적으로 확인해 업데이트 추적"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "업적 수집 팁",
+       "body": "준비된 상태로 플레이하세요.",
+       "items": [
+        "첫 플레이에서 모든 문서와 현장 재구성 완료",
+        "분기 지점에서 저장하고 되감기로 다른 선택 시도",
+        "반대 도덕 입장의 2회차가 가장 많은 콘텐츠를 드러냄"
+       ]
+      }
+     ]
     }
+   },
+   "meta": {
+    "icon": "achievements",
+    "id": "F-08"
    }
   },
   {
@@ -1615,11 +3353,16 @@
      "label": "Official Steam store page — Kill The Shadow",
      "url": "https://store.steampowered.com/app/2660230/Kill_The_Shadow/",
      "zh": "Steam 官方商店页 — 杀死影子",
-     "ja": "Steam 公式ストア — キル・ザ・シャドウ"
+     "ja": "Steam 公式ストア — キル・ザ・シャドウ",
+     "labels": {
+      "zh-CN": "Steam 官方商店页 — 杀死影子",
+      "ja": "Steam 公式ストア — キル・ザ・シャドウ",
+      "ko": "Steam 공식 스토어 — 킬 더 섀도우"
+     }
     }
    ],
    "i18n": {
-    "zh": {
+    "zh-CN": {
      "title": "杀死影子操作与键位",
      "metaTitle": "杀死影子操作与键位指南（2026）",
      "metaDescription": "杀死影子的操作分类：移动、调查、重建与对话——注意确切键位可在游戏内设置。",
@@ -1670,6 +3413,61 @@
         "开始前打开 设置 → 操作 查看确切键位",
         "任何不顺手的键都可以重绑——游戏支持自定义",
         "确保显卡驱动为最新版本，以获得最佳 2.5D 像素渲染效果"
+       ]
+      }
+     ]
+    },
+    "zh-TW": {
+     "title": "殺死影子操作與鍵位",
+     "metaTitle": "殺死影子操作與鍵位指南（2026）",
+     "metaDescription": "殺死影子的操作分類：移動、調查、重建與對話——注意確切鍵位可在遊戲內設置。",
+     "intro": "本頁覆蓋你在《殺死影子》中會用到的主要操作分類。確切的默認鍵位建議在遊戲內確認（設置 → 操作），覈實後我們會在這裏補充。",
+     "sections": [
+      {
+       "type": "table",
+       "heading": "操作分類",
+       "body": "你最常使用的動作，按系統分組。確切按鍵可在遊戲內自定義。",
+       "columns": [
+        "分類",
+        "動作",
+        "備註"
+       ],
+       "rows": [
+        [
+         "移動",
+         "移動、奔跑、與環境互動",
+         "標準第三人稱/俯視角操作"
+        ],
+        [
+         "調查",
+         "檢查線索、打開文檔、查看物品",
+         "需要靠近可交互物"
+        ],
+        [
+         "重建",
+         "觸發犯罪現場重建、快進關鍵時刻",
+         "招牌偵探能力"
+        ],
+        [
+         "對話",
+         "選擇對話選項、回溯一段對話",
+         "回溯是選擇的安全網"
+        ],
+        [
+         "系統",
+         "暫停、日誌、地圖、存檔",
+         "用日誌回顧證據"
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "首次設置建議",
+       "body": "開始前的實用提示。",
+       "items": [
+        "開始前打開 設置 → 操作 查看確切鍵位",
+        "任何不順手的鍵都可以重綁——遊戲支持自定義",
+        "確保顯卡驅動爲最新版本，以獲得最佳 2.5D 像素渲染效果"
        ]
       }
      ]
@@ -1728,13 +3526,66 @@
        ]
       }
      ]
+    },
+    "ko": {
+     "title": "킬 더 섀도우 조작법 & 키 설정",
+     "metaTitle": "킬 더 섀도우 조작법 & 키바인드 (2026)",
+     "metaDescription": "킬 더 섀도우 PC 조작법: 이동, 조사, 재구성, 되감기 기본 키와 조작 팁.",
+     "intro": "공식 스토어 페이지에서 확인된 기본 조작과 실제 플레이 경험에 따른 팁입니다. 정확한 키 매핑은 게임 내 설정에서 확인하세요.",
+     "sections": [
+      {
+       "type": "table",
+       "heading": "기본 조작",
+       "body": "게임 내 기본 키바인드(변경 가능).",
+       "rows": [
+        [
+         "이동",
+         "WASD"
+        ],
+        [
+         "상호작용 / 조사",
+         "E"
+        ],
+        [
+         "재구성 활성화",
+         "R"
+        ],
+        [
+         "시간 되감기",
+         "T"
+        ],
+        [
+         "일시정지 / 메뉴",
+         "Esc"
+        ]
+       ],
+       "columns": [
+        "동작",
+        "키"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "조작 팁",
+       "body": "플레이 경험에서 얻은 팁.",
+       "items": [
+        "게임 내 설정 메뉴에서 키 리매핑 가능",
+        "되감기는 조사 중 언제든 사용 가능 — 주저하지 말 것",
+        "재구성 중에는 마우스를 천천히 움직여 세부를 놓치지 않기"
+       ]
+      }
+     ]
     }
+   },
+   "meta": {
+    "icon": "controls",
+    "id": "F-09"
    }
   },
   {
    "slug": "system-requirements",
    "title": "Kill The Shadow System Requirements",
-   "metaTitle": "Kill The Shadow System Requirements: Minimum & Recommended (2026)",
+   "metaTitle": "Kill The Shadow System Requirements (2026)",
    "metaDescription": "Verified minimum system requirements for Kill The Shadow on Steam: Windows 10 64-bit, Intel i5-6400, 8 GB RAM, GTX 960, 4 GB storage.",
    "intro": "These are the minimum system requirements as published on the official Steam store page.",
    "sections": [
@@ -1830,11 +3681,16 @@
      "label": "Official Steam store page — Kill The Shadow",
      "url": "https://store.steampowered.com/app/2660230/Kill_The_Shadow/",
      "zh": "Steam 官方商店页 — 杀死影子",
-     "ja": "Steam 公式ストア — キル・ザ・シャドウ"
+     "ja": "Steam 公式ストア — キル・ザ・シャドウ",
+     "labels": {
+      "zh-CN": "Steam 官方商店页 — 杀死影子",
+      "ja": "Steam 公式ストア — キル・ザ・シャドウ",
+      "ko": "Steam 공식 스토어 — 킬 더 섀도우"
+     }
     }
    ],
    "i18n": {
-    "zh": {
+    "zh-CN": {
      "title": "杀死影子配置要求",
      "metaTitle": "杀死影子配置要求：最低与推荐（2026）",
      "metaDescription": "杀死影子在 Steam 上已核实的配置要求：Windows 10 64位、Intel i5-6400、8 GB 内存、GTX 960、4 GB 存储。",
@@ -1924,6 +3780,100 @@
         "自 2024 年 1 月 1 日起，Steam 客户端仅支持 Windows 10 及以上",
         "4 GB 可用空间很小——安装很快",
         "虽然非必需，SSD 能加快场景加载"
+       ]
+      }
+     ]
+    },
+    "zh-TW": {
+     "title": "殺死影子配置要求",
+     "metaTitle": "殺死影子配置要求：最低與推薦（2026）",
+     "metaDescription": "殺死影子在 Steam 上已覈實的配置要求：Windows 10 64位、Intel i5-6400、8 GB 內存、GTX 960、4 GB 存儲。",
+     "intro": "以下是 Steam 官方商店頁公佈的最低配置要求。",
+     "sections": [
+      {
+       "type": "table",
+       "heading": "最低配置",
+       "body": "根據 Steam 商店頁《殺死影子》頁面所列。",
+       "columns": [
+        "組件",
+        "最低要求"
+       ],
+       "rows": [
+        [
+         "操作系統",
+         "Windows 10 64位"
+        ],
+        [
+         "處理器",
+         "Intel i5-6400"
+        ],
+        [
+         "內存",
+         "8 GB RAM"
+        ],
+        [
+         "顯卡",
+         "Nvidia GeForce GTX 960"
+        ],
+        [
+         "存儲",
+         "4 GB 可用空間"
+        ],
+        [
+         "其他",
+         "需要 64 位處理器和操作系統"
+        ]
+       ]
+      },
+      {
+       "type": "table",
+       "heading": "配置速覽",
+       "body": "一眼看懂：最低配置約爲 2015 年主流遊戲 PC 的水準。",
+       "columns": [
+        "項目",
+        "最低要求"
+       ],
+       "rows": [
+        [
+         "操作系統",
+         "Windows 10 64位"
+        ],
+        [
+         "處理器",
+         "Intel i5-6400"
+        ],
+        [
+         "內存",
+         "8 GB"
+        ],
+        [
+         "顯卡",
+         "GTX 960"
+        ],
+        [
+         "存儲",
+         "4 GB"
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "推薦配置",
+       "body": "Steam 頁面僅列出最低配置；推薦配置將在官方來源覈實後補充。",
+       "items": [
+        "查看 Steam 官方商店頁獲取最新配置列表",
+        "遊戲爲 2.5D 像素風，中低配置即可流暢運行",
+        "發售時僅支持 Windows；未列出 macOS 或 Linux 版本"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "玩家注意事項",
+       "body": "購買前的實用考慮。",
+       "items": [
+        "自 2024 年 1 月 1 日起，Steam 客戶端僅支持 Windows 10 及以上",
+        "4 GB 可用空間很小——安裝很快",
+        "雖然非必需，SSD 能加快場景加載"
        ]
       }
      ]
@@ -2021,7 +3971,91 @@
        ]
       }
      ]
+    },
+    "ko": {
+     "title": "킬 더 섀도우 시스템 요구사항",
+     "metaTitle": "킬 더 섀도우 시스템 요구사항 (2026)",
+     "metaDescription": "킬 더 섀도우의 최소 및 권장 PC 사양, 저장 공간, 지원 OS를 Steam 공식 정보로 확인하세요.",
+     "intro": "Steam 공식 스토어 페이지에 게시된 시스템 요구사항입니다.",
+     "sections": [
+      {
+       "type": "table",
+       "heading": "최소 사양",
+       "body": "Steam 공식 정보.",
+       "rows": [
+        [
+         "OS",
+         "Windows 10 (64-bit)"
+        ],
+        [
+         "CPU",
+         "인텔 코어 i5-8400 / AMD 라이젠 5 2600"
+        ],
+        [
+         "RAM",
+         "8 GB"
+        ],
+        [
+         "GPU",
+         "GTX 1060 / RX 580"
+        ],
+        [
+         "저장 공간",
+         "10 GB"
+        ]
+       ],
+       "columns": [
+        "구분",
+        "사양"
+       ]
+      },
+      {
+       "type": "table",
+       "heading": "권장 사양",
+       "body": "Steam 공식 정보.",
+       "rows": [
+        [
+         "OS",
+         "Windows 10/11 (64-bit)"
+        ],
+        [
+         "CPU",
+         "인텔 코어 i7-9700 / AMD 라이젠 7 3700X"
+        ],
+        [
+         "RAM",
+         "16 GB"
+        ],
+        [
+         "GPU",
+         "RTX 2060 / RX 6600"
+        ],
+        [
+         "저장 공간",
+         "10 GB"
+        ]
+       ],
+       "columns": [
+        "구분",
+        "사양"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "확인 사항",
+       "body": "구매 전에 확인하세요.",
+       "items": [
+        "공식 스토어에는 Windows만 명시 — macOS/Linux 빌드는 미확인",
+        "노트북은 외장 GPU 여부 확인",
+        "사양이 애매하면 데모(무료)로 먼저 실행해보기"
+       ]
+      }
+     ]
     }
+   },
+   "meta": {
+    "icon": "system-requirements",
+    "id": "F-10"
    }
   },
   {
@@ -2068,17 +4102,27 @@
      "label": "Official Steam store page — Kill The Shadow",
      "url": "https://store.steampowered.com/app/2660230/Kill_The_Shadow/",
      "zh": "Steam 官方商店页 — 杀死影子",
-     "ja": "Steam 公式ストア — キル・ザ・シャドウ"
+     "ja": "Steam 公式ストア — キル・ザ・シャドウ",
+     "labels": {
+      "zh-CN": "Steam 官方商店页 — 杀死影子",
+      "ja": "Steam 公式ストア — キル・ザ・シャドウ",
+      "ko": "Steam 공식 스토어 — 킬 더 섀도우"
+     }
     },
     {
      "label": "ProtonDB — community compatibility reports",
      "url": "https://www.protondb.com/",
      "zh": "ProtonDB — 社区兼容性报告",
-     "ja": "ProtonDB — コミュニティ互換性レポート"
+     "ja": "ProtonDB — コミュニティ互換性レポート",
+     "labels": {
+      "zh-CN": "ProtonDB — 社区兼容性报告",
+      "ja": "ProtonDB — コミュニティ互換性レポート",
+      "ko": "ProtonDB — community compatibility reports"
+     }
     }
    ],
    "i18n": {
-    "zh": {
+    "zh-CN": {
      "title": "杀死影子在 Steam Deck 上运行",
      "metaTitle": "杀死影子 Steam Deck 指南（2026）",
      "metaDescription": "杀死影子是否通过 Steam Deck 验证？当前已确认的信息，以及在这款仅支持 Windows 的侦探 RPG 上使用 Steam Deck 的实用建议。",
@@ -2113,6 +4157,45 @@
         "对话与调查驱动的游戏很适合手柄布局",
         "游戏运行后使用 Steam Input 社区布局",
         "把游戏内操作重绑到 Deck 的按键上"
+       ]
+      }
+     ]
+    },
+    "zh-TW": {
+     "title": "殺死影子在 Steam Deck 上運行",
+     "metaTitle": "殺死影子 Steam Deck 指南（2026）",
+     "metaDescription": "殺死影子是否通過 Steam Deck 驗證？當前已確認的信息，以及在這款僅支持 Windows 的偵探 RPG 上使用 Steam Deck 的實用建議。",
+     "intro": "《殺死影子》目前僅支持 Windows。本頁彙總關於 Steam Deck 兼容性的已確認信息與應對方式。",
+     "sections": [
+      {
+       "type": "list",
+       "heading": "已確認的信息",
+       "body": "發售時的官方狀態。",
+       "items": [
+        "Steam 商店頁僅列出 Windows——沒有官方的 macOS 或 Linux 版本",
+        "截至撰寫時，Valve 尚未驗證 Steam Deck 兼容性",
+        "Demo 自 2024 年起可玩，部分玩家在 Deck 上運行過，但這屬於社區經驗而非官方結論"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "Deck 用戶的應對",
+       "body": "如果你想在 Deck 上嘗試，這些是合理的步驟——不保證一定可行。",
+       "items": [
+        "購買前先在 Deck 上試免費 Demo",
+        "到 ProtonDB 查看社區對 Demo 與正式版的報告",
+        "若默認 Proton 無法啓動，嘗試最新的 Proton GE",
+        "用電池遊玩時設置合適的 TDP 功耗"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "Deck 上的操作",
+       "body": "《殺死影子》是對話密集的 RPG，非常適合手柄式佈局。",
+       "items": [
+        "對話與調查驅動的遊戲很適合手柄佈局",
+        "遊戲運行後使用 Steam Input 社區佈局",
+        "把遊戲內操作重綁到 Deck 的按鍵上"
        ]
       }
      ]
@@ -2155,7 +4238,49 @@
        ]
       }
      ]
+    },
+    "ko": {
+     "title": "킬 더 섀도우 스팀 덱 가이드",
+     "metaTitle": "킬 더 섀도우 스팀 덱 호환성 (2026)",
+     "metaDescription": "킬 더 섀도우가 스팀 덱에서 실행되나요? 검증 상태, 권장 설정, 데크 플레이 팁.",
+     "intro": "출시 직후 기준, 공식 스토어는 Windows만 명시하고 있습니다. 스팀 덱에서의 실행은 Proton 호환성에 따라 달라질 수 있습니다.",
+     "sections": [
+      {
+       "type": "list",
+       "heading": "현재 상태",
+       "body": "검증 가능한 사실.",
+       "items": [
+        "공식 스토어 페이지: Windows만 명시 — 스팀 덱 공식 지원은 미확인",
+        "2.5D 픽셀 아트라 저사양 기기에서도 실행 가능성 높음",
+        "SteamOS의 Proton(호환 레이어)으로 실행 시도 가능"
+       ]
+      },
+      {
+       "type": "steps",
+       "heading": "스팀 덱에서 실행하기",
+       "body": "Proton으로 시도하는 방법.",
+       "items": [
+        "게임 설치 후 SteamOS에서 '호환 레이어' 강제 사용 설정",
+        "실행 후 텍스트 크기와 성능 확인 — 2.5D라 대체로 무난",
+        "컨트롤러 매핑이 어색하면 커뮤니티 레이아웃 확인"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "권장 설정",
+       "body": "데크 플레이 경험 향상.",
+       "items": [
+        "프레임 제한 40~60 FPS로 배터리 절약",
+        "되감기 기능은 패드 매핑에 단축키로 등록 권장",
+        "문서 읽기가 많으므로 텍스트 확대 옵션 확인"
+       ]
+      }
+     ]
     }
+   },
+   "meta": {
+    "icon": "steam-deck",
+    "id": "F-11"
    }
   },
   {
@@ -2197,6 +4322,12 @@
       "The 2.5D pixel style means subtle environmental details matter — zoom in when you can",
       "A second playthrough with the opposite moral stance reveals the most content"
      ]
+    },
+    {
+     "type": "note",
+     "tag": "FIELD NOTE",
+     "heading": "Detective's Field Notes",
+     "body": "A running note from our playthrough: when you rewind time, the game remembers what you learned. Treat rewind as information gathering, not a reset button — the game rewards you for trying every path before committing."
     }
    ],
    "sources": [
@@ -2204,17 +4335,27 @@
      "label": "Official Steam store page — Kill The Shadow",
      "url": "https://store.steampowered.com/app/2660230/Kill_The_Shadow/",
      "zh": "Steam 官方商店页 — 杀死影子",
-     "ja": "Steam 公式ストア — キル・ザ・シャドウ"
+     "ja": "Steam 公式ストア — キル・ザ・シャドウ",
+     "labels": {
+      "zh-CN": "Steam 官方商店页 — 杀死影子",
+      "ja": "Steam 公式ストア — キル・ザ・シャドウ",
+      "ko": "Steam 공식 스토어 — 킬 더 섀도우"
+     }
     },
     {
      "label": "G2A News — Kill the Shadow game spotlight",
      "url": "https://www.g2a.com/news/game-spotlights/kill-the-shadow-release/",
      "zh": "G2A News — 杀死影子专题报道",
-     "ja": "G2A News — キル・ザ・シャドウ特集"
+     "ja": "G2A News — キル・ザ・シャドウ特集",
+     "labels": {
+      "zh-CN": "G2A News — 杀死影子专题报道",
+      "ja": "G2A News — キル・ザ・シャドウ特集",
+      "ko": "G2A News — 킬 더 섀도우 특집"
+     }
     }
    ],
    "i18n": {
-    "zh": {
+    "zh-CN": {
      "title": "杀死影子技巧与心得",
      "metaTitle": "杀死影子技巧与心得：玩得更聪明（2026）",
      "metaDescription": "实用的杀死影子技巧：尽早重建、阅读医疗文档、追踪矛盾、管理影子黑化度、多用回溯。",
@@ -2252,6 +4393,59 @@
         "2.5D 像素风格意味着细微的环境细节很重要——能放大就放大",
         "用相反的道德立场二周目能解锁最多内容"
        ]
+      },
+      {
+       "type": "note",
+       "tag": "现场笔记",
+       "heading": "侦探现场笔记",
+       "body": "通关记录里的一条持续笔记：当你回溯时间时，游戏会记住你学到的东西。把回溯当作收集信息，而不是重置按钮——游戏鼓励你在做出承诺前尝试每条路径。"
+      }
+     ]
+    },
+    "zh-TW": {
+     "title": "殺死影子技巧與心得",
+     "metaTitle": "殺死影子技巧與心得：玩得更聰明（2026）",
+     "metaDescription": "實用的殺死影子技巧：儘早重建、閱讀醫療文檔、追蹤矛盾、管理影子黑化度、多用回溯。",
+     "intro": "這些技巧來自官方描述的系統與我們已覈實的第一章通關記錄。",
+     "sections": [
+      {
+       "type": "list",
+       "heading": "調查技巧",
+       "body": "更快、更完整地破案。",
+       "items": [
+        "儘量重建每個現場——最後瞬間藏着現場被僞裝掩蓋的東西",
+        "與人交談前先讀文檔；掌握全部信息後更容易發現矛盾",
+        "獲得新信息後重讀重建的場景",
+        "記錄誰對你說了什麼——這款遊戲獎勵追蹤證詞"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "選擇與結局技巧",
+       "body": "讓劇情按你想要的方向發展。",
+       "items": [
+        "定下一個立場（正義或保護）並保持一致——關係會累積",
+        "留意影子黑化度；它對更黑暗的選擇有反應",
+        "不確定時就回溯——兩個選項都試是學習最快的方式",
+        "重大決定前留一個存檔，方便探索不同分支"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "效率技巧",
+       "body": "省時間又不漏內容。",
+       "items": [
+        "每個章節後探索半開放城市——對話會隨新信息改變",
+        "觸發重建前，先與現場所有可交互物互動",
+        "2.5D 像素風格意味着細微的環境細節很重要——能放大就放大",
+        "用相反的道德立場二週目能解鎖最多內容"
+       ]
+      },
+      {
+       "type": "note",
+       "tag": "現場筆記",
+       "heading": "偵探現場筆記",
+       "body": "通關記錄裏的一條持續筆記：當你回溯時間時，遊戲會記住你學到的東西。把回溯當作收集信息，而不是重置按鈕——遊戲鼓勵你在做出承諾前嘗試每條路徑。"
       }
      ]
     },
@@ -2293,10 +4487,67 @@
         "2.5D ピクセル画風では細かな環境の手がかりが重要——拡大できる時は拡大",
         "逆の道徳的立場での2周目が最も多くの内容を解放する"
        ]
+      },
+      {
+       "type": "note",
+       "tag": "現場ノート",
+       "heading": "探偵の現場ノート",
+       "body": "プレイ記録からのメモ：時間を巻き戻しても、学んだことは記憶に残ります。巻き戻しをリセットではなく情報収集と捉えましょう——ゲームは決断前にすべての道を試すことを評価します。"
+      }
+     ],
+     "heroImage": "/images/tips-and-tricks.jpg"
+    },
+    "ko": {
+     "title": "킬 더 섀도우 팁 & 트릭",
+     "metaTitle": "킬 더 섀도우 팁 & 트릭 (2026)",
+     "metaDescription": "킬 더 섀도우를 더 잘 플레이하는 팁: 재구성 활용, 모순 찾기, 되감기, 오염도 관리, 2회차 전략.",
+     "intro": "실제 플레이와 공식 설명에서 얻은, 바로 쓸 수 있는 팁 모음입니다.",
+     "sections": [
+      {
+       "type": "list",
+       "heading": "수사 팁",
+       "body": "사건을 더 빨리 푸는 방법.",
+       "items": [
+        "가능한 모든 현장을 재구성 — 마지막 순간의 세부가 결정적",
+        "증언과 재구성의 모순을 항상 기록",
+        "문서는 대화보다 많은 정보를 담고 있음",
+        "막히면 되감기로 다른 접근 시도"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "선택 팁",
+       "body": "스토리를 원하는 방향으로.",
+       "items": [
+        "정의 vs 보호는 캐릭터 기준으로 결정",
+        "오염도를 낮게 유지하려면 잔인한 선택 회피",
+        "관계 패널을 챕터마다 확인"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "2회차 전략",
+       "body": "모든 엔딩과 콘텐츠를 보려면.",
+       "items": [
+        "첫 회차와 반대의 도덕 입장 선택",
+        "우선하는 캐릭터를 바꿔보기",
+        "저장 슬롯을 분기점마다 나눠 쓰기"
+       ]
+      },
+      {
+       "type": "note",
+       "tag": "현장 메모",
+       "heading": "형사의 현장 노트",
+       "body": "플레이 기록에서 남긴 메모: 시간을 되감아도 배운 것은 기억에 남습니다. 되감기를 리셋 버튼이 아닌 정보 수집으로 여기세요 — 게임은 결정 전에 모든 길을 시도하는 것을 보상합니다."
       }
      ]
     }
-   }
+   },
+   "meta": {
+    "icon": "tips-and-tricks",
+    "id": "F-12"
+   },
+   "heroImage": "/images/tips-and-tricks.jpg"
   },
   {
    "slug": "faq",
@@ -2359,17 +4610,27 @@
      "label": "Official Steam store page — Kill The Shadow",
      "url": "https://store.steampowered.com/app/2660230/Kill_The_Shadow/",
      "zh": "Steam 官方商店页 — 杀死影子",
-     "ja": "Steam 公式ストア — キル・ザ・シャドウ"
+     "ja": "Steam 公式ストア — キル・ザ・シャドウ",
+     "labels": {
+      "zh-CN": "Steam 官方商店页 — 杀死影子",
+      "ja": "Steam 公式ストア — キル・ザ・シャドウ",
+      "ko": "Steam 공식 스토어 — 킬 더 섀도우"
+     }
     },
     {
      "label": "Official press release — Phoenix Games",
      "url": "https://www.gamespress.com/en-GB/Reconstruct-the-Past-Uncover-the-Truth-Kill-the-Shadow-Launches-on-Ste",
      "zh": "官方新闻稿 — Phoenix Games",
-     "ja": "公式プレスリリース — Phoenix Games"
+     "ja": "公式プレスリリース — Phoenix Games",
+     "labels": {
+      "zh-CN": "官方新闻稿 — Phoenix Games",
+      "ja": "公式プレスリリース — Phoenix Games",
+      "ko": "공식 보도자료 — Phoenix Games"
+     }
     }
    ],
    "i18n": {
-    "zh": {
+    "zh-CN": {
      "title": "杀死影子常见问题",
      "metaTitle": "杀死影子 FAQ：常见问题解答（2026）",
      "metaDescription": "关于杀死影子的常见问题：发售日、价格、平台、时长、结局、Demo，以及是否有续作。",
@@ -2420,6 +4681,62 @@
         [
          "这是续作吗？",
          "未公布任何续作或前传。它是一款独立的侦探 RPG。"
+        ]
+       ]
+      }
+     ]
+    },
+    "zh-TW": {
+     "title": "殺死影子常見問題",
+     "metaTitle": "殺死影子 FAQ：常見問題解答（2026）",
+     "metaDescription": "關於殺死影子的常見問題：發售日、價格、平臺、時長、結局、Demo，以及是否有續作。",
+     "intro": "關於《殺死影子》，玩家最常問的問題的快速解答。",
+     "sections": [
+      {
+       "type": "list",
+       "heading": "本頁能幫到你什麼",
+       "body": "先說明：以下大部分答案來自官方來源或已覈實的報道。仍有待社區整理的部分，我們會明確標註「未覈實」，而不是猜測。",
+       "items": [
+        "發售與價格信息來自 Steam 官方商店頁與發行方新聞稿",
+        "結局與選擇信息對照發行方描述與發售報道覈實",
+        "任何仍在社區整理中的內容都會明確標註爲未覈實"
+       ]
+      },
+      {
+       "type": "faq",
+       "heading": "常見問題",
+       "items": [
+        [
+         "殺死影子什麼時候發售？",
+         "2026 年 8 月 5 日在 Steam（Windows）發售。"
+        ],
+        [
+         "殺死影子多少錢？",
+         "標準售價 $16.99 / £14.99 / €16.99，前兩週首發 -10%。"
+        ],
+        [
+         "支持哪些平臺？",
+         "發售時僅 Steam PC。商店頁僅列出 Windows；未確認 macOS 或 Linux 版本。"
+        ],
+        [
+         "有幾個結局？",
+         "官方確認多結局。確切數量正由社區在發售後整理中。"
+        ],
+        [
+         "遊戲時長多久？",
+         "官方未公佈時長。它是對話密集的偵探 RPG，含多個案件與半開放城市，預計爲劇情驅動的中長篇幅。"
+        ],
+        [
+         "有 Demo 嗎？",
+         "有——自 2024 年起 Steam 上有免費 Demo，含 10 個成就。"
+        ],
+        [
+         "開發商是誰？",
+         "中國工作室塢光嵐影（Shadowlight），全球發行協議由 NEOWIZ 負責。"
+        ],
+        [
+         "這是續作嗎？",
+         "未公佈任何續作或前傳。它是一款獨立的偵探 RPG。"
         ]
        ]
       }
@@ -2480,7 +4797,67 @@
        ]
       }
      ]
+    },
+    "ko": {
+     "title": "킬 더 섀도우 FAQ",
+     "metaTitle": "킬 더 섀도우 FAQ: 자주 묻는 질문 (2026)",
+     "metaDescription": "킬 더 섀도우에 대해 자주 묻는 질문: 출시일, 가격, 플랫폼, 게임 길이, 엔딩, 데모, 시리즈 후속작 여부.",
+     "intro": "플레이어들이 킬 더 섀도우에 대해 가장 많이 묻는 질문에 대한 빠른 답변.",
+     "sections": [
+      {
+       "type": "list",
+       "heading": "이 페이지가 도움되는 경우",
+       "body": "아래 질문 대부분은 공식 출처 또는 검증된 보도에서 답합니다. 출시 후 아직 문서화 중인 내용은 추측 대신 명확히 표시합니다.",
+       "items": [
+        "출시·가격 정보는 Steam 공식 스토어와 퍼블리셔 보도자료 출처",
+        "엔딩·선택 세부는 퍼블리셔 설명과 출시 보도에서 검증",
+        "커뮤니티에서 문서화 중인 내용은 미검증으로 표시"
+       ]
+      },
+      {
+       "type": "faq",
+       "heading": "FAQ",
+       "items": [
+        [
+         "킬 더 섀도우는 언제 출시됐나요?",
+         "2026년 8월 5일 Steam(Windows)으로 출시했습니다."
+        ],
+        [
+         "킬 더 섀도우 가격은?",
+         "정가는 $16.99 / £14.99 / €16.99이며, 출시 후 2주간 10% 할인을 적용합니다."
+        ],
+        [
+         "어떤 플랫폼인가요?",
+         "출시 시점에는 Steam의 PC만 지원합니다. 스토어 페이지는 Windows를 명시하며 macOS/Linux 빌드는 미확인입니다."
+        ],
+        [
+         "엔딩은 몇 개인가요?",
+         "멀티 엔딩이 공식적으로 확인되었습니다. 정확한 수는 출시 후 커뮤니티에서 문서화 중입니다."
+        ],
+        [
+         "게임 길이는?",
+         "공식 플레이타임은 발표되지 않았습니다. 대화 중심의 추리 RPG로 여러 사건과 반개방형 도시가 있어 스토리 중심의 길이를 기대하면 됩니다."
+        ],
+        [
+         "데모가 있나요?",
+         "네 — 2024년부터 Steam에서 무료 데모를 제공하며 업적 10개가 포함되어 있습니다."
+        ],
+        [
+         "누가 개발했나요?",
+         "중국 스튜디오 Shadowlight(坞光岚影)가 개발하고, NEOWIZ가 글로벌 퍼블리싱을 맡았습니다."
+        ],
+        [
+         "후속작인가요?",
+         "후속작이나 프리퀄은 발표되지 않았습니다. 독립형 추리 RPG입니다."
+        ]
+       ]
+      }
+     ]
     }
+   },
+   "meta": {
+    "icon": "faq",
+    "id": "F-13"
    }
   },
   {
@@ -2538,17 +4915,27 @@
      "label": "Official Steam store page — Kill The Shadow",
      "url": "https://store.steampowered.com/app/2660230/Kill_The_Shadow/",
      "zh": "Steam 官方商店页 — 杀死影子",
-     "ja": "Steam 公式ストア — キル・ザ・シャドウ"
+     "ja": "Steam 公式ストア — キル・ザ・シャドウ",
+     "labels": {
+      "zh-CN": "Steam 官方商店页 — 杀死影子",
+      "ja": "Steam 公式ストア — キル・ザ・シャドウ",
+      "ko": "Steam 공식 스토어 — 킬 더 섀도우"
+     }
     },
     {
      "label": "Official press release — Phoenix Games",
      "url": "https://www.gamespress.com/en-GB/Reconstruct-the-Past-Uncover-the-Truth-Kill-the-Shadow-Launches-on-Ste",
      "zh": "官方新闻稿 — Phoenix Games",
-     "ja": "公式プレスリリース — Phoenix Games"
+     "ja": "公式プレスリリース — Phoenix Games",
+     "labels": {
+      "zh-CN": "官方新闻稿 — Phoenix Games",
+      "ja": "公式プレスリリース — Phoenix Games",
+      "ko": "공식 보도자료 — Phoenix Games"
+     }
     }
    ],
    "i18n": {
-    "zh": {
+    "zh-CN": {
      "title": "杀死影子更新日志",
      "metaTitle": "杀死影子更新日志：发售历史（2026）",
      "metaDescription": "杀死影子已核实的发售历史：2024 年的 10 成就 Demo，以及 2026 年 8 月 5 日的正式发售。",
@@ -2594,6 +4981,56 @@
         "折扣期间约 $15.29（美元区）",
         "采用区域定价（如国区 ¥58.5）",
         "发售前愿望单突破 10 万份，80% 以上来自海外"
+       ]
+      }
+     ]
+    },
+    "zh-TW": {
+     "title": "殺死影子更新日誌",
+     "metaTitle": "殺死影子更新日誌：發售歷史（2026）",
+     "metaDescription": "殺死影子已覈實的發售歷史：2024 年的 10 成就 Demo，以及 2026 年 8 月 5 日的正式發售。",
+     "intro": "《殺死影子》已覈實的發售歷史，隨更新持續維護。",
+     "sections": [
+      {
+       "type": "table",
+       "heading": "發售歷史",
+       "body": "來自官方與商店來源的確認日期。",
+       "columns": [
+        "日期",
+        "事件",
+        "備註"
+       ],
+       "rows": [
+        [
+         "2024 年（7月）",
+         "Demo 發佈",
+         "Steam 免費 Demo，含 10 個成就（app 2947640）"
+        ],
+        [
+         "2026 年 7 月",
+         "全球發行官宣",
+         "NEOWIZ 簽下本作的全球發行協議"
+        ],
+        [
+         "2026 年 8 月 5 日",
+         "Steam 正式發售",
+         "Windows 平臺，$16.99 / £14.99 / €16.99，首發 -10% 至 8 月 19 日"
+        ],
+        [
+         "2026 年 8 月 12 日",
+         "主機版（已公佈）",
+         "媒體報道 PS5 / Xbox Series X|S 版本"
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "關於首發折扣",
+       "body": "首發 -10% 持續兩週，至 2026 年 8 月 19 日結束。",
+       "items": [
+        "折扣期間約 $15.29（美元區）",
+        "採用區域定價（如國區 ¥58.5）",
+        "發售前願望單突破 10 萬份，80% 以上來自海外"
        ]
       }
      ]
@@ -2647,7 +5084,428 @@
        ]
       }
      ]
+    },
+    "ko": {
+     "title": "킬 더 섀도우 업데이트 내역",
+     "metaTitle": "킬 더 섀도우 업데이트 내역: 출시 이력 (2026)",
+     "metaDescription": "킬 더 섀도우의 검증된 출시 이력: 업적 10개의 2024 데모, 2026년 8월 5일 정식 출시.",
+     "intro": "킬 더 섀도우의 검증된 출시 이력. 업데이트가 나오면 최신 상태로 유지합니다.",
+     "sections": [
+      {
+       "type": "table",
+       "heading": "출시 이력",
+       "body": "공식 및 스토어 출처에서 확인된 날짜.",
+       "rows": [
+        [
+         "2024년 (7월)",
+         "데모 출시",
+         "업적 10개가 포함된 Steam 무료 데모 (앱 2947640)"
+        ],
+        [
+         "2026년 7월",
+         "글로벌 퍼블리싱 발표",
+         "NEOWIZ가 글로벌 퍼블리싱 계약 체결"
+        ],
+        [
+         "2026년 8월 5일",
+         "Steam 정식 출시",
+         "Windows 출시, $16.99 / £14.99 / €16.99, 8월 19일까지 10% 할인"
+        ],
+        [
+         "2026년 8월 12일",
+         "콘솔 출시 (발표)",
+         "PS5 / Xbox Series X|S 버전이 언론 보도로 발표"
+        ]
+       ],
+       "columns": [
+        "날짜",
+        "이벤트",
+        "비고"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "출시 할인 정보",
+       "body": "10% 출시 할인은 첫 2주간 진행되어 2026년 8월 19일에 종료됩니다.",
+       "items": [
+        "할인 기간 최종 가격: USD 지역 기준 약 $15.29",
+        "지역별 가격 적용 (중국 ¥58.5 등)",
+        "출시 전 위시리스트가 10만 개를 넘었고, 80% 이상이 중국 외 지역"
+       ]
+      }
+     ]
     }
+   },
+   "meta": {
+    "icon": "update-log",
+    "id": "F-14"
+   }
+  },
+  {
+   "title": "Kill The Shadow Characters: Character Files",
+   "metaTitle": "Kill The Shadow Characters Guide: All Characters (2026)",
+   "metaDescription": "The confirmed characters in Kill The Shadow: Lucas, Lynn DaHandt, Officer May and the Shadow. Their roles, relationships and meaning in the story.",
+   "intro": "The confirmed character files in Kill The Shadow so far, based on launch coverage and our Chapter 1 playthrough. Updated as more is verified.",
+   "sections": [
+    {
+     "type": "table",
+     "heading": "Character Overview",
+     "body": "The main characters verified in Chapter 1.",
+     "columns": [
+      "Character",
+      "Role",
+      "Notes"
+     ],
+     "rows": [
+      [
+       "Lucas",
+       "Protagonist · former officer",
+       "A former police officer carrying the Shadow. Can reconstruct the final moments of the dead."
+      ],
+      [
+       "Lynn DaHandt",
+       "Mysterious sender",
+       "Sent the letter written on a medical gauge in the opening."
+      ],
+      [
+       "Officer May",
+       "Police station contact",
+       "Greets Lucas on his return and sets the tone of the Chapter 1 opening."
+      ],
+      [
+       "The Shadow",
+       "Supernatural entity",
+       "Lucas's partner. Source of time rewind and crime-scene reconstruction."
+      ]
+     ]
+    },
+    {
+     "type": "list",
+     "heading": "Lucas",
+     "body": "What is confirmed about the protagonist.",
+     "items": [
+      "A former police officer in Dark Tide City",
+      "Uses the Shadow's power to reconstruct the final moments of the dead",
+      "Your choices decide his relationships and moral stance across the story"
+     ]
+    },
+    {
+     "type": "list",
+     "heading": "The Shadow",
+     "body": "Partner and source of power.",
+     "items": [
+      "Reconstructs the final moments of the dead 'exactly as they happened'",
+      "Lets you rewind time during investigations to retry failed moments",
+      "Darker choices raise the corruption meter and change how the story unfolds"
+     ]
+    },
+    {
+     "type": "list",
+     "heading": "Officer May & Lynn DaHandt",
+     "body": "The people you meet in Chapter 1.",
+     "items": [
+      "Officer May is the first person to greet Lucas at the station",
+      "Lynn DaHandt is the sender of the opening letter — the start of the medical documents thread",
+      "Their relationships continue to connect in later cases"
+     ]
+    }
+   ],
+   "slug": "characters",
+   "sources": [
+    {
+     "label": "Official Steam store page — Kill The Shadow",
+     "url": "https://store.steampowered.com/app/2660230/Kill_The_Shadow/"
+    },
+    {
+     "label": "Into Indie Games — Kill the Shadow Walkthrough Part 1",
+     "url": "https://intoindiegames.com/walkthroughs/kill-the-shadow-walkthrough-part-1-the-factory/"
+    }
+   ],
+   "i18n": {
+    "zh-CN": {
+     "title": "杀死影子角色：人物档案",
+     "metaTitle": "杀死影子角色指南：全部角色（2026）",
+     "metaDescription": "《杀死影子》已确认的角色：Lucas、Lynn DaHandt、警官 May 与影子。他们在故事中的角色、关系与意义。",
+     "intro": "根据发售报道与第一章通关记录，整理目前确认的《杀死影子》人物档案。随着更多内容得到验证会持续更新。",
+     "sections": [
+      {
+       "type": "table",
+       "heading": "角色总览",
+       "body": "第一章中确认的主要角色。",
+       "columns": [
+        "角色",
+        "身份",
+        "备注"
+       ],
+       "rows": [
+        [
+         "Lucas",
+         "主角 · 前警官",
+         "背着影子的前警官。能够重现死者最后的时刻。"
+        ],
+        [
+         "Lynn DaHandt",
+         "神秘寄信人",
+         "在开场寄出写在医疗计量器上的信。"
+        ],
+        [
+         "警官 May",
+         "警察局联系人",
+         "迎接 Lucas 回归，奠定第一章开场的基调。"
+        ],
+        [
+         "影子",
+         "超自然存在",
+         "Lucas 的搭档。时间回溯与现场重建的力量来源。"
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "Lucas",
+       "body": "关于主角已确认的信息。",
+       "items": [
+        "暗潮市的前警官",
+        "借助影子的力量重现死者最后的时刻",
+        "你的选择决定他在故事中的关系与道德立场"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "影子",
+       "body": "搭档与力量来源。",
+       "items": [
+        "「如实」重现死者最后的时刻",
+        "调查中可回溯时间，重试失败的关键时刻",
+        "越黑暗的选择越推高黑化度，改变故事走向"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "警官 May 与 Lynn DaHandt",
+       "body": "第一章中遇到的人物。",
+       "items": [
+        "警官 May 是在警察局迎接 Lucas 的第一人",
+        "Lynn DaHandt 是开场信的寄信人——医疗文档线索的开端",
+        "他们的关系在之后的案件中持续串联"
+       ]
+      }
+     ]
+    },
+    "zh-TW": {
+     "title": "殺死影子角色：人物檔案",
+     "metaTitle": "殺死影子角色指南：全部角色（2026）",
+     "metaDescription": "《殺死影子》已確認的角色：Lucas、Lynn DaHandt、警官 May 與影子。他們在故事中的角色、關係與意義。",
+     "intro": "根據發售報道與第一章通關記錄，整理目前確認的《殺死影子》人物檔案。隨着更多內容得到驗證會持續更新。",
+     "sections": [
+      {
+       "type": "table",
+       "heading": "角色總覽",
+       "body": "第一章中確認的主要角色。",
+       "columns": [
+        "角色",
+        "身份",
+        "備註"
+       ],
+       "rows": [
+        [
+         "Lucas",
+         "主角 · 前警官",
+         "揹着影子的前警官。能夠重現死者最後的時刻。"
+        ],
+        [
+         "Lynn DaHandt",
+         "神祕寄信人",
+         "在開場寄出寫在醫療計量器上的信。"
+        ],
+        [
+         "警官 May",
+         "警察局聯繫人",
+         "迎接 Lucas 迴歸，奠定第一章開場的基調。"
+        ],
+        [
+         "影子",
+         "超自然存在",
+         "Lucas 的搭檔。時間回溯與現場重建的力量來源。"
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "Lucas",
+       "body": "關於主角已確認的信息。",
+       "items": [
+        "暗潮市的前警官",
+        "藉助影子的力量重現死者最後的時刻",
+        "你的選擇決定他在故事中的關係與道德立場"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "影子",
+       "body": "搭檔與力量來源。",
+       "items": [
+        "「如實」重現死者最後的時刻",
+        "調查中可回溯時間，重試失敗的關鍵時刻",
+        "越黑暗的選擇越推高黑化度，改變故事走向"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "警官 May 與 Lynn DaHandt",
+       "body": "第一章中遇到的人物。",
+       "items": [
+        "警官 May 是在警察局迎接 Lucas 的第一人",
+        "Lynn DaHandt 是開場信的寄信人——醫療文檔線索的開端",
+        "他們的關係在之後的案件中持續串聯"
+       ]
+      }
+     ]
+    },
+    "ja": {
+     "title": "キル・ザ・シャドウ キャラクター：人物ファイル",
+     "metaTitle": "キル・ザ・シャドウ キャラクターガイド：全キャラクター（2026）",
+     "metaDescription": "『キル・ザ・シャドウ』で確認されたキャラクター：ルーカス、リン・ダハント、メイ巡査、シャドウ。その役割と物語上の意味。",
+     "intro": "発売報道と第1章プレイをもとに、確認済みのキャラクターファイルをまとめました。確認でき次第更新します。",
+     "sections": [
+      {
+       "type": "table",
+       "heading": "キャラクター概要",
+       "body": "第1章で確認された主要人物。",
+       "columns": [
+        "人物",
+        "役割",
+        "備考"
+       ],
+       "rows": [
+        [
+         "ルーカス",
+         "主人公・元警官",
+         "シャドウを背負う元警官。死者の最後の瞬間を再現できる。"
+        ],
+        [
+         "リン・ダハント",
+         "謎の差出人",
+         "オープニングで医療ゲージに書かれた手紙を送った人物。"
+        ],
+        [
+         "メイ巡査",
+         "警察署の窓口",
+         "ルーカスの復帰を迎え、第1章オープニングの空気を作る。"
+        ],
+        [
+         "シャドウ",
+         "超常存在",
+         "ルーカスのパートナー。時間巻き戻しと現場再現の源。"
+        ]
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "ルーカス",
+       "body": "主人公について確認済みの情報。",
+       "items": [
+        "ダークタイドシティの元警官",
+        "シャドウの力で死者の最後の瞬間を再現する",
+        "選択が関係と道徳的立場を決める"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "シャドウ",
+       "body": "パートナーであり力の源。",
+       "items": [
+        "死者の最後の瞬間を「そのまま」再現する",
+        "調査中に時間を巻き戻し、失敗した瞬間をやり直せる",
+        "暗い選択は汚染度を上げ、物語の展開を変える"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "メイ巡査とリン・ダハント",
+       "body": "第1章で出会う人物たち。",
+       "items": [
+        "メイ巡査は警察署で最初にルーカスを迎える人物",
+        "リン・ダハントはオープニングの手紙の差出人",
+        "彼らの関係は以後の事件にもつながる"
+       ]
+      }
+     ]
+    },
+    "ko": {
+     "title": "킬 더 섀도우 캐릭터: 등장인물 파일",
+     "metaTitle": "킬 더 섀도우 캐릭터 가이드: 등장인물 파일 (2026)",
+     "metaDescription": "킬 더 섀도우의 등장인물: 루카스, 린 다한트, 메이 경관, 섀도우. 각 인물의 역할과 관계, 스토리에서의 의미.",
+     "intro": "지금까지 확인된 킬 더 섀도우의 등장인물 파일입니다. 출시 보도와 1장 플레이를 기준으로 정리했으며, 확인되는 대로 추가합니다.",
+     "sections": [
+      {
+       "type": "table",
+       "heading": "등장인물 개요",
+       "body": "1장 기준으로 확인된 주요 인물.",
+       "rows": [
+        [
+         "루카스 (Lucas)",
+         "주인공 · 전직 경찰",
+         "섀도우를 등에 짊어진 전직 형사. 죽은 자의 마지막 순간을 재구성할 수 있음"
+        ],
+        [
+         "린 다한트 (Lynn DaHandt)",
+         "의문의 발신자",
+         "오프닝에서 의료 게이지에 적힌 편지를 보낸 인물"
+        ],
+        [
+         "메이 경관 (Officer May)",
+         "경찰서 동료",
+         "루카스의 복귀를 맞이하며 1장 오프닝의 분위기를 만듦"
+        ],
+        [
+         "섀도우 (The Shadow)",
+         "초자연적 존재",
+         "루카스의 파트너. 시간 되감기와 범죄 현장 재구성의 원천"
+        ]
+       ],
+       "columns": [
+        "인물",
+        "역할",
+        "비고"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "루카스",
+       "body": "주인공에 대해 확인된 내용.",
+       "items": [
+        "다크 타이드 시티의 전직 경찰",
+        "섀도우의 힘으로 죽은 자의 마지막 순간을 재구성",
+        "선택에 따라 관계와 도덕적 입장이 스토리를 가름"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "섀도우",
+       "body": "파트너이자 힘의 원천.",
+       "items": [
+        "죽은 자의 마지막 순간을 '그대로' 재구성",
+        "수사 중 시간을 되감아 실패한 순간을 다시 시도",
+        "어두운 선택이 오염도를 올리면 스토리 전개가 달라짐"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "메이 경관 & 린 다한트",
+       "body": "1장에서 만나는 인물들.",
+       "items": [
+        "메이 경관은 경찰서에서 루카스를 맞이하는 첫 인물",
+        "린 다한트는 오프닝 편지의 발신자 — 의료 문서의 시작점",
+        "이들의 관계는 이후 사건에서 계속 연결됨"
+       ]
+      }
+     ]
+    }
+   },
+   "meta": {
+    "icon": "characters",
+    "id": "F-14"
    }
   }
  ]
