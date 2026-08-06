@@ -281,10 +281,10 @@ function renderHome(lang){
   const CORE = ["walkthrough","choices","endings","investigation","characters","cases"];
   const DEEP = ["evidence","controls","tips-and-tricks","system-requirements","steam-deck"];
   const ANS  = ["achievements","update-log","faq"];
-  const evCard = (slug,i) => {
+  const evCard = (slug,i,type) => {
     const p=DATA.pages.find(x=>x.slug===slug); if(!p) return "";
     const m=metaOf(slug); const t=Object.assign(pageOf(p,lang),{slug:p.slug});
-    return `<a class="ev-card reveal" href="${prefix}/${slug}">
+    return `<a class="ev-card reveal" data-type="${type}" href="${prefix}/${slug}">
       <span class="ev-id">${m.id||("C-"+String(i+1).padStart(2,"0"))}</span>
       <span class="ev-ic">${SVG[m.icon]}</span>
       <h3>${esc(t.title)}</h3>
@@ -292,9 +292,9 @@ function renderHome(lang){
       <span class="ev-open">${esc(s.readGuide)}</span>
     </a>`;
   };
-  const coreCards = CORE.map((sl,i)=>evCard(sl,i)).join("");
-  const deepCards = DEEP.map((sl,i)=>evCard(sl,i)).join("");
-  const ansCards  = ANS.map((sl,i)=>evCard(sl,i)).join("");
+  const coreCards = CORE.map((sl,i)=>evCard(sl,i,"core")).join("");
+  const deepCards = DEEP.map((sl,i)=>evCard(sl,i,"deep")).join("");
+  const ansCards  = ANS.map((sl,i)=>evCard(sl,i,"ans")).join("");
   // 案件时间线（横向）
   const timeline = [
     [lang==="en"?"Day 1 — The Fall":lang==="ja"?"第1日——崩落":lang==="ko"?"1일차 — 추락":"第1天——坠落", lang==="en"?"The protagonist's past is buried in the medical gauge letter.":lang==="ja"?"主人公の過去は医療ゲージの手紙に埋もれている。":lang==="ko"?"주인공의 과거는 의료 게이지 편지에 묻혀 있습니다.":"主角的过去埋在医疗刻度表的信里。"],
@@ -330,16 +330,14 @@ function renderHome(lang){
       <div class="tl-row">${timeline}</div>
     </section>
     <section class="container section">
-      <div class="sec-head reveal"><span class="mono">${esc(s.caseFile)} // 001</span><h2>${esc(s.guides)}</h2></div>
-      <div class="ev-wall">${coreCards}</div>
-    </section>
-    <section class="container section">
-      <div class="sec-head reveal"><span class="mono">${esc(s.caseFile)} // DEEP</span><h2>${esc(s.latest)}</h2></div>
-      <div class="ev-row">${deepCards}</div>
-    </section>
-    <section class="container section">
-      <div class="sec-head reveal"><span class="mono">${esc(s.caseFile)} // ANSWERS</span><h2>${esc(lang==="en"?"Quick answers":lang==="ja"?"クイック回答":lang==="ko"?"빠른 답변":"快速答案")}</h2></div>
-      <div class="ev-row ev-row-3">${ansCards}</div>
+      <div class="sec-head reveal"><span class="mono">${esc(s.caseFile)} // EVIDENCE WALL</span><h2>${esc(s.guides)}</h2></div>
+      <div class="case-filters reveal">
+        <button class="case-filter" data-filter="all" aria-pressed="true">${esc(lang==="en"?"All cases":lang==="ja"?"全事件":lang==="ko"?"전체 사건":"全部案件")}</button>
+        <button class="case-filter" data-filter="core" aria-pressed="false">${esc(lang==="en"?"Main case":lang==="ja"?"本編":lang==="ko"?"본편":"主线案件")}</button>
+        <button class="case-filter" data-filter="deep" aria-pressed="false">${esc(lang==="en"?"Deep dive":lang==="ja"?"深掘り":lang==="ko"?"심층":"深挖")}</button>
+        <button class="case-filter" data-filter="ans" aria-pressed="false">${esc(lang==="en"?"Answers":lang==="ja"?"解答":lang==="ko"?"답변":"答案")}</button>
+      </div>
+      <div class="ev-wall ev-wall-all">${coreCards}${deepCards}${ansCards}</div>
     </section>
     <section class="container section split">
       <div class="card dossier reveal">
@@ -352,7 +350,23 @@ function renderHome(lang){
         ${faqHtml}
       </div>
     </section>
-  </main>`;
+  </main>
+  <script>
+  document.addEventListener('DOMContentLoaded', function(){
+    var filters=document.querySelectorAll('.case-filter');
+    var cards=document.querySelectorAll('.ev-card[data-type]');
+    filters.forEach(function(f){
+      f.addEventListener('click', function(){
+        filters.forEach(function(x){x.setAttribute('aria-pressed','false');x.classList.remove('on');});
+        f.setAttribute('aria-pressed','true');f.classList.add('on');
+        var v=f.dataset.filter;
+        cards.forEach(function(c){
+          if(v==='all'||c.dataset.type===v){c.style.display='';}else{c.style.display='none';}
+        });
+      });
+    });
+  });
+  </script>`;
   return renderFull(lang, siteI18n(lang).name, `${esc(gname)} — ${esc(s.tagline)}`, [], "index", body, heroImg);
 }
 function renderFull(lang, title, desc, extraLd, slug, body, ogImage){

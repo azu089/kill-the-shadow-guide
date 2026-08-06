@@ -390,3 +390,14 @@ details.faq[open] .faq-a{animation:faqIn .24s ease-out}
 /* 案件便签 */
 .case-note{background:linear-gradient(160deg,rgba(242,169,0,.07),rgba(20,23,29,.6));border-left:3px solid var(--amber)}
 .case-pin{position:absolute;top:12px;right:16px;width:13px;height:13px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#f5c34c,#b8860b);box-shadow:0 2px 5px rgba(0,0,0,.4)}
+
+/* ============================================================
+   KTS — Case filters (v2.3, 侦探案件筛选交互)
+   ============================================================ */
+.case-filters{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:18px}
+.case-filter{font-family:var(--mono);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;background:rgba(255,255,255,.04);border:1.5px solid var(--line-strong);color:var(--muted);border-radius:7px;padding:9px 16px;cursor:pointer;transition:.16s;font-weight:700}
+.case-filter:hover{color:var(--text);border-color:rgba(242,169,0,.5)}
+.case-filter[aria-pressed="true"],.case-filter.on{color:#1a1200;background:var(--amber);border-color:var(--amber)}
+.ev-wall-all{columns:2;column-gap:16px}
+.ev-wall-all .ev-card{display:inline-block;width:100%;margin:0 0 16px;break-inside:avoid}
+@media (max-width:640px){.ev-wall-all{columns:1}}
