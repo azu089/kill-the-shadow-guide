@@ -269,62 +269,76 @@ function renderHome(lang){
   const gintro = (DATA.game.introI18n && DATA.game.introI18n[lang]) || DATA.game.intro;
   const statsArr = (DATA.game.statsI18n && DATA.game.statsI18n[lang]) || DATA.game.stats || [];
   const stats = statsArr.map(st=>`<div class="stat"><b>${esc(st.value)}</b><span>${esc(st.label)}</span></div>`).join("");
-  const cards = DATA.pages.map((p,i) => {
-    const m = metaOf(p.slug);
-    const t = Object.assign(pageOf(p, lang), {slug: p.slug});
-    return `<a class="file-card reveal" href="${prefix}/${p.slug}">
-      <span class="file-id">${m.id||("F-"+String(i+1).padStart(2,"0"))}</span>
-      <span class="file-icon">${SVG[m.icon]}</span>
-      <h3>${esc(t.title)}</h3>
-      <p>${esc(t.metaDescription)}</p>
-      <span class="file-open">${esc(s.readGuide)}</span>
-    </a>`;
-  }).join("");
   const _faqSec = (pageOf(DATA.pages.find(p=>p.slug==="faq"), lang).sections||[]).find(x=>x.type==="faq");
   const faqItems = _faqSec?.items || [];
   const faqHtml = faqItems.map(([q,a])=>`<details class="faq"><summary>${esc(q)}<span class="pm">+</span></summary><div class="faq-a">${esc(a)}</div></details>`).join("");
   const keyFactsArr = (DATA.game.keyFactsI18n && DATA.game.keyFactsI18n[lang]) || DATA.game.keyFacts || [];
   const keyFacts = keyFactsArr.map(f=>`<li>${esc(f)}</li>`).join("");
-  const clues = [
-    [s.evidence+" 01", lang==="en"?"A letter written on a medical gauge":lang==="ja"?"医療ゲージに書かれた手紙":"一张写在医疗刻度表上的信"],
-    [s.evidence+" 02", lang==="en"?"The Shadow reconstructs the final moments of the dead":lang==="ja"?"影は死者の最後の瞬間を再現する":"影子能还原死者最后的时刻"],
-    [s.evidence+" 03", lang==="en"?"Every choice rewinds time and rewrites the truth":lang==="ja"?"選択が時間を巻き戻し、真実を書き換える":"每次选择都会回溯时间、改写真相"],
-    [s.evidence+" 04", lang==="en"?"Multiple endings across Dark Tide City":lang==="ja"?"ダークタイドシティで複数のエンディング":"暗潮市的多重结局"],
-  ];
-  const heroImg = "/images/hero.jpg";
+  // 证据分组：案件主线 / 深挖 / 答案
+  const CORE = ["walkthrough","choices","endings","investigation","characters","cases"];
+  const DEEP = ["evidence","controls","tips-and-tricks","system-requirements","steam-deck"];
+  const ANS  = ["achievements","update-log","faq"];
+  const evCard = (slug,i) => {
+    const p=DATA.pages.find(x=>x.slug===slug); if(!p) return "";
+    const m=metaOf(slug); const t=Object.assign(pageOf(p,lang),{slug:p.slug});
+    return `<a class="ev-card reveal" href="${prefix}/${slug}">
+      <span class="ev-id">${m.id||("C-"+String(i+1).padStart(2,"0"))}</span>
+      <span class="ev-ic">${SVG[m.icon]}</span>
+      <h3>${esc(t.title)}</h3>
+      <p>${esc(t.metaDescription)}</p>
+      <span class="ev-open">${esc(s.readGuide)}</span>
+    </a>`;
+  };
+  const coreCards = CORE.map((sl,i)=>evCard(sl,i)).join("");
+  const deepCards = DEEP.map((sl,i)=>evCard(sl,i)).join("");
+  const ansCards  = ANS.map((sl,i)=>evCard(sl,i)).join("");
+  // 案件时间线（横向）
+  const timeline = [
+    [lang==="en"?"Day 1 — The Fall":lang==="ja"?"第1日——崩落":lang==="ko"?"1일차 — 추락":"第1天——坠落", lang==="en"?"The protagonist's past is buried in the medical gauge letter.":lang==="ja"?"主人公の過去は医療ゲージの手紙に埋もれている。":lang==="ko"?"주인공의 과거는 의료 게이지 편지에 묻혀 있습니다.":"主角的过去埋在医疗刻度表的信里。"],
+    [lang==="en"?"The Shadow":lang==="ja"?"影":lang==="ko"?"그림자":"影子", lang==="en"?"Reconstruct the final moments of the dead.":lang==="ja"?"死者の最後の瞬間を再現する。":lang==="ko"?"죽은 자의 마지막 순간을 재구성합니다.":"还原死者最后的时刻。"],
+    [lang==="en"?"Rewind Time":lang==="ja"?"時間を巻き戻す":lang==="ko"?"시간 되감기":"回溯时间", lang==="en"?"Every choice rewrites the truth in Dark Tide City.":lang==="ja"?"選択が暗潮市の真実を書き換える。":lang==="ko"?"선택이 다크 타이드 시티의 진실을 다시 씁니다.":"每次选择都改写暗潮市的真相。"],
+    [lang==="en"?"Multiple Endings":lang==="ja"?"複数のエンディング":lang==="ko"?"다중 엔딩":"多重结局", lang==="en"?"Corruption meter decides how far you fall.":lang==="ja"?"汚染メーターがどこまで堕ちるかを決める。":lang==="ko"?"오염 게이지가 얼마나 떨어질지 결정합니다.":"腐化值决定你坠得多深。"],
+  ].map(([t,d],i)=>`<div class="tl-card reveal"><span class="tl-no">${String(i+1).padStart(2,"0")}</span><b>${esc(t)}</b><p>${esc(d)}</p></div>`).join("");
+  const heroImg="/images/hero.jpg";
   const badgeTxt = lang==="en" ? "A detective RPG with the dead's memories — updated regularly"
     : lang==="ja" ? "死者の記憶を追う刑事RPG — 定期更新"
     : lang==="ko" ? "죽은 자의 기억을 쫓는 추리 RPG — 정기 업데이트"
     : "追查死者记忆的侦探RPG — 持续更新";
-  const h1Tail = lang==="en" ? "GUIDES" : lang==="ja" ? "攻略" : lang==="ko" ? "공략" : "攻略";
+  const h1Tail = lang==="en" ? "CASE FILES" : lang==="ja" ? "事件ファイル" : lang==="ko" ? "사건 파일" : "案件卷宗";
   const body = `
-  <main class="container">
-    <section class="hero case-hero">
-      <div class="hero-copy">
+  <main>
+    <section class="wall-hero">
+      <div class="wall-bg"><img src="/images/hero-1280.jpg" srcset="/images/hero-640.jpg 640w, /images/hero-1280.jpg 1280w, /images/hero.jpg 1600w" sizes="100vw" alt="${esc(gname)} key art" loading="eager" width="1600" height="900" fetchpriority="high" /></div>
+      <div class="wall-overlay"></div>
+      <div class="container wall-copy">
         <span class="evidence-tag"><span class="dot"></span> ${esc(badgeTxt)}</span>
         <h1>${esc(gname)} <span class="stamp-hl">${esc(h1Tail)}</span></h1>
         <p class="lead">${esc(s.tagline)}. ${esc(s.explore)}.</p>
-        <div class="stats">${stats}</div>
+        <div class="stats wall-stats">${stats}</div>
         <div class="cta-row">
           <a class="btn btn-primary" href="${esc(DATA.game.steamUrl)}" target="_blank" rel="noopener">${esc(s.startPlaying)}</a>
           <a class="btn btn-ghost" href="${prefix}/walkthrough">${esc(s.readGuide)}</a>
         </div>
       </div>
-      <div class="board">
-        <svg class="board-lines" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path d="M18 30 C 38 22, 62 22, 82 30" /><path d="M18 72 C 38 80, 62 80, 82 72" /><path d="M18 30 C 28 50, 28 52, 18 72" /><path d="M82 30 C 72 50, 72 52, 82 72" /></svg>
-        <div class="board-photo"><img src="/images/hero-1280.jpg" srcset="/images/hero-640.jpg 640w, /images/hero-1280.jpg 1280w, /images/hero.jpg 1600w" sizes="(max-width: 560px) 92vw, (max-width: 960px) 60vw, 520px" alt="${esc(gname)} key art" loading="eager" width="1600" height="900" fetchpriority="high" /></div>
-        <div class="clue clue-a"><span class="clue-pin">${SVG.pin}</span><b>${esc(clues[0][0])}</b><p>${esc(clues[0][1])}</p></div>
-        <div class="clue clue-b"><span class="clue-pin">${SVG.pin}</span><b>${esc(clues[1][0])}</b><p>${esc(clues[1][1])}</p></div>
-        <div class="clue clue-c"><span class="clue-pin">${SVG.pin}</span><b>${esc(clues[2][0])}</b><p>${esc(clues[2][1])}</p></div>
-        <div class="clue clue-d"><span class="clue-pin">${SVG.pin}</span><b>${esc(clues[3][0])}</b><p>${esc(clues[3][1])}</p></div>
-        <div class="stamp" aria-hidden="true">${esc(s.sealed)}</div>
-      </div>
+      <div class="wall-stamp" aria-hidden="true">${esc(s.sealed)}</div>
     </section>
-    <section class="section">
+    <section class="container section">
+      <div class="sec-head reveal"><span class="mono">${esc(s.caseFile)} // TIMELINE</span><h2>${esc(lang==="en"?"The Investigation":lang==="ja"?"捜査の軌跡":lang==="ko"?"수사의 궤적":"调查轨迹")}</h2></div>
+      <div class="tl-row">${timeline}</div>
+    </section>
+    <section class="container section">
       <div class="sec-head reveal"><span class="mono">${esc(s.caseFile)} // 001</span><h2>${esc(s.guides)}</h2></div>
-      <div class="file-grid">${cards}</div>
+      <div class="ev-wall">${coreCards}</div>
     </section>
-    <section class="section split">
+    <section class="container section">
+      <div class="sec-head reveal"><span class="mono">${esc(s.caseFile)} // DEEP</span><h2>${esc(s.latest)}</h2></div>
+      <div class="ev-row">${deepCards}</div>
+    </section>
+    <section class="container section">
+      <div class="sec-head reveal"><span class="mono">${esc(s.caseFile)} // ANSWERS</span><h2>${esc(lang==="en"?"Quick answers":lang==="ja"?"クイック回答":lang==="ko"?"빠른 답변":"快速答案")}</h2></div>
+      <div class="ev-row ev-row-3">${ansCards}</div>
+    </section>
+    <section class="container section split">
       <div class="card dossier reveal">
         <h2><span class="sec-tag">${esc(s.aboutGame)}</span>${esc(gname)}</h2>
         <p class="sec-body">${esc(gintro)}</p>
@@ -336,7 +350,7 @@ function renderHome(lang){
       </div>
     </section>
   </main>`;
-  return renderFull(lang, siteI18n(lang).name + " & Wiki", `${esc(gname)} — ${esc(s.tagline)}`, [], "index", body, heroImg);
+  return renderFull(lang, siteI18n(lang).name, `${esc(gname)} — ${esc(s.tagline)}`, [], "index", body, heroImg);
 }
 function renderFull(lang, title, desc, extraLd, slug, body, ogImage){
   const s = siteI18n(lang);
@@ -348,17 +362,17 @@ function renderPage(lang, page){
   const t = Object.assign(pageOf(page, lang), {slug: page.slug});
   const prefix = lang === DEF ? "" : `/${lang}`;
   SEC_IDX = 0;
-  const toc = (t.sections||[]).filter(s=>s.heading).map((s,i)=>{
+  const toc = (t.sections||[]).filter(x=>x.heading).map((x,i)=>{
     SEC_IDX += 1;
-    return `<a href="#sec-${SEC_IDX}">${esc(s.heading)}</a>`;
+    return `<a href="#sec-${SEC_IDX}"><span class="evt-no">${String(SEC_IDX).padStart(2,"0")}</span>${esc(x.heading)}</a>`;
   }).join("");
   SEC_IDX = 0;
-  const sections2 = (t.sections||[]).map(s => renderSection(s, lang)).join("");
+  const sections2 = (t.sections||[]).map(x => renderSection(x, lang)).join("");
   const related = DATA.pages.filter(p=>p.slug!==page.slug).slice(0,6).map(p=>{
     const m = metaOf(p.slug);
     return `<a href="${prefix}/${p.slug}"><span class="nav-ic">${SVG[m.icon]}</span><span>${esc(pageOf(p,lang).title)}</span></a>`;
   }).join("");
-  const sources = (page.sources||[]).map(s=>`<li><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc((s.labels && s.labels[lang]) || s.label)} ↗</a></li>`).join("");
+  const sources = (page.sources||[]).map(x=>`<li><a href="${esc(x.url)}" target="_blank" rel="noopener">${esc((x.labels && x.labels[lang]) || x.label)} ↗</a></li>`).join("");
   const s = siteI18n(lang);
   const heroImg = t.heroImage;
   const srcsetOf = img => {
@@ -366,36 +380,27 @@ function renderPage(lang, page){
     const base = img.replace(/\.(jpg|jpeg|png|webp)$/i, "");
     return ` srcset="${base}-640.jpg 640w, ${base}-1280.jpg 1280w, ${img} 1600w" sizes="(max-width: 640px) 94vw, (max-width: 960px) 92vw, 820px"`;
   };
-  const pageHero = heroImg ? `<div class="page-hero-img"><img src="${heroImg}"${srcsetOf(heroImg)} alt="${esc(t.title)}" loading="lazy" width="1600" height="900" /></div>` : "";
+  const pageHero = heroImg ? `<div class="dossier-hero-img"><img src="${heroImg}"${srcsetOf(heroImg)} alt="${esc(t.title)}" loading="lazy" width="1600" height="900" /></div>` : "";
   const noImgCls = heroImg ? "" : " noimg";
   const body = `
   <main class="container">
     <nav class="crumbs"><a href="${prefix}/">${esc(s.navHome)}</a><span>›</span><span>${esc(t.title)}</span></nav>
-    <div class="article-wrap">
-      <article>
-        <div class="page-hero reveal${noImgCls}">
-          ${heroImg ? "" : `<span class="hero-ic" aria-hidden="true">${SVG[page.meta?.icon || "faq"]}</span>`}
-          <span class="hero-wm" aria-hidden="true">${esc(page.meta?.id || page.slug.toUpperCase())}</span>
-          <span class="evidence-tag">${esc(s.caseFile)} // ${esc(page.meta?.id || page.slug.toUpperCase())}</span>
-          <h1>${esc(t.title)}</h1>
-          <p class="intro">${esc(t.intro)}</p>
-          ${pageHero}
-        </div>
+    <div class="file-open-hero reveal${noImgCls}">
+      ${heroImg ? "" : `<span class="hero-ic" aria-hidden="true">${SVG[page.meta?.icon || "faq"]}</span>`}
+      <span class="evidence-tag">${esc(s.caseFile)} // ${esc(page.meta?.id || page.slug.toUpperCase())}</span>
+      <h1>${esc(t.title)}</h1>
+      <p class="intro">${esc(t.intro)}</p>
+      ${pageHero}
+    </div>
+    <div class="dossier-grid">
+      <aside class="evidence-rail">
         ${toc ? `<nav class="toc reveal"><b class="toc-title">${esc(s.updated)}</b>${toc}</nav>` : ""}
-        ${sections2}
-        ${sources ? `<div class="sources reveal"><b>${esc(s.sources)}</b><ul>${sources}</ul></div>` : ""}
-      </article>
-      <aside class="dossier-side">
-        <div class="case-meta reveal">
+        <div class="case-tag reveal">
           <span class="cm-tag">${esc(s.caseFile)}</span>
           <div class="cm-row"><span class="cm-k">${esc(lang==="en"?"Case No.":lang==="ja"?"事件番号":lang==="ko"?"사건 번호":"案件编号")}</span><b>${esc(page.meta?.id || page.slug.toUpperCase())}</b></div>
-          <div class="cm-row"><span class="cm-k">${esc(lang==="en"?"Category":lang==="ja"?"分類":lang==="ko"?"분류":"分类")}</span><b>${esc(pageOf(page,lang).title.split(":")[0].split("—")[0].trim())}</b></div>
+          <div class="cm-row"><span class="cm-k">${esc(lang==="en"?"Category":lang==="ja"?"分類":lang==="ko"?"분류":"分类")}</span><b>${esc(t.title.split(":")[0].split("—")[0].trim())}</b></div>
           <div class="cm-row"><span class="cm-k">${esc(s.updated)}</span><b>${today}</b></div>
           <div class="cm-stamp">${esc(s.sealed)}</div>
-        </div>
-        <div class="related reveal">
-          <b>${esc(s.moreGuides)}</b>
-          ${related}
         </div>
         <div class="cta-box reveal">
           <span class="mono">${esc(s.caseFile)} // STEAM</span>
@@ -403,9 +408,20 @@ function renderPage(lang, page){
           <a class="btn btn-primary" href="${esc(DATA.game.steamUrl)}" target="_blank" rel="noopener">${esc(s.getOnSteam)}</a>
         </div>
       </aside>
+      <article class="dossier-main">
+        ${sections2}
+        ${sources ? `<div class="sources reveal"><b>${esc(s.sources)}</b><ul>${sources}</ul></div>` : ""}
+        <div class="related reveal">
+          <b>${esc(s.moreGuides)}</b>
+          <div class="rel-grid">${related}</div>
+        </div>
+      </article>
     </div>
   </main>`;
-  return renderFull(lang, t.metaTitle || t.title, t.metaDescription, [articleLd(page, lang), breadcrumbLd(page, lang)], page.slug, body, heroImg || DATA.site.ogImage);
+  const extraLd = [articleLd(page, lang), breadcrumbLd(page, lang)];
+  const fq = faqLd(t.sections);
+  if (fq) extraLd.push(fq);
+  return renderFull(lang, t.metaTitle || t.title, t.metaDescription, extraLd, page.slug, body, heroImg || DATA.site.ogImage);
 }
 function gnameOf(lang){ return (DATA.game.nameI18n && DATA.game.nameI18n[lang]) || DATA.game.name; }
 
