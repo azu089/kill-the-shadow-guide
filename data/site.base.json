@@ -1025,8 +1025,8 @@
    "slug": "cases",
    "title": "Kill The Shadow Cases: Every Investigation So Far",
    "metaTitle": "Kill The Shadow Cases Guide: All Investigations (2026)",
-   "metaDescription": "The confirmed cases in Kill The Shadow so far — from the police station opening to the Factory — and how each investigation builds the central mystery.",
-   "intro": "Kill The Shadow is structured as a series of cases that feed into one larger mystery. This page tracks every case we can verify.",
+   "metaDescription": "Every verified Kill The Shadow case — from the police station opening to the Factory — and how each investigation feeds the central mystery.",
+   "intro": "Kill The Shadow is a series of cases that connect into one larger mystery. This page tracks every case we can verify, from the opening letter to the Factory.",
    "sections": [
     {
      "type": "table",
@@ -1042,19 +1042,31 @@
       [
        "The Letter",
        "Police Station (opening)",
-       "A letter written on a medical gauge from Lynn DaHandt",
+       "A letter written on a medical gauge from Lynn DaHandt; the station catches fire after you read it",
        "Chapter 1 opening"
       ],
       [
-       "The Factory Case",
+       "Teddy's Death",
        "Factory district",
-       "Crime-scene reconstruction of the victim's final moments",
+       "The dog's death that breaks the Factory open — interrogate the crew, follow the clues, resolve the case",
        "Chapter 1 main case"
+      ],
+      [
+       "Father's Secret",
+       "Factory & streets",
+       "Rafe's family thread: his mother's request, the Anti-Blockade Protest, calming Rafe down",
+       "Chapter 1 subplot"
+      ],
+      [
+       "Captain Theo's Memories",
+       "Factory",
+       "Reconstructing Theo's objects ties the case to the city's ten-year-old mystery",
+       "Chapter 1 climax"
       ],
       [
        "Ongoing investigations",
        "Dark Tide City",
-       "Semi-open city with multiple cases",
+       "Semi-open city with multiple cases that keep unfolding",
        "As the story unfolds"
       ]
      ]
@@ -1066,18 +1078,31 @@
      "items": [
       "Medical documents — the gauge from the opening letter — recur across investigations",
       "People from one case appear in later ones, with relationships that persist",
-      "The mysterious event that fractured Dark Tide City ten years ago is the thread connecting everything"
+      "The mysterious event that fractured Dark Tide City ten years ago is the thread connecting everything",
+      "The Shadow's death-rewind is the investigative tool that links witness accounts to physical evidence"
      ]
     },
     {
-     "type": "list",
+     "type": "steps",
      "heading": "Case-Solving Checklist",
      "body": "The routine that works on every case we have played.",
      "items": [
-      "Read every document before talking to anyone",
-      "Reconstruct the scene early — then re-read it after new information",
-      "Note contradictions between what witnesses say and what reconstruction shows",
-      "Decide whether the case calls for justice or protection before you act"
+      [
+       "Read everything first",
+       "Read every document before talking to anyone — the written record anchors the case."
+      ],
+      [
+       "Reconstruct early and often",
+       "Rebuild the scene early, then re-read it after each new piece of information."
+      ],
+      [
+       "Find contradictions",
+       "Note mismatches between what witnesses say and what the reconstruction shows."
+      ],
+      [
+       "Decide the case's purpose",
+       "Decide whether the case calls for justice or protection before you act — endings branch on these calls."
+      ]
      ]
     }
    ],
@@ -1097,10 +1122,10 @@
    ],
    "i18n": {
     "zh": {
-     "title": "杀死影子案件：目前全部调查",
+     "title": "杀死影子案件：目前的所有调查",
      "metaTitle": "杀死影子案件攻略：全部调查（2026）",
-     "metaDescription": "杀死影子目前已确认的案件——从警察局开场到工厂——以及每个调查如何构建核心谜团。",
-     "intro": "《杀死影子》由一系列案件构成，它们汇入一个更大的谜团。本页追踪所有我们能核实的案件。",
+     "metaDescription": "目前已核实的杀死影子案件——从警察局开场到工厂——以及每个调查如何汇入核心谜团。",
+     "intro": "《杀死影子》由一系列案件组成，最终连成一个更大的谜团。本页追踪每一个我们能核实的案件，从开场信件到工厂。",
      "sections": [
       {
        "type": "table",
@@ -1116,19 +1141,31 @@
         [
          "那封信",
          "警察局（开场）",
-         "Lynn DaHandt 写在医疗计量器上的信",
+         "Lynn DaHandt 写在医疗计量器上的信；读信后警察局起火",
          "第一章开场"
         ],
         [
-         "工厂案",
+         "泰迪之死",
          "工厂区",
-         "对受害者最后瞬间的犯罪现场重建",
+         "那只打开工厂的狗之死——审讯众人、追查线索、解决事件",
          "第一章主案件"
+        ],
+        [
+         "父亲的秘密",
+         "工厂与街道",
+         "Rafe 的家庭线：母亲的请求、反封锁抗议、安抚 Rafe",
+         "第一章支线"
+        ],
+        [
+         "西奥队长的记忆",
+         "工厂",
+         "重建西奥的物品，把案件与城市十年谜团相连",
+         "第一章高潮"
         ],
         [
          "持续调查",
          "暗潮市",
-         "半开放城市中的多个案件",
+         "半开放城市中不断展开的多个案件",
          "随剧情展开"
         ]
        ]
@@ -1140,27 +1177,40 @@
        "items": [
         "医疗文档——开场信件里的计量器——在多个调查中反复出现",
         "一个案件里的人物会出现在后续案件中，关系持续存在",
-        "十年前撕裂暗潮市的神秘事件，是贯穿一切的线索"
+        "十年前撕裂暗潮市的神秘事件，是贯穿一切的线索",
+        "影子的死亡回溯，是把证词与物证联系起来的关键调查工具"
        ]
       },
       {
-       "type": "list",
+       "type": "steps",
        "heading": "破案检查清单",
        "body": "在我们玩过的每个案件上都行之有效的例行程序。",
        "items": [
-        "与任何人交谈前先读完所有文档",
-        "尽早重建现场——获得新信息后再重读一遍",
-        "留意证人的说法与重建展示之间的矛盾",
-        "行动前先判断这个案件该用正义还是保护"
+        [
+         "先读完一切",
+         "与任何人交谈前先读完所有文档——文字记录是案件的地基。"
+        ],
+        [
+         "尽早重建、经常重建",
+         "尽早重建现场，每获得一条新信息就重读一遍。"
+        ],
+        [
+         "寻找矛盾",
+         "留意证人的说法与重建展示之间的不符。"
+        ],
+        [
+         "判断案件的目的",
+         "行动前先判断这个案件该用正义还是保护——结局在这些抉择处分叉。"
+        ]
        ]
       }
      ]
     },
     "ja": {
-     "title": "キル・ザ・シャドウの事件：確認済みの全調査",
-     "metaTitle": "キル・ザ・シャドウ事件攻略：全調査（2026）",
-     "metaDescription": "キル・ザ・シャドウで確認済みの事件——警察署のオープニングからファクトリーまで——と、各調査が中心の謎をどう築くか。",
-     "intro": "『キル・ザ・シャドウ』は、より大きな謎へとつながる一連の事件で構成されています。検証できるすべての事件を本ページで追跡します。",
+     "title": "キル・ザ・シャドウ事件：これまでの全調査",
+     "metaTitle": "キル・ザ・シャドウ事件ガイド：全調査（2026）",
+     "metaDescription": "検証済みのキル・ザ・シャドウの事件すべて——警察署のオープニングから工場まで——と、各調査が中心の謎へとつながる仕組み。",
+     "intro": "キル・ザ・シャドウは、より大きな謎へとつながる一連の事件で構成されます。本ページは検証できるすべての事件を、冒頭の手紙から工場まで追跡します。",
      "sections": [
       {
        "type": "table",
@@ -1176,19 +1226,31 @@
         [
          "手紙",
          "警察署（オープニング）",
-         "Lynn DaHandt が医療メーターに書いた手紙",
+         "Lynn DaHandt が医療メーターに書いた手紙；読むと警察署が炎上",
          "第1章オープニング"
         ],
         [
-         "ファクトリー事件",
+         "テディの死",
          "ファクトリー地区",
-         "犠牲者の最期の犯行現場再現",
+         "工場を切り開く犬の死——関係者への尋問、手がかり追跡、事件解決",
          "第1章のメイン事件"
+        ],
+        [
+         "父の秘密",
+         "工場と街",
+         "レイフの家族の物語：母の依頼、封鎖反対デモ、レイフを落ち着かせる",
+         "第1章のサブプロット"
+        ],
+        [
+         "テオ船長の記憶",
+         "工場",
+         "テオの品物の再現が事件を10年前の謎へと結びつける",
+         "第1章のクライマックス"
         ],
         [
          "進行中の調査",
          "ダークタイド・シティ",
-         "半オープン都市での複数の事件",
+         "半オープン都市で展開し続ける複数の事件",
          "物語が進むにつれて"
         ]
        ]
@@ -1200,18 +1262,31 @@
        "items": [
         "医療書類——冒頭の手紙のメーター——が複数の調査に登場",
         "ある事件の人物が後の事件にも現れ、関係性は継続",
-        "10年前にダークタイド・シティを分断した謎の出来事がすべてをつなぐ糸"
+        "10年前にダークタイド・シティを分断した謎の出来事がすべてをつなぐ糸",
+        "影の死の巻き戻しが、証言と物的証拠を結びつける調査ツール"
        ]
       },
       {
-       "type": "list",
+       "type": "steps",
        "heading": "事件解決チェックリスト",
        "body": "プレイしたすべての事件で有効だった手順です。",
        "items": [
-        "誰かに話す前にすべての書類を読む",
-        "早めに現場を再現し、新情報を得たら読み直す",
-        "証言と再現の矛盾に注目する",
-        "行動前に、この事件が正義か保護かを判断する"
+        [
+         "まず全てを読む",
+         "誰かに話す前にすべての書類を読む——記録が事件の土台。"
+        ],
+        [
+         "早く、何度も再現する",
+         "現場を早めに再現し、新しい情報のたびに読み直す。"
+        ],
+        [
+         "矛盾を見つける",
+         "証言と再現の食い違いに注目する。"
+        ],
+        [
+         "事件の目的を判断する",
+         "行動前に、正義か保護かを判断する——エンディングはこの判断で分岐する。"
+        ]
        ]
       }
      ]
@@ -1425,8 +1500,8 @@
    "slug": "achievements",
    "title": "Kill The Shadow Achievements Guide",
    "metaTitle": "Kill The Shadow Achievements Guide (2026)",
-   "metaDescription": "What is confirmed about Kill The Shadow achievements: the free demo has 10 achievements, and how the full game's list is being documented after launch.",
-   "intro": "Achievement hunting in Kill The Shadow is just getting started. This page covers what is verified so far and how to track the full list as it is documented.",
+   "metaDescription": "What is confirmed about Kill The Shadow achievements: the free demo has 10 achievements (5,129 EXP), and how the full game's list is being documented after launch.",
+   "intro": "Achievement hunting in Kill The Shadow is just getting started. This page covers what is verified so far — the demo's 10 achievements — and how to track the full list as it is documented.",
    "sections": [
     {
      "type": "list",
@@ -1435,14 +1510,15 @@
      "items": [
       "Demo app ID on SteamDB: 2947640",
       "10 total achievements, tracked by 58 players on Exophase",
+      "All 10 were added on 2024-09-19, well ahead of the full release",
       "Completionist players have earned all 10 (the '100% club' is active)",
       "Full achievement names and descriptions are listed on the Steam store's demo page"
      ]
     },
     {
      "type": "list",
-     "heading": "The Full Game",
-     "body": "The full release launched August 5, 2026. Its achievement list is being documented by the community now.",
+     "heading": "The Full Game (August 5, 2026)",
+     "body": "The full release launched August 5, 2026. Its achievement list is being documented by the community right now.",
      "items": [
       "The full game has its own achievement set separate from the demo",
       "Tracking sites update as players earn achievements — check SteamDB for the live list",
@@ -1457,6 +1533,17 @@
       "SteamDB achievement stats page for Kill The Shadow (app 2660230)",
       "The Steam Community hub — player-written guides often list achievements fastest",
       "TrueSteamAchievements for completionist stats and percentages"
+     ]
+    },
+    {
+     "type": "list",
+     "heading": "Achievement-Hunting Checklist",
+     "body": "Simple habits that make the full list easier to complete once it is documented — all grounded in the game's verified mechanics.",
+     "items": [
+      "Read every document and finish every scene reconstruction on a case before moving on",
+      "Save at branching choices — the time-rewind mechanic lets you explore alternatives from the same moment",
+      "Multiple endings mean multiple playthroughs: keep the first run blind, then use later runs to mop up what you missed",
+      "Console versions arrive on August 12, 2026 — if you play there too, track both lists"
      ]
     }
    ],
@@ -1478,8 +1565,8 @@
     "zh": {
      "title": "杀死影子成就指南",
      "metaTitle": "杀死影子成就攻略（2026）",
-     "metaDescription": "杀死影子成就的已确认信息：免费 Demo 有 10 个成就，以及正式版成就列表的发售后整理进展。",
-     "intro": "《杀死影子》的成就收集才刚刚开始。本页汇总目前已核实的信息，以及如何跟进正在整理中的完整列表。",
+     "metaDescription": "杀死影子成就的已确认信息：免费 Demo 有 10 个成就（5,129 EXP），以及正式版成就列表的发售后整理进展。",
+     "intro": "《杀死影子》的成就收集才刚刚开始。本页汇总目前已核实的信息——Demo 的 10 个成就——以及如何跟进正在整理中的完整列表。",
      "sections": [
       {
        "type": "list",
@@ -1488,14 +1575,15 @@
        "items": [
         "Demo 在 SteamDB 的 app ID：2947640",
         "共 10 个成就，Exophase 上已有 58 名玩家在追踪",
+        "全部 10 个于 2024-09-19 加入，远早于正式版发售",
         "完成度玩家已集齐全部 10 个（「100% 俱乐部」活跃中）",
         "完整成就名称与描述在 Steam 商店 Demo 页面可查"
        ]
       },
       {
        "type": "list",
-       "heading": "正式版",
-       "body": "正式版于 2026 年 8 月 5 日发售，成就列表正在被社区整理。",
+       "heading": "正式版（2026 年 8 月 5 日）",
+       "body": "正式版于 2026 年 8 月 5 日发售，成就列表正在被社区整理中。",
        "items": [
         "正式版拥有独立于 Demo 的成就集",
         "追踪站会随玩家解锁不断更新——到 SteamDB 查看实时列表",
@@ -1511,14 +1599,25 @@
         "Steam 社区中心——玩家写的指南往往最快列出成就",
         "TrueSteamAchievements 查看完成度统计与百分比"
        ]
+      },
+      {
+       "type": "list",
+       "heading": "成就收集清单",
+       "body": "一些让完整列表更容易完成的小习惯——全部基于已核实的游戏机制。",
+       "items": [
+        "在案件上推进前，读完所有文档并完成每次现场重建",
+        "在分支选择处存档——时间回溯机制让你能从同一时刻尝试不同选项",
+        "多结局意味着多周目：第一周目不查攻略，后续周目补漏",
+        "主机版 2026 年 8 月 12 日发售——如果也玩主机版，两边列表都跟进"
+       ]
       }
      ]
     },
     "ja": {
      "title": "キル・ザ・シャドウ実績ガイド",
      "metaTitle": "キル・ザ・シャドウ実績攻略（2026）",
-     "metaDescription": "キル・ザ・シャドウ実績の確定情報：無料デモには実績10個、製品版のリストは発売後に整理中。",
-     "intro": "『キル・ザ・シャドウ』の実績集めは始まったばかりです。現時点で検証済みの情報と、整理中の完全リストの追い方をまとめます。",
+     "metaDescription": "キル・ザ・シャドウ実績の確定情報：無料デモには実績10個（EXP合計5,129）、製品版リストの発売後整理状況。",
+     "intro": "『キル・ザ・シャドウ』の実績集めは始まったばかり。本ページでは、これまでに検証済みの情報（デモの実績10個）と、整理中の完全リストの追い方をまとめます。",
      "sections": [
       {
        "type": "list",
@@ -1527,13 +1626,14 @@
        "items": [
         "デモの SteamDB app ID：2947640",
         "実績10個、Exophase で58人のプレイヤーが追跡",
+        "10個すべて2024-09-19に追加され、製品版よりかなり先行",
         "コンプリート勢が10個すべて獲得済み（100%クラブ稼働中）",
         "実績名と説明は Steam ストアのデモページで確認可能"
        ]
       },
       {
        "type": "list",
-       "heading": "製品版",
+       "heading": "製品版（2026年8月5日）",
        "body": "製品版は2026年8月5日に発売。実績リストは現在コミュニティが整理中です。",
        "items": [
         "製品版にはデモとは別の実績セットがある",
@@ -1549,6 +1649,17 @@
         "SteamDB のキル・ザ・シャドウ実績統計ページ（app 2660230）",
         "Steam コミュニティハブ——プレイヤー作成ガイドが最も速い",
         "TrueSteamAchievements でコンプ率と統計を確認"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "実績集めのチェックリスト",
+       "body": "完全リストの公開後に実績を埋めやすくする習慣——すべて検証済みのゲームシステムに基づきます。",
+       "items": [
+        "先に進む前に、すべての書類を読み、現場再現を完了させる",
+        "分岐する選択でセーブ——時間巻き戻しで同じ時点から別の選択を試せる",
+        "マルチエンディングはマルチ周回を意味する——初周はネタバレなしで、後続周回で取りこぼしを回収",
+        "コンソール版は2026年8月12日発売——そちらでも遊ぶなら両方のリストを追跡"
        ]
       }
      ]
