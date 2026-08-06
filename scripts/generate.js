@@ -30,6 +30,16 @@ const LANG_META = {
   "ja":    { flag: "🇯🇵", name: "日本語",   html: "ja" },
   "ko":    { flag: "🇰🇷", name: "한국어",   html: "ko" },
 };
+/* ---------- SVG flags (premium, render on all platforms) ---------- */
+const FLAGS = {
+  "en": '<svg viewBox="0 0 60 40"><rect width="60" height="40" fill="#012169"/><path d="M0 0 60 40M60 0 0 40" stroke="#fff" stroke-width="11"/><path d="M0 0 60 40M60 0 0 40" stroke="#C8102E" stroke-width="6"/><path d="M30 0v40M0 20h60" stroke="#fff" stroke-width="14"/><path d="M30 0v40M0 20h60" stroke="#C8102E" stroke-width="8"/></svg>',
+  "zh-CN": '<svg viewBox="0 0 60 40"><rect width="60" height="40" fill="#EE1C25"/><g fill="#FFDE00"><path d="M12 8l1.7 3.4 3.8.5-2.8 2.7.7 3.8L12 16.7l-3.4 1.7.7-3.8-2.8-2.7 3.8-.5z"/><path d="M22 4l.8 1.6 1.8.3-1.3 1.3.3 1.8-1.6-.8-1.6.8.3-1.8-1.3-1.3 1.8-.3zM25 11l.8 1.6 1.8.3-1.3 1.3.3 1.8-1.6-.8-1.6.8.3-1.8-1.3-1.3 1.8-.3zM22 18l.8 1.6 1.8.3-1.3 1.3.3 1.8-1.6-.8-1.6.8.3-1.8-1.3-1.3 1.8-.3zM19 11l.8 1.6 1.8.3-1.3 1.3.3 1.8-1.6-.8-1.6.8.3-1.8-1.3-1.3 1.8-.3z"/></g></svg>',
+  "zh-TW": '<svg viewBox="0 0 60 40"><rect width="60" height="40" fill="#FE0000"/><rect width="30" height="20" fill="#000095"/><g fill="#fff" stroke="#fff" stroke-width="1"><path d="M15 2l2.3 6.7 7 .1-5.6 4.2 2.1 6.7-5.8-4-5.8 4 2.1-6.7L5.7 8.8l7-.1z"/><g stroke-width=".6"><path d="M15 2v16M15 2 5.7 8.8 15 15.6M15 2l9.3 6.8L15 15.6M15 2v16M15 18.8 5.7 12 15 5.2M15 18.8l9.3-6.8L15 5.2"/></g></g></svg>',
+  "ja": '<svg viewBox="0 0 60 40"><rect width="60" height="40" fill="#fff"/><circle cx="30" cy="20" r="11" fill="#BC002D"/></svg>',
+  "ko": '<svg viewBox="0 0 60 40"><rect width="60" height="40" fill="#fff"/><g transform="translate(30 20)"><g transform="rotate(45)"><rect x="-10" y="-5" width="20" height="10" fill="#CD2E3A"/><rect x="-10" y="0" width="20" height="10" fill="#0047A0"/><circle r="6" fill="#fff"/></g><circle r="5" fill="#CD2E3A"/><path d="M0-5a5 5 0 0 1 0 10 2 2 0 0 1 0-10" fill="#0047A0"/></g><g fill="#000"><path d="M15 2h3v6h-3zM15 32h3v6h-3zM42 2h3v6h-3zM42 32h3v6h-3z"/></g></svg>',
+};
+const flagOf = lang => FLAGS[lang] || "🌐";
+
 const metaOf = slug => (DATA.pages.find(p=>p.slug===slug)?.meta) || {};
 const pageOf = (page, lang) => {
   if (lang === DEF || !page.i18n || !page.i18n[lang]) {
@@ -120,10 +130,10 @@ ${DATA.site.gaId ? `<script async src="https://www.googletagmanager.com/gtag/js?
 }
 function langSwitcher(lang, slug){
   const items = LANGS.map(l =>
-    `<a href="${urlOf(slug,l)}" class="${l===lang?"active":""}"><span class="flag">${LANG_META[l]?.flag||""}</span>${LANG_META[l]?.name||l}</a>`
+    `<a href="${urlOf(slug,l)}" class="${l===lang?"active":""}"><span class="flag svg-flag">${flagOf(l)}</span>${LANG_META[l]?.name||l}</a>`
   ).join("");
   return `<details class="lang-dd">
-    <summary><span class="flag">${LANG_META[lang]?.flag||"🌐"}</span><span class="lang-name">${LANG_META[lang]?.name||lang}</span><span class="caret">▾</span></summary>
+    <summary><span class="flag svg-flag">${flagOf(lang)}</span><span class="lang-name">${LANG_META[lang]?.name||lang}</span><span class="caret">▾</span></summary>
     <div class="dd-menu dd-lang">${items}</div>
   </details>`;
 }
@@ -352,12 +362,15 @@ function renderPage(lang, page){
     return ` srcset="${base}-640.jpg 640w, ${base}-1280.jpg 1280w, ${img} 1600w" sizes="(max-width: 640px) 94vw, (max-width: 960px) 92vw, 820px"`;
   };
   const pageHero = heroImg ? `<div class="page-hero-img"><img src="${heroImg}"${srcsetOf(heroImg)} alt="${esc(t.title)}" loading="lazy" width="1600" height="900" /></div>` : "";
+  const noImgCls = heroImg ? "" : " noimg";
   const body = `
   <main class="container">
     <nav class="crumbs"><a href="${prefix}/">${esc(s.navHome)}</a><span>›</span><span>${esc(t.title)}</span></nav>
     <div class="article-wrap">
       <article>
-        <div class="page-hero reveal">
+        <div class="page-hero reveal${noImgCls}">
+          ${heroImg ? "" : `<span class="hero-ic" aria-hidden="true">${SVG[page.meta?.icon || "faq"]}</span>`}
+          <span class="hero-wm" aria-hidden="true">${esc(page.meta?.id || page.slug.toUpperCase())}</span>
           <span class="evidence-tag">${esc(s.caseFile)} // ${esc(page.meta?.id || page.slug.toUpperCase())}</span>
           <h1>${esc(t.title)}</h1>
           <p class="intro">${esc(t.intro)}</p>
@@ -368,6 +381,13 @@ function renderPage(lang, page){
         ${sources ? `<div class="sources reveal"><b>${esc(s.sources)}</b><ul>${sources}</ul></div>` : ""}
       </article>
       <aside class="dossier-side">
+        <div class="case-meta reveal">
+          <span class="cm-tag">${esc(s.caseFile)}</span>
+          <div class="cm-row"><span class="cm-k">${esc(lang==="en"?"Case No.":lang==="ja"?"事件番号":lang==="ko"?"사건 번호":"案件编号")}</span><b>${esc(page.meta?.id || page.slug.toUpperCase())}</b></div>
+          <div class="cm-row"><span class="cm-k">${esc(lang==="en"?"Category":lang==="ja"?"分類":lang==="ko"?"분류":"分类")}</span><b>${esc(pageOf(page,lang).title.split(":")[0].split("—")[0].trim())}</b></div>
+          <div class="cm-row"><span class="cm-k">${esc(s.updated)}</span><b>${today}</b></div>
+          <div class="cm-stamp">${esc(s.sealed)}</div>
+        </div>
         <div class="related reveal">
           <b>${esc(s.moreGuides)}</b>
           ${related}
