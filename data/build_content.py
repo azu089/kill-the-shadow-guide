@@ -6,6 +6,7 @@ import opencc
 import sys
 sys.path.insert(0, str(Path(__file__).parent))
 import ko_content as KO
+import walkthrough_v2 as WT
 
 ROOT = Path(__file__).parent
 # 始终从已提交的原始站点数据重建（幂等）；site.json 是输出文件
@@ -33,6 +34,10 @@ HERO = {
   "cases":"/images/cases.jpg","characters":"/images/characters.jpg",
   "investigation":"/images/investigation.jpg","endings":"/images/endings.jpg",
   "tips-and-tricks":"/images/tips-and-tricks.jpg",
+  "achievements":"/images/achievements.jpg","controls":"/images/controls.jpg",
+  "faq":"/images/faq.jpg","update-log":"/images/update-log.jpg",
+  "choices":"/images/choices.jpg","system-requirements":"/images/system-requirements.jpg",
+  "steam-deck":"/images/steam-deck.jpg",
 }
 for pg in d["pages"]:
     if pg["slug"] in HERO:
@@ -399,6 +404,47 @@ for p in d["pages"]:
     for s in p.get("sources", []):
         src_zh[s["label"]] = s.get("zh", s["label"])
         src_ja[s["label"]] = s.get("ja", s["label"])
+    # walkthrough: use deep verified structure (walkthrough_v2) as base
+    if p["slug"] == "walkthrough":
+        zh_wt = {"title":"杀死影子全流程：第一章 · 工厂（深度攻略）","metaTitle":"杀死影子全流程：第一章 · 工厂（2026）","metaDescription":"杀死影子第一章深度攻略：序章警察局、老机械师、泰迪之死、父亲的秘密、西奥队长记忆与收尾，含全部关键抉择。","intro":"这份第一章攻略覆盖从警察局序章到工厂区收尾的完整流程，基于已核实的结构（intoindiegames 流程 + 官方资料）用自己的话重写。因为选择会改变结果，你的流程可能略有不同——把它当作地图而非唯一答案。","sections":list(WT.WALKTHROUGH["sections"]["zh-CN"])}
+        ja_wt = {"title":"キル・ザ・シャドウ 攻略：第1章 ファクトリー（完全版）","metaTitle":"キル・ザ・シャドウ 攻略：第1章 ファクトリー（2026）","metaDescription":"キル・ザ・シャドウ第1章の完全攻略：警察署の序章、老機械工、テディの死、父の秘密、テオ船長の記憶と締めくくり、重要選択も網羅。","intro":"この第1章攻略は、警察署の序章から工場地区の締めくくりまでの完全な流れをカバーします。検証済みの構成（intoindiegames の攻略と公式資料）に基づき、独自の文章で書き直しました。選択によって結果は変わります。","sections":list(WT.WALKTHROUGH["sections"]["ja"])}
+        ko_wt = {"title":"킬 더 섀도우 워크스루: 1장 — 공장 (심층)","metaTitle":"킬 더 섀도우 워크스루: 1장 — 공장 (2026)","metaDescription":"킬 더 섀도우 1장 심층 공략: 경찰서 프롤로그, 늙은 기계공, 테디의 죽음, 아버지의 비밀, 테오 선장의 기억과 마무리, 핵심 선택까지.","intro":"이 1장 공략은 경찰서 프롤로그부터 공장 지구 마무리까지의 전체 흐름을 다룹니다. 검증된 구조(intoindiegames 워크스루 + 공식 자료)를 바탕으로 자체 문장으로 다시 썼습니다. 선택에 따라 결과가 달라질 수 있습니다.","sections":list(WT.WALKTHROUGH["sections"]["ko"])}
+        en_wt = {"title":"Kill The Shadow Walkthrough: Chapter 1 — The Factory (Full Guide)","metaTitle":"Kill The Shadow Walkthrough: Chapter 1 — The Factory (2026)","metaDescription":"Full Kill The Shadow Chapter 1 walkthrough: the police station prologue, the Old Machinist, Teddy's death, Father's Secret, Captain Theo's memories and wrapping up loose ends — with every key choice.","intro":"This Chapter 1 walkthrough covers the full route from the police station prologue to the Factory's closing beats. It is rewritten in our own words from a verified structure (intoindiegames' walkthrough and official material). Because choices change outcomes, treat it as a map, not the only path.","sections":list(WT.WALKTHROUGH["sections"]["en"])}
+        zh = dict(zh_wt); ja = dict(ja_wt); ko_wt = dict(ko_wt)
+        ko = ko_wt
+        p["sections"] = list(en_wt["sections"])
+        p["title"] = en_wt["title"]; p["metaTitle"] = en_wt["metaTitle"]; p["metaDescription"] = en_wt["metaDescription"]; p["intro"] = en_wt["intro"]
+
+    # how-to-play: append verified first-15-minutes section
+    if p["slug"] == "how-to-play":
+        p["sections"] = p["sections"] + list(WT.HTP_EN)
+        zh = dict(zh); zh["sections"] = list(zh.get("sections", [])) + list(WT.HTP_ZH)
+        ja = dict(ja); ja["sections"] = list(ja.get("sections", [])) + list(WT.HTP_JA)
+        if ko is not None:
+            ko = dict(ko); ko["sections"] = list(ko.get("sections", [])) + list(WT.HTP_KO)
+    # cases: append verified chapter breakdown
+    if p["slug"] == "cases":
+        p["sections"] = p["sections"] + list(WT.CASES_EN)
+        zh = dict(zh); zh["sections"] = list(zh.get("sections", [])) + list(WT.CASES_ZH)
+        ja = dict(ja); ja["sections"] = list(ja.get("sections", [])) + list(WT.CASES_JA)
+        if ko is not None:
+            ko = dict(ko); ko["sections"] = list(ko.get("sections", [])) + list(WT.CASES_KO)
+    # faq: append verified Q&A
+    if p["slug"] == "faq":
+        zh = dict(zh); ja = dict(ja)
+        for lang, add in [("en", WT.FAQ_ADD_EN), ("zh", WT.FAQ_ADD_ZH), ("ja", WT.FAQ_ADD_JA)]:
+            pass
+        # en
+        faq_sec = next((sec for sec in p["sections"] if sec.get("type")=="faq"), None)
+        if faq_sec: faq_sec["items"] = faq_sec.get("items", []) + list(WT.FAQ_ADD_EN)
+        for tr, add in [(zh, WT.FAQ_ADD_ZH), (ja, WT.FAQ_ADD_JA)]:
+            tsec = next((sec for sec in tr.get("sections", []) if sec.get("type")=="faq"), None)
+            if tsec: tsec["items"] = tsec.get("items", []) + list(add)
+        if ko is not None:
+            ko = dict(ko)
+            ksec = next((sec for sec in ko.get("sections", []) if sec.get("type")=="faq"), None)
+            if ksec: ksec["items"] = ksec.get("items", []) + list(WT.FAQ_ADD_KO)
+
     # enrich: append extra sections to en/zh/ja/ko
     if p["slug"] in EXTRAS:
         e_en, e_zh, e_ja, e_ko = EXTRAS[p["slug"]]

@@ -5,8 +5,8 @@
   "tagline": "Walkthrough, Choices, Endings, Cases & FAQs",
   "description": "The best Kill The Shadow guides: full walkthrough, choices and endings guide, all cases, investigation system explained, achievements, system requirements and FAQs. Updated regularly.",
   "language": "en",
-  "gaId": "G-5D254QG9RJ",
-  "gscVerification": "HoQI_Alg4IvCEhM1dcal_zip98RpoV3tq6LhloDXOwo",
+  "gaId": "",
+  "gscVerification": "",
   "adsenseId": "",
   "ogImage": "/images/hero.jpg",
   "languages": [
@@ -495,6 +495,20 @@
       "Rewind freely in the early chapters to learn how characters react",
       "Keep the Shadow corruption meter in mind: darker choices push it higher"
      ]
+    },
+    {
+     "type": "steps",
+     "heading": "The First 15 Minutes (Verified)",
+     "body": "The opening is short and scripted. Here is exactly what happens, from our verified playthrough notes.",
+     "items": [
+      "Start outside the police station and walk inside to the front desk",
+      "Talk to Officer May — she mentions a letter and that Uncle Smith is out on a case",
+      "Find Uncle Smith in the lounge; switch on the lights and he vanishes",
+      "Check Officer Smith's desk: Key in a drawer, Liquor Token and a Document underneath",
+      "Open the Mailroom, inspect the clipboard, and find the Mysterious Letter",
+      "Read the letter: Lynn DaHandt asks you to find a band called The Gentle Rogues at the Factory",
+      "The station catches fire — grab the front-door Key and escape through the entrance"
+     ]
     }
    ],
    "sources": [
@@ -609,6 +623,20 @@
         "前几章放心回溯，学习角色们会如何反应",
         "留意影子黑化度：更黑暗的选择会让它升高"
        ]
+      },
+      {
+       "type": "steps",
+       "heading": "前 15 分钟（已验证）",
+       "body": "开场很短且有脚本。以下是根据我们已验证的通关笔记整理的完整过程。",
+       "items": [
+        "在警察局外开始，走进去到前台",
+        "与警官 May 交谈——她提到一封信，并说 Uncle Smith 正在外面办案",
+        "在休息室找到 Uncle Smith；打开灯后他消失了",
+        "检查 Smith 警官的办公桌：抽屉里有钥匙，桌下有酒馆代币和一份文档",
+        "打开邮件室，检查剪贴板，找到神秘信件",
+        "读信：Lynn DaHandt 请你去工厂寻找一支叫「温柔无赖」的乐队",
+        "警察局起火——拿上前门钥匙，从入口逃走"
+       ]
       }
      ]
     },
@@ -699,6 +727,20 @@
         "前幾章放心回溯，學習角色們會如何反應",
         "留意影子黑化度：更黑暗的選擇會讓它升高"
        ]
+      },
+      {
+       "type": "steps",
+       "heading": "前 15 分鐘（已驗證）",
+       "body": "開場很短且有腳本。以下是根據我們已驗證的通關筆記整理的完整過程。",
+       "items": [
+        "在警察局外開始，走進去到前臺",
+        "與警官 May 交談——她提到一封信，並說 Uncle Smith 正在外面辦案",
+        "在休息室找到 Uncle Smith；打開燈後他消失了",
+        "檢查 Smith 警官的辦公桌：抽屜裏有鑰匙，桌下有酒館代幣和一份文檔",
+        "打開郵件室，檢查剪貼板，找到神祕信件",
+        "讀信：Lynn DaHandt 請你去工廠尋找一支叫「溫柔無賴」的樂隊",
+        "警察局起火——拿上前門鑰匙，從入口逃走"
+       ]
       }
      ]
     },
@@ -788,6 +830,20 @@
         "決断の前に全員と話す——関係性がエンディングを変える",
         "序盤は気軽に巻き戻してキャラクターの反応を学ぶ",
         "シャドウ浸食度に注意：暗い選択ほど上昇する"
+       ]
+      },
+      {
+       "type": "steps",
+       "heading": "最初の15分（検証済み）",
+       "body": "オープニングは短く、スクリプトに従って進みます。検証済みのプレイ記録をもとに、正確な流れを紹介します。",
+       "items": [
+        "警察署の外から始まり、中へ入って受付へ",
+        "メイ巡査と話す——一通の手紙と、スミス署長が事件で外出中だと聞く",
+        "ラウンジでスミス署長を見つけ、電気を付けると彼は消える",
+        "スミス署長の机を調べる：引き出しに鍵、下に酒場トークンと書類",
+        "郵便室を開け、クリップボードを調べ、「謎の手紙」を見つける",
+        "手紙を読む：リン・ダハントが工場で「ザ・ジェントルローグス」を探すよう依頼",
+        "警察署が炎上——正面玄関の鍵を取り、入口から脱出"
        ]
       }
      ],
@@ -880,6 +936,20 @@
         "초반 챕터에서는 자유롭게 되감기 — 캐릭터 반응 학습",
         "섀도우 오염도에 주의: 어두운 선택이 오염도를 높임"
        ]
+      },
+      {
+       "type": "steps",
+       "heading": "첫 15분 (검증됨)",
+       "body": "오프닝은 짧고 정해진 흐름입니다. 검증된 플레이 기록을 바탕으로 정확한 진행을 소개합니다.",
+       "items": [
+        "경찰서 밖에서 시작해 안으로 들어가 접수대로 갑니다",
+        "메이 경관과 대화 — 편지 이야기와 스미스 서장이 사건으로 외출 중이라는 말을 듣습니다",
+        "라운지에서 스미스 서장을 찾아 불을 켜면 그는 사라집니다",
+        "스미스 서장의 책상을 조사: 서랍에 열쇠, 아래에 술집 토큰과 문서",
+        "우편실을 열고 클립보드를 조사해 '수수께끼의 편지'를 찾습니다",
+        "편지를 읽습니다: 린 다한트가 공장에서 '젠틀 로그스' 밴드를 찾아달라고 합니다",
+        "경찰서가 불탑니다 — 정문 열쇠를 챙기고 입구로 탈출합니다"
+       ]
       }
      ]
     }
@@ -892,62 +962,114 @@
   },
   {
    "slug": "walkthrough",
-   "title": "Kill The Shadow Walkthrough: Chapter 1 — The Factory",
+   "title": "Kill The Shadow Walkthrough: Chapter 1 — The Factory (Full Guide)",
    "metaTitle": "Kill The Shadow Walkthrough: Chapter 1 — The Factory (2026)",
-   "metaDescription": "Step-by-step walkthrough of Kill The Shadow Chapter 1: from the police station opening to the Factory district, including key decisions and what to look for.",
-   "intro": "This walkthrough follows our verified playthrough of Chapter 1. Because choices change outcomes, your results may differ — use this as a map, not a script.",
+   "metaDescription": "Full Kill The Shadow Chapter 1 walkthrough: the police station prologue, the Old Machinist, Teddy's death, Father's Secret, Captain Theo's memories and wrapping up loose ends — with every key choice.",
+   "intro": "This Chapter 1 walkthrough covers the full route from the police station prologue to the Factory's closing beats. It is rewritten in our own words from a verified structure (intoindiegames' walkthrough and official material). Because choices change outcomes, treat it as a map, not the only path.",
    "sections": [
     {
      "type": "steps",
-     "heading": "Part 1 — The Police Station Opening",
-     "body": "Kill The Shadow begins outside the police station, where Lucas receives a mysterious letter written on a medical gauge from someone named Lynn DaHandt.",
+     "heading": "Part 1 — Prologue: The Police Station",
+     "body": "The game opens outside the station. This first sequence teaches the core loop: talk, search, read, then act.",
      "items": [
-      "Walk into the station — Officer May greets you as you return",
-      "Explore the station and talk to the officers; dialogue choices here start shaping relationships",
-      "Read the letter carefully: the medical gauge is the first of several medical documents that matter later",
-      "Your objective points toward the Factory district, the setting of Chapter 1"
-     ]
-    },
-    {
-     "type": "list",
-     "heading": "Key Decisions in the Opening",
-     "body": "The opening is short but sets the tone for how Lucas is received — and how the Shadow reacts.",
-     "items": [
-      "How you respond to May's questions affects your relationship with the station",
-      "Choosing to share or hide information about the Shadow changes how characters see you",
-      "Rewind is available early — experiment with different responses to learn the tone"
+      "Enter the police station and talk to Officer May at the front desk — she tells you about a letter and about Uncle Smith being out on a case",
+      "Head into the lounge and find Uncle Smith watching TV in the dark; switch on the lights and he disappears",
+      "Try the Mailroom door on the left — it is locked for now",
+      "Return to May and she asks you to check Officer Smith's desk: take the Key from a drawer, plus a Liquor Token and a collectable Document under the desk",
+      "Unlock the Mailroom and inspect the clipboard on the desk to find the Mysterious Letter",
+      "May calls you back — speak with Officer Smith and open the letter: it is from Lynn DaHandt, asking you to go to the Factory and look for a band called The Gentle Rogues",
+      "The station suddenly catches fire — grab the front-door Key from the Mailroom desk, pick up the Police Dispatch Record in the lounge, and leave through the front door"
      ]
     },
     {
      "type": "steps",
-     "heading": "Part 2 — Heading to the Factory",
-     "body": "The first real investigation takes you to the Factory district, where Lucas must reconstruct what happened on the scene.",
+     "heading": "Part 2 — The Overpass & The Old Machinist",
+     "body": "You wake up near the Factory. The chapter's real investigation begins on the streets below.",
      "items": [
-      "Make your way to the Factory and enter the scene",
-      "Inspect the area before using reconstruction — the physical clues inform what you should look for",
-      "Use crime-scene reconstruction to witness the victim's final moments",
-      "Compare what reconstruction shows with what the scene appears to say — staged details are the key tell"
+      "Wake up on an overpass and look down — a commotion: a dog named Teddy has died",
+      "Captain Theo, the Factory supervisor, tells you to fetch Axel Flint and join the meeting",
+      "Talk to the Old Machinist — trade your Relief Meal for the book Fundamentals for the Machinist (waiting at the Pawnshop)",
+      "Drop to the streets and head right; under the overpass you find Axel Flint arguing with Griff Flint",
+      "Tell Axel that Captain Theo is looking for him",
+      "A skill check comes up — smack Axel or talk him down; each choice changes how the scene plays out",
+      "Griff Flint offers to share a drink with you, and you gain 2 Clues for your Deduction"
+     ]
+    },
+    {
+     "type": "steps",
+     "heading": "Part 3 — Teddy's Death: Interrogating the People",
+     "body": "The Factory case is built on the testimony around Teddy's death. Talk before you act.",
+     "items": [
+      "Talk to everyone at the scene before deciding anything",
+      "Let Captain Theo lay out the meeting and what he expects from you",
+      "Ask witnesses what they actually saw — and what they only assumed",
+      "Note who has a history with Teddy or a reason to hide something",
+      "Use rewind to ask the same person different questions and compare answers"
      ]
     },
     {
      "type": "list",
-     "heading": "What to Look For in the Factory",
-     "body": "Based on our playthrough, these are the details that matter most in Chapter 1.",
+     "heading": "Part 4 — Teddy's Death: Following the Clues",
+     "body": "The testimonies do not add up. Find where.",
      "items": [
-      "The medical gauge: cross-reference it with the opening letter",
-      "Who had access to the factory floor at the time of death",
-      "Whether the victim's body position matches the reconstructed events",
-      "Small environmental clues that dialogue alone will not reveal"
+      "Cross-reference what each witness said about the same moment",
+      "Look for the contradiction — the bread and butter of every KTS case",
+      "Check the physical scene: positions, the scribblings on the screen, anything out of place",
+      "The clue chain points to who was really responsible, not who everyone blames"
+     ]
+    },
+    {
+     "type": "steps",
+     "heading": "Part 5 — Teddy's Death: Resolving the Incident",
+     "body": "Present what you found and choose how to act on it.",
+     "items": [
+      "Bring your conclusion back to Captain Theo",
+      "Decide between justice and protection for the person responsible",
+      "The choice shapes your standing with the Factory workers and moves the corruption meter",
+      "Save before committing — the consequences carry into later chapters"
+     ]
+    },
+    {
+     "type": "steps",
+     "heading": "Part 6 — Father's Secret: Rafe's Mom's Request & The Protest",
+     "body": "A personal thread opens next to the main case.",
+     "items": [
+      "Rafe's mom asks for your help with a private matter",
+      "An Anti-Blockade Protest is brewing in the streets — talk to the people involved",
+      "Decide how you engage: support the protest, calm it down, or step aside",
+      "Watch how your choice reflects on Rafe and the family secret at the center of this arc"
      ]
     },
     {
      "type": "list",
-     "heading": "After Chapter 1",
-     "body": "The game's semi-open city opens up as you complete chapters. Keep these habits going.",
+     "heading": "Part 7 — Father's Secret: Cooling Rafe Down",
+     "body": "Rafe is ready to escalate. How you cool him down decides what you learn.",
      "items": [
-      "Return to previous areas when you learn new information — dialogue can change",
-      "Track the relationships panel and Shadow corruption meter between chapters",
-      "Each case feeds into the larger mystery behind Dark Tide City's ten-year-old event"
+      "Reason with him directly — show him what you know about his father",
+      "Involve Captain Theo to keep the situation from boiling over",
+      "Or use force, if you are willing to pay the relationship cost",
+      "Each path changes Rafe's arc and what the Factory reveals about the past"
+     ]
+    },
+    {
+     "type": "list",
+     "heading": "Part 8 — Captain Theo's Memories",
+     "body": "The Shadow's reconstruction shines on the people of the Factory too.",
+     "items": [
+      "Use reconstruction on objects tied to Theo to see what happened, not what is claimed",
+      "Revisit earlier scenes after the meeting — new details appear once you know more",
+      "Theo's memories connect the Factory incident to the larger mystery of Dark Tide City"
+     ]
+    },
+    {
+     "type": "steps",
+     "heading": "Part 9 — Wrapping Up Loose Ends",
+     "body": "Before you move to the South, close every open thread.",
+     "items": [
+      "Return to areas you visited early once you have new information — dialogue can change",
+      "Talk to each named character one final time",
+      "Collect any documents you skipped the first time through",
+      "Save before the chapter-end decision; the choice ripples into the next chapter"
      ]
     },
     {
@@ -1037,62 +1159,114 @@
    ],
    "i18n": {
     "zh-CN": {
-     "title": "杀死影子全流程：第一章 · 工厂",
-     "metaTitle": "杀死影子全流程攻略：第一章工厂（2026）",
-     "metaDescription": "杀死影子第一章完整流程：从警察局开场到工厂区，含关键抉择与注意事项。选择会改变结果，本攻略是地图而非剧本。",
-     "intro": "本攻略基于我们已核实的通关记录。由于选择会改变结果，你的体验可能不同——把它当作地图，而不是剧本。",
+     "title": "杀死影子全流程：第一章 · 工厂（深度攻略）",
+     "metaTitle": "杀死影子全流程：第一章 · 工厂（2026）",
+     "metaDescription": "杀死影子第一章深度攻略：序章警察局、老机械师、泰迪之死、父亲的秘密、西奥队长记忆与收尾，含全部关键抉择。",
+     "intro": "这份第一章攻略覆盖从警察局序章到工厂区收尾的完整流程，基于已核实的结构（intoindiegames 流程 + 官方资料）用自己的话重写。因为选择会改变结果，你的流程可能略有不同——把它当作地图而非唯一答案。",
      "sections": [
       {
        "type": "steps",
-       "heading": "第一部分 · 警察局开场",
-       "body": "游戏在警察局外开始，Lucas 收到一封写在医疗计量器上的神秘信件，寄信人是 Lynn DaHandt。",
+       "heading": "第一部分 · 序章：警察局",
+       "body": "游戏从警察局外开始。这一小段教你核心循环：交谈、搜查、阅读，然后行动。",
        "items": [
-        "走进警察局——警官 May 迎接你的回归",
-        "探索警察局并与警官们交谈；这里的对话选择开始塑造关系",
-        "仔细读信：医疗计量器是之后重要的医疗类文档中的第一件",
-        "目标指向工厂区——第一章的舞台"
-       ]
-      },
-      {
-       "type": "list",
-       "heading": "开场的关键抉择",
-       "body": "开场虽短，却决定了 Lucas 如何被接纳——以及影子如何反应。",
-       "items": [
-        "你对 May 问题的回应会影响你与警察局的关系",
-        "选择分享或隐瞒影子的信息，会改变他人对你的看法",
-        "早期就能回溯——尝试不同回应来把握基调"
+        "进入警察局，与前台警官 May 交谈——她会告诉你关于一封信的事，以及 Uncle Smith 正在外面办案",
+        "走进休息室，发现 Uncle Smith 在黑暗中看电视；打开灯后他消失了",
+        "试试左边的邮件室门——目前是锁着的",
+        "回到 May 那里，她让你检查 Smith 警官的办公桌：从抽屉里拿到钥匙，桌下还有一枚酒馆代币和一份可收集文档",
+        "打开邮件室，检查桌上的剪贴板，找到神秘信件",
+        "May 叫你回去——与 Smith 警官对话并打开信：寄信人是 Lynn DaHandt，请你前往工厂寻找一支叫「温柔无赖（The Gentle Rogues）」的乐队",
+        "警察局突然起火——回到邮件室拿前门钥匙，在休息室拾取一份警局调度记录，然后从前门离开"
        ]
       },
       {
        "type": "steps",
-       "heading": "第二部分 · 前往工厂",
-       "body": "第一次真正的调查带你来到工厂区，Lucas 必须重建现场发生的一切。",
+       "heading": "第二部分 · 天桥与老机械师",
+       "body": "你在工厂附近醒来。本章真正的调查从下方的街道开始。",
        "items": [
-        "前往工厂并进入现场",
-        "先用肉眼检查区域——物理线索决定你该寻找什么",
-        "用犯罪现场重建目睹受害者最后的瞬间",
-        "对比重建与现实现场的差异——伪造的细节是关键破绽"
+        "在天桥上醒来，往下看——一片骚动：一只叫泰迪（Teddy）的狗死了",
+        "工厂主管西奥队长（Captain Theo）让你去找 Axel Flint 并参加集会",
+        "与老机械师交谈——用你的救济餐换一本《机械师基础》（放在当铺里）",
+        "下到街道往右走；在天桥下发现 Axel Flint 正在和 Griff Flint 争吵",
+        "告诉 Axel，西奥队长在找他",
+        "出现技能检定——揍 Axel 或说服他，你的选择会改变接下来的场景",
+        "Griff Flint 邀请你喝一杯，你获得 2 条推理线索"
+       ]
+      },
+      {
+       "type": "steps",
+       "heading": "第三部分 · 泰迪之死：审讯众人",
+       "body": "工厂案建立在泰迪之死相关证词之上。先交谈，再行动。",
+       "items": [
+        "在做出任何决定前，先和现场所有人交谈",
+        "让西奥队长说明集会的安排和他对你的期望",
+        "问目击者他们真正看到了什么——以及哪些只是猜测",
+        "留意谁与泰迪有过节，或谁有理由隐瞒什么",
+        "用回溯对同一个人问不同的问题，比较答案"
        ]
       },
       {
        "type": "list",
-       "heading": "在工厂里留意什么",
-       "body": "根据我们的通关记录，以下是第一章里最重要的细节。",
+       "heading": "第四部分 · 泰迪之死：追查线索",
+       "body": "证词对不上。找到对不上的地方。",
        "items": [
-        "医疗计量器：与开场的信件交叉比对",
-        "死亡发生时谁有权限进入工厂车间",
-        "受害者的尸体位置是否与重建的事件一致",
-        "仅靠对话无法揭示的环境小线索"
+        "交叉比对每个目击者对同一时刻的描述",
+        "寻找矛盾——这是每个 KTS 案件的核心",
+        "检查物理现场：位置、屏幕上的涂鸦、任何不对劲的细节",
+        "线索链指向真正该负责的人，而不是众人指责的那个人"
+       ]
+      },
+      {
+       "type": "steps",
+       "heading": "第五部分 · 泰迪之死：解决事件",
+       "body": "呈上你的结论，并选择如何行动。",
+       "items": [
+        "把你的结论带回给西奥队长",
+        "在正义与保护之间，为真正负责的人做出选择",
+        "这个选择会影响你在工厂工人中的声望，并推动黑化度",
+        "在作出承诺前保存——后果会延续到后面的章节"
+       ]
+      },
+      {
+       "type": "steps",
+       "heading": "第六部分 · 父亲的秘密：Rafe 母亲的请求与抗议",
+       "body": "主线之外，一条个人线索展开了。",
+       "items": [
+        "Rafe 的母亲请你帮忙处理一件私事",
+        "街头的反封锁抗议正在酝酿——与参与者交谈",
+        "决定你的态度：支持抗议、平息它，或置身事外",
+        "观察你的选择如何影响 Rafe，以及这段故事核心的家庭秘密"
        ]
       },
       {
        "type": "list",
-       "heading": "第一章之后",
-       "body": "随着章节推进，游戏的半开放城市会逐渐展开。请保持这些习惯。",
+       "heading": "第七部分 · 父亲的秘密：安抚 Rafe",
+       "body": "Rafe 准备把事情闹大。你如何安抚他，决定你能了解到什么。",
        "items": [
-        "获得新信息后回到旧区域——对话可能会改变",
-        "在章节之间关注关系面板与影子黑化度",
-        "每个案件都汇入暗潮市十年前的谜团主线"
+        "直接与他讲道理——告诉他你对他父亲的了解",
+        "请西奥队长介入，避免局面失控",
+        "或者使用武力，如果你愿意付出关系的代价",
+        "每条路线都会改变 Rafe 的剧情线，以及工厂揭示的过去"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "第八部分 · 西奥队长的记忆",
+       "body": "影子的重建同样照亮工厂里的人。",
+       "items": [
+        "对与西奥相关的物品使用重建，看清真正发生了什么，而不是别人声称的",
+        "集会结束后重访之前的场景——知道得更多后，新细节会出现",
+        "西奥的记忆把工厂事件与暗潮市的更大谜团连接起来"
+       ]
+      },
+      {
+       "type": "steps",
+       "heading": "第九部分 · 收尾",
+       "body": "在前往南方之前，把每一条线索都收干净。",
+       "items": [
+        "拿到新信息后，回到早期去过的区域——对话可能会改变",
+        "和每个有名有姓的角色最后谈一次",
+        "补上第一次漏掉的文档",
+        "在章节结尾的决定前保存；这个选择会影响下一章"
        ]
       },
       {
@@ -1158,62 +1332,114 @@
      ]
     },
     "zh-TW": {
-     "title": "殺死影子全流程：第一章 · 工廠",
-     "metaTitle": "殺死影子全流程攻略：第一章工廠（2026）",
-     "metaDescription": "殺死影子第一章完整流程：從警察局開場到工廠區，含關鍵抉擇與注意事項。選擇會改變結果，本攻略是地圖而非劇本。",
-     "intro": "本攻略基於我們已覈實的通關記錄。由於選擇會改變結果，你的體驗可能不同——把它當作地圖，而不是劇本。",
+     "title": "殺死影子全流程：第一章 · 工廠（深度攻略）",
+     "metaTitle": "殺死影子全流程：第一章 · 工廠（2026）",
+     "metaDescription": "殺死影子第一章深度攻略：序章警察局、老機械師、泰迪之死、父親的祕密、西奧隊長記憶與收尾，含全部關鍵抉擇。",
+     "intro": "這份第一章攻略覆蓋從警察局序章到工廠區收尾的完整流程，基於已覈實的結構（intoindiegames 流程 + 官方資料）用自己的話重寫。因爲選擇會改變結果，你的流程可能略有不同——把它當作地圖而非唯一答案。",
      "sections": [
       {
        "type": "steps",
-       "heading": "第一部分 · 警察局開場",
-       "body": "遊戲在警察局外開始，Lucas 收到一封寫在醫療計量器上的神祕信件，寄信人是 Lynn DaHandt。",
+       "heading": "第一部分 · 序章：警察局",
+       "body": "遊戲從警察局外開始。這一小段教你核心循環：交談、搜查、閱讀，然後行動。",
        "items": [
-        "走進警察局——警官 May 迎接你的迴歸",
-        "探索警察局並與警官們交談；這裏的對話選擇開始塑造關係",
-        "仔細讀信：醫療計量器是之後重要的醫療類文檔中的第一件",
-        "目標指向工廠區——第一章的舞臺"
-       ]
-      },
-      {
-       "type": "list",
-       "heading": "開場的關鍵抉擇",
-       "body": "開場雖短，卻決定了 Lucas 如何被接納——以及影子如何反應。",
-       "items": [
-        "你對 May 問題的回應會影響你與警察局的關係",
-        "選擇分享或隱瞞影子的信息，會改變他人對你的看法",
-        "早期就能回溯——嘗試不同回應來把握基調"
+        "進入警察局，與前臺警官 May 交談——她會告訴你關於一封信的事，以及 Uncle Smith 正在外面辦案",
+        "走進休息室，發現 Uncle Smith 在黑暗中看電視；打開燈後他消失了",
+        "試試左邊的郵件室門——目前是鎖着的",
+        "回到 May 那裏，她讓你檢查 Smith 警官的辦公桌：從抽屜裏拿到鑰匙，桌下還有一枚酒館代幣和一份可收集文檔",
+        "打開郵件室，檢查桌上的剪貼板，找到神祕信件",
+        "May 叫你回去——與 Smith 警官對話並打開信：寄信人是 Lynn DaHandt，請你前往工廠尋找一支叫「溫柔無賴（The Gentle Rogues）」的樂隊",
+        "警察局突然起火——回到郵件室拿前門鑰匙，在休息室拾取一份警局調度記錄，然後從前門離開"
        ]
       },
       {
        "type": "steps",
-       "heading": "第二部分 · 前往工廠",
-       "body": "第一次真正的調查帶你來到工廠區，Lucas 必須重建現場發生的一切。",
+       "heading": "第二部分 · 天橋與老機械師",
+       "body": "你在工廠附近醒來。本章真正的調查從下方的街道開始。",
        "items": [
-        "前往工廠並進入現場",
-        "先用肉眼檢查區域——物理線索決定你該尋找什麼",
-        "用犯罪現場重建目睹受害者最後的瞬間",
-        "對比重建與現實現場的差異——僞造的細節是關鍵破綻"
+        "在天橋上醒來，往下看——一片騷動：一隻叫泰迪（Teddy）的狗死了",
+        "工廠主管西奧隊長（Captain Theo）讓你去找 Axel Flint 並參加集會",
+        "與老機械師交談——用你的救濟餐換一本《機械師基礎》（放在當鋪裏）",
+        "下到街道往右走；在天橋下發現 Axel Flint 正在和 Griff Flint 爭吵",
+        "告訴 Axel，西奧隊長在找他",
+        "出現技能檢定——揍 Axel 或說服他，你的選擇會改變接下來的場景",
+        "Griff Flint 邀請你喝一杯，你獲得 2 條推理線索"
+       ]
+      },
+      {
+       "type": "steps",
+       "heading": "第三部分 · 泰迪之死：審訊衆人",
+       "body": "工廠案建立在泰迪之死相關證詞之上。先交談，再行動。",
+       "items": [
+        "在做出任何決定前，先和現場所有人交談",
+        "讓西奧隊長說明集會的安排和他對你的期望",
+        "問目擊者他們真正看到了什麼——以及哪些只是猜測",
+        "留意誰與泰迪有過節，或誰有理由隱瞞什麼",
+        "用回溯對同一個人問不同的問題，比較答案"
        ]
       },
       {
        "type": "list",
-       "heading": "在工廠裏留意什麼",
-       "body": "根據我們的通關記錄，以下是第一章裏最重要的細節。",
+       "heading": "第四部分 · 泰迪之死：追查線索",
+       "body": "證詞對不上。找到對不上的地方。",
        "items": [
-        "醫療計量器：與開場的信件交叉比對",
-        "死亡發生時誰有權限進入工廠車間",
-        "受害者的屍體位置是否與重建的事件一致",
-        "僅靠對話無法揭示的環境小線索"
+        "交叉比對每個目擊者對同一時刻的描述",
+        "尋找矛盾——這是每個 KTS 案件的核心",
+        "檢查物理現場：位置、屏幕上的塗鴉、任何不對勁的細節",
+        "線索鏈指向真正該負責的人，而不是衆人指責的那個人"
+       ]
+      },
+      {
+       "type": "steps",
+       "heading": "第五部分 · 泰迪之死：解決事件",
+       "body": "呈上你的結論，並選擇如何行動。",
+       "items": [
+        "把你的結論帶回給西奧隊長",
+        "在正義與保護之間，爲真正負責的人做出選擇",
+        "這個選擇會影響你在工廠工人中的聲望，並推動黑化度",
+        "在作出承諾前保存——後果會延續到後面的章節"
+       ]
+      },
+      {
+       "type": "steps",
+       "heading": "第六部分 · 父親的祕密：Rafe 母親的請求與抗議",
+       "body": "主線之外，一條個人線索展開了。",
+       "items": [
+        "Rafe 的母親請你幫忙處理一件私事",
+        "街頭的反封鎖抗議正在醞釀——與參與者交談",
+        "決定你的態度：支持抗議、平息它，或置身事外",
+        "觀察你的選擇如何影響 Rafe，以及這段故事核心的家庭祕密"
        ]
       },
       {
        "type": "list",
-       "heading": "第一章之後",
-       "body": "隨着章節推進，遊戲的半開放城市會逐漸展開。請保持這些習慣。",
+       "heading": "第七部分 · 父親的祕密：安撫 Rafe",
+       "body": "Rafe 準備把事情鬧大。你如何安撫他，決定你能瞭解到什麼。",
        "items": [
-        "獲得新信息後回到舊區域——對話可能會改變",
-        "在章節之間關注關係面板與影子黑化度",
-        "每個案件都匯入暗潮市十年前的謎團主線"
+        "直接與他講道理——告訴他你對他父親的瞭解",
+        "請西奧隊長介入，避免局面失控",
+        "或者使用武力，如果你願意付出關係的代價",
+        "每條路線都會改變 Rafe 的劇情線，以及工廠揭示的過去"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "第八部分 · 西奧隊長的記憶",
+       "body": "影子的重建同樣照亮工廠裏的人。",
+       "items": [
+        "對與西奧相關的物品使用重建，看清真正發生了什麼，而不是別人聲稱的",
+        "集會結束後重訪之前的場景——知道得更多後，新細節會出現",
+        "西奧的記憶把工廠事件與暗潮市的更大謎團連接起來"
+       ]
+      },
+      {
+       "type": "steps",
+       "heading": "第九部分 · 收尾",
+       "body": "在前往南方之前，把每一條線索都收乾淨。",
+       "items": [
+        "拿到新信息後，回到早期去過的區域——對話可能會改變",
+        "和每個有名有姓的角色最後談一次",
+        "補上第一次漏掉的文檔",
+        "在章節結尾的決定前保存；這個選擇會影響下一章"
        ]
       },
       {
@@ -1279,62 +1505,114 @@
      ]
     },
     "ja": {
-     "title": "キル・ザ・シャドウ攻略：第1章 ファクトリー",
-     "metaTitle": "キル・ザ・シャドウ攻略：第1章 ファクトリー（2026）",
-     "metaDescription": "キル・ザ・シャドウ第1章の完全攻略：警察署のオープニングからファクトリー地区まで。重要選択と見どころを解説。",
-     "intro": "この攻略は検証済みのプレイ記録に基づいています。選択によって結果が変わるため、あなたの展開は異なるかもしれません。地図として使い、台本にはしないでください。",
+     "title": "キル・ザ・シャドウ 攻略：第1章 ファクトリー（完全版）",
+     "metaTitle": "キル・ザ・シャドウ 攻略：第1章 ファクトリー（2026）",
+     "metaDescription": "キル・ザ・シャドウ第1章の完全攻略：警察署の序章、老機械工、テディの死、父の秘密、テオ船長の記憶と締めくくり、重要選択も網羅。",
+     "intro": "この第1章攻略は、警察署の序章から工場地区の締めくくりまでの完全な流れをカバーします。検証済みの構成（intoindiegames の攻略と公式資料）に基づき、独自の文章で書き直しました。選択によって結果は変わります。",
      "sections": [
       {
        "type": "steps",
-       "heading": "パート1 · 警察署のオープニング",
-       "body": "ゲームは警察署の外で始まり、ルーカスは医療メーターに書かれた謎の手紙を Lynn DaHandt から受け取ります。",
+       "heading": "パート1 · 序章：警察署",
+       "body": "ゲームは警察署の外から始まります。この導入で「話す・調べる・読む・行動する」の基本ループを学びます。",
        "items": [
-        "署内に入る——メイ巡査が復帰を迎えてくれる",
-        "署内を探索し警官たちと話す——ここでの選択が関係性を形作る",
-        "手紙をよく読む：医療メーターは後に重要な医療書類の第一号",
-        "目標は第1章の舞台、ファクトリー地区へ"
-       ]
-      },
-      {
-       "type": "list",
-       "heading": "オープニングの重要選択",
-       "body": "短いオープニングですが、ルーカスがどう迎えられるか、シャドウがどう反応するかを決めます。",
-       "items": [
-        "メイの質問への答え方で署との関係が変わる",
-        "シャドウの情報を共有するか隠すかで、周囲の見方が変わる",
-        "序盤から巻き戻し可能——反応を試してトーンを掴もう"
+        "警察署に入り、受付のメイ巡査と話す——一通の手紙と、スミス署長が事件で外出中だと教えられる",
+        "ラウンジに入るとスミス署長が暗闇でテレビを見ている——電気を付けると彼は消える",
+        "左の郵便室のドアを試す——今は鍵がかかっている",
+        "メイのところに戻ると、スミス署長の机を調べるよう頼まれる：引き出しから鍵を、机の下から酒場トークンと収集可能な書類を入手",
+        "郵便室を開け、机のクリップボードを調べて「謎の手紙」を見つける",
+        "メイに呼び戻され、スミス署長と話して手紙を開く：差出人はリン・ダハント。工場へ行き「ザ・ジェントルローグス」というバンドを探してほしいと頼まれる",
+        "警察署が突然炎上——郵便室で正面玄関の鍵を取り、ラウンジで警察配備記録を拾い、正面玄関から脱出する"
        ]
       },
       {
        "type": "steps",
-       "heading": "パート2 · ファクトリーへ",
-       "body": "最初の本格調査はファクトリー地区。ルーカスは現場で何が起きたのかを再現しなければなりません。",
+       "heading": "パート2 · 高架橋と老機械工",
+       "body": "工場の近くで目覚めます。本章の本格的な調査は下の街で始まります。",
        "items": [
-        "ファクトリーに向かい現場に入る",
-        "再現の前にまず現場を調べる——物理的な手がかりが探すべきものを示す",
-        "犯行現場再現で犠牲者の最期を目撃する",
-        "再現と現場の見た目の違いを比べる——偽装の細部が決定的な手掛かり"
+        "高架橋で目覚め、下を見る——騒ぎが起きている：テディという犬が死んでいる",
+        "工場の監督、テオ船長がアクセル・フリントを呼んで集会に参加するよう命じる",
+        "老機械工と話し、配給食と交換で『機械工の基礎』（質屋にある）を手に入れる",
+        "通りに降りて右へ——高架橋の下でアクセル・フリントがグリフ・フリントと口論している",
+        "アクセルにテオ船長が探していると伝える",
+        "スキルチェック発生——アクセルを殴るか説得するか。選択で展開が変わる",
+        "グリフ・フリントが一杯おごると言い、推理用の手がかりを2つ獲得"
+       ]
+      },
+      {
+       "type": "steps",
+       "heading": "パート3 · テディの死：人々への尋問",
+       "body": "工場の事件はテディの死をめぐる証言が鍵です。行動より先に話を聞きましょう。",
+       "items": [
+        "何かを決める前に、現場の全員と話す",
+        "テオ船長に集会の趣旨と期待を聞く",
+        "目撃者に「実際に見たもの」を聞く——思い込みと区別する",
+        "テディと因縁のある人物、何かを隠したがっている人物に注目",
+        "巻き戻しで同じ相手に違う質問をし、答えを比べる"
        ]
       },
       {
        "type": "list",
-       "heading": "ファクトリーで注目すべき点",
-       "body": "私たちのプレイ記録に基づく、第1章で最も重要な細部です。",
+       "heading": "パート4 · テディの死：手がかりを追う",
+       "body": "証言は一致しません。どこが食い違うのかを見つけます。",
        "items": [
-        "医療メーター：冒頭の手紙と照合する",
-        "死亡時刻に工場フロアへ出入りできた人物",
-        "犠牲者の体勢と再現された出来事の一致",
-        "会話だけでは明かされない環境の細かい手がかり"
+        "同じ瞬間について各目撃者の証言を突き合わせる",
+        "矛盾を探す——KTS の事件の核心はここ",
+        "物理的な現場を確認：位置、画面の落書き、不自然な点",
+        "手がかりの連鎖は、皆が疑う人物ではなく本当の責任者を指す"
+       ]
+      },
+      {
+       "type": "steps",
+       "heading": "パート5 · テディの死：事件の解決",
+       "body": "結論を提出し、どう動くかを選びます。",
+       "items": [
+        "結論をテオ船長に持ち帰る",
+        "責任者への「正義」か「保護」かを選ぶ",
+        "この選択は工場労働者との関係に影響し、汚染度を動かす",
+        "決断前にセーブ——結果は後の章まで続く"
+       ]
+      },
+      {
+       "type": "steps",
+       "heading": "パート6 · 父の秘密：レイフの母の依頼と抗議",
+       "body": "本筋に並行して、個人の物語が開きます。",
+       "items": [
+        "レイフの母が私事の手助けを求める",
+        "街で封鎖反対デモが起きつつある——関わった人々と話す",
+        "デモに加勢するか、鎮めるか、距離を置くかを決める",
+        "その選択がレイフと、この物語の中心にある家族の秘密にどう映るかを見る"
        ]
       },
       {
        "type": "list",
-       "heading": "第1章のあと",
-       "body": "章を進めるほど半オープンの都市が広がります。この習慣を続けましょう。",
+       "heading": "パート7 · 父の秘密：レイフを落ち着かせる",
+       "body": "レイフは事を大きくしようとしています。どう鎮めるかで得られる情報が変わります。",
        "items": [
-        "新しい情報を得たら以前の場所に戻る——会話が変わることも",
-        "章の合間に関係パネルとシャドウ浸食度を確認",
-        "各事件はダークタイド・シティの10年前の謎へとつながる"
+        "直接説得する——彼の父親について知っていることを伝える",
+        "テオ船長を巻き込んで事態を収める",
+        "関係の代償を払う覚悟があれば、力に訴える",
+        "どの道もレイフの物語と、工場が明かす過去を変える"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "パート8 · テオ船長の記憶",
+       "body": "シャドウの再現は工場の人々にも光を当てます。",
+       "items": [
+        "テオに関係する物体に再現を使い、「主張」ではなく「実際」を見る",
+        "集会後に以前の場面を再訪——知ることが増えると新たな細部が見える",
+        "テオの記憶は工場の事件をダークタイドシティの大きな謎へと結びつける"
+       ]
+      },
+      {
+       "type": "steps",
+       "heading": "パート9 · 未解決の糸を結ぶ",
+       "body": "南へ移る前に、すべての糸を回収します。",
+       "items": [
+        "新しい情報を得たら早期のエリアに戻る——会話が変わることもある",
+        "名前のあるキャラクター全員と最後にもう一度話す",
+        "最初に取り逃がした書類を回収する",
+        "章末の決断の前にセーブ——選択は次章へと続く"
        ]
       },
       {
@@ -1397,66 +1675,117 @@
         ]
        ]
       }
-     ],
-     "heroImage": "/images/walkthrough.jpg"
+     ]
     },
     "ko": {
-     "title": "킬 더 섀도우 워크스루: 1장 — 공장",
+     "title": "킬 더 섀도우 워크스루: 1장 — 공장 (심층)",
      "metaTitle": "킬 더 섀도우 워크스루: 1장 — 공장 (2026)",
-     "metaDescription": "킬 더 섀도우 1장 단계별 공략: 경찰서 오프닝부터 공장 지구까지, 핵심 선택과 주목할 포인트 포함.",
-     "intro": "이 워크스루는 검증된 1장 플레이 기록을 기준으로 합니다. 선택에 따라 결과가 달라질 수 있으니, 절대적인 답이 아닌 지도로 활용하세요.",
+     "metaDescription": "킬 더 섀도우 1장 심층 공략: 경찰서 프롤로그, 늙은 기계공, 테디의 죽음, 아버지의 비밀, 테오 선장의 기억과 마무리, 핵심 선택까지.",
+     "intro": "이 1장 공략은 경찰서 프롤로그부터 공장 지구 마무리까지의 전체 흐름을 다룹니다. 검증된 구조(intoindiegames 워크스루 + 공식 자료)를 바탕으로 자체 문장으로 다시 썼습니다. 선택에 따라 결과가 달라질 수 있습니다.",
      "sections": [
       {
        "type": "steps",
-       "heading": "파트 1 — 경찰서 오프닝",
-       "body": "킬 더 섀도우는 경찰서 밖에서 시작합니다. 루카스는 린 다한트가 보낸 의료 게이지에 적힌 수수께끼의 편지를 받습니다.",
+       "heading": "파트 1 — 프롤로그: 경찰서",
+       "body": "게임은 경찰서 밖에서 시작합니다. 이 도입부에서 '말하기·조사하기·읽기·행동하기'의 핵심 루프를 배웁니다.",
        "items": [
-        "경찰서로 들어가기 — 메이 경관이 복귀를 맞이함",
-        "경찰서를 탐색하고 경관들과 대화 — 여기서부터 관계가 형성됨",
-        "편지를 주의 깊게 읽기: 의료 게이지는 이후 등장하는 의료 문서 시리즈의 첫 번째",
-        "목표는 공장 지구 — 1장의 무대"
-       ]
-      },
-      {
-       "type": "list",
-       "heading": "오프닝의 핵심 선택",
-       "body": "오프닝은 짧지만 루카스가 어떻게 받아들여지는지, 섀도우가 어떻게 반응하는지의 분위기를 결정합니다.",
-       "items": [
-        "메이의 질문에 대한 대답이 경찰서와의 관계에 영향",
-        "섀도우에 대한 정보를 공유할지 숨길지 — 캐릭터들의 시선이 바뀜",
-        "되감기는 초반부터 가능 — 다양한 반응으로 분위기 파악"
+        "경찰서에 들어가 접수대의 메이 경관과 대화 — 편지에 대한 이야기와 스미스 서장이 사건으로 외출 중이라는 말을 듣습니다",
+        "라운지로 가면 스미스 서장이 어둠 속에서 TV를 보고 있습니다 — 불을 켜면 그는 사라집니다",
+        "왼쪽 우편실 문을 시도 — 지금은 잠겨 있습니다",
+        "메이에게 돌아가면 스미스 서장의 책상을 조사하라고 합니다: 서랍에서 열쇠를, 책상 아래에서 술집 토큰과 수집용 문서를 얻습니다",
+        "우편실을 열고 책상의 클립보드를 조사해 '수수께끼의 편지'를 찾습니다",
+        "메이가 다시 부르면 스미스 서장과 대화하고 편지를 엽니다: 발신자는 린 다한트. 공장으로 가서 '젠틀 로그스'라는 밴드를 찾아달라는 내용입니다",
+        "경찰서가 갑자기 불에 타기 시작합니다 — 우편실에서 정문 열쇠를 챙기고, 라운지에서 경찰 배치 기록을 주운 뒤 정문으로 탈출합니다"
        ]
       },
       {
        "type": "steps",
-       "heading": "파트 2 — 공장으로",
-       "body": "첫 번째 진짜 수사는 공장 지구로 향합니다. 루카스는 현장에서 무슨 일이 있었는지 재구성해야 합니다.",
+       "heading": "파트 2 — 고가도로와 늙은 기계공",
+       "body": "공장 근처에서 깨어납니다. 이번 장의 진짜 수사는 아래 거리에서 시작됩니다.",
        "items": [
-        "공장으로 이동해 현장 진입",
-        "재구성 전에 육안으로 현장 확인 — 물리적 단서가 무엇을 찾아야 할지 알려줌",
-        "범죄 현장 재구성으로 피해자의 마지막 순간 목격",
-        "재구성과 현장 표면의 차이 비교 — 조작된 세부가 핵심 단서"
+        "고가도로에서 깨어나 아래를 내려다봅니다 — 소란이 일어나고 있습니다: 테디라는 개가 죽었습니다",
+        "공장 감독인 테오 선장이 액셀 플린트를 데려와 회의에 참석하라고 합니다",
+        "늙은 기계공과 대화 — 배급 식사를 내주고 '기계공의 기초' 책(전당포에 있음)을 받습니다",
+        "거리로 내려가 오른쪽으로 — 고가도로 아래에서 액셀 플린트가 그리프 플린트와 다투고 있습니다",
+        "액셀에게 테오 선장이 찾고 있다고 전합니다",
+        "스킬 체크가 나옵니다 — 액셀을 때리거나 설득하세요. 선택에 따라 장면이 달라집니다",
+        "그리프 플린트가 한잔 하자고 하며, 추리용 단서 2개를 얻습니다"
+       ]
+      },
+      {
+       "type": "steps",
+       "heading": "파트 3 — 테디의 죽음: 사람들 심문",
+       "body": "공장 사건은 테디의 죽음에 관한 증언이 핵심입니다. 행동보다 대화를 먼저 하세요.",
+       "items": [
+        "무엇이든 결정하기 전에 현장의 모두와 대화하세요",
+        "테오 선장에게 회의의 취지와 기대를 들으세요",
+        "목격자들에게 실제로 본 것을 물어보세요 — 추측과 구분해서",
+        "테디와 악연이 있거나 무언가를 숨기려는 사람을 주목하세요",
+        "되감기로 같은 상대에게 다른 질문을 하고 답을 비교하세요"
        ]
       },
       {
        "type": "list",
-       "heading": "공장에서 주목할 포인트",
-       "body": "플레이 기록을 기준으로, 1장에서 가장 중요한 세부입니다.",
+       "heading": "파트 4 — 테디의 죽음: 단서 추적",
+       "body": "증언은 맞지 않습니다. 어디가 어긋나는지 찾으세요.",
        "items": [
-        "의료 게이지: 오프닝 편지와 교차 확인",
-        "사망 당시 공장 내부에 접근 권한이 있던 인물",
-        "피해자 시신 위치가 재구성된 사건과 일치하는지",
-        "대화만으로는 드러나지 않는 작은 환경 단서"
+        "같은 순간에 대한 각 목격자의 증언을 교차 비교하세요",
+        "모순을 찾으세요 — 모든 KTS 사건의 핵심입니다",
+        "물리적 현장을 확인하세요: 위치, 화면의 낙서, 어색한 부분",
+        "단서의 사슬은 모두가 의심하는 사람이 아니라 진짜 책임자를 가리킵니다"
+       ]
+      },
+      {
+       "type": "steps",
+       "heading": "파트 5 — 테디의 죽음: 사건 해결",
+       "body": "결론을 제출하고 어떻게 행동할지 선택하세요.",
+       "items": [
+        "결론을 테오 선장에게 가져가세요",
+        "책임자에게 '정의'를 실현할지 '보호'할지 선택하세요",
+        "이 선택은 공장 노동자들과의 관계를 만들고 오염도를 움직입니다",
+        "결정 전에 저장하세요 — 결과는 이후 챕터까지 이어집니다"
+       ]
+      },
+      {
+       "type": "steps",
+       "heading": "파트 6 — 아버지의 비밀: 레이프 엄마의 부탁과 시위",
+       "body": "본편과 나란히 개인적인 이야기가 펼쳐집니다.",
+       "items": [
+        "레이프의 엄마가 사적인 일을 도와달라고 합니다",
+        "거리에서 봉쇄 반대 시위가 일어나고 있습니다 — 관련자들과 대화하세요",
+        "시위를 지지할지, 진정시킬지, 거리를 둘지 결정하세요",
+        "그 선택이 레이프와, 이 이야기 중심에 있는 가족의 비밀에 어떻게 비치는지 지켜보세요"
        ]
       },
       {
        "type": "list",
-       "heading": "1장 이후",
-       "body": "챕터를 완료하면 반개방형 도시가 열립니다. 다음 습관을 유지하세요.",
+       "heading": "파트 7 — 아버지의 비밀: 레이프 진정시키기",
+       "body": "레이프는 일을 키우려 합니다. 어떻게 진정시키느냐에 따라 알게 되는 것이 달라집니다.",
        "items": [
-        "새 정보를 얻으면 이전 지역에 다시 방문 — 대화가 달라질 수 있음",
-        "챕터 사이에 관계 패널과 섀도우 오염도 확인",
-        "각 사건은 다크 타이드 시티 10년 전 사건의 미스터리로 연결됨"
+        "직접 설득하세요 — 그의 아버지에 대해 아는 것을 보여주세요",
+        "테오 선장을 개입시켜 상황이 과열되는 것을 막으세요",
+        "관계의 대가를 감당할 수 있다면 힘을 쓰세요",
+        "모든 길은 레이프의 서사와 공장이 드러내는 과거를 바꿉니다"
+       ]
+      },
+      {
+       "type": "list",
+       "heading": "파트 8 — 테오 선장의 기억",
+       "body": "섀도우의 재구성은 공장 사람들에게도 빛을 비춥니다.",
+       "items": [
+        "테오와 관련된 물건에 재구성을 사용해 '주장'이 아닌 '실제'를 보세요",
+        "회의 후 이전 장면을 다시 방문하세요 — 더 알게 되면 새로운 세부가 보입니다",
+        "테오의 기억은 공장 사건을 다크 타이드 시티의 더 큰 미스터리로 연결합니다"
+       ]
+      },
+      {
+       "type": "steps",
+       "heading": "파트 9 — 마무리: 묶이지 않은 실타래",
+       "body": "남쪽으로 이동하기 전에 모든 실타래를 정리하세요.",
+       "items": [
+        "새 정보를 얻으면 초반에 갔던 지역으로 돌아가세요 — 대화가 바뀔 수 있습니다",
+        "이름이 있는 캐릭터 전원과 마지막으로 한 번 더 대화하세요",
+        "처음에 놓친 문서를 챙기세요",
+        "챕터 끝 결정 전에 저장하세요 — 선택은 다음 챕터로 이어집니다"
        ]
       },
       {
@@ -1755,7 +2084,8 @@
         "全部見たければ、二周目は逆の道徳的立場で"
        ]
       }
-     ]
+     ],
+     "heroImage": "/images/choices.jpg"
     },
     "ko": {
      "title": "킬 더 섀도우 선택지: 모든 결정이 스토리를 바꾸는 법",
@@ -1812,7 +2142,8 @@
    "meta": {
     "icon": "choices",
     "id": "F-03"
-   }
+   },
+   "heroImage": "/images/choices.jpg"
   },
   {
    "slug": "endings",
@@ -2168,6 +2499,49 @@
     },
     {
      "type": "table",
+     "heading": "Chapter 1 Case Breakdown",
+     "body": "The verified beats of Chapter 1, mapped to the case board.",
+     "rows": [
+      [
+       "The Letter",
+       "Police Station",
+       "A medical-gauge letter from Lynn DaHandt; the station burns after you read it",
+       "Prologue"
+      ],
+      [
+       "Teddy's Death",
+       "Factory district",
+       "A dog's death becomes the case that breaks the Factory open — interrogate, follow the clues, resolve",
+       "Part 3-5"
+      ],
+      [
+       "Father's Secret",
+       "Factory & streets",
+       "Rafe's family thread: his mother's request, the Anti-Blockade Protest, cooling Rafe down",
+       "Part 6-7"
+      ],
+      [
+       "Captain Theo's Memories",
+       "Factory",
+       "Reconstruction on Theo's objects connects the incident to the city's ten-year-old mystery",
+       "Part 8"
+      ],
+      [
+       "Loose Ends",
+       "Dark Tide City",
+       "Return to earlier areas, close every thread, save before the chapter-end choice",
+       "Part 9"
+      ]
+     ],
+     "columns": [
+      "Beat",
+      "Location",
+      "Key Element",
+      "Stage"
+     ]
+    },
+    {
+     "type": "table",
      "tag": "SUSPECTS",
      "heading": "Persons of Interest",
      "body": "Who we are watching in Chapter 1 — confirmed from coverage and our playthrough.",
@@ -2285,6 +2659,49 @@
       },
       {
        "type": "table",
+       "heading": "第一章案件拆解",
+       "body": "第一章已核实的节点，映射到案件板上。",
+       "rows": [
+        [
+         "信件",
+         "警察局",
+         "来自 Lynn DaHandt 的医疗计量器信件；读信后警察局起火",
+         "序章"
+        ],
+        [
+         "泰迪之死",
+         "工厂区",
+         "一只狗的死成为打开工厂的契机——审讯、追查线索、解决事件",
+         "第3-5部分"
+        ],
+        [
+         "父亲的秘密",
+         "工厂与街道",
+         "Rafe 的家庭线：母亲的请求、反封锁抗议、安抚 Rafe",
+         "第6-7部分"
+        ],
+        [
+         "西奥队长的记忆",
+         "工厂",
+         "对西奥物品的重建，把事件与城市十年谜团连接起来",
+         "第8部分"
+        ],
+        [
+         "收尾",
+         "暗潮市",
+         "回到早期区域，收清每条线索，在章节结尾选择前保存",
+         "第9部分"
+        ]
+       ],
+       "columns": [
+        "节点",
+        "地点",
+        "关键元素",
+        "阶段"
+       ]
+      },
+      {
+       "type": "table",
        "tag": "嫌疑人",
        "heading": "重点关注人物",
        "body": "第一章中我们正在关注的人物——根据报道与通关记录确认。",
@@ -2374,6 +2791,49 @@
         "儘早重建現場——獲得新信息後再重讀一遍",
         "留意證人的說法與重建展示之間的矛盾",
         "行動前先判斷這個案件該用正義還是保護"
+       ]
+      },
+      {
+       "type": "table",
+       "heading": "第一章案件拆解",
+       "body": "第一章已覈實的節點，映射到案件板上。",
+       "rows": [
+        [
+         "信件",
+         "警察局",
+         "來自 Lynn DaHandt 的醫療計量器信件；讀信後警察局起火",
+         "序章"
+        ],
+        [
+         "泰迪之死",
+         "工廠區",
+         "一隻狗的死成爲打開工廠的契機——審訊、追查線索、解決事件",
+         "第3-5部分"
+        ],
+        [
+         "父親的祕密",
+         "工廠與街道",
+         "Rafe 的家庭線：母親的請求、反封鎖抗議、安撫 Rafe",
+         "第6-7部分"
+        ],
+        [
+         "西奧隊長的記憶",
+         "工廠",
+         "對西奧物品的重建，把事件與城市十年謎團連接起來",
+         "第8部分"
+        ],
+        [
+         "收尾",
+         "暗潮市",
+         "回到早期區域，收清每條線索，在章節結尾選擇前保存",
+         "第9部分"
+        ]
+       ],
+       "columns": [
+        "節點",
+        "地點",
+        "關鍵元素",
+        "階段"
        ]
       },
       {
@@ -2471,6 +2931,49 @@
       },
       {
        "type": "table",
+       "heading": "第1章の事件の内訳",
+       "body": "検証済みの第1章の節目を事件ボードに整理しました。",
+       "rows": [
+        [
+         "手紙",
+         "警察署",
+         "リン・ダハントからの医療ゲージの手紙；読むと警察署が炎上",
+         "序章"
+        ],
+        [
+         "テディの死",
+         "工場地区",
+         "犬の死が工場を切り開く事件に——尋問、手がかり追跡、解決",
+         "パート3-5"
+        ],
+        [
+         "父の秘密",
+         "工場と街",
+         "レイフの家族の物語：母の依頼、封鎖反対デモ、レイフを落ち着かせる",
+         "パート6-7"
+        ],
+        [
+         "テオ船長の記憶",
+         "工場",
+         "テオの物体への再現が、事件を10年前の謎へと結びつける",
+         "パート8"
+        ],
+        [
+         "締めくくり",
+         "ダークタイドシティ",
+         "初期エリアに戻り、すべての糸を回収し、章末の選択前にセーブ",
+         "パート9"
+        ]
+       ],
+       "columns": [
+        "節目",
+        "場所",
+        "重要要素",
+        "段階"
+       ]
+      },
+      {
+       "type": "table",
        "tag": "容疑者",
        "heading": "注目人物",
        "body": "第1章で注目している人物——報道とプレイ記録で確認。",
@@ -2561,6 +3064,49 @@
         "현장을 일찍 재구성 — 새 정보 후 다시 읽기",
         "목격자 증언과 재구성 사이의 모순 기록",
         "행동 전에 사건이 정의를 요구하는지 보호를 요구하는지 판단"
+       ]
+      },
+      {
+       "type": "table",
+       "heading": "1장 사건 분해",
+       "body": "검증된 1장의 지점을 사건 보드에 정리했습니다.",
+       "rows": [
+        [
+         "편지",
+         "경찰서",
+         "린 다한트의 의료 게이지 편지; 읽으면 경찰서가 불탑니다",
+         "프롤로그"
+        ],
+        [
+         "테디의 죽음",
+         "공장 지구",
+         "개의 죽음이 공장을 열어젖히는 사건이 됩니다 — 심문, 단서 추적, 해결",
+         "파트 3-5"
+        ],
+        [
+         "아버지의 비밀",
+         "공장과 거리",
+         "레이프의 가족 이야기: 엄마의 부탁, 봉쇄 반대 시위, 레이프 진정시키기",
+         "파트 6-7"
+        ],
+        [
+         "테오 선장의 기억",
+         "공장",
+         "테오의 물건에 대한 재구성이 사건을 10년 전 미스터리로 연결합니다",
+         "파트 8"
+        ],
+        [
+         "마무리",
+         "다크 타이드 시티",
+         "초반 지역으로 돌아가 모든 실타래를 정리하고, 챕터 끝 선택 전에 저장",
+         "파트 9"
+        ]
+       ],
+       "columns": [
+        "지점",
+        "위치",
+        "핵심 요소",
+        "단계"
        ]
       },
       {
@@ -3247,7 +3793,8 @@
         "TrueSteamAchievements でコンプ率と統計を確認"
        ]
       }
-     ]
+     ],
+     "heroImage": "/images/achievements.jpg"
     },
     "ko": {
      "title": "킬 더 섀도우 업적 가이드",
@@ -3291,7 +3838,8 @@
    "meta": {
     "icon": "achievements",
     "id": "F-08"
-   }
+   },
+   "heroImage": "/images/achievements.jpg"
   },
   {
    "slug": "controls",
@@ -3525,7 +4073,8 @@
         "2.5D ピクセル描画のためにグラフィックドライバを最新に"
        ]
       }
-     ]
+     ],
+     "heroImage": "/images/controls.jpg"
     },
     "ko": {
      "title": "킬 더 섀도우 조작법 & 키 설정",
@@ -3580,7 +4129,8 @@
    "meta": {
     "icon": "controls",
     "id": "F-09"
-   }
+   },
+   "heroImage": "/images/controls.jpg"
   },
   {
    "slug": "system-requirements",
@@ -3970,7 +4520,8 @@
         "必須ではないが SSD でシーンの読み込みが速くなる"
        ]
       }
-     ]
+     ],
+     "heroImage": "/images/system-requirements.jpg"
     },
     "ko": {
      "title": "킬 더 섀도우 시스템 요구사항",
@@ -4056,7 +4607,8 @@
    "meta": {
     "icon": "system-requirements",
     "id": "F-10"
-   }
+   },
+   "heroImage": "/images/system-requirements.jpg"
   },
   {
    "slug": "steam-deck",
@@ -4237,7 +4789,8 @@
         "ゲーム内操作を Deck のボタンに合わせてリマップ"
        ]
       }
-     ]
+     ],
+     "heroImage": "/images/steam-deck.jpg"
     },
     "ko": {
      "title": "킬 더 섀도우 스팀 덱 가이드",
@@ -4281,7 +4834,8 @@
    "meta": {
     "icon": "steam-deck",
     "id": "F-11"
-   }
+   },
+   "heroImage": "/images/steam-deck.jpg"
   },
   {
    "slug": "tips-and-tricks",
@@ -4601,6 +5155,14 @@
       [
        "Is this a sequel?",
        "No sequel or prequel has been announced. The game is a standalone detective RPG."
+      ],
+      [
+       "Is there a console version?",
+       "Yes — PS5 and Xbox Series X|S versions were announced by press coverage, with the console release set for August 12, 2026."
+      ],
+      [
+       "How many achievements does the free demo have?",
+       "The free demo (app 2947640) includes 10 achievements, verified through SteamDB."
       ]
      ]
     }
@@ -4681,6 +5243,14 @@
         [
          "这是续作吗？",
          "未公布任何续作或前传。它是一款独立的侦探 RPG。"
+        ],
+        [
+         "有主机版吗？",
+         "有——PS5 和 Xbox Series X|S 版本已由媒体报道宣布，主机版定于 2026 年 8 月 12 日发售。"
+        ],
+        [
+         "免费试玩版有多少成就？",
+         "免费试玩版（应用 2947640）包含 10 个成就，经 SteamDB 核实。"
         ]
        ]
       }
@@ -4737,6 +5307,14 @@
         [
          "這是續作嗎？",
          "未公佈任何續作或前傳。它是一款獨立的偵探 RPG。"
+        ],
+        [
+         "有主機版嗎？",
+         "有——PS5 和 Xbox Series X|S 版本已由媒體報道宣佈，主機版定於 2026 年 8 月 12 日發售。"
+        ],
+        [
+         "免費試玩版有多少成就？",
+         "免費試玩版（應用 2947640）包含 10 個成就，經 SteamDB 覈實。"
         ]
        ]
       }
@@ -4793,10 +5371,19 @@
         [
          "続編はある？",
          "続編・前日譚の発表はありません。単独の探偵RPGです。"
+        ],
+        [
+         "コンソール版はありますか？",
+         "はい——PS5 / Xbox Series X|S 版が報道で発表され、コンソール版は2026年8月12日発売予定です。"
+        ],
+        [
+         "無料デモの実績はいくつですか？",
+         "無料デモ（アプリ2947640）には実績10個が含まれます（SteamDBで確認）。"
         ]
        ]
       }
-     ]
+     ],
+     "heroImage": "/images/faq.jpg"
     },
     "ko": {
      "title": "킬 더 섀도우 FAQ",
@@ -4849,6 +5436,14 @@
         [
          "후속작인가요?",
          "후속작이나 프리퀄은 발표되지 않았습니다. 독립형 추리 RPG입니다."
+        ],
+        [
+         "콘솔 버전이 있나요?",
+         "네 — PS5 / Xbox Series X|S 버전이 언론 보도로 발표되었고, 콘솔 출시는 2026년 8월 12일 예정입니다."
+        ],
+        [
+         "무료 데모 업적은 몇 개인가요?",
+         "무료 데모(앱 2947640)에는 업적 10개가 포함되어 있습니다(SteamDB로 확인)."
         ]
        ]
       }
@@ -4858,7 +5453,8 @@
    "meta": {
     "icon": "faq",
     "id": "F-13"
-   }
+   },
+   "heroImage": "/images/faq.jpg"
   },
   {
    "slug": "update-log",
@@ -5083,7 +5679,8 @@
         "発売前ウィッシュリストは10万件超、80%以上が海外"
        ]
       }
-     ]
+     ],
+     "heroImage": "/images/update-log.jpg"
     },
     "ko": {
      "title": "킬 더 섀도우 업데이트 내역",
@@ -5139,7 +5736,8 @@
    "meta": {
     "icon": "update-log",
     "id": "F-14"
-   }
+   },
+   "heroImage": "/images/update-log.jpg"
   },
   {
    "title": "Kill The Shadow Characters: Character Files",
