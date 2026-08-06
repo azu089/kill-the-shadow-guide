@@ -21,6 +21,7 @@ ICON = {
   "cases":"cases","characters":"characters","investigation":"investigation","achievements":"achievements",
   "controls":"controls","system-requirements":"system-requirements","steam-deck":"steam-deck",
   "tips-and-tricks":"tips-and-tricks","faq":"faq","update-log":"update-log",
+  "where-to-buy":"where-to-buy","how-long-to-beat":"how-long-to-beat",
 }
 FID = {slug: "F-" + str(i+1).zfill(2) for i, slug in enumerate(ICON)}
 for p in d["pages"]:
