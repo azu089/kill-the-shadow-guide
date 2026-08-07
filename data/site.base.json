@@ -63,7 +63,8 @@
     "sources": "出典とファクトチェック",
     "readGuide": "遊び方 →"
    }
-  }
+  },
+  "awinVerification": "awin"
  },
  "game": {
   "name": "Kill The Shadow",
