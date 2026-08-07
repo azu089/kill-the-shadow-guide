@@ -75,7 +75,7 @@ GAME = {
     "price": "$16.99",
     "steamUrl": "https://store.steampowered.com/app/2660230/Kill_The_Shadow/",
     "officialSite": "",
-    "intro": "Kill The Shadow is an atmospheric detective RPG with multiple endings, developed by Chinese studio Shadowlight and published globally under a deal with NEOWIZ. You play as Lucas, a former police officer in the divided city of Dark Tide City, who carries a supernatural entity called the Shadow on his back. It lets him reconstruct the final moments of the dead and rewind time during investigations. Every choice you make shapes relationships, the truth that comes to light, and which of the multiple endings you reach.",
+    "intro": "Kill The Shadow is an atmospheric detective RPG with multiple endings, developed by Chinese studio Shadowlight and published by Phoenix Game. You play as Lucas, a former police officer in the divided city of Dark Tide City, who carries a supernatural entity called the Shadow on his back. It lets him reconstruct the final moments of the dead and rewind time during investigations. Every choice you make shapes relationships, the truth that comes to light, and which of the multiple endings you reach.",
     "keyFacts": [
         "Launched August 5, 2026 on Steam (Windows) at $16.99 / £14.99 / €16.99 with a 10% launch discount",
         "Detective RPG with multiple endings and a 'Shadow corruption' meter influenced by your choices",
@@ -130,8 +130,8 @@ GAME = {
         ],
     },
     "introI18n": {
-        "zh": "《杀死影子》是一款多结局的氛围派侦探 RPG，由中国工作室坞光岚影（Shadowlight）开发，并在 NEOWIZ 的全球发行协议下发行。你扮演暗潮市（Dark Tide City）的前警官 Lucas，他的背上寄宿着名为「影子」的超自然存在，能让他重建死者最后的瞬间，并在调查中回溯时间。你的每个选择都会改变人物关系、被揭开的真相，以及最终抵达的多个结局之一。",
-        "ja": "『キル・ザ・シャドウ』は、中国のスタジオ Shadowlight が開発し、NEOWIZ のグローバル契約のもと配信される、マルチエンディングの空気感重視の探偵RPG。プレイヤーは分断された都市ダークタイド・シティの元警官ルーカスとなり、背中に宿る超常的存在「シャドウ」の力で死者の最期の瞬間を再現し、調査中に時間を巻き戻せます。選択のひとつひとつが関係性と明かされる真実、そして複数のエンディングの分岐に影響します。"
+        "zh": "《杀死影子》是一款多结局的氛围派侦探 RPG，由中国工作室坞光岚影（Shadowlight）开发，凤凰游戏（Phoenix Game）发行。你扮演暗潮市（Dark Tide City）的前警官 Lucas，他的背上寄宿着名为「影子」的超自然存在，能让他重建死者最后的瞬间，并在调查中回溯时间。你的每个选择都会改变人物关系、被揭开的真相，以及最终抵达的多个结局之一。",
+        "ja": "『キル・ザ・シャドウ』は、中国のスタジオ Shadowlight が開発し、Phoenix Game が配信する、マルチエンディングの空気感重視の探偵RPG。プレイヤーは分断された都市ダークタイド・シティの元警官ルーカスとなり、背中に宿る超常的存在「シャドウ」の力で死者の最期の瞬間を再現し、調査中に時間を巻き戻せます。選択のひとつひとつが関係性と明かされる真実、そして複数のエンディングの分岐に影響します。"
     },
 }
 
@@ -1454,7 +1454,7 @@ P("faq",
            ["How many endings does it have?", "Multiple endings are officially confirmed. The exact number is still being documented by the community after launch."],
            ["How long is the game?", "Official playtime has not been published. It is a dialogue-heavy detective RPG with multiple cases and a semi-open city, so expect a story-driven length."],
            ["Is there a demo?", "Yes — a free demo has been available on Steam since 2024 and includes 10 achievements."],
-           ["Who developed it?", "Chinese studio Shadowlight (坞光岚影), with a global publishing deal under NEOWIZ."],
+           ["Who developed it?", "Chinese studio Shadowlight (坞光岚影). The Steam release is published by Phoenix Game."],
            ["Is this a sequel?", "No sequel or prequel has been announced. The game is a standalone detective RPG."]
        ]}
   ],
@@ -1480,7 +1480,7 @@ P("faq",
                ["有几个结局？", "官方确认多结局。确切数量正由社区在发售后整理中。"],
                ["游戏时长多久？", "官方未公布时长。它是对话密集的侦探 RPG，含多个案件与半开放城市，预计为剧情驱动的中长篇幅。"],
                ["有 Demo 吗？", "有——自 2024 年起 Steam 上有免费 Demo，含 10 个成就。"],
-               ["开发商是谁？", "中国工作室坞光岚影（Shadowlight），全球发行协议由 NEOWIZ 负责。"],
+               ["开发商是谁？", "中国工作室坞光岚影（Shadowlight）开发，Steam 版由凤凰游戏（Phoenix Game）发行。"],
                ["这是续作吗？", "未公布任何续作或前传。它是一款独立的侦探 RPG。"]
            ]}
       ]
@@ -1505,7 +1505,7 @@ P("faq",
                ["エンディングはいくつ？", "マルチエンディングは公式に確定。正確な数は発売後、コミュニティが整理中。"],
                ["プレイ時間は？", "公式のプレイ時間は未公表。会話中心の探偵RPGで複数の事件と半オープンの都市があり、ストーリー主導のボリューム。"],
                ["デモはある？", "あります——2024年から Steam で無料デモを公開中。実績10個。"],
-               ["開発元は？", "中国のスタジオ Shadowlight（坞光岚影）。グローバル配信は NEOWIZ の契約。"],
+               ["開発元は？", "中国のスタジオ Shadowlight（坞光岚影）。Steam 版のパブリッシャーは Phoenix Game。"],
                ["続編はある？", "続編・前日譚の発表はありません。単独の探偵RPGです。"]
            ]}
       ]
@@ -1523,7 +1523,7 @@ P("update-log",
        "columns": ["Date", "Event", "Notes"],
        "rows": [
            ["2024 (July)", "Demo released", "Free demo on Steam with 10 achievements (app 2947640)"],
-           ["July 2026", "Global publishing announced", "NEOWIZ signs global publishing deal for the title"],
+           ["May 2025", "Publishing deal announced", "NEOWIZ announces a global publishing deal; the released Steam version is published by Phoenix Game"],
            ["August 5, 2026", "Full release on Steam", "Windows launch at $16.99 / £14.99 / €16.99 with 10% launch discount until August 19"],
            ["August 12, 2026", "Console release (announced)", "PS5 / Xbox Series X|S versions announced by press coverage"]
        ]},
@@ -1547,7 +1547,7 @@ P("update-log",
            "columns": ["日期", "事件", "备注"],
            "rows": [
                ["2024 年（7月）", "Demo 发布", "Steam 免费 Demo，含 10 个成就（app 2947640）"],
-               ["2026 年 7 月", "全球发行官宣", "NEOWIZ 签下本作的全球发行协议"],
+               ["2025 年 5 月", "全球发行官宣", "NEOWIZ 宣布全球发行协议；实际发售的 Steam 版由凤凰游戏（Phoenix Game）发行"],
                ["2026 年 8 月 5 日", "Steam 正式发售", "Windows 平台，$16.99 / £14.99 / €16.99，首发 -10% 至 8 月 19 日"],
                ["2026 年 8 月 12 日", "主机版（已公布）", "媒体报道 PS5 / Xbox Series X|S 版本"]
            ]},
@@ -1570,7 +1570,7 @@ P("update-log",
            "columns": ["日付", "出来事", "備考"],
            "rows": [
                ["2024年（7月）", "デモ公開", "Steam で無料デモ。実績10個（app 2947640）"],
-               ["2026年7月", "グローバル配信を発表", "NEOWIZ が本作のグローバル配信契約を締結"],
+               ["2025年5月", "グローバル配信を発表", "NEOWIZ がグローバル配信契約を発表。実際に発売された Steam 版は Phoenix Game が配信"],
                ["2026年8月5日", "Steam で製品版発売", "Windows 版。$16.99 / £14.99 / €16.99、ローンチ割引10%は8月19日まで"],
                ["2026年8月12日", "コンソール版（発表済み）", "報道で PS5 / Xbox Series X|S 版が言及"]
            ]},

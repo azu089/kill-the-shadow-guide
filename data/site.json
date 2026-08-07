@@ -191,7 +191,7 @@
   "price": "$16.99",
   "steamUrl": "https://store.steampowered.com/app/2660230/Kill_The_Shadow/",
   "officialSite": "",
-  "intro": "Kill The Shadow is an atmospheric detective RPG with multiple endings, developed by Chinese studio Shadowlight and published globally under a deal with NEOWIZ. You play as Lucas, a former police officer in the divided city of Dark Tide City, who carries a supernatural entity called the Shadow on his back. It lets him reconstruct the final moments of the dead and rewind time during investigations. Every choice you make shapes relationships, the truth that comes to light, and which of the multiple endings you reach.",
+  "intro": "Kill The Shadow is an atmospheric detective RPG with multiple endings, developed by Chinese studio Shadowlight and published by Phoenix Game. You play as Lucas, a former police officer in the divided city of Dark Tide City, who carries a supernatural entity called the Shadow on his back. It lets him reconstruct the final moments of the dead and rewind time during investigations. Every choice you make shapes relationships, the truth that comes to light, and which of the multiple endings you reach.",
   "keyFacts": [
    "Launched August 5, 2026 on Steam (Windows) at $16.99 / £14.99 / €16.99 with a 10% launch discount",
    "Detective RPG with multiple endings and a 'Shadow corruption' meter influenced by your choices",
@@ -400,11 +400,11 @@
    ]
   },
   "introI18n": {
-   "en": "Kill The Shadow is an atmospheric detective RPG with multiple endings, developed by Chinese studio Shadowlight and published globally under a deal with NEOWIZ. You play as Lucas, a former police officer in the divided city of Dark Tide City, who carries a supernatural entity called the Shadow on his back. It lets him reconstruct the final moments of the dead and rewind time during investigations. Every choice you make shapes relationships, the truth that comes to light, and which of the multiple endings you reach.",
-   "zh-CN": "《杀死影子》是一款氛围浓厚的侦探RPG，由中国工作室坞光岚影（Shadowlight）开发，并在 NEOWIZ 的全球发行协议下发行。你扮演分裂城市暗潮市的前警官 Lucas，背上寄宿着名为「影子」的超自然存在，它能让你重现死者最后的时刻，并在调查中倒转时间。你的每一个选择都会塑造人物关系、被揭开的真相，以及你最终抵达的多种结局之一。",
-   "zh-TW": "《殺死影子》是一款氛圍濃厚的偵探RPG，由中國工作室塢光嵐影（Shadowlight）開發，並在 NEOWIZ 的全球發行協議下發行。你扮演分裂城市暗潮市的前警官 Lucas，背上寄宿著名為「影子」的超自然存在，它能讓你重現死者最後的時刻，並在調查中倒轉時間。你的每一個選擇都會塑造人物關係、被揭開的真相，以及你最終抵達的多種結局之一。",
-   "ja": "『キル・ザ・シャドウ』は、中国のスタジオ Shadowlight（塢光嵐影）が開発し、NEOWIZ のグローバルパブリッシング契約のもと発売された、雰囲気のある刑事RPGです。分断された都市ダークタイドシティで、元警官ルーカスとしてプレイ。背中に宿る超常存在「シャドウ」は、死者の最後の瞬間を再現し、調査中に時間を巻き戻すことを可能にします。すべての選択が、人間関係・明らかになる真実・たどり着く複数のエンディングを形作ります。",
-   "ko": "킬 더 섀도우는 중국 스튜디오 Shadowlight(坞光岚影)가 개발하고 NEOWIZ가 글로벌 퍼블리싱을 맡은 분위기 있는 추리 RPG입니다. 분단된 도시 다크 타이드 시티에서 전직 형사 루카스로 플레이하며, 등에 짊어진 초자연적 존재 '섀도우'는 죽은 자의 마지막 순간을 재구성하고 수사 중 시간을 되감게 해줍니다. 모든 선택이 관계와 드러나는 진실, 그리고 도달하는 엔딩을 바꿉니다."
+   "en": "Kill The Shadow is an atmospheric detective RPG with multiple endings, developed by Chinese studio Shadowlight and published by Phoenix Game. You play as Lucas, a former police officer in the divided city of Dark Tide City, who carries a supernatural entity called the Shadow on his back. It lets him reconstruct the final moments of the dead and rewind time during investigations. Every choice you make shapes relationships, the truth that comes to light, and which of the multiple endings you reach.",
+   "zh-CN": "《杀死影子》是一款氛围浓厚的侦探RPG，由中国工作室坞光岚影（Shadowlight）开发，凤凰游戏（Phoenix Game）发行。你扮演分裂城市暗潮市的前警官 Lucas，背上寄宿着名为「影子」的超自然存在，它能让你重现死者最后的时刻，并在调查中倒转时间。你的每一个选择都会塑造人物关系、被揭开的真相，以及你最终抵达的多种结局之一。",
+   "zh-TW": "《殺死影子》是一款氛圍濃厚的偵探RPG，由中國工作室塢光嵐影（Shadowlight）開發，鳳凰遊戲（Phoenix Game）發行。你扮演分裂城市暗潮市的前警官 Lucas，背上寄宿著名為「影子」的超自然存在，它能讓你重現死者最後的時刻，並在調查中倒轉時間。你的每一個選擇都會塑造人物關係、被揭開的真相，以及你最終抵達的多種結局之一。",
+   "ja": "『キル・ザ・シャドウ』は、中国のスタジオ Shadowlight（塢光嵐影）が開発し、Phoenix Game が発売した、雰囲気のある刑事RPGです。分断された都市ダークタイドシティで、元警官ルーカスとしてプレイ。背中に宿る超常存在「シャドウ」は、死者の最後の瞬間を再現し、調査中に時間を巻き戻すことを可能にします。すべての選択が、人間関係・明らかになる真実・たどり着く複数のエンディングを形作ります。",
+   "ko": "킬 더 섀도우는 중국 스튜디오 Shadowlight(坞光岚影)가 개발하고 Phoenix Game이 퍼블리싱한 분위기 있는 추리 RPG입니다. 분단된 도시 다크 타이드 시티에서 전직 형사 루카스로 플레이하며, 등에 짊어진 초자연적 존재 '섀도우'는 죽은 자의 마지막 순간을 재구성하고 수사 중 시간을 되감게 해줍니다. 모든 선택이 관계와 드러나는 진실, 그리고 도달하는 엔딩을 바꿉니다."
   }
  },
  "pages": [
@@ -5932,7 +5932,7 @@
       ],
       [
        "Who developed it?",
-       "Chinese studio Shadowlight (坞光岚影), with a global publishing deal under NEOWIZ."
+       "Chinese studio Shadowlight (坞光岚影). The Steam release is published by Phoenix Game."
       ],
       [
        "Is this a sequel?",
@@ -6020,7 +6020,7 @@
         ],
         [
          "开发商是谁？",
-         "中国工作室坞光岚影（Shadowlight），全球发行协议由 NEOWIZ 负责。"
+         "中国工作室坞光岚影（Shadowlight）开发，Steam 版由凤凰游戏（Phoenix Game）发行。"
         ],
         [
          "这是续作吗？",
@@ -6084,7 +6084,7 @@
         ],
         [
          "開發商是誰？",
-         "中國工作室塢光嵐影（Shadowlight），全球發行協議由 NEOWIZ 負責。"
+         "中國工作室塢光嵐影（Shadowlight）開發，Steam 版由鳳凰遊戲（Phoenix Game）發行。"
         ],
         [
          "這是續作嗎？",
@@ -6148,7 +6148,7 @@
         ],
         [
          "開発元は？",
-         "中国のスタジオ Shadowlight（坞光岚影）。グローバル配信は NEOWIZ の契約。"
+         "中国のスタジオ Shadowlight（坞光岚影）。Steam 版のパブリッシャーは Phoenix Game。"
         ],
         [
          "続編はある？",
@@ -6213,7 +6213,7 @@
         ],
         [
          "누가 개발했나요?",
-         "중국 스튜디오 Shadowlight(坞光岚影)가 개발하고, NEOWIZ가 글로벌 퍼블리싱을 맡았습니다."
+         "중국 스튜디오 Shadowlight(坞光岚影)가 개발했으며, Steam 버전 퍼블리셔는 Phoenix Game입니다."
         ],
         [
          "후속작인가요?",
@@ -6261,9 +6261,9 @@
        "Free demo on Steam with 10 achievements (app 2947640)"
       ],
       [
-       "July 2026",
-       "Global publishing announced",
-       "NEOWIZ signs global publishing deal for the title"
+       "May 2025",
+       "Publishing deal announced",
+       "NEOWIZ announces a global publishing deal; the released Steam version is published by Phoenix Game"
       ],
       [
        "August 5, 2026",
@@ -6335,9 +6335,9 @@
          "Steam 免费 Demo，含 10 个成就（app 2947640）"
         ],
         [
-         "2026 年 7 月",
+         "2025 年 5 月",
          "全球发行官宣",
-         "NEOWIZ 签下本作的全球发行协议"
+         "NEOWIZ 宣布全球发行协议；实际发售的 Steam 版由凤凰游戏（Phoenix Game）发行"
         ],
         [
          "2026 年 8 月 5 日",
@@ -6385,9 +6385,9 @@
          "Steam 免費 Demo，含 10 個成就（app 2947640）"
         ],
         [
-         "2026 年 7 月",
+         "2025 年 5 月",
          "全球發行官宣",
-         "NEOWIZ 簽下本作的全球發行協議"
+         "NEOWIZ 宣佈全球發行協議；實際發售的 Steam 版由鳳凰遊戲（Phoenix Game）發行"
         ],
         [
          "2026 年 8 月 5 日",
@@ -6435,9 +6435,9 @@
          "Steam で無料デモ。実績10個（app 2947640）"
         ],
         [
-         "2026年7月",
+         "2025年5月",
          "グローバル配信を発表",
-         "NEOWIZ が本作のグローバル配信契約を締結"
+         "NEOWIZ がグローバル配信契約を発表。実際に発売された Steam 版は Phoenix Game が配信"
         ],
         [
          "2026年8月5日",
@@ -6481,9 +6481,9 @@
          "업적 10개가 포함된 Steam 무료 데모 (앱 2947640)"
         ],
         [
-         "2026년 7월",
+         "2025년 5월",
          "글로벌 퍼블리싱 발표",
-         "NEOWIZ가 글로벌 퍼블리싱 계약 체결"
+         "NEOWIZ가 글로벌 퍼블리싱 계약을 발표. 실제 출시된 Steam 버전은 Phoenix Game이 퍼블리싱"
         ],
         [
          "2026년 8월 5일",
@@ -6618,12 +6618,12 @@
      }
     },
     {
-     "label": "NEOWIZ global publishing announcement (gamespress)",
-     "url": "https://www.gamespress.com/",
+     "label": "NEOWIZ publishing announcement (Worthplaying, 2025-06)",
+     "url": "https://worthplaying.com/article/2025/6/3/news/146278-kill-the-shadow-publishing-rights-picked-up-by-neowiz/",
      "labels": {
-      "zh-CN": "NEOWIZ global publishing announcement (gamespress)",
-      "ja": "NEOWIZ global publishing announcement (gamespress)",
-      "ko": "NEOWIZ global publishing announcement (gamespress)"
+      "zh-CN": "NEOWIZ publishing announcement (Worthplaying, 2025-06)",
+      "ja": "NEOWIZ publishing announcement (Worthplaying, 2025-06)",
+      "ko": "NEOWIZ publishing announcement (Worthplaying, 2025-06)"
      }
     },
     {
@@ -7086,12 +7086,12 @@
      }
     },
     {
-     "label": "NEOWIZ global publishing announcement (gamespress)",
-     "url": "https://www.gamespress.com/",
+     "label": "NEOWIZ publishing announcement (Worthplaying, 2025-06)",
+     "url": "https://worthplaying.com/article/2025/6/3/news/146278-kill-the-shadow-publishing-rights-picked-up-by-neowiz/",
      "labels": {
-      "zh-CN": "NEOWIZ global publishing announcement (gamespress)",
-      "ja": "NEOWIZ global publishing announcement (gamespress)",
-      "ko": "NEOWIZ global publishing announcement (gamespress)"
+      "zh-CN": "NEOWIZ publishing announcement (Worthplaying, 2025-06)",
+      "ja": "NEOWIZ publishing announcement (Worthplaying, 2025-06)",
+      "ko": "NEOWIZ publishing announcement (Worthplaying, 2025-06)"
      }
     },
     {

@@ -455,27 +455,44 @@ function renderStatic(lang, slug, title, body){
   const desc = KIT.staticDesc(slug, lang, s.name, title);
   return renderFull(lang, title, desc, [breadcrumbLd({slug,title}, lang)], slug, `<main class="container"><div class="article-wrap single"><article><div class="page-hero reveal"><span class="evidence-tag">${esc(s.caseFile)} // ${esc(slug.toUpperCase())}</span><h1>${esc(title)}</h1></div>${body}</article></div></main>`);
 }
+/** 5 语选择器。⚠️ 此前 about 页只写了 ja/ko 分支，zh-CN/zh-TW 静默落回英文（本项目 1 号复发坑） */
+const T5 = (lang, zhCN, zhTW, ja, ko, en) =>
+  lang === "zh-CN" ? zhCN : lang === "zh-TW" ? zhTW : lang === "ja" ? ja : lang === "ko" ? ko : en;
+
 function genStatic(lang){
   const s = siteI18n(lang);
   const dir = path.join(OUT, lang === DEF ? "" : lang);
   fs.mkdirSync(dir, {recursive:true});
   // about
   const aboutBody = `<section class="card dossier"><h2><span class="sec-tag">${esc(s.aboutTitle)}</span></h2><p class="sec-body">${
-    lang==="ja" ? "このサイトは『キル・ザ・シャドウ』の非公式攻略サイトです。完全ウォークスルー、選択肢とエンディング、全事件、調査システム、キャラクター、FAQ をひとつの「事件ファイル」として整理しています。"
-    : lang==="ko" ? "이 사이트는 『킬 더 섀도우』의 비공식 공략 사이트입니다. 완전 워크스루, 선택지와 엔딩, 모든 사건, 수사 시스템, 캐릭터, FAQ를 하나의 '사건 파일'로 정리했습니다."
-    : "This is an unofficial fan guide site for Kill The Shadow. We organize the full walkthrough, choices and endings, every case, the investigation system, characters and FAQs into one 'case file'."
+    T5(lang,
+      "本站是《杀死影子》的非公式攻略站。我们把完整流程、选择与结局、全部案件、调查系统、角色档案和常见问题整理成一份「案件卷宗」。",
+      "本站是《殺死影子》的非公式攻略站。我們把完整流程、選擇與結局、全部案件、調查系統、角色檔案和常見問題整理成一份「案件卷宗」。",
+      "このサイトは『キル・ザ・シャドウ』の非公式攻略サイトです。完全ウォークスルー、選択肢とエンディング、全事件、調査システム、キャラクター、FAQ をひとつの「事件ファイル」として整理しています。",
+      "이 사이트는 『킬 더 섀도우』의 비공식 공략 사이트입니다. 완전 워크스루, 선택지와 엔딩, 모든 사건, 수사 시스템, 캐릭터, FAQ를 하나의 '사건 파일'로 정리했습니다.",
+      "This is an unofficial fan guide site for Kill The Shadow. We organize the full walkthrough, choices and endings, every case, the investigation system, characters and FAQs into one 'case file'.")
   }</p><ul class="checks"><li>${
-    lang==="ja" ? "情報は Steam 公式ストアページ・パブリッシャー発表・信頼できるメディアで確認しています。"
-    : lang==="ko" ? "정보는 Steam 공식 스토어 페이지, 퍼블리셔 발표, 신뢰할 수 있는 매체에서 확인했습니다."
-    : "Facts are checked against the official Steam store page, publisher announcements and reputable media."
+    T5(lang,
+      "所有事实均对照 Steam 官方商店页、发行商公告与可信媒体核实。",
+      "所有事實均對照 Steam 官方商店頁、發行商公告與可信媒體核實。",
+      "情報は Steam 公式ストアページ・パブリッシャー発表・信頼できるメディアで確認しています。",
+      "정보는 Steam 공식 스토어 페이지, 퍼블리셔 발표, 신뢰할 수 있는 매체에서 확인했습니다.",
+      "Facts are checked against the official Steam store page, publisher announcements and reputable media.")
   }</li><li>${
-    lang==="ja" ? "未確認の情報はその旨を明記しています。"
-    : lang==="ko" ? "확인되지 않은 정보는 그렇게 표시합니다."
-    : "Anything unverified is clearly marked as such."
+    T5(lang,
+      "未经核实的内容会明确标注。",
+      "未經核實的內容會明確標註。",
+      "未確認の情報はその旨を明記しています。",
+      "확인되지 않은 정보는 그렇게 표시합니다.",
+      "Anything unverified is clearly marked as such.")
   }</li><li>${
-    lang==="ja" ? "このサイトは非公式であり、NEOWIZ・開発スタジオとは提携していません。"
-    : lang==="ko" ? "이 사이트는 비공식이며 NEOWIZ·개발 스튜디오와 제휴하지 않았습니다."
-    : "This site is unofficial and not affiliated with NEOWIZ or the developers."
+    // 发行商：Steam appinfo 实测为 Phoenix Game（不是早年宣布的 NEOWIZ），2026-08-07 核实
+    T5(lang,
+      "本站为非官方站点，与凤凰游戏（Phoenix Game）及开发团队均无隶属关系。",
+      "本站為非官方站點，與鳳凰遊戲（Phoenix Game）及開發團隊均無隸屬關係。",
+      "このサイトは非公式であり、Phoenix Game・開発スタジオとは提携していません。",
+      "이 사이트는 비공식이며 Phoenix Game·개발 스튜디오와 제휴하지 않았습니다.",
+      "This site is unofficial and not affiliated with Phoenix Game or the developers.")
   }</li></ul></section>`;
   writePage(path.join(dir,"about.html"), "about", lang, renderStatic(lang,"about",s.aboutTitle,aboutBody + `<section class="card dossier">` + KIT.editorialPolicy(lang, { siteName: s.name, contactEmail: `contact@${DATA.site.domain}` }) + `</section>`));
   // privacy
