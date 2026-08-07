@@ -1,102 +1,402 @@
 {
-  "https://killtheshadowguides.com/": {},
-  "https://killtheshadowguides.com/about": {},
-  "https://killtheshadowguides.com/achievements": {},
-  "https://killtheshadowguides.com/cases": {},
-  "https://killtheshadowguides.com/characters": {},
-  "https://killtheshadowguides.com/choices": {},
-  "https://killtheshadowguides.com/contact": {},
-  "https://killtheshadowguides.com/controls": {},
-  "https://killtheshadowguides.com/endings": {},
-  "https://killtheshadowguides.com/faq": {},
-  "https://killtheshadowguides.com/how-long-to-beat": {},
-  "https://killtheshadowguides.com/how-to-play": {},
-  "https://killtheshadowguides.com/investigation": {},
-  "https://killtheshadowguides.com/ja/": {},
-  "https://killtheshadowguides.com/ja/about": {},
-  "https://killtheshadowguides.com/ja/achievements": {},
-  "https://killtheshadowguides.com/ja/cases": {},
-  "https://killtheshadowguides.com/ja/characters": {},
-  "https://killtheshadowguides.com/ja/choices": {},
-  "https://killtheshadowguides.com/ja/contact": {},
-  "https://killtheshadowguides.com/ja/controls": {},
-  "https://killtheshadowguides.com/ja/endings": {},
-  "https://killtheshadowguides.com/ja/faq": {},
-  "https://killtheshadowguides.com/ja/how-long-to-beat": {},
-  "https://killtheshadowguides.com/ja/how-to-play": {},
-  "https://killtheshadowguides.com/ja/investigation": {},
-  "https://killtheshadowguides.com/ja/privacy": {},
-  "https://killtheshadowguides.com/ja/steam-deck": {},
-  "https://killtheshadowguides.com/ja/system-requirements": {},
-  "https://killtheshadowguides.com/ja/tips-and-tricks": {},
-  "https://killtheshadowguides.com/ja/update-log": {},
-  "https://killtheshadowguides.com/ja/walkthrough": {},
-  "https://killtheshadowguides.com/ja/where-to-buy": {},
-  "https://killtheshadowguides.com/ko/": {},
-  "https://killtheshadowguides.com/ko/about": {},
-  "https://killtheshadowguides.com/ko/achievements": {},
-  "https://killtheshadowguides.com/ko/cases": {},
-  "https://killtheshadowguides.com/ko/characters": {},
-  "https://killtheshadowguides.com/ko/choices": {},
-  "https://killtheshadowguides.com/ko/contact": {},
-  "https://killtheshadowguides.com/ko/controls": {},
-  "https://killtheshadowguides.com/ko/endings": {},
-  "https://killtheshadowguides.com/ko/faq": {},
-  "https://killtheshadowguides.com/ko/how-long-to-beat": {},
-  "https://killtheshadowguides.com/ko/how-to-play": {},
-  "https://killtheshadowguides.com/ko/investigation": {},
-  "https://killtheshadowguides.com/ko/privacy": {},
-  "https://killtheshadowguides.com/ko/steam-deck": {},
-  "https://killtheshadowguides.com/ko/system-requirements": {},
-  "https://killtheshadowguides.com/ko/tips-and-tricks": {},
-  "https://killtheshadowguides.com/ko/update-log": {},
-  "https://killtheshadowguides.com/ko/walkthrough": {},
-  "https://killtheshadowguides.com/ko/where-to-buy": {},
-  "https://killtheshadowguides.com/privacy": {},
-  "https://killtheshadowguides.com/steam-deck": {},
-  "https://killtheshadowguides.com/system-requirements": {},
-  "https://killtheshadowguides.com/tips-and-tricks": {},
-  "https://killtheshadowguides.com/update-log": {},
-  "https://killtheshadowguides.com/walkthrough": {},
-  "https://killtheshadowguides.com/where-to-buy": {},
-  "https://killtheshadowguides.com/zh-CN/": {},
-  "https://killtheshadowguides.com/zh-CN/about": {},
-  "https://killtheshadowguides.com/zh-CN/achievements": {},
-  "https://killtheshadowguides.com/zh-CN/cases": {},
-  "https://killtheshadowguides.com/zh-CN/characters": {},
-  "https://killtheshadowguides.com/zh-CN/choices": {},
-  "https://killtheshadowguides.com/zh-CN/contact": {},
-  "https://killtheshadowguides.com/zh-CN/controls": {},
-  "https://killtheshadowguides.com/zh-CN/endings": {},
-  "https://killtheshadowguides.com/zh-CN/faq": {},
-  "https://killtheshadowguides.com/zh-CN/how-long-to-beat": {},
-  "https://killtheshadowguides.com/zh-CN/how-to-play": {},
-  "https://killtheshadowguides.com/zh-CN/investigation": {},
-  "https://killtheshadowguides.com/zh-CN/privacy": {},
-  "https://killtheshadowguides.com/zh-CN/steam-deck": {},
-  "https://killtheshadowguides.com/zh-CN/system-requirements": {},
-  "https://killtheshadowguides.com/zh-CN/tips-and-tricks": {},
-  "https://killtheshadowguides.com/zh-CN/update-log": {},
-  "https://killtheshadowguides.com/zh-CN/walkthrough": {},
-  "https://killtheshadowguides.com/zh-CN/where-to-buy": {},
-  "https://killtheshadowguides.com/zh-TW/": {},
-  "https://killtheshadowguides.com/zh-TW/about": {},
-  "https://killtheshadowguides.com/zh-TW/achievements": {},
-  "https://killtheshadowguides.com/zh-TW/cases": {},
-  "https://killtheshadowguides.com/zh-TW/characters": {},
-  "https://killtheshadowguides.com/zh-TW/choices": {},
-  "https://killtheshadowguides.com/zh-TW/contact": {},
-  "https://killtheshadowguides.com/zh-TW/controls": {},
-  "https://killtheshadowguides.com/zh-TW/endings": {},
-  "https://killtheshadowguides.com/zh-TW/faq": {},
-  "https://killtheshadowguides.com/zh-TW/how-long-to-beat": {},
-  "https://killtheshadowguides.com/zh-TW/how-to-play": {},
-  "https://killtheshadowguides.com/zh-TW/investigation": {},
-  "https://killtheshadowguides.com/zh-TW/privacy": {},
-  "https://killtheshadowguides.com/zh-TW/steam-deck": {},
-  "https://killtheshadowguides.com/zh-TW/system-requirements": {},
-  "https://killtheshadowguides.com/zh-TW/tips-and-tricks": {},
-  "https://killtheshadowguides.com/zh-TW/update-log": {},
-  "https://killtheshadowguides.com/zh-TW/walkthrough": {},
-  "https://killtheshadowguides.com/zh-TW/where-to-buy": {}
+  "https://killtheshadowguides.com/": {
+    "hash": "99b5a5f5f85f3b4ff3e808fdaa5c74b5",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/about": {
+    "hash": "bdbf71d46380a30ee40e0b3ee48740a7",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/achievements": {
+    "hash": "bf66fc0767c5060b32ce98d66982ddb3",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/cases": {
+    "hash": "339aecf3dc38a3acbac19dbbeef3f3c3",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/characters": {
+    "hash": "31f042992344d63448b510e4a829ce81",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/choices": {
+    "hash": "b8c75de14effd14fee93502ce1af77c5",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/contact": {
+    "hash": "6c248dbf9e12c0c0b859a2ceffa8d80c",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/controls": {
+    "hash": "edfc857651401afd7f02bb72b87a4564",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/endings": {
+    "hash": "8b1bc7fee9a4584fce92ae5b9a27fdef",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/faq": {
+    "hash": "00df9e353c3dbd3b25cd9e5d515d918b",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/how-long-to-beat": {
+    "hash": "52e65b4ccb388c4a4fd137604e1c561e",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/how-to-play": {
+    "hash": "cc40e84b87cf3ab0fc7b8dbe8a1252dd",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/investigation": {
+    "hash": "d8ec1eb179009a6f5960bda2e6758dc1",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/ja/": {
+    "hash": "b037ba836fbd38055d3dd4c8c6111103",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/ja/about": {
+    "hash": "cbc85d802eee38469206098fb897e41e",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/ja/achievements": {
+    "hash": "4bc264b7fa2d791f829049330c02d50d",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/ja/cases": {
+    "hash": "922c4e788bcd9a10af014cbbc46e1515",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/ja/characters": {
+    "hash": "1480965aa8671744abad1b63b40b3513",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/ja/choices": {
+    "hash": "e71ec3444c3b9afbf9b5fe5092b91467",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/ja/contact": {
+    "hash": "6a8e5f1ffde1fb39965bb1e4cc02fe8f",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/ja/controls": {
+    "hash": "70b46cb85e7e9b07ffa6e78343794734",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/ja/endings": {
+    "hash": "1675a5d688a9225547f93b66eda8bc1e",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/ja/faq": {
+    "hash": "2b9dd245b2bbaad7ac505afd9cf842bd",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/ja/how-long-to-beat": {
+    "hash": "26d71f2dba5ac796afbb13ee85d43230",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/ja/how-to-play": {
+    "hash": "4013abe5879f9de90a777bf150b0d9be",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/ja/investigation": {
+    "hash": "bca2b2796a8266f2611505427e1cea67",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/ja/privacy": {
+    "hash": "81467c382dafa57547b710c843c8a4d5",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/ja/steam-deck": {
+    "hash": "b9f464d0863600226bb5028c1c8abf03",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/ja/system-requirements": {
+    "hash": "046855bbcde9cd2e4e01ea5b97365569",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/ja/tips-and-tricks": {
+    "hash": "9f28652a0b4028d370d7fe17e48399c4",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/ja/update-log": {
+    "hash": "2f4e40b45edaf47e85213e38e818551e",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/ja/walkthrough": {
+    "hash": "3933fd1d215fdf31a976d6d17655b339",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/ja/where-to-buy": {
+    "hash": "e8b9263667131a6ca4153759bab59841",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/ko/": {
+    "hash": "ba7a18cfe581c1984ba427438950a1b8",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/ko/about": {
+    "hash": "f28c98211a1b784f11a5bca8a191120d",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/ko/achievements": {
+    "hash": "eda82b2f13c69a822f324af93ae9f076",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/ko/cases": {
+    "hash": "4e90381dfb461f5fe5bc5349e458bdb3",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/ko/characters": {
+    "hash": "3b8869683c3423dadb9e6efde52f88a0",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/ko/choices": {
+    "hash": "d0895056d0fb063eb17fd26e64233522",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/ko/contact": {
+    "hash": "c2d274e2f68cde4019f52df24719637f",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/ko/controls": {
+    "hash": "10a443bbd0727d1db14267b64d31cf5b",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/ko/endings": {
+    "hash": "ae42effb6861fdf037114b3f27f1c7b5",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/ko/faq": {
+    "hash": "142f616faf43667319e79d88b33de25f",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/ko/how-long-to-beat": {
+    "hash": "8f700ee59eb9c5015acd0a83cf0c8a2d",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/ko/how-to-play": {
+    "hash": "cad59804cc0ab94dbdecd21fd82a797e",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/ko/investigation": {
+    "hash": "040ecf194cc5510f0dfa914d2e111da8",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/ko/privacy": {
+    "hash": "8c3ff9db8657ebc9aecd99caa7c02a7b",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/ko/steam-deck": {
+    "hash": "a9bc2e3affb694ecf590b643276bc075",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/ko/system-requirements": {
+    "hash": "0b67fffa3f8f1a612582a11e38d829c8",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/ko/tips-and-tricks": {
+    "hash": "605f4c504d54c86bfa580f06737e62b9",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/ko/update-log": {
+    "hash": "2fef21db899f7ef48ddf1833059a706d",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/ko/walkthrough": {
+    "hash": "984f4713634b097041d061bd52895ec3",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/ko/where-to-buy": {
+    "hash": "3ada6ce0489afaa6f92430e89a8fc16f",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/privacy": {
+    "hash": "4a0f013745d09f880c468777a244ad55",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/steam-deck": {
+    "hash": "ad6bc1bb9b3320797b7d9e57c7b910e7",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/system-requirements": {
+    "hash": "6c1b3f82c92fc4adcc6be6400be54bc5",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/tips-and-tricks": {
+    "hash": "92a3cad8e9f97ae119fd16eb51f046df",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/update-log": {
+    "hash": "8cb6de80c96eeb2c5dc52a121d25ae90",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/walkthrough": {
+    "hash": "eb5c545d1409a23250ea3651b98df79e",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/where-to-buy": {
+    "hash": "9d37227de21ab387daca0d782fe21ad7",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/zh-CN/": {
+    "hash": "c343bc121aff10bae9d457c6d7ca4544",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/zh-CN/about": {
+    "hash": "822b9e83547df0197a6a5568af1fe8d3",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/zh-CN/achievements": {
+    "hash": "6ec7ca2896c1724ab9829853419da3c3",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/zh-CN/cases": {
+    "hash": "2e258c73336d4ab013ead18b49073fee",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/zh-CN/characters": {
+    "hash": "8897da7d9ef461eebf3e0f1306094df1",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/zh-CN/choices": {
+    "hash": "a4e40993609eae1f358a468032a43f30",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/zh-CN/contact": {
+    "hash": "82b7cb8887ca15a2413629d0a15b1e32",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/zh-CN/controls": {
+    "hash": "18f86f15474c118586bbdcebbc8a61d6",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/zh-CN/endings": {
+    "hash": "42bd708449f1d9e4d9ce7686135820ef",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/zh-CN/faq": {
+    "hash": "e2e2fff05b49c3f69355c0af3bf23bcc",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/zh-CN/how-long-to-beat": {
+    "hash": "c1099760be7529ba0b47b164b896d884",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/zh-CN/how-to-play": {
+    "hash": "6d8a398c8fc3efc3512d74f0e65220d0",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/zh-CN/investigation": {
+    "hash": "31d78c3a1d9bedf7bd9c886ca5bc9367",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/zh-CN/privacy": {
+    "hash": "97013b4d8084422cc0b08ebe5fb94a66",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/zh-CN/steam-deck": {
+    "hash": "791189258a09f407e5f51285079942d4",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/zh-CN/system-requirements": {
+    "hash": "12d70a3e522dc44b632f38b68a9290dc",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/zh-CN/tips-and-tricks": {
+    "hash": "b18ccf76f8409cadaf8da40c313304d0",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/zh-CN/update-log": {
+    "hash": "feedec86301da375c3379b53453716d8",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/zh-CN/walkthrough": {
+    "hash": "d08dd32b0f9dd9725da8faa90dbd9ba8",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/zh-CN/where-to-buy": {
+    "hash": "4cc37ec625a32fe93b5e8e7ff4d67b33",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/zh-TW/": {
+    "hash": "964061cc940c949977fd4b8350fec3fe",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/zh-TW/about": {
+    "hash": "f9a2240205ba35a3096d0b2b468ee6ee",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/zh-TW/achievements": {
+    "hash": "01d5cbb56bb1dbacf260133e8dbd868a",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/zh-TW/cases": {
+    "hash": "4706a10026e6a77a3f9b17abbd1ee9d8",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/zh-TW/characters": {
+    "hash": "9b8df195eeca4bce741dafebf33097bd",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/zh-TW/choices": {
+    "hash": "af7163cad4e056155ae6187ec6d7931e",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/zh-TW/contact": {
+    "hash": "7b9ff87f5c24de86ddcc9461210b590b",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/zh-TW/controls": {
+    "hash": "6eb6cc809d77fa7bb18f40f574aa2c87",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/zh-TW/endings": {
+    "hash": "e4f062e6b5d9bf67f9ea96d5e9d837ba",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/zh-TW/faq": {
+    "hash": "7e7739e2093570c81cc9f03f109cce69",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/zh-TW/how-long-to-beat": {
+    "hash": "6411504d74290dfdc7e6098de90b569b",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/zh-TW/how-to-play": {
+    "hash": "2da6363c9cb986fa99b6fe769425a395",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/zh-TW/investigation": {
+    "hash": "4ad317d67ab34698308821d1887d7efe",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/zh-TW/privacy": {
+    "hash": "c2be655ad4632c8e230f14730207abd4",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/zh-TW/steam-deck": {
+    "hash": "5ba3601409c8a7b357de4272b3b2eb63",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/zh-TW/system-requirements": {
+    "hash": "5cf335283f3758d19adc506fb531a089",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/zh-TW/tips-and-tricks": {
+    "hash": "24f9d12da6dddbb0e3fe4ae3d8b0d9e5",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/zh-TW/update-log": {
+    "hash": "d249bdb44f35602f68dfb7fad7cba18b",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/zh-TW/walkthrough": {
+    "hash": "5f0dadcbeb2391ca327f2df217ea3513",
+    "date": "2026-08-07"
+  },
+  "https://killtheshadowguides.com/zh-TW/where-to-buy": {
+    "hash": "d0080cbfb0f9d77bbcfa8f06cf79af69",
+    "date": "2026-08-07"
+  }
 }
