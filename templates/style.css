@@ -237,6 +237,8 @@ details.faq[open] .faq-a{animation:faqIn .24s ease-out}
 .sources li::before{content:"▸";position:absolute;left:0;color:var(--blood)}
 .sources a{color:var(--ice);border-bottom:1px dashed rgba(76,201,240,.4)}
 .sources a:hover{color:var(--amber-soft);border-bottom-color:rgba(242,169,0,.5)}
+/* 联盟披露（FTC）：只在页面含计佣链接时输出。卷宗风格用等宽字体做成"档案附注" */
+.aff-note{margin-top:12px;padding-top:10px;border-top:1px dashed var(--line);color:var(--muted);font-family:var(--mono);font-size:.72rem;line-height:1.65}
 
 /* ---------- Footer ---------- */
 .site-footer{border-top:1px solid var(--line);margin-top:60px;background:rgba(8,9,12,.7)}
