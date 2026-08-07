@@ -147,91 +147,432 @@ def _tr_sections(sections_en, sections_zh, sections_ja, sections_ko):
 
 # characters page (en/zh/ja base) — ko from KO.PAGES
 CHAR_EN = {
-  "title":"Kill The Shadow Characters: Character Files",
-  "metaTitle":"Kill The Shadow Characters Guide: All Characters (2026)",
-  "metaDescription":"The confirmed characters in Kill The Shadow: Lucas, Lynn DaHandt, Officer May and the Shadow. Their roles, relationships and meaning in the story.",
-  "intro":"The confirmed character files in Kill The Shadow so far, based on launch coverage and our Chapter 1 playthrough. Updated as more is verified.",
-  "sections":[
-    {"type":"table","heading":"Character Overview","body":"The main characters verified in Chapter 1.","columns":["Character","Role","Notes"],"rows":[
-      ["Lucas","Protagonist · former officer","A former police officer carrying the Shadow. Can reconstruct the final moments of the dead."],
-      ["Lynn DaHandt","Mysterious sender","Sent the letter written on a medical gauge in the opening."],
-      ["Officer May","Police station contact","Greets Lucas on his return and sets the tone of the Chapter 1 opening."],
-      ["The Shadow","Supernatural entity","Lucas's partner. Source of time rewind and crime-scene reconstruction."],
-    ]},
-    {"type":"list","heading":"Lucas","body":"What is confirmed about the protagonist.","items":[
-      "A former police officer in Dark Tide City",
-      "Uses the Shadow's power to reconstruct the final moments of the dead",
-      "Your choices decide his relationships and moral stance across the story",
-    ]},
-    {"type":"list","heading":"The Shadow","body":"Partner and source of power.","items":[
-      "Reconstructs the final moments of the dead 'exactly as they happened'",
-      "Lets you rewind time during investigations to retry failed moments",
-      "Darker choices raise the corruption meter and change how the story unfolds",
-    ]},
-    {"type":"list","heading":"Officer May & Lynn DaHandt","body":"The people you meet in Chapter 1.","items":[
-      "Officer May is the first person to greet Lucas at the station",
-      "Lynn DaHandt is the sender of the opening letter — the start of the medical documents thread",
-      "Their relationships continue to connect in later cases",
-    ]},
-  ],
+ "title": "Kill The Shadow Characters: Character Files",
+ "metaTitle": "Kill The Shadow Characters Guide: All Characters (2026)",
+ "metaDescription": "The confirmed Kill The Shadow characters from Chapter 1: Lucas, the Shadow, Lynn DaHandt, Officer May, Uncle Smith, Captain Theo, the Flints, the Old Machinist, Rafe and Teddy.",
+ "intro": "The confirmed character files in Kill The Shadow, based on launch coverage and our Chapter 1 playthrough. The roster below covers everyone verified in the opening and the factory case — updated as more is confirmed.",
+ "sections": [
+  {
+   "type": "table",
+   "heading": "Character Overview",
+   "body": "Everyone verified in Chapter 1 — from the opening letter to the factory floor.",
+   "columns": [
+    "Character",
+    "Role",
+    "Notes"
+   ],
+   "rows": [
+    [
+     "Lucas",
+     "Protagonist · former officer",
+     "Former police officer carrying the Shadow; reconstructs the final moments of the dead"
+    ],
+    [
+     "The Shadow",
+     "Supernatural entity",
+     "Lucas's partner; source of time rewind and crime-scene reconstruction"
+    ],
+    [
+     "Lynn DaHandt",
+     "Mysterious sender",
+     "Sent the letter written on a medical gauge in the opening"
+    ],
+    [
+     "Officer May",
+     "Police station contact",
+     "Greets Lucas on his return and sets the tone of the opening"
+    ],
+    [
+     "Uncle Smith",
+     "Senior officer",
+     "Mysteriously disappears during the police station prologue"
+    ],
+    [
+     "Captain Theo",
+     "Factory supervisor",
+     "Chapter 1 key figure; reconstructing his objects ties into the ten-year mystery"
+    ],
+    [
+     "Axel Flint",
+     "Factory worker",
+     "Half of the Flint argument under the bridge; can be punched in a skill check"
+    ],
+    [
+     "Griff Flint",
+     "Factory worker",
+     "The other half; buys Lucas a drink for two clue points"
+    ],
+    [
+     "The Old Machinist",
+     "Factory elder",
+     "Trades the book 'Machinist's Basics' for a relief meal"
+    ],
+    [
+     "Rafe",
+     "Child in the factory case",
+     "His father's secret drives a Chapter 1 subplot"
+    ],
+    [
+     "Teddy",
+     "The dead dog",
+     "The case that breaks the factory open"
+    ]
+   ]
+  },
+  {
+   "type": "list",
+   "heading": "Lucas",
+   "body": "What is confirmed about the protagonist.",
+   "items": [
+    "A former police officer in Dark Tide City",
+    "Uses the Shadow's power to reconstruct the final moments of the dead",
+    "Your choices decide his relationships and moral stance across the story"
+   ]
+  },
+  {
+   "type": "list",
+   "heading": "The Shadow",
+   "body": "Partner and source of power.",
+   "items": [
+    "Reconstructs the final moments of the dead 'exactly as they happened'",
+    "Lets you rewind time during investigations to retry failed moments",
+    "Darker choices raise the corruption meter and change how the story unfolds"
+   ]
+  },
+  {
+   "type": "list",
+   "heading": "Officer May, Lynn DaHandt & Uncle Smith",
+   "body": "The people of the police station prologue.",
+   "items": [
+    "Officer May is the first person to greet Lucas at the station",
+    "Lynn DaHandt is the sender of the opening letter — the start of the medical documents thread",
+    "Uncle Smith is the senior officer who mysteriously disappears when the station catches fire",
+    "Their threads continue to connect in later cases"
+   ]
+  },
+  {
+   "type": "list",
+   "heading": "Captain Theo & the Factory",
+   "body": "The man who runs the factory floor.",
+   "items": [
+    "The factory supervisor who assembles the crew after Teddy's death",
+    "His objects, when reconstructed, connect the case to the city's ten-year-old mystery",
+    "He is the anchor of the Chapter 1 main case"
+   ]
+  },
+  {
+   "type": "list",
+   "heading": "Axel & Griff Flint",
+   "body": "The argument under the bridge.",
+   "items": [
+    "Axel and Griff argue beneath the overpass before the case breaks",
+    "A skill check lets Lucas punch Axel — a choice with consequences",
+    "Griff buys Lucas a drink, earning two investigation clue points",
+    "Both are caught up in the Teddy case that follows"
+   ]
+  },
+  {
+   "type": "list",
+   "heading": "The Old Machinist, Rafe & Teddy",
+   "body": "The supporting cast of the factory.",
+   "items": [
+    "The Old Machinist trades the book 'Machinist's Basics' for a relief meal at the pawnshop",
+    "Rafe's family thread — his mother's request, the Anti-Blockade Protest and calming Rafe down — is a full Chapter 1 subplot",
+    "Teddy, the dead dog, is the incident that opens the factory case"
+   ]
+  },
+  {
+   "type": "note",
+   "heading": "How the Cast Connects",
+   "body": "The medical gauge from the opening letter recurs across investigations. People from one case reappear in later ones, with relationships that persist. The mysterious event that fractured Dark Tide City ten years ago is the thread connecting everything — and the Shadow's corruption meter shapes how Lucas's story ends."
+  }
+ ]
 }
+
 CHAR_ZH = {
-  "title":"杀死影子角色：人物档案",
-  "metaTitle":"杀死影子角色指南：全部角色（2026）",
-  "metaDescription":"《杀死影子》已确认的角色：Lucas、Lynn DaHandt、警官 May 与影子。他们在故事中的角色、关系与意义。",
-  "intro":"根据发售报道与第一章通关记录，整理目前确认的《杀死影子》人物档案。随着更多内容得到验证会持续更新。",
-  "sections":[
-    {"type":"table","heading":"角色总览","body":"第一章中确认的主要角色。","columns":["角色","身份","备注"],"rows":[
-      ["Lucas","主角 · 前警官","背着影子的前警官。能够重现死者最后的时刻。"],
-      ["Lynn DaHandt","神秘寄信人","在开场寄出写在医疗计量器上的信。"],
-      ["警官 May","警察局联系人","迎接 Lucas 回归，奠定第一章开场的基调。"],
-      ["影子","超自然存在","Lucas 的搭档。时间回溯与现场重建的力量来源。"],
-    ]},
-    {"type":"list","heading":"Lucas","body":"关于主角已确认的信息。","items":[
-      "暗潮市的前警官",
-      "借助影子的力量重现死者最后的时刻",
-      "你的选择决定他在故事中的关系与道德立场",
-    ]},
-    {"type":"list","heading":"影子","body":"搭档与力量来源。","items":[
-      "「如实」重现死者最后的时刻",
-      "调查中可回溯时间，重试失败的关键时刻",
-      "越黑暗的选择越推高黑化度，改变故事走向",
-    ]},
-    {"type":"list","heading":"警官 May 与 Lynn DaHandt","body":"第一章中遇到的人物。","items":[
-      "警官 May 是在警察局迎接 Lucas 的第一人",
-      "Lynn DaHandt 是开场信的寄信人——医疗文档线索的开端",
-      "他们的关系在之后的案件中持续串联",
-    ]},
-  ],
+ "title": "杀死影子角色：人物档案",
+ "metaTitle": "杀死影子角色指南：全部角色（2026）",
+ "metaDescription": "《杀死影子》第一章已确认的角色：Lucas、影子、Lynn DaHandt、梅警官、史密斯叔叔、西奥队长、弗林特父子、老机械师、拉夫与泰迪。",
+ "intro": "根据发售报道与第一章通关记录，整理目前确认的《杀死影子》人物档案。以下阵容覆盖开场与工厂案中核实到的每一位角色——随着更多内容得到验证会持续更新。",
+ "sections": [
+  {
+   "type": "table",
+   "heading": "角色总览",
+   "body": "第一章中核实到的全部角色——从开场信件到工厂车间。",
+   "columns": [
+    "角色",
+    "身份",
+    "备注"
+   ],
+   "rows": [
+    [
+     "Lucas",
+     "主角 · 前警官",
+     "背着影子的前警官；能重现死者最后的时刻"
+    ],
+    [
+     "影子",
+     "超自然存在",
+     "Lucas 的搭档；时间回溯与现场重建的力量来源"
+    ],
+    [
+     "Lynn DaHandt",
+     "神秘寄信人",
+     "在开场寄出写在医疗计量器上的信"
+    ],
+    [
+     "梅警官",
+     "警察局联系人",
+     "迎接 Lucas 回归，奠定开场基调"
+    ],
+    [
+     "史密斯叔叔",
+     "资深警官",
+     "在警察局序章中神秘消失"
+    ],
+    [
+     "西奥队长",
+     "工厂主管",
+     "第一章关键人物；重建他的物品会把案件与十年谜团相连"
+    ],
+    [
+     "阿克塞尔·弗林特",
+     "工厂工人",
+     "天桥下弗林特争吵的一方；技能检定中可以被揍"
+    ],
+    [
+     "格里夫·弗林特",
+     "工厂工人",
+     "争吵的另一方；请 Lucas 喝酒换来 2 条推理线索"
+    ],
+    [
+     "老机械师",
+     "工厂长者",
+     "用《机械师基础》一书换救济餐"
+    ],
+    [
+     "拉夫",
+     "工厂案中的孩子",
+     "父亲的秘密驱动第一章的一条完整支线"
+    ],
+    [
+     "泰迪",
+     "死去的狗",
+     "打开工厂案的事件起点"
+    ]
+   ]
+  },
+  {
+   "type": "list",
+   "heading": "Lucas",
+   "body": "关于主角已确认的信息。",
+   "items": [
+    "暗潮市的前警官",
+    "借助影子的力量重现死者最后的时刻",
+    "你的选择决定他在故事中的关系与道德立场"
+   ]
+  },
+  {
+   "type": "list",
+   "heading": "影子",
+   "body": "搭档与力量来源。",
+   "items": [
+    "「如实」重现死者最后的时刻",
+    "调查中可回溯时间，重试失败的关键时刻",
+    "越黑暗的选择越推高黑化度，改变故事走向"
+   ]
+  },
+  {
+   "type": "list",
+   "heading": "梅警官、Lynn DaHandt 与史密斯叔叔",
+   "body": "警察局序章中的人物。",
+   "items": [
+    "梅警官是在警察局迎接 Lucas 的第一人",
+    "Lynn DaHandt 是开场信的寄信人——医疗文档线索的开端",
+    "史密斯叔叔是警局起火时神秘消失的资深警官",
+    "他们的线索在之后的案件中持续串联"
+   ]
+  },
+  {
+   "type": "list",
+   "heading": "西奥队长与工厂",
+   "body": "掌管工厂车间的人。",
+   "items": [
+    "泰迪之死后召集工厂众人的主管",
+    "重建他的物品，会把案件与城市十年谜团相连",
+    "他是第一章主案件的锚点"
+   ]
+  },
+  {
+   "type": "list",
+   "heading": "阿克塞尔与格里夫·弗林特",
+   "body": "天桥下的争吵。",
+   "items": [
+    "阿克塞尔与格里夫在案发前于天桥下争吵",
+    "技能检定允许 Lucas 揍阿克塞尔——一个有后果的选择",
+    "格里夫请 Lucas 喝酒，换来 2 条推理线索",
+    "两人都被卷入随后的泰迪案"
+   ]
+  },
+  {
+   "type": "list",
+   "heading": "老机械师、拉夫与泰迪",
+   "body": "工厂的配角阵容。",
+   "items": [
+    "老机械师在当铺用《机械师基础》一书换救济餐",
+    "拉夫的家庭线——母亲的请求、反封锁抗议与安抚拉夫——是第一章的一条完整支线",
+    "死去的泰迪是打开工厂案的事件起点"
+   ]
+  },
+  {
+   "type": "note",
+   "heading": "角色如何相连",
+   "body": "开场信里的医疗计量器在多个调查中反复出现。一个案件里的人物会出现在后续案件中，关系持续存在。十年前撕裂暗潮市的神秘事件是贯穿一切的线索——而影子的黑化度决定 Lucas 的故事如何收尾。"
+  }
+ ]
 }
+
 CHAR_JA = {
-  "title":"キル・ザ・シャドウ キャラクター：人物ファイル",
-  "metaTitle":"キル・ザ・シャドウ キャラクターガイド：全キャラクター（2026）",
-  "metaDescription":"『キル・ザ・シャドウ』で確認されたキャラクター：ルーカス、リン・ダハント、メイ巡査、シャドウ。その役割と物語上の意味。",
-  "intro":"発売報道と第1章プレイをもとに、確認済みのキャラクターファイルをまとめました。確認でき次第更新します。",
-  "sections":[
-    {"type":"table","heading":"キャラクター概要","body":"第1章で確認された主要人物。","columns":["人物","役割","備考"],"rows":[
-      ["ルーカス","主人公・元警官","シャドウを背負う元警官。死者の最後の瞬間を再現できる。"],
-      ["リン・ダハント","謎の差出人","オープニングで医療ゲージに書かれた手紙を送った人物。"],
-      ["メイ巡査","警察署の窓口","ルーカスの復帰を迎え、第1章オープニングの空気を作る。"],
-      ["シャドウ","超常存在","ルーカスのパートナー。時間巻き戻しと現場再現の源。"],
-    ]},
-    {"type":"list","heading":"ルーカス","body":"主人公について確認済みの情報。","items":[
-      "ダークタイドシティの元警官",
-      "シャドウの力で死者の最後の瞬間を再現する",
-      "選択が関係と道徳的立場を決める",
-    ]},
-    {"type":"list","heading":"シャドウ","body":"パートナーであり力の源。","items":[
-      "死者の最後の瞬間を「そのまま」再現する",
-      "調査中に時間を巻き戻し、失敗した瞬間をやり直せる",
-      "暗い選択は汚染度を上げ、物語の展開を変える",
-    ]},
-    {"type":"list","heading":"メイ巡査とリン・ダハント","body":"第1章で出会う人物たち。","items":[
-      "メイ巡査は警察署で最初にルーカスを迎える人物",
-      "リン・ダハントはオープニングの手紙の差出人",
-      "彼らの関係は以後の事件にもつながる",
-    ]},
-  ],
+ "title": "キル・ザ・シャドウ キャラクター：人物ファイル",
+ "metaTitle": "キル・ザ・シャドウ キャラクターガイド：全キャラクター（2026）",
+ "metaDescription": "『キル・ザ・シャドウ』第1章で確認されたキャラクター：ルーカス、シャドウ、リン・ダハント、メイ巡査、スミスおじさん、テオ船長、フリント父子、老機械工、レイフ、テディ。",
+ "intro": "発売報道と第1章プレイをもとに、確認済みのキャラクターファイルをまとめました。オープニングと工場事件で確認できた全員を網羅しており、確認でき次第更新します。",
+ "sections": [
+  {
+   "type": "table",
+   "heading": "キャラクター概要",
+   "body": "第1章で確認された全員——オープニングの手紙から工場の現場まで。",
+   "columns": [
+    "人物",
+    "役割",
+    "備考"
+   ],
+   "rows": [
+    [
+     "ルーカス",
+     "主人公・元警官",
+     "シャドウを背負う元警官。死者の最後の瞬間を再現できる"
+    ],
+    [
+     "シャドウ",
+     "超常存在",
+     "ルーカスのパートナー。時間巻き戻しと現場再現の源"
+    ],
+    [
+     "リン・ダハント",
+     "謎の差出人",
+     "オープニングで医療ゲージに書かれた手紙を送った人物"
+    ],
+    [
+     "メイ巡査",
+     "警察署の窓口",
+     "ルーカスの復帰を迎え、オープニングの空気を作る"
+    ],
+    [
+     "スミスおじさん",
+     "先任警官",
+     "警察署の序章で謎の失踪"
+    ],
+    [
+     "テオ船長",
+     "工場の監督",
+     "第1章の要。彼の品物の再現が事件を10年前の謎へとつなぐ"
+    ],
+    [
+     "アクセル・フリント",
+     "工場労働者",
+     "高架下のフリント喧嘩の片割れ。スキルチェックで殴れる"
+    ],
+    [
+     "グリフ・フリント",
+     "工場労働者",
+     "もう片割れ。ルーカスに酒を振る舞い推理ポイント2つ"
+    ],
+    [
+     "老機械工",
+     "工場の古老",
+     "『機械士の基礎』の本を救済食と交換"
+    ],
+    [
+     "レイフ",
+     "工場事件の子供",
+     "父の秘密が第1章のサブプロットを動かす"
+    ],
+    [
+     "テディ",
+     "死んだ犬",
+     "工場事件を開くきっかけ"
+    ]
+   ]
+  },
+  {
+   "type": "list",
+   "heading": "ルーカス",
+   "body": "主人公について確認済みの情報。",
+   "items": [
+    "ダークタイドシティの元警官",
+    "シャドウの力で死者の最後の瞬間を再現する",
+    "選択が関係と道徳的立場を決める"
+   ]
+  },
+  {
+   "type": "list",
+   "heading": "シャドウ",
+   "body": "パートナーであり力の源。",
+   "items": [
+    "死者の最後の瞬間を「そのまま」再現する",
+    "調査中に時間を巻き戻し、失敗した瞬間をやり直せる",
+    "暗い選択は汚染度を上げ、物語の展開を変える"
+   ]
+  },
+  {
+   "type": "list",
+   "heading": "メイ巡査、リン・ダハント、スミスおじさん",
+   "body": "警察署序章の人々。",
+   "items": [
+    "メイ巡査は警察署で最初にルーカスを迎える人物",
+    "リン・ダハントはオープニングの手紙の差出人——医療書類の始まり",
+    "スミスおじさんは署が炎上する中で謎の失踪を遂げる先任警官",
+    "彼らの糸は以後の事件にもつながる"
+   ]
+  },
+  {
+   "type": "list",
+   "heading": "テオ船長と工場",
+   "body": "工場の現場を仕切る男。",
+   "items": [
+    "テディの死後に作業員を集める監督",
+    "彼の品物の再現が事件を10年前の謎へとつなぐ",
+    "第1章メイン事件の要"
+   ]
+  },
+  {
+   "type": "list",
+   "heading": "アクセルとグリフ・フリント",
+   "body": "高架下の喧嘩。",
+   "items": [
+    "アクセルとグリフは事件前に高架下で喧嘩",
+    "スキルチェックでルーカスがアクセルを殴れる——結果を伴う選択",
+    "グリフは酒を振る舞い、推理ポイント2つを稼ぐ",
+    "二人とも続くテディ事件に巻き込まれる"
+   ]
+  },
+  {
+   "type": "list",
+   "heading": "老機械工、レイフ、テディ",
+   "body": "工場の脇役たち。",
+   "items": [
+    "老機械工は質屋で『機械士の基礎』を救済食と交換",
+    "レイフの家族の物語——母の依頼、封鎖反対デモ、レイフを落ち着かせる——は第1章の完全なサブプロット",
+    "死んだテディは工場事件を開くきっかけ"
+   ]
+  },
+  {
+   "type": "note",
+   "heading": "キャストのつながり",
+   "body": "冒頭の手紙の医療ゲージは複数の調査に登場。ある事件の人物が後の事件にも現れ、関係は継続。10年前にダークタイドシティを分断した謎の出来事がすべてをつなぐ——そしてシャドウの汚染度がルーカスの物語の結末を形作ります。"
+  }
+ ]
 }
 
 # enrich existing pages: add new sections (en/zh/ja base + ko merge)
