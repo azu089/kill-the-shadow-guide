@@ -477,7 +477,7 @@ function genStatic(lang){
     : lang==="ko" ? "이 사이트는 비공식이며 NEOWIZ·개발 스튜디오와 제휴하지 않았습니다."
     : "This site is unofficial and not affiliated with NEOWIZ or the developers."
   }</li></ul></section>`;
-  writePage(path.join(dir,"about.html"), "about", lang, renderStatic(lang,"about",s.aboutTitle,aboutBody));
+  writePage(path.join(dir,"about.html"), "about", lang, renderStatic(lang,"about",s.aboutTitle,aboutBody + `<section class="card dossier">` + KIT.editorialPolicy(lang, { siteName: s.name, contactEmail: `contact@${DATA.site.domain}` }) + `</section>`));
   // privacy
   const pBody = lang==="ja" ? `<p class="sec-body">このサイトはゲーム攻略サイトです。訪問者のプライバシーを尊重しています。</p><h2 style="font-size:1.05rem;margin:18px 0 8px">収集する情報</h2><p>Google Analytics（GA4）で匿名のアクセス統計（ページビュー、流入元、端末タイプ、おおよその地域）を取得しています。氏名・メールアドレスなどの個人情報は収集しません。</p><h2 style="font-size:1.05rem;margin:18px 0 8px">Cookie</h2><p>Google Analytics はセッション統計のため Cookie を使用します。ブラウザで無効化できます。</p><h2 style="font-size:1.05rem;margin:18px 0 8px">お問い合わせ</h2><p><a href="mailto:contact@${esc(DATA.site.domain)}">contact@${esc(DATA.site.domain)}</a></p>`
     : lang==="ko" ? `<p class="sec-body">이 사이트는 게임 공략 사이트로, 방문자의 프라이버시를 존중합니다.</p><h2 style="font-size:1.05rem;margin:18px 0 8px">수집 정보</h2><p>Google Analytics(GA4)로 익명의 접속 통계(페이지뷰, 유입 경로, 기기 유형, 대략적인 지역)를 수집합니다. 이름·이메일 등 개인정보는 수집하지 않습니다.</p><h2 style="font-size:1.05rem;margin:18px 0 8px">쿠키</h2><p>Google Analytics는 세션 통계를 위해 쿠키를 사용합니다. 브라우저에서 비활성화할 수 있습니다.</p><h2 style="font-size:1.05rem;margin:18px 0 8px">문의</h2><p><a href="mailto:contact@${esc(DATA.site.domain)}">contact@${esc(DATA.site.domain)}</a></p>`
