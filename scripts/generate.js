@@ -11,18 +11,16 @@ const crypto = require("crypto");
 const ROOT = path.join(__dirname, "..");
 const DATA = JSON.parse(fs.readFileSync(path.join(ROOT, "data", "site.json"), "utf8"));
 const OUT = path.join(ROOT, "public");
-const esc = s => String(s ?? "").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
-const clean = slug => String(slug).replace(/\.html$/,"");
+const KIT = require("./lib/site-kit");   // 共用基建：URL/图片/sitemap/lastmod
+const esc = KIT.esc;
+const clean = KIT.clean;
 const LANGS = DATA.site.languages || ["en"];
 const DEF = DATA.site.defaultLanguage || "en";
 const CSS_V = crypto.createHash("md5").update(fs.readFileSync(path.join(ROOT,"templates","style.css"),"utf8")).digest("hex").slice(0,8);
 const today = new Date().toISOString().slice(0,10);
-const urlOf = (slug, lang) => {
-  const base = `https://${DATA.site.domain}`;
-  const p = clean(slug);
-  const pathPart = lang === DEF ? (p === "index" ? "/" : `/${p}`) : (p === "index" ? `/${lang}/` : `/${lang}/${p}`);
-  return base + pathPart;
-};
+const urlOf = KIT.createUrl({ domain: DATA.site.domain, defaultLang: DEF });
+const LM = KIT.createLastmod({ manifestPath: path.join(ROOT,"data",".lastmod.json"), today });
+const HERO_SET = "/images/hero-640.jpg 640w, /images/hero-1280.jpg 1280w, /images/hero.jpg 1600w";
 const LANG_META = {
   "en":    { flag: "🇬🇧", name: "English",  html: "en" },
   "zh-CN": { flag: "🇨🇳", name: "简体中文", html: "zh-CN" },
@@ -123,7 +121,7 @@ ${gsc}
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Chakra+Petch:wght@600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="/css/style.css?v=${CSS_V}" />
+<link rel="stylesheet" href="/css/style.css?v=${CSS_V}" />${slug === "index" ? "\n" + KIT.heroPreload({ srcset: HERO_SET, sizes: "100vw" }) : ""}
 <script type="application/ld+json">${ld}</script>
 ${DATA.site.gaId ? `<script async src="https://www.googletagmanager.com/gtag/js?id=${esc(DATA.site.gaId)}"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${esc(DATA.site.gaId)}');</script>` : ""}
@@ -313,7 +311,7 @@ function renderHome(lang){
   const body = `
   <main>
     <section class="wall-hero">
-      <div class="wall-bg"><img src="/images/hero-1280.jpg" srcset="/images/hero-640.jpg 640w, /images/hero-1280.jpg 1280w, /images/hero.jpg 1600w" sizes="100vw" alt="${esc(gname)} key art" loading="eager" width="1600" height="900" fetchpriority="high" /></div>
+      <div class="wall-bg">${KIT.picture({ src:"/images/hero-1280.jpg", srcset:HERO_SET, sizes:"100vw", attrs:`alt="${esc(gname)} key art" loading="eager" width="1600" height="900" fetchpriority="high"` })}</div>
       <div class="wall-overlay"></div>
       <div class="container wall-copy">
         <span class="evidence-tag"><span class="dot"></span> ${esc(badgeTxt)}</span>
@@ -369,7 +367,7 @@ function renderHome(lang){
     });
   });
   </script>`;
-  return renderFull(lang, siteI18n(lang).name, `${esc(gname)} — ${esc(s.tagline)}`, [], "index", body, heroImg);
+  return renderFull(lang, siteI18n(lang).name, s.description, [], "index", body, heroImg);
 }
 function renderFull(lang, title, desc, extraLd, slug, body, ogImage){
   const s = siteI18n(lang);
@@ -395,11 +393,11 @@ function renderPage(lang, page){
   const s = siteI18n(lang);
   const heroImg = t.heroImage;
   const srcsetOf = img => {
-    if (!img) return "";
+    if (!img) return null;
     const base = img.replace(/\.(jpg|jpeg|png|webp)$/i, "");
-    return ` srcset="${base}-640.jpg 640w, ${base}-1280.jpg 1280w, ${img} 1600w" sizes="(max-width: 640px) 94vw, (max-width: 960px) 92vw, 820px"`;
+    return { srcset: `${base}-640.jpg 640w, ${base}-1280.jpg 1280w, ${img} 1600w`, sizes: "(max-width: 640px) 94vw, (max-width: 960px) 92vw, 820px" };
   };
-  const pageHero = heroImg ? `<div class="dossier-hero-img"><img src="${heroImg}"${srcsetOf(heroImg)} alt="${esc(t.title)}" loading="lazy" width="1600" height="900" /></div>` : "";
+  const pageHero = heroImg ? `<div class="dossier-hero-img">${KIT.picture({ ...srcsetOf(heroImg), src: heroImg, attrs: `alt="${esc(t.title)}" loading="lazy" width="1600" height="900"` })}</div>` : "";
   const noImgCls = heroImg ? "" : " noimg";
   const body = `
   <main class="container">
@@ -448,7 +446,8 @@ function gnameOf(lang){ return (DATA.game.nameI18n && DATA.game.nameI18n[lang]) 
 function renderStatic(lang, slug, title, body){
   const prefix = lang === DEF ? "" : `/${lang}`;
   const s = siteI18n(lang);
-  return renderFull(lang, title, title, [breadcrumbLd({slug,title}, lang)], slug, `<main class="container"><div class="article-wrap single"><article><div class="page-hero reveal"><span class="evidence-tag">${esc(s.caseFile)} // ${esc(slug.toUpperCase())}</span><h1>${esc(title)}</h1></div>${body}</article></div></main>`);
+  const desc = KIT.staticDesc(slug, lang, s.name, title);
+  return renderFull(lang, title, desc, [breadcrumbLd({slug,title}, lang)], slug, `<main class="container"><div class="article-wrap single"><article><div class="page-hero reveal"><span class="evidence-tag">${esc(s.caseFile)} // ${esc(slug.toUpperCase())}</span><h1>${esc(title)}</h1></div>${body}</article></div></main>`);
 }
 function genStatic(lang){
   const s = siteI18n(lang);
@@ -472,19 +471,19 @@ function genStatic(lang){
     : lang==="ko" ? "이 사이트는 비공식이며 NEOWIZ·개발 스튜디오와 제휴하지 않았습니다."
     : "This site is unofficial and not affiliated with NEOWIZ or the developers."
   }</li></ul></section>`;
-  fs.writeFileSync(path.join(dir,"about.html"), renderStatic(lang,"about",s.aboutTitle,aboutBody));
+  writePage(path.join(dir,"about.html"), "about", lang, renderStatic(lang,"about",s.aboutTitle,aboutBody));
   // privacy
   const pBody = lang==="ja" ? `<p class="sec-body">このサイトはゲーム攻略サイトです。訪問者のプライバシーを尊重しています。</p><h2 style="font-size:1.05rem;margin:18px 0 8px">収集する情報</h2><p>Google Analytics（GA4）で匿名のアクセス統計（ページビュー、流入元、端末タイプ、おおよその地域）を取得しています。氏名・メールアドレスなどの個人情報は収集しません。</p><h2 style="font-size:1.05rem;margin:18px 0 8px">Cookie</h2><p>Google Analytics はセッション統計のため Cookie を使用します。ブラウザで無効化できます。</p><h2 style="font-size:1.05rem;margin:18px 0 8px">お問い合わせ</h2><p><a href="mailto:contact@${esc(DATA.site.domain)}">contact@${esc(DATA.site.domain)}</a></p>`
     : lang==="ko" ? `<p class="sec-body">이 사이트는 게임 공략 사이트로, 방문자의 프라이버시를 존중합니다.</p><h2 style="font-size:1.05rem;margin:18px 0 8px">수집 정보</h2><p>Google Analytics(GA4)로 익명의 접속 통계(페이지뷰, 유입 경로, 기기 유형, 대략적인 지역)를 수집합니다. 이름·이메일 등 개인정보는 수집하지 않습니다.</p><h2 style="font-size:1.05rem;margin:18px 0 8px">쿠키</h2><p>Google Analytics는 세션 통계를 위해 쿠키를 사용합니다. 브라우저에서 비활성화할 수 있습니다.</p><h2 style="font-size:1.05rem;margin:18px 0 8px">문의</h2><p><a href="mailto:contact@${esc(DATA.site.domain)}">contact@${esc(DATA.site.domain)}</a></p>`
     : lang==="zh-TW" ? `<p class="sec-body">本網站為遊戲攻略網站，尊重訪客隱私。</p><h2 style="font-size:1.05rem;margin:18px 0 8px">收集的資訊</h2><p>我們使用 Google Analytics（GA4）收集匿名流量統計：瀏覽量、來源、裝置類型與大致地區。我們不收集姓名、電子郵件等個人資料。</p><h2 style="font-size:1.05rem;margin:18px 0 8px">Cookie</h2><p>Google Analytics 會使用 Cookie 進行會話統計，可在瀏覽器中停用。</p><h2 style="font-size:1.05rem;margin:18px 0 8px">聯絡</h2><p><a href="mailto:contact@${esc(DATA.site.domain)}">contact@${esc(DATA.site.domain)}</a></p>`
     : lang==="zh-CN" ? `<p class="sec-body">本网站为游戏攻略网站，尊重访客隐私。</p><h2 style="font-size:1.05rem;margin:18px 0 8px">收集的信息</h2><p>我们使用 Google Analytics（GA4）收集匿名流量统计：浏览量、来源、设备类型与大致地区。我们不收集姓名、邮箱等个人资料。</p><h2 style="font-size:1.05rem;margin:18px 0 8px">Cookie</h2><p>Google Analytics 会使用 Cookie 进行会话统计，可在浏览器中停用。</p><h2 style="font-size:1.05rem;margin:18px 0 8px">联系</h2><p><a href="mailto:contact@${esc(DATA.site.domain)}">contact@${esc(DATA.site.domain)}</a></p>`
     : `<p class="sec-body">This is a game guide website and we respect visitor privacy.</p><h2 style="font-size:1.05rem;margin:18px 0 8px">What we collect</h2><p>We use Google Analytics (GA4) for anonymous traffic statistics: page views, referrers, device types and approximate regions. We do not collect names, email addresses or any personally identifiable information.</p><h2 style="font-size:1.05rem;margin:18px 0 8px">Cookies</h2><p>Google Analytics sets cookies for session statistics. You can disable cookies in your browser.</p><h2 style="font-size:1.05rem;margin:18px 0 8px">Contact</h2><p><a href="mailto:contact@${esc(DATA.site.domain)}">contact@${esc(DATA.site.domain)}</a></p>`;
-  fs.writeFileSync(path.join(dir,"privacy.html"), renderStatic(lang,"privacy",s.privacyTitle,pBody));
+  writePage(path.join(dir,"privacy.html"), "privacy", lang, renderStatic(lang,"privacy",s.privacyTitle,pBody));
   // contact
   const cBody = lang==="ja" ? `<p class="sec-body">お問い合わせ：<a href="mailto:contact@${esc(DATA.site.domain)}">contact@${esc(DATA.site.domain)}</a></p><p style="margin-top:10px">通常 2〜3 営業日以内に返信します。</p>`
     : lang==="ko" ? `<p class="sec-body">문의：<a href="mailto:contact@${esc(DATA.site.domain)}">contact@${esc(DATA.site.domain)}</a></p><p style="margin-top:10px">보통 2~3 영업일 이내에 답변합니다.</p>`
     : `<p class="sec-body">${lang==="zh-TW"?"聯絡我們：":lang==="zh-CN"?"联系我们：":"Reach us at:"} <a href="mailto:contact@${esc(DATA.site.domain)}">contact@${esc(DATA.site.domain)}</a></p><p style="margin-top:10px">${lang==="zh-TW"?"我們通常會在 2-3 個工作天內回覆。":lang==="zh-CN"?"我们通常会在 2-3 个工作日内回复。":"We usually reply within 2-3 business days."}</p>`;
-  fs.writeFileSync(path.join(dir,"contact.html"), renderStatic(lang,"contact",s.contactTitle,cBody));
+  writePage(path.join(dir,"contact.html"), "contact", lang, renderStatic(lang,"contact",s.contactTitle,cBody));
 }
 function gen404(){
   const s = siteI18n(DEF);
@@ -505,7 +504,7 @@ function gameLd(){
 }
 function articleLd(page, lang){
   const t = pageOf(page, lang);
-  return {"@context":"https://schema.org","@type":"Article",headline:t.title,description:t.metaDescription,mainEntityOfPage:urlOf(page.slug,lang),datePublished:DATA.game.releaseDate||today,dateModified:today,inLanguage:LANG_META[lang]?.html||lang,publisher:{"@type":"Organization",name:siteI18n(lang).name}};
+  return {"@context":"https://schema.org","@type":"Article",headline:t.title,description:t.metaDescription,mainEntityOfPage:urlOf(page.slug,lang),datePublished:DATA.game.releaseDate||today,dateModified:KIT.LASTMOD_TOKEN,inLanguage:LANG_META[lang]?.html||lang,publisher:{"@type":"Organization",name:siteI18n(lang).name}};
 }
 function faqLd(sections){
   const items = (sections||[]).filter(s=>s.type==="faq").flatMap(s=>s.items||[]);
@@ -517,6 +516,8 @@ function breadcrumbLd(page, lang){
 }
 
 /* ---------- build ---------- */
+// 写页面统一走这里：按「内容是否真变了」把 lastmod 占位符换成真实日期
+const writePage = (filePath, slug, lang, html) => fs.writeFileSync(filePath, LM.stamp(urlOf(slug, lang), html));
 fs.rmSync(OUT, {recursive:true, force:true});
 fs.mkdirSync(OUT, {recursive:true});
 // assets copy
@@ -538,24 +539,40 @@ fs.writeFileSync(path.join(OUT,"css","style.css"), fs.readFileSync(path.join(ROO
 for (const lang of LANGS) {
   const dir = path.join(OUT, lang === DEF ? "" : lang);
   fs.mkdirSync(dir, {recursive:true});
-  fs.writeFileSync(path.join(dir,"index.html"), renderHome(lang));
+  writePage(path.join(dir,"index.html"), "index", lang, renderHome(lang));
   for (const page of DATA.pages) {
     SEC_IDX = 0;
     const html = renderPage(lang, page);
-    fs.writeFileSync(path.join(dir, page.slug + ".html"), html);
+    writePage(path.join(dir, page.slug + ".html"), page.slug, lang, html);
   }
   genStatic(lang);
 }
 gen404();
 
-// sitemap
+// sitemap（lastmod 走 LM：内容没变就沿用旧日期，不再每次全站标记为当天）
 const urls = [];
 for (const lang of LANGS) {
-  urls.push(urlOf("index",lang));
-  for (const p of DATA.pages) urls.push(urlOf(p.slug,lang));
-  for (const sp of ["about","privacy","contact"]) urls.push(urlOf(sp,lang));
+  urls.push({ loc: urlOf("index",lang), priority: "1.0" });
+  for (const p of DATA.pages) urls.push({ loc: urlOf(p.slug,lang), priority: "0.8" });
+  for (const sp of ["about","privacy","contact"]) urls.push({ loc: urlOf(sp,lang), priority: "0.3" });
 }
-fs.writeFileSync(path.join(OUT,"sitemap.xml"), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map(u=>`  <url><loc>${u}</loc><lastmod>${today}</lastmod><changefreq>daily</changefreq><priority>${u.endsWith("/")?"1.0":"0.8"}</priority></url>`).join("\n")}\n</urlset>\n`);
-fs.writeFileSync(path.join(OUT,"robots.txt"), `User-agent: *\nAllow: /\nSitemap: https://${DATA.site.domain}/sitemap.xml\n`);
-fs.writeFileSync(path.join(OUT,"ads.txt"), DATA.site.adsenseId ? `google.com, ${DATA.site.adsenseId}, DIRECT, f08c47fec0942fa0\n` : "");
-console.log(`✓ Generated ${LANGS.length} locales x ${1+DATA.pages.length+4} pages + sitemap (${today})`);
+const smN = KIT.writeSitemap(OUT, urls, LM);
+KIT.writeRobots(OUT, DATA.site.domain);
+KIT.writeAds(OUT, DATA.site.adsenseId);
+KIT.writeHeaders(OUT);
+KIT.writeIndexNowKey(OUT, DATA.site.indexNowKey);
+// llms.txt：给 AI agent 的机器可读入口（不是 SEO 手段，见 site-kit 注释）
+KIT.writeLlmsTxt(OUT, {
+  siteName: DATA.site.name,
+  domain: DATA.site.domain,
+  summary: `Unofficial ${DATA.game.name} guide site. Each page answers one question players actually search for, and lists the sources it was checked against. Available in ${LANGS.length} languages: ${LANGS.join(", ")}.`,
+  pages: DATA.pages.map(p => { const t = pageOf(p, DEF); return { slug: p.slug, title: t.title, desc: t.metaDescription }; }),
+  notes: [
+    "Facts are checked against the official Steam store page and reputable gaming media; every page lists its own sources at the bottom.",
+    "Anything we could not verify is explicitly marked as unverified — gaps are left open rather than filled with generated text.",
+    "Localised versions live under /<lang>/ (e.g. /ja/how-to-play) and are declared via hreflang on every page.",
+    "This is an unofficial fan site, not affiliated with the game's developer or publisher."
+  ]
+});
+const lm = LM.save();
+console.log(`✓ ${LANGS.length} locales × ${1+DATA.pages.length+3} pages｜sitemap ${smN} URL｜内容有变更 ${lm.changed}/${lm.total} 页`);

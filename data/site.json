@@ -3,11 +3,12 @@
   "name": "Kill The Shadow Guide",
   "domain": "killtheshadowguides.com",
   "tagline": "Walkthrough, Choices, Endings, Cases & FAQs",
-  "description": "The best Kill The Shadow guides: full walkthrough, choices and endings guide, all cases, investigation system explained, achievements, system requirements and FAQs. Updated regularly.",
+  "description": "The best Kill The Shadow guides: full walkthrough, choices and endings, all cases, the investigation system, achievements, system requirements and FAQs.",
   "language": "en",
   "gaId": "G-5D254QG9RJ",
   "gscVerification": "",
   "adsenseId": "",
+  "indexNowKey": "7abddacb916a38f7be9e524bae040f30",
   "ogImage": "/images/hero.jpg",
   "languages": [
    "en",
@@ -21,7 +22,7 @@
    "en": {
     "name": "Kill The Shadow Guide",
     "tagline": "Walkthrough, Choices, Endings, Cases & FAQs",
-    "description": "The best Kill The Shadow guides: full walkthrough, choices and endings guide, all cases, investigation system explained, achievements, system requirements and FAQs. Updated regularly.",
+    "description": "The best Kill The Shadow guides: full walkthrough, choices and endings, all cases, the investigation system, achievements, system requirements and FAQs.",
     "navHome": "Home",
     "navGuides": "Guides",
     "navCases": "Case Board",
@@ -149,7 +150,7 @@
    "ko": {
     "name": "킬 더 섀도우 공략",
     "tagline": "전체 워크스루 · 선택지 · 엔딩 · 사건 · 캐릭터",
-    "description": "킬 더 섀도우(Kill The Shadow) 최고의 공략: 전체 워크스루, 선택지와 엔딩 가이드, 모든 사건, 수사 시스템, 캐릭터, 업적, FAQ. 정기 업데이트.",
+    "description": "킬 더 섀도우 공략: 전체 워크스루, 선택지와 엔딩, 모든 사건, 수사 시스템, 캐릭터, 업적, FAQ.",
     "navHome": "홈",
     "navGuides": "공략",
     "navCases": "사건 파일",
@@ -411,7 +412,7 @@
    "slug": "how-to-play",
    "title": "How to Play Kill The Shadow",
    "metaTitle": "How to Play Kill The Shadow: Full Beginner's Guide (2026)",
-   "metaDescription": "New to Kill The Shadow? Learn the core investigation loop, crime-scene reconstruction, time rewind, the Shadow corruption meter and how your choices shape the story.",
+   "metaDescription": "New to Kill The Shadow? Learn the investigation loop, crime-scene reconstruction, time rewind, the Shadow corruption meter and how choices shape the story.",
    "intro": "Kill The Shadow is a detective RPG where you investigate bizarre cases, reconstruct crime scenes and make moral choices that change the ending. Here is everything you need before your first case.",
    "sections": [
     {
@@ -1154,7 +1155,7 @@
    "slug": "walkthrough",
    "title": "Kill The Shadow Walkthrough: Chapter 1 — The Factory (Full Guide)",
    "metaTitle": "Kill The Shadow Walkthrough: Chapter 1 — The Factory (2026)",
-   "metaDescription": "Full Kill The Shadow Chapter 1 walkthrough: the police station prologue, the Old Machinist, Teddy's death, Father's Secret, Captain Theo's memories and wrapping up loose ends — with every key choice.",
+   "metaDescription": "Full Kill The Shadow Chapter 1 walkthrough: police station prologue, the Old Machinist, Teddy's death, Father's Secret and Captain Theo's memories.",
    "intro": "This Chapter 1 walkthrough covers the full route from the police station prologue to the Factory's closing beats. It is rewritten in our own words from a verified structure (intoindiegames' walkthrough and official material). Because choices change outcomes, treat it as a map, not the only path.",
    "sections": [
     {
@@ -2474,7 +2475,7 @@
    "slug": "endings",
    "title": "Kill The Shadow Endings: How Many Endings & How to Reach Them",
    "metaTitle": "Kill The Shadow Endings Guide (2026)",
-   "metaDescription": "Everything confirmed about Kill The Shadow's multiple endings: how many there are, how the Shadow corruption meter and choices branch the story, and what to do for a second playthrough.",
+   "metaDescription": "Everything confirmed about Kill The Shadow's multiple endings: how many there are, and how the Shadow corruption meter and your choices branch the story.",
    "intro": "Kill The Shadow is confirmed to have multiple endings driven by player choice. Full branch conditions are still being documented by the community; this page covers everything verified so far.",
    "sections": [
     {
@@ -3605,7 +3606,7 @@
    "slug": "investigation",
    "title": "Kill The Shadow Investigation System Explained",
    "metaTitle": "Kill The Shadow Investigation System Guide (2026)",
-   "metaDescription": "How the investigation system works in Kill The Shadow: crime-scene reconstruction, the logic chains of deduction, time rewind and the evidence you need to solve each case.",
+   "metaDescription": "How investigation works in Kill The Shadow: crime-scene reconstruction, logic chains of deduction, time rewind and the evidence needed to solve each case.",
    "intro": "The investigation system is the mechanical heart of Kill The Shadow. Here is how it actually works, based on official descriptions and our playthrough.",
    "sections": [
     {
@@ -4273,7 +4274,7 @@
    "slug": "achievements",
    "title": "Kill The Shadow Achievements Guide",
    "metaTitle": "Kill The Shadow Achievements Guide (2026)",
-   "metaDescription": "What is confirmed about Kill The Shadow achievements: the free demo has 10 achievements (5,129 EXP), and how the full game's list is being documented after launch.",
+   "metaDescription": "What's confirmed about Kill The Shadow achievements: the free demo has 10 achievements (5,129 EXP), and how the full list is documented after launch.",
    "intro": "Achievement hunting in Kill The Shadow is just getting started. This page covers what is verified so far — the demo's 10 achievements — and how to track the full list as it is documented.",
    "sections": [
     {
@@ -5557,7 +5558,7 @@
    "slug": "tips-and-tricks",
    "title": "Kill The Shadow Tips & Tricks",
    "metaTitle": "Kill The Shadow Tips & Tricks: Play Smarter (2026)",
-   "metaDescription": "Practical Kill The Shadow tips: use reconstruction early, read medical documents, track contradictions, manage the Shadow corruption meter and experiment with rewind.",
+   "metaDescription": "Practical Kill The Shadow tips: use reconstruction early, read medical documents, track contradictions, manage the Shadow meter and experiment with rewind.",
    "intro": "These tips come from the officially described systems and our own verified playthrough of Chapter 1.",
    "sections": [
     {
@@ -7468,7 +7469,7 @@
   {
    "title": "Kill The Shadow Characters: Character Files",
    "metaTitle": "Kill The Shadow Characters Guide: All Characters (2026)",
-   "metaDescription": "The confirmed Kill The Shadow characters from Chapter 1: Lucas, the Shadow, Lynn DaHandt, Officer May, Uncle Smith, Captain Theo, the Flints, the Old Machinist, Rafe and Teddy.",
+   "metaDescription": "Confirmed Kill The Shadow characters from Chapter 1: Lucas, the Shadow, Lynn DaHandt, Officer May, Uncle Smith, Captain Theo, the Flints, Rafe and Teddy.",
    "intro": "The confirmed character files in Kill The Shadow, based on launch coverage and our Chapter 1 playthrough. The roster below covers everyone verified in the opening and the factory case — updated as more is confirmed.",
    "sections": [
     {
@@ -7905,7 +7906,7 @@
     "ja": {
      "title": "キル・ザ・シャドウ キャラクター：人物ファイル",
      "metaTitle": "キル・ザ・シャドウ キャラクターガイド：全キャラクター（2026）",
-     "metaDescription": "『キル・ザ・シャドウ』第1章で確認されたキャラクター：ルーカス、シャドウ、リン・ダハント、メイ巡査、スミスおじさん、テオ船長、フリント父子、老機械工、レイフ、テディ。",
+     "metaDescription": "『キル・ザ・シャドウ』第1章の確認済みキャラクター：ルーカス、シャドウ、リン、メイ巡査、テオ船長、フリント父子ほか。",
      "intro": "発売報道と第1章プレイをもとに、確認済みのキャラクターファイルをまとめました。オープニングと工場事件で確認できた全員を網羅しており、確認でき次第更新します。",
      "sections": [
       {
@@ -8047,7 +8048,7 @@
     "ko": {
      "title": "킬 더 섀도우 캐릭터: 등장인물 파일",
      "metaTitle": "킬 더 섀도우 캐릭터 가이드: 등장인물 파일 (2026)",
-     "metaDescription": "킬 더 섀도우 1장에서 확인된 등장인물: 루카스, 섀도우, 린 다한트, 메이 경관, 스미스 아저씨, 테오 선장, 플린트 부자, 늙은 기계공, 레이프, 테디.",
+     "metaDescription": "킬 더 섀도우 1장 확인된 등장인물: 루카스, 섀도우, 린 다한트, 메이 경관, 테오 선장, 플린트 부자 등.",
      "intro": "출시 보도와 1장 플레이를 기준으로 확인된 킬 더 섀도우 등장인물 파일입니다. 오프닝과 공장 사건에서 검증된 전원을 담았으며, 확인되는 대로 추가합니다.",
      "sections": [
       {

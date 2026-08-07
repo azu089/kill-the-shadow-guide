@@ -3,11 +3,12 @@
   "name": "Kill The Shadow Guide",
   "domain": "killtheshadowguides.com",
   "tagline": "Walkthrough, Choices, Endings, Cases & FAQs",
-  "description": "The best Kill The Shadow guides: full walkthrough, choices and endings guide, all cases, investigation system explained, achievements, system requirements and FAQs. Updated regularly.",
+  "description": "The best Kill The Shadow guides: full walkthrough, choices and endings, all cases, the investigation system, achievements, system requirements and FAQs.",
   "language": "en",
   "gaId": "G-5D254QG9RJ",
   "gscVerification": "",
   "adsenseId": "",
+  "indexNowKey": "7abddacb916a38f7be9e524bae040f30",
   "ogImage": "/images/hero.jpg",
   "languages": [
    "en",
@@ -195,7 +196,7 @@
    "slug": "how-to-play",
    "title": "How to Play Kill The Shadow",
    "metaTitle": "How to Play Kill The Shadow: Full Beginner's Guide (2026)",
-   "metaDescription": "New to Kill The Shadow? Learn the core investigation loop, crime-scene reconstruction, time rewind, the Shadow corruption meter and how your choices shape the story.",
+   "metaDescription": "New to Kill The Shadow? Learn the investigation loop, crime-scene reconstruction, time rewind, the Shadow corruption meter and how choices shape the story.",
    "intro": "Kill The Shadow is a detective RPG where you investigate bizarre cases, reconstruct crime scenes and make moral choices that change the ending. Here is everything you need before your first case.",
    "sections": [
     {
@@ -852,7 +853,7 @@
    "slug": "endings",
    "title": "Kill The Shadow Endings: How Many Endings & How to Reach Them",
    "metaTitle": "Kill The Shadow Endings Guide (2026)",
-   "metaDescription": "Everything confirmed about Kill The Shadow's multiple endings: how many there are, how the Shadow corruption meter and choices branch the story, and what to do for a second playthrough.",
+   "metaDescription": "Everything confirmed about Kill The Shadow's multiple endings: how many there are, and how the Shadow corruption meter and your choices branch the story.",
    "intro": "Kill The Shadow is confirmed to have multiple endings driven by player choice. Full branch conditions are still being documented by the community; this page covers everything verified so far.",
    "sections": [
     {
@@ -1297,7 +1298,7 @@
    "slug": "investigation",
    "title": "Kill The Shadow Investigation System Explained",
    "metaTitle": "Kill The Shadow Investigation System Guide (2026)",
-   "metaDescription": "How the investigation system works in Kill The Shadow: crime-scene reconstruction, the logic chains of deduction, time rewind and the evidence you need to solve each case.",
+   "metaDescription": "How investigation works in Kill The Shadow: crime-scene reconstruction, logic chains of deduction, time rewind and the evidence needed to solve each case.",
    "intro": "The investigation system is the mechanical heart of Kill The Shadow. Here is how it actually works, based on official descriptions and our playthrough.",
    "sections": [
     {
@@ -1500,7 +1501,7 @@
    "slug": "achievements",
    "title": "Kill The Shadow Achievements Guide",
    "metaTitle": "Kill The Shadow Achievements Guide (2026)",
-   "metaDescription": "What is confirmed about Kill The Shadow achievements: the free demo has 10 achievements (5,129 EXP), and how the full game's list is being documented after launch.",
+   "metaDescription": "What's confirmed about Kill The Shadow achievements: the free demo has 10 achievements (5,129 EXP), and how the full list is documented after launch.",
    "intro": "Achievement hunting in Kill The Shadow is just getting started. This page covers what is verified so far — the demo's 10 achievements — and how to track the full list as it is documented.",
    "sections": [
     {
@@ -2273,7 +2274,7 @@
    "slug": "tips-and-tricks",
    "title": "Kill The Shadow Tips & Tricks",
    "metaTitle": "Kill The Shadow Tips & Tricks: Play Smarter (2026)",
-   "metaDescription": "Practical Kill The Shadow tips: use reconstruction early, read medical documents, track contradictions, manage the Shadow corruption meter and experiment with rewind.",
+   "metaDescription": "Practical Kill The Shadow tips: use reconstruction early, read medical documents, track contradictions, manage the Shadow meter and experiment with rewind.",
    "intro": "These tips come from the officially described systems and our own verified playthrough of Chapter 1.",
    "sections": [
     {

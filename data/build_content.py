@@ -149,7 +149,7 @@ def _tr_sections(sections_en, sections_zh, sections_ja, sections_ko):
 CHAR_EN = {
  "title": "Kill The Shadow Characters: Character Files",
  "metaTitle": "Kill The Shadow Characters Guide: All Characters (2026)",
- "metaDescription": "The confirmed Kill The Shadow characters from Chapter 1: Lucas, the Shadow, Lynn DaHandt, Officer May, Uncle Smith, Captain Theo, the Flints, the Old Machinist, Rafe and Teddy.",
+ "metaDescription": "Confirmed Kill The Shadow characters from Chapter 1: Lucas, the Shadow, Lynn DaHandt, Officer May, Uncle Smith, Captain Theo, the Flints, Rafe and Teddy.",
  "intro": "The confirmed character files in Kill The Shadow, based on launch coverage and our Chapter 1 playthrough. The roster below covers everyone verified in the opening and the factory case — updated as more is confirmed.",
  "sections": [
   {
@@ -435,7 +435,7 @@ CHAR_ZH = {
 CHAR_JA = {
  "title": "キル・ザ・シャドウ キャラクター：人物ファイル",
  "metaTitle": "キル・ザ・シャドウ キャラクターガイド：全キャラクター（2026）",
- "metaDescription": "『キル・ザ・シャドウ』第1章で確認されたキャラクター：ルーカス、シャドウ、リン・ダハント、メイ巡査、スミスおじさん、テオ船長、フリント父子、老機械工、レイフ、テディ。",
+ "metaDescription": "『キル・ザ・シャドウ』第1章の確認済みキャラクター：ルーカス、シャドウ、リン、メイ巡査、テオ船長、フリント父子ほか。",
  "intro": "発売報道と第1章プレイをもとに、確認済みのキャラクターファイルをまとめました。オープニングと工場事件で確認できた全員を網羅しており、確認でき次第更新します。",
  "sections": [
   {
@@ -754,7 +754,7 @@ for p in d["pages"]:
         zh_wt = {"title":"杀死影子全流程：第一章 · 工厂（深度攻略）","metaTitle":"杀死影子全流程：第一章 · 工厂（2026）","metaDescription":"杀死影子第一章深度攻略：序章警察局、老机械师、泰迪之死、父亲的秘密、西奥队长记忆与收尾，含全部关键抉择。","intro":"这份第一章攻略覆盖从警察局序章到工厂区收尾的完整流程，基于已核实的结构（intoindiegames 流程 + 官方资料）用自己的话重写。因为选择会改变结果，你的流程可能略有不同——把它当作地图而非唯一答案。","sections":list(WT.WALKTHROUGH["sections"]["zh-CN"])}
         ja_wt = {"title":"キル・ザ・シャドウ 攻略：第1章 ファクトリー（完全版）","metaTitle":"キル・ザ・シャドウ 攻略：第1章 ファクトリー（2026）","metaDescription":"キル・ザ・シャドウ第1章の完全攻略：警察署の序章、老機械工、テディの死、父の秘密、テオ船長の記憶と締めくくり、重要選択も網羅。","intro":"この第1章攻略は、警察署の序章から工場地区の締めくくりまでの完全な流れをカバーします。検証済みの構成（intoindiegames の攻略と公式資料）に基づき、独自の文章で書き直しました。選択によって結果は変わります。","sections":list(WT.WALKTHROUGH["sections"]["ja"])}
         ko_wt = {"title":"킬 더 섀도우 워크스루: 1장 — 공장 (심층)","metaTitle":"킬 더 섀도우 워크스루: 1장 — 공장 (2026)","metaDescription":"킬 더 섀도우 1장 심층 공략: 경찰서 프롤로그, 늙은 기계공, 테디의 죽음, 아버지의 비밀, 테오 선장의 기억과 마무리, 핵심 선택까지.","intro":"이 1장 공략은 경찰서 프롤로그부터 공장 지구 마무리까지의 전체 흐름을 다룹니다. 검증된 구조(intoindiegames 워크스루 + 공식 자료)를 바탕으로 자체 문장으로 다시 썼습니다. 선택에 따라 결과가 달라질 수 있습니다.","sections":list(WT.WALKTHROUGH["sections"]["ko"])}
-        en_wt = {"title":"Kill The Shadow Walkthrough: Chapter 1 — The Factory (Full Guide)","metaTitle":"Kill The Shadow Walkthrough: Chapter 1 — The Factory (2026)","metaDescription":"Full Kill The Shadow Chapter 1 walkthrough: the police station prologue, the Old Machinist, Teddy's death, Father's Secret, Captain Theo's memories and wrapping up loose ends — with every key choice.","intro":"This Chapter 1 walkthrough covers the full route from the police station prologue to the Factory's closing beats. It is rewritten in our own words from a verified structure (intoindiegames' walkthrough and official material). Because choices change outcomes, treat it as a map, not the only path.","sections":list(WT.WALKTHROUGH["sections"]["en"])}
+        en_wt = {"title":"Kill The Shadow Walkthrough: Chapter 1 — The Factory (Full Guide)","metaTitle":"Kill The Shadow Walkthrough: Chapter 1 — The Factory (2026)","metaDescription":"Full Kill The Shadow Chapter 1 walkthrough: police station prologue, the Old Machinist, Teddy's death, Father's Secret and Captain Theo's memories.","intro":"This Chapter 1 walkthrough covers the full route from the police station prologue to the Factory's closing beats. It is rewritten in our own words from a verified structure (intoindiegames' walkthrough and official material). Because choices change outcomes, treat it as a map, not the only path.","sections":list(WT.WALKTHROUGH["sections"]["en"])}
         zh = dict(zh_wt); ja = dict(ja_wt); ko_wt = dict(ko_wt)
         ko = ko_wt
         p["sections"] = list(en_wt["sections"])
