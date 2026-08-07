@@ -13,7 +13,7 @@ ROOT = Path(__file__).parent
 # 始终从已提交的原始站点数据重建（幂等）；site.json 是输出文件
 BASE = ROOT / "site.base.json"
 d = json.loads(BASE.read_text() if BASE.exists() else (ROOT / "site.json").read_text())
-cc = opencc.OpenCC("s2t")
+cc = opencc.OpenCC("s2tw")
 
 # ---------- 1) page meta: icon + case file id ----------
 ICON = {
