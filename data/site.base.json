@@ -2805,6 +2805,34 @@
      ]
     },
     {
+     "type": "table",
+     "tag": "STORES",
+     "heading": "Authorized stores & region locks",
+     "body": "Prices checked on August 7, 2026; discounts are time-limited. The region locks below are taken from each store's own product page. A region-locked key cannot be activated on your Steam account, so check this before you buy. Avoid unauthorized grey-market key resellers — they often do not disclose region locks at all.",
+     "columns": [
+      "Store",
+      "Price",
+      "Where the key activates"
+     ],
+     "rows": [
+      [
+       "Steam (official)",
+       "$16.99 — 10% launch discount until August 19, 2026",
+       "No region restriction"
+      ],
+      [
+       "Gamesplanet (authorized retailer)",
+       "$16.99 → $14.36 (-15%)",
+       "Will NOT activate in 28 countries, including mainland China, India, Indonesia, Malaysia, the Philippines, Russia, Saudi Arabia, South Africa, Thailand, Turkey, Ukraine and Vietnam"
+      ],
+      [
+       "GamersGate (authorized retailer)",
+       "$16.99 → $15.29 (-10%)",
+       "Activates in 166 regions. Mainland China and Taiwan are not on the list; Japan, South Korea, Hong Kong, the US and Spain are"
+      ]
+     ]
+    },
+    {
      "type": "list",
      "heading": "The Straight Answer",
      "body": "What you need to know before buying.",
@@ -2860,6 +2888,26 @@
     {
      "label": "intoindiegames — Kill The Shadow walkthrough",
      "url": "https://www.intoindiegames.com/"
+    },
+    {
+     "url": "https://us.gamesplanet.com/game/kill-the-shadow-steam-key--8619-1",
+     "label": "Gamesplanet — Kill The Shadow (Steam key, authorized retailer)",
+     "labels": {
+      "zh-CN": "Gamesplanet — 杀死影子（Steam key，授权零售商）",
+      "zh-TW": "Gamesplanet — 殺死影子（Steam key，授權零售商）",
+      "ja": "Gamesplanet — キル・ザ・シャドウ（Steam キー、正規販売店）",
+      "ko": "Gamesplanet — 킬 더 섀도우 (Steam 키, 공식 인증 판매처)"
+     }
+    },
+    {
+     "url": "https://www.gamersgate.com/en-us/product/kill-the-shadow/",
+     "label": "GamersGate — Kill The Shadow (Steam key, authorized retailer)",
+     "labels": {
+      "zh-CN": "GamersGate — 杀死影子（Steam key，授权零售商）",
+      "zh-TW": "GamersGate — 殺死影子（Steam key，授權零售商）",
+      "ja": "GamersGate — キル・ザ・シャドウ（Steam キー、正規販売店）",
+      "ko": "GamersGate — 킬 더 섀도우 (Steam 키, 공식 인증 판매처)"
+     }
     }
    ],
    "i18n": {
@@ -2901,6 +2949,34 @@
         [
          "免费试玩",
          "Steam 上有独立免费 Demo（app 2947640），含 10 个成就"
+        ]
+       ]
+      },
+      {
+       "type": "table",
+       "tag": "STORES",
+       "heading": "授权商店与区域锁",
+       "body": "价格核对于 2026 年 8 月 7 日，折扣有时效。下表的区域限制来自各商店自己的商品页。被锁区的 key 无法在你的 Steam 账号激活，购买前务必确认。请避开非授权的灰产 key 站——它们通常根本不标注区域锁。",
+       "columns": [
+        "商店",
+        "价格",
+        "可激活地区"
+       ],
+       "rows": [
+        [
+         "Steam（官方）",
+         "$16.99，首发 10% 折扣至 2026 年 8 月 19 日",
+         "无区域限制"
+        ],
+        [
+         "Gamesplanet（授权零售商）",
+         "$16.99 → $14.36（-15%）",
+         "28 个国家/地区无法激活，其中包括中国大陆、印度、印尼、马来西亚、菲律宾、俄罗斯、沙特、南非、泰国、土耳其、乌克兰、越南"
+        ],
+        [
+         "GamersGate（授权零售商）",
+         "$16.99 → $15.29（-10%）",
+         "可在 166 个地区激活。中国大陆与台湾不在名单内；日本、韩国、香港、美国、西班牙在名单内"
         ]
        ]
       },
@@ -2991,6 +3067,34 @@
        ]
       },
       {
+       "type": "table",
+       "tag": "STORES",
+       "heading": "授權商店與區域鎖",
+       "body": "價格核對於 2026 年 8 月 7 日，折扣有時效。下表的區域限制來自各商店自己的商品頁。被鎖區的 key 無法在你的 Steam 帳號啟用，購買前務必確認。請避開非授權的灰產 key 站——它們通常根本不標註區域鎖。",
+       "columns": [
+        "商店",
+        "價格",
+        "可啟用地區"
+       ],
+       "rows": [
+        [
+         "Steam（官方）",
+         "$16.99，首發 10% 折扣至 2026 年 8 月 19 日",
+         "無區域限制"
+        ],
+        [
+         "Gamesplanet（授權零售商）",
+         "$16.99 → $14.36（-15%）",
+         "28 個國家/地區無法啟用，其中包括中國大陸、印度、印尼、馬來西亞、菲律賓、俄羅斯、沙烏地阿拉伯、南非、泰國、土耳其、烏克蘭、越南"
+        ],
+        [
+         "GamersGate（授權零售商）",
+         "$16.99 → $15.29（-10%）",
+         "可在 166 個地區啟用。中國大陸與台灣不在名單內；日本、韓國、香港、美國、西班牙在名單內"
+        ]
+       ]
+      },
+      {
        "type": "list",
        "heading": "直接回答",
        "body": "購買前需要知道的信息。",
@@ -3077,6 +3181,34 @@
        ]
       },
       {
+       "type": "table",
+       "tag": "STORES",
+       "heading": "正規販売店と地域制限",
+       "body": "価格は 2026 年 8 月 7 日時点。割引には期限があります。以下の地域制限は各ストアの商品ページに記載されている内容です。地域ロックされたキーは Steam アカウントで有効化できないため、購入前に必ず確認してください。地域ロックを明記しない非正規のキー転売サイトは避けてください。",
+       "columns": [
+        "ストア",
+        "価格",
+        "有効化できる地域"
+       ],
+       "rows": [
+        [
+         "Steam（公式）",
+         "$16.99、発売記念 10% オフ（2026 年 8 月 19 日まで）",
+         "地域制限なし"
+        ],
+        [
+         "Gamesplanet（正規販売店）",
+         "$16.99 → $14.36（-15%）",
+         "中国本土・インド・インドネシア・マレーシア・フィリピン・ロシア・サウジアラビア・南アフリカ・タイ・トルコ・ウクライナ・ベトナムを含む 28 か国では有効化不可"
+        ],
+        [
+         "GamersGate（正規販売店）",
+         "$16.99 → $15.29（-10%）",
+         "166 地域で有効化可能。中国本土と台湾は対象外、日本・韓国・香港・米国・スペインは対象"
+        ]
+       ]
+      },
+      {
        "type": "list",
        "heading": "結論",
        "body": "購入前に知っておきたいこと。",
@@ -3159,6 +3291,34 @@
         [
          "무료 데모",
          "Steam에 무료 데모 (app 2947640) — 도전과제 10개"
+        ]
+       ]
+      },
+      {
+       "type": "table",
+       "tag": "STORES",
+       "heading": "공식 인증 스토어와 지역 제한",
+       "body": "가격은 2026년 8월 7일 기준이며 할인에는 기간이 있습니다. 아래 지역 제한은 각 스토어의 상품 페이지에 표기된 내용입니다. 지역이 잠긴 키는 Steam 계정에 등록할 수 없으니 구매 전에 반드시 확인하세요. 지역 제한을 표기하지 않는 비공식 키 재판매 사이트는 피하는 것이 좋습니다.",
+       "columns": [
+        "스토어",
+        "가격",
+        "등록 가능 지역"
+       ],
+       "rows": [
+        [
+         "Steam(공식)",
+         "$16.99, 출시 기념 10% 할인 (2026년 8월 19일까지)",
+         "지역 제한 없음"
+        ],
+        [
+         "Gamesplanet(공식 인증 판매처)",
+         "$16.99 → $14.36 (-15%)",
+         "중국 본토, 인도, 인도네시아, 말레이시아, 필리핀, 러시아, 사우디아라비아, 남아프리카공화국, 태국, 튀르키예, 우크라이나, 베트남 등 28개국에서 등록 불가"
+        ],
+        [
+         "GamersGate(공식 인증 판매처)",
+         "$16.99 → $15.29 (-10%)",
+         "166개 지역에서 등록 가능. 중국 본토와 대만은 제외이며 일본·한국·홍콩·미국·스페인은 포함"
         ]
        ]
       },
