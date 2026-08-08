@@ -4282,8 +4282,8 @@
    "slug": "achievements",
    "title": "Kill The Shadow Achievements Guide",
    "metaTitle": "Kill The Shadow Achievements Guide (2026)",
-   "metaDescription": "What's confirmed about Kill The Shadow achievements: the free demo has 10 achievements (5,129 EXP), and how the full list is documented after launch.",
-   "intro": "Achievement hunting in Kill The Shadow is just getting started. This page covers what is verified so far — the demo's 10 achievements — and how to track the full list as it is documented.",
+   "metaDescription": "Kill The Shadow achievements: the demo's 10 (5,129 EXP) plus the full game's complete 41-achievement list with an interactive tracker and unlock rates.",
+   "intro": "Kill The Shadow launched with 41 Steam achievements, and the free demo has its own 10. This page lists every full-game achievement with official names, descriptions and unlock rates — check them off to track your progress.",
    "sections": [
     {
      "type": "list",
@@ -4299,37 +4299,447 @@
     },
     {
      "type": "list",
-     "heading": "The Full Game (August 5, 2026)",
-     "body": "The full release launched August 5, 2026. Its achievement list is being documented by the community right now.",
+     "heading": "The Full Game: 41 Achievements",
+     "body": "The full release launched August 5, 2026 with 41 Steam achievements — a separate set from the demo. All names and descriptions below come from Steam's official list.",
      "items": [
-      "The full game has its own achievement set separate from the demo",
-      "Tracking sites update as players earn achievements — check SteamDB for the live list",
-      "We will publish a complete checklist here once reliable sources confirm every achievement"
+      "41 achievements, separate from the demo's 10",
+      "Names and descriptions in 5 languages (English, Simplified/Traditional Chinese, Japanese, Korean) — official Steam localizations",
+      "Unlock rates range from 64.2% (Senior Machinist) down to 1.4% (the rarest ending achievement)",
+      "11 achievements sit under 10% unlock rate (Rare tier); 2 are above 50% (Common tier)",
+      "10 achievements are flagged Hidden on Steam — their descriptions are only revealed once you unlock them"
      ]
     },
     {
      "type": "list",
-     "heading": "How to Track the Full List",
-     "body": "Recommended places to follow the list as it fills in.",
+     "heading": "Track Your Progress",
+     "body": "Use the interactive checklist below: tick achievements as you earn them, filter by rarity or search by name. Progress is saved in your browser, on this device.",
      "items": [
-      "SteamDB achievement stats page for Kill The Shadow (app 2660230)",
-      "The Steam Community hub — player-written guides often list achievements fastest",
-      "TrueSteamAchievements for completionist stats and percentages"
+      "Tick the checkbox on any achievement to mark it done — the progress bar and counter update instantly",
+      "Filter to Rare (<10% unlock) to find the hardest targets first",
+      "The Hidden filter shows only the 10 secret achievements",
+      "Search matches achievement names and descriptions in the page's language"
      ]
     },
     {
      "type": "list",
      "heading": "Achievement-Hunting Checklist",
-     "body": "Simple habits that make the full list easier to complete once it is documented — all grounded in the game's verified mechanics.",
+     "body": "Habits that make the full list easier to complete — all grounded in the game's verified mechanics.",
      "items": [
       "Read every document and finish every scene reconstruction on a case before moving on",
       "Save at branching choices — the time-rewind mechanic lets you explore alternatives from the same moment",
       "Multiple endings mean multiple playthroughs: keep the first run blind, then use later runs to mop up what you missed",
       "Console versions arrive on August 12, 2026 — if you play there too, track both lists"
      ]
+    },
+    {
+     "type": "achieve",
+     "heading": "Full Achievement List (41)",
+     "body": "All 41 achievements from the full game, straight from Steam's official list. The percentage is the share of all players who unlocked each one. Rarity tiers: Common = 50%+ of players, Uncommon = 10–49.9%, Rare = under 10%. Tick achievements to track your progress — it saves in your browser.",
+     "ui": {
+      "heading": "Full Achievement List (41)",
+      "body": "All 41 achievements from the full game, straight from Steam's official list. The percentage is the share of all players who unlocked each one. Rarity tiers: Common = 50%+ of players, Uncommon = 10–49.9%, Rare = under 10%. Tick achievements to track your progress — it saves in your browser.",
+      "search": "Search achievements…",
+      "all": "All",
+      "common": "Common",
+      "uncommon": "Uncommon",
+      "rare": "Rare",
+      "hidden": "Hidden",
+      "count": "{n} of {t} shown",
+      "done": "{n}/{t} done ({p}%)",
+      "reset": "Reset progress",
+      "empty": "No achievements match.",
+      "hiddenTag": "HIDDEN",
+      "hiddenDesc": "Hidden — its description is revealed when you unlock it.",
+      "nameCol": "Achievement",
+      "descCol": "Description",
+      "playersCol": "Players",
+      "iconCol": "Icon"
+     },
+     "achievements": [
+      {
+       "i": 0,
+       "name": "Senior Machinist",
+       "desc": "Obtained the Senior Machinist Certificate from the Old Machinist.",
+       "pct": 64.2,
+       "tier": "common",
+       "hidden": 0,
+       "icon": "ach-00.webp"
+      },
+      {
+       "i": 1,
+       "name": "Goodbye, North!",
+       "desc": "I'm outta here!",
+       "pct": 62.2,
+       "tier": "common",
+       "hidden": 0,
+       "icon": "ach-01.webp"
+      },
+      {
+       "i": 2,
+       "name": "Who's a Good Boy?",
+       "desc": "Lucky likes you a lot!",
+       "pct": 46.2,
+       "tier": "uncommon",
+       "hidden": 0,
+       "icon": "ach-02.webp"
+      },
+      {
+       "i": 3,
+       "name": "Homie for Life",
+       "desc": "Lucas is the man! —Captain Theo.",
+       "pct": 44.0,
+       "tier": "uncommon",
+       "hidden": 0,
+       "icon": "ach-03.webp"
+      },
+      {
+       "i": 4,
+       "name": "Elementary, My Dear Watson",
+       "desc": "Revealed Captain Theo's secret to the public.",
+       "pct": 42.0,
+       "tier": "uncommon",
+       "hidden": 0,
+       "icon": "ach-04.webp"
+      },
+      {
+       "i": 5,
+       "name": "Master Negotiator",
+       "desc": "Talked Rafe out of committing suicide.",
+       "pct": 41.3,
+       "tier": "uncommon",
+       "hidden": 0,
+       "icon": "ach-05.webp"
+      },
+      {
+       "i": 6,
+       "name": "Detective Lucas",
+       "desc": "There's only one truth!",
+       "pct": 39.4,
+       "tier": "uncommon",
+       "hidden": 0,
+       "icon": "ach-06.webp"
+      },
+      {
+       "i": 7,
+       "name": "The Newspaper Boy",
+       "desc": "I run through the street, and deliver newspapers to everyone I meet!",
+       "pct": 39.4,
+       "tier": "uncommon",
+       "hidden": 0,
+       "icon": "ach-07.webp"
+      },
+      {
+       "i": 8,
+       "name": "The Password Expert",
+       "desc": "",
+       "pct": 38.9,
+       "tier": "uncommon",
+       "hidden": 1,
+       "icon": "ach-08.webp"
+      },
+      {
+       "i": 9,
+       "name": "Master Pickpocket",
+       "desc": "",
+       "pct": 35.8,
+       "tier": "uncommon",
+       "hidden": 1,
+       "icon": "ach-09.webp"
+      },
+      {
+       "i": 10,
+       "name": "Tomb Raider",
+       "desc": "Took money from Rafe's corpse.",
+       "pct": 35.0,
+       "tier": "uncommon",
+       "hidden": 0,
+       "icon": "ach-10.webp"
+      },
+      {
+       "i": 11,
+       "name": "A Pleasure to Help",
+       "desc": "Broke up a couple. Maybe it's for the best...",
+       "pct": 34.4,
+       "tier": "uncommon",
+       "hidden": 0,
+       "icon": "ach-11.webp"
+      },
+      {
+       "i": 12,
+       "name": "Justice Will Prevail",
+       "desc": "Helped Lily out.",
+       "pct": 34.2,
+       "tier": "uncommon",
+       "hidden": 0,
+       "icon": "ach-12.webp"
+      },
+      {
+       "i": 13,
+       "name": "The Boat Tickets",
+       "desc": "The Shipwreck Wharf, Here I Come!",
+       "pct": 31.5,
+       "tier": "uncommon",
+       "hidden": 0,
+       "icon": "ach-13.webp"
+      },
+      {
+       "i": 14,
+       "name": "MY PRECIOUS!",
+       "desc": "THAT'S MINE!",
+       "pct": 24.5,
+       "tier": "uncommon",
+       "hidden": 0,
+       "icon": "ach-14.webp"
+      },
+      {
+       "i": 15,
+       "name": "Skull and Bones",
+       "desc": "",
+       "pct": 23.8,
+       "tier": "uncommon",
+       "hidden": 1,
+       "icon": "ach-15.webp"
+      },
+      {
+       "i": 16,
+       "name": "The Death of the Old Era",
+       "desc": "With the death of Master Bingley, the Four Families have largely lost their power in the South.",
+       "pct": 22.3,
+       "tier": "uncommon",
+       "hidden": 0,
+       "icon": "ach-16.webp"
+      },
+      {
+       "i": 17,
+       "name": "The Middle-aged Love Story",
+       "desc": "Wendell Forge and Auntie Bass got back together.",
+       "pct": 22.2,
+       "tier": "uncommon",
+       "hidden": 0,
+       "icon": "ach-17.webp"
+      },
+      {
+       "i": 18,
+       "name": "Quick Tongue, Fast Hand",
+       "desc": "Stopped Piglet from pulling the trigger.",
+       "pct": 21.0,
+       "tier": "uncommon",
+       "hidden": 0,
+       "icon": "ach-18.webp"
+      },
+      {
+       "i": 19,
+       "name": "Ending",
+       "desc": "Complete one of the Major Endings.",
+       "pct": 20.5,
+       "tier": "uncommon",
+       "hidden": 0,
+       "icon": "ach-19.webp"
+      },
+      {
+       "i": 20,
+       "name": "Secret of the Shipwreck",
+       "desc": "",
+       "pct": 20.2,
+       "tier": "uncommon",
+       "hidden": 1,
+       "icon": "ach-20.webp"
+      },
+      {
+       "i": 21,
+       "name": "Major Ending: The Buried Truth",
+       "desc": "During Dorian's trial, everyone learned the truth that had been concealed for ten years.",
+       "pct": 17.4,
+       "tier": "uncommon",
+       "hidden": 0,
+       "icon": "ach-21.webp"
+      },
+      {
+       "i": 22,
+       "name": "Money above All Else",
+       "desc": "Accepted the bribe from the Butler of Reed.",
+       "pct": 17.2,
+       "tier": "uncommon",
+       "hidden": 0,
+       "icon": "ach-22.webp"
+      },
+      {
+       "i": 23,
+       "name": "A Newcomer Debuts",
+       "desc": "",
+       "pct": 16.4,
+       "tier": "uncommon",
+       "hidden": 1,
+       "icon": "ach-23.webp"
+      },
+      {
+       "i": 24,
+       "name": "Smooth Talker",
+       "desc": "Apologized to Captain Theo after revealing the truth.",
+       "pct": 15.9,
+       "tier": "uncommon",
+       "hidden": 0,
+       "icon": "ach-24.webp"
+      },
+      {
+       "i": 25,
+       "name": "Arm of Steel",
+       "desc": "Where did such a big fish come from?",
+       "pct": 15.6,
+       "tier": "uncommon",
+       "hidden": 0,
+       "icon": "ach-25.webp"
+      },
+      {
+       "i": 26,
+       "name": "Perfect Ending",
+       "desc": "Freed the North and built a brand-new Dark Tide City!",
+       "pct": 13.9,
+       "tier": "uncommon",
+       "hidden": 0,
+       "icon": "ach-26.webp"
+      },
+      {
+       "i": 27,
+       "name": "Master Thief",
+       "desc": "Stole Wendell's tickets and give them to Noah.",
+       "pct": 13.1,
+       "tier": "uncommon",
+       "hidden": 0,
+       "icon": "ach-27.webp"
+      },
+      {
+       "i": 28,
+       "name": "I See What You Did There",
+       "desc": "Beat up Dr. Cyrus and put the blame on the Imperial guard.",
+       "pct": 13.0,
+       "tier": "uncommon",
+       "hidden": 0,
+       "icon": "ach-28.webp"
+      },
+      {
+       "i": 29,
+       "name": "The Fishing Master",
+       "desc": "Caught 30 fish!",
+       "pct": 11.9,
+       "tier": "uncommon",
+       "hidden": 0,
+       "icon": "ach-29.webp"
+      },
+      {
+       "i": 30,
+       "name": "Ending: Escape",
+       "desc": "",
+       "pct": 9.4,
+       "tier": "rare",
+       "hidden": 1,
+       "icon": "ach-30.webp"
+      },
+      {
+       "i": 31,
+       "name": "Hard Work Pays Off",
+       "desc": "A lifelong slave to money!",
+       "pct": 9.2,
+       "tier": "rare",
+       "hidden": 0,
+       "icon": "ach-31.webp"
+      },
+      {
+       "i": 32,
+       "name": "Major Ending: The Lynching",
+       "desc": "",
+       "pct": 9.2,
+       "tier": "rare",
+       "hidden": 1,
+       "icon": "ach-32.webp"
+      },
+      {
+       "i": 33,
+       "name": "The Foodie",
+       "desc": "Can never get enough of the Braised Pork Rice in Reed Mansion!",
+       "pct": 7.7,
+       "tier": "rare",
+       "hidden": 0,
+       "icon": "ach-33.webp"
+      },
+      {
+       "i": 34,
+       "name": "Ending: The Stepfather",
+       "desc": "Stayed in the factory and lived happily ever after with Rafe's Mom.",
+       "pct": 6.6,
+       "tier": "rare",
+       "hidden": 0,
+       "icon": "ach-34.webp"
+      },
+      {
+       "i": 35,
+       "name": "Hymn of Courage",
+       "desc": "",
+       "pct": 6.5,
+       "tier": "rare",
+       "hidden": 1,
+       "icon": "ach-35.webp"
+      },
+      {
+       "i": 36,
+       "name": "Ending: To Die for Justice",
+       "desc": "Died in the pursuit of truth.",
+       "pct": 5.7,
+       "tier": "rare",
+       "hidden": 0,
+       "icon": "ach-36.webp"
+      },
+      {
+       "i": 37,
+       "name": "Major Ending: The Butterfly's Dream",
+       "desc": "",
+       "pct": 5.7,
+       "tier": "rare",
+       "hidden": 1,
+       "icon": "ach-37.webp"
+      },
+      {
+       "i": 38,
+       "name": "Major Ending: The Reckoning",
+       "desc": "The Firefly Gang purged the guilty of the Walled City.",
+       "pct": 5.6,
+       "tier": "rare",
+       "hidden": 0,
+       "icon": "ach-38.webp"
+      },
+      {
+       "i": 39,
+       "name": "Choices Matter",
+       "desc": "",
+       "pct": 4.0,
+       "tier": "rare",
+       "hidden": 1,
+       "icon": "ach-39.webp"
+      },
+      {
+       "i": 40,
+       "name": "Completionist",
+       "desc": "Unlocked all the achievements.",
+       "pct": 1.4,
+       "tier": "rare",
+       "hidden": 0,
+       "icon": "ach-40.webp"
+      }
+     ]
     }
    ],
    "sources": [
+    {
+     "label": "Steam Community — Kill The Shadow Achievements",
+     "url": "https://steamcommunity.com/stats/2660230/achievements/",
+     "zh": "Steam 社区 — 杀死影子成就",
+     "ja": "Steam コミュニティ — キル・ザ・シャドウ実績",
+     "labels": {
+      "zh-CN": "Steam 社区 — 杀死影子成就",
+      "ja": "Steam コミュニティ — キル・ザ・シャドウ実績",
+      "ko": "Steam Community — Kill The Shadow Achievements"
+     }
+    },
     {
      "label": "SteamDB — Kill The Shadow Demo stats",
      "url": "https://steamdb.info/app/2947640/stats/",
@@ -4357,8 +4767,8 @@
     "zh-CN": {
      "title": "杀死影子成就指南",
      "metaTitle": "杀死影子成就攻略（2026）",
-     "metaDescription": "杀死影子成就的已确认信息：免费 Demo 有 10 个成就（5,129 EXP），以及正式版成就列表的发售后整理进展。",
-     "intro": "《杀死影子》的成就收集才刚刚开始。本页汇总目前已核实的信息——Demo 的 10 个成就——以及如何跟进正在整理中的完整列表。",
+     "metaDescription": "杀死影子成就：免费 Demo 有 10 个（5,129 EXP），正式版完整 41 个成就列表 + 交互式进度追踪器与玩家解锁率。",
+     "intro": "《杀死影子》正式版带有 41 个 Steam 成就，免费 Demo 另有自己的 10 个。本页列出正式版全部成就的官方名称、描述与解锁率——勾选即可记录你的进度。",
      "sections": [
       {
        "type": "list",
@@ -4374,33 +4784,432 @@
       },
       {
        "type": "list",
-       "heading": "正式版（2026 年 8 月 5 日）",
-       "body": "正式版于 2026 年 8 月 5 日发售，成就列表正在被社区整理中。",
+       "heading": "正式版：41 个成就",
+       "body": "正式版于 2026 年 8 月 5 日发售，带有 41 个 Steam 成就——与 Demo 的 10 个相互独立。以下名称与描述均来自 Steam 官方列表。",
        "items": [
-        "正式版拥有独立于 Demo 的成就集",
-        "追踪站会随玩家解锁不断更新——到 SteamDB 查看实时列表",
-        "可靠来源确认全部成就后，我们会在这里发布完整清单"
+        "41 个成就，与 Demo 的 10 个相互独立",
+        "成就名称与描述共 5 种语言（英文、简/繁中文、日文、韩文）——均为 Steam 官方本地化",
+        "解锁率从 64.2%（高级钳工）到 1.4%（最稀有的结局成就）不等",
+        "11 个成就解锁率低于 10%（稀有档）；2 个高于 50%（常见档）",
+        "10 个成就被 Steam 标记为隐藏——描述需解锁后才会显示"
        ]
       },
       {
        "type": "list",
-       "heading": "如何跟进完整列表",
-       "body": "推荐以下位置跟进逐步补全的列表。",
+       "heading": "记录你的进度",
+       "body": "使用下方交互式清单：解锁后勾选成就，按稀有度筛选或按名称搜索。进度保存在你当前设备的浏览器中。",
        "items": [
-        "SteamDB 的 Kill The Shadow 成就统计页（app 2660230）",
-        "Steam 社区中心——玩家写的指南往往最快列出成就",
-        "TrueSteamAchievements 查看完成度统计与百分比"
+        "勾选任意成就即可标记完成——进度条与计数实时更新",
+        "筛选「稀有」（解锁率 <10%）优先攻克最难的目标",
+        "「隐藏」筛选只显示那 10 个隐藏成就",
+        "搜索会匹配本页语言下的成就名称与描述"
        ]
       },
       {
        "type": "list",
        "heading": "成就收集清单",
-       "body": "一些让完整列表更容易完成的小习惯——全部基于已核实的游戏机制。",
+       "body": "让完整列表更容易完成的小习惯——全部基于已核实的游戏机制。",
        "items": [
         "在案件上推进前，读完所有文档并完成每次现场重建",
         "在分支选择处存档——时间回溯机制让你能从同一时刻尝试不同选项",
         "多结局意味着多周目：第一周目不查攻略，后续周目补漏",
         "主机版 2026 年 8 月 12 日发售——如果也玩主机版，两边列表都跟进"
+       ]
+      },
+      {
+       "type": "achieve",
+       "heading": "正式版完整成就列表（41 个）",
+       "body": "正式版全部 41 个成就，直接取自 Steam 官方列表。百分比表示已解锁该成就的玩家占比。稀有度分级：常见 = 50% 以上玩家，少见 = 10–49.9%，稀有 = 低于 10%。勾选成就即可记录进度——保存在你的浏览器中。",
+       "ui": {
+        "heading": "正式版完整成就列表（41 个）",
+        "body": "正式版全部 41 个成就，直接取自 Steam 官方列表。百分比表示已解锁该成就的玩家占比。稀有度分级：常见 = 50% 以上玩家，少见 = 10–49.9%，稀有 = 低于 10%。勾选成就即可记录进度——保存在你的浏览器中。",
+        "search": "搜索成就…",
+        "all": "全部",
+        "common": "常见",
+        "uncommon": "少见",
+        "rare": "稀有",
+        "hidden": "隐藏",
+        "count": "显示 {n} / {t} 个",
+        "done": "已完成 {n}/{t}（{p}%）",
+        "reset": "重置进度",
+        "empty": "没有匹配的成就。",
+        "hiddenTag": "隐藏",
+        "hiddenDesc": "隐藏成就——解锁后才会显示描述。",
+        "nameCol": "成就",
+        "descCol": "描述",
+        "playersCol": "玩家占比",
+        "iconCol": "图标"
+       },
+       "achievements": [
+        {
+         "i": 0,
+         "name": "高级钳工",
+         "desc": "获得老钳工的高级钳工证书。",
+         "pct": 64.2,
+         "tier": "common",
+         "hidden": 0,
+         "icon": "ach-00.webp"
+        },
+        {
+         "i": 1,
+         "name": "再见了，北方！",
+         "desc": "再见了，牢笼。",
+         "pct": 62.2,
+         "tier": "common",
+         "hidden": 0,
+         "icon": "ach-01.webp"
+        },
+        {
+         "i": 2,
+         "name": "好狗好狗",
+         "desc": "来福现在很喜欢你~",
+         "pct": 46.2,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-02.webp"
+        },
+        {
+         "i": 3,
+         "name": "好基友",
+         "desc": "阿光什么的，最喜欢了~——汪队长",
+         "pct": 44.0,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-03.webp"
+        },
+        {
+         "i": 4,
+         "name": "公平！公平！还是他妈的公平！",
+         "desc": "将汪队长的秘密公之于众。",
+         "pct": 42.0,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-04.webp"
+        },
+        {
+         "i": 5,
+         "name": "谈心大师",
+         "desc": "用你的三寸不烂之舌劝住了国伟。",
+         "pct": 41.3,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-05.webp"
+        },
+        {
+         "i": 6,
+         "name": "推理大师",
+         "desc": "真相只有一个！",
+         "pct": 39.4,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-06.webp"
+        },
+        {
+         "i": 7,
+         "name": "报童",
+         "desc": "啦啦啦~ 我是卖报的小行家~",
+         "pct": 39.4,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-07.webp"
+        },
+        {
+         "i": 8,
+         "name": "密码专家",
+         "desc": "",
+         "pct": 38.9,
+         "tier": "uncommon",
+         "hidden": 1,
+         "icon": "ach-08.webp"
+        },
+        {
+         "i": 9,
+         "name": "妙手空空",
+         "desc": "",
+         "pct": 35.8,
+         "tier": "uncommon",
+         "hidden": 1,
+         "icon": "ach-09.webp"
+        },
+        {
+         "i": 10,
+         "name": "摸金校尉",
+         "desc": "国伟死亡后并摸走他身上的钱。",
+         "pct": 35.0,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-10.webp"
+        },
+        {
+         "i": 11,
+         "name": "助人为乐",
+         "desc": "拆散了一对情侣，也许是好事……",
+         "pct": 34.4,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-11.webp"
+        },
+        {
+         "i": 12,
+         "name": "正义必胜",
+         "desc": "帮助豆蔻解除危机。",
+         "pct": 34.2,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-12.webp"
+        },
+        {
+         "i": 13,
+         "name": "船票",
+         "desc": "沉船口我来了！",
+         "pct": 31.5,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-13.webp"
+        },
+        {
+         "i": 14,
+         "name": "My precious!",
+         "desc": "那是我的宝贝！",
+         "pct": 24.5,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-14.webp"
+        },
+        {
+         "i": 15,
+         "name": "白骨",
+         "desc": "",
+         "pct": 23.8,
+         "tier": "uncommon",
+         "hidden": 1,
+         "icon": "ach-15.webp"
+        },
+        {
+         "i": 16,
+         "name": "旧时代的恶臭",
+         "desc": "贾老爷死了，南城的家族势力即将消亡。",
+         "pct": 22.3,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-16.webp"
+        },
+        {
+         "i": 17,
+         "name": "中年爱情故事",
+         "desc": "刘五金和鱼婶儿重归于好。",
+         "pct": 22.2,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-17.webp"
+        },
+        {
+         "i": 18,
+         "name": "嘴疾手快",
+         "desc": "成功阻止了肥猫开枪。",
+         "pct": 21.0,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-18.webp"
+        },
+        {
+         "i": 19,
+         "name": "谢幕",
+         "desc": "完成任意重要结局。",
+         "pct": 20.5,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-19.webp"
+        },
+        {
+         "i": 20,
+         "name": "沉船之谜",
+         "desc": "",
+         "pct": 20.2,
+         "tier": "uncommon",
+         "hidden": 1,
+         "icon": "ach-20.webp"
+        },
+        {
+         "i": 21,
+         "name": "重要结局-尘封的真相",
+         "desc": "在薛军的审判中众人得知了隐瞒了十年的真相。",
+         "pct": 17.4,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-21.webp"
+        },
+        {
+         "i": 22,
+         "name": "视财如命",
+         "desc": "收下了阮府管家的贿赂。",
+         "pct": 17.2,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-22.webp"
+        },
+        {
+         "i": 23,
+         "name": "新人出道",
+         "desc": "",
+         "pct": 16.4,
+         "tier": "uncommon",
+         "hidden": 1,
+         "icon": "ach-23.webp"
+        },
+        {
+         "i": 24,
+         "name": "处事圆滑",
+         "desc": "——潮汐海灵",
+         "pct": 15.9,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-24.webp"
+        },
+        {
+         "i": 25,
+         "name": "臂力惊人",
+         "desc": "哪来这么大的鱼？",
+         "pct": 15.6,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-25.webp"
+        },
+        {
+         "i": 26,
+         "name": "完美谢幕",
+         "desc": "解放工厂的群众，建立一个全新的暗水城！",
+         "pct": 13.9,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-26.webp"
+        },
+        {
+         "i": 27,
+         "name": "神偷手",
+         "desc": "偷走刘五金的门票然后拿给梅毛斌。",
+         "pct": 13.1,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-27.webp"
+        },
+        {
+         "i": 28,
+         "name": "你小子",
+         "desc": "殴打老王并且嫁祸给帝国守卫。",
+         "pct": 13.0,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-28.webp"
+        },
+        {
+         "i": 29,
+         "name": "钓鱼高手",
+         "desc": "成功钓上30条鱼！",
+         "pct": 11.9,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-29.webp"
+        },
+        {
+         "i": 30,
+         "name": "结局-逃离",
+         "desc": "",
+         "pct": 9.4,
+         "tier": "rare",
+         "hidden": 1,
+         "icon": "ach-30.webp"
+        },
+        {
+         "i": 31,
+         "name": "劳动致富",
+         "desc": "我哋呢班打工仔~ 一生一世为钱币做奴隶~",
+         "pct": 9.2,
+         "tier": "rare",
+         "hidden": 0,
+         "icon": "ach-31.webp"
+        },
+        {
+         "i": 32,
+         "name": "重要结局-私刑",
+         "desc": "",
+         "pct": 9.2,
+         "tier": "rare",
+         "hidden": 1,
+         "icon": "ach-32.webp"
+        },
+        {
+         "i": 33,
+         "name": "干饭人",
+         "desc": "阮府的红烧肉盖饭，真香！",
+         "pct": 7.7,
+         "tier": "rare",
+         "hidden": 0,
+         "icon": "ach-33.webp"
+        },
+        {
+         "i": 34,
+         "name": "结局-无痛当爹",
+         "desc": "留在工厂和国伟妈在一起双宿双飞。",
+         "pct": 6.6,
+         "tier": "rare",
+         "hidden": 0,
+         "icon": "ach-34.webp"
+        },
+        {
+         "i": 35,
+         "name": "勇气的赞歌",
+         "desc": "",
+         "pct": 6.5,
+         "tier": "rare",
+         "hidden": 1,
+         "icon": "ach-35.webp"
+        },
+        {
+         "i": 36,
+         "name": "结局-正义赴死",
+         "desc": "在追寻真相的路途中死亡。",
+         "pct": 5.7,
+         "tier": "rare",
+         "hidden": 0,
+         "icon": "ach-36.webp"
+        },
+        {
+         "i": 37,
+         "name": "重要结局-蝶梦如烟",
+         "desc": "",
+         "pct": 5.7,
+         "tier": "rare",
+         "hidden": 1,
+         "icon": "ach-37.webp"
+        },
+        {
+         "i": 38,
+         "name": "重要结局-审判降临",
+         "desc": "萤火帮清洗了猪笼城寨的有罪之人。",
+         "pct": 5.6,
+         "tier": "rare",
+         "hidden": 0,
+         "icon": "ach-38.webp"
+        },
+        {
+         "i": 39,
+         "name": "选择的代价",
+         "desc": "",
+         "pct": 4.0,
+         "tier": "rare",
+         "hidden": 1,
+         "icon": "ach-39.webp"
+        },
+        {
+         "i": 40,
+         "name": "全成就",
+         "desc": "获得全部成就。",
+         "pct": 1.4,
+         "tier": "rare",
+         "hidden": 0,
+         "icon": "ach-40.webp"
+        }
        ]
       }
      ]
@@ -4408,8 +5217,8 @@
     "zh-TW": {
      "title": "殺死影子成就指南",
      "metaTitle": "殺死影子成就攻略（2026）",
-     "metaDescription": "殺死影子成就的已確認信息：免費 Demo 有 10 個成就（5,129 EXP），以及正式版成就列表的發售後整理進展。",
-     "intro": "《殺死影子》的成就收集才剛剛開始。本頁彙總目前已核實的信息——Demo 的 10 個成就——以及如何跟進正在整理中的完整列表。",
+     "metaDescription": "殺死影子成就：免費 Demo 有 10 個（5,129 EXP），正式版完整 41 個成就列表 + 交互式進度追蹤器與玩家解鎖率。",
+     "intro": "《殺死影子》正式版帶有 41 個 Steam 成就，免費 Demo 另有自己的 10 個。本頁列出正式版全部成就的官方名稱、描述與解鎖率——勾選即可記錄你的進度。",
      "sections": [
       {
        "type": "list",
@@ -4425,33 +5234,432 @@
       },
       {
        "type": "list",
-       "heading": "正式版（2026 年 8 月 5 日）",
-       "body": "正式版於 2026 年 8 月 5 日發售，成就列表正在被社區整理中。",
+       "heading": "正式版：41 個成就",
+       "body": "正式版於 2026 年 8 月 5 日發售，帶有 41 個 Steam 成就——與 Demo 的 10 個相互獨立。以下名稱與描述均來自 Steam 官方列表。",
        "items": [
-        "正式版擁有獨立於 Demo 的成就集",
-        "追蹤站會隨玩家解鎖不斷更新——到 SteamDB 查看實時列表",
-        "可靠來源確認全部成就後，我們會在這裡發佈完整清單"
+        "41 個成就，與 Demo 的 10 個相互獨立",
+        "成就名稱與描述共 5 種語言（英文、簡/繁中文、日文、韓文）——均為 Steam 官方本地化",
+        "解鎖率從 64.2%（高級鉗工）到 1.4%（最稀有的結局成就）不等",
+        "11 個成就解鎖率低於 10%（稀有檔）；2 個高於 50%（常見檔）",
+        "10 個成就被 Steam 標記為隱藏——描述需解鎖後才會顯示"
        ]
       },
       {
        "type": "list",
-       "heading": "如何跟進完整列表",
-       "body": "推薦以下位置跟進逐步補全的列表。",
+       "heading": "記錄你的進度",
+       "body": "使用下方交互式清單：解鎖後勾選成就，按稀有度篩選或按名稱搜索。進度保存在你當前設備的瀏覽器中。",
        "items": [
-        "SteamDB 的 Kill The Shadow 成就統計頁（app 2660230）",
-        "Steam 社區中心——玩家寫的指南往往最快列出成就",
-        "TrueSteamAchievements 查看完成度統計與百分比"
+        "勾選任意成就即可標記完成——進度條與計數實時更新",
+        "篩選「稀有」（解鎖率 <10%）優先攻克最難的目標",
+        "「隱藏」篩選只顯示那 10 個隱藏成就",
+        "搜索會匹配本頁語言下的成就名稱與描述"
        ]
       },
       {
        "type": "list",
        "heading": "成就收集清單",
-       "body": "一些讓完整列表更容易完成的小習慣——全部基於已核實的遊戲機制。",
+       "body": "讓完整列表更容易完成的小習慣——全部基於已核實的遊戲機制。",
        "items": [
         "在案件上推進前，讀完所有文檔並完成每次現場重建",
         "在分支選擇處存檔——時間回溯機制讓你能從同一時刻嘗試不同選項",
         "多結局意味著多周目：第一週目不查攻略，後續周目補漏",
         "主機版 2026 年 8 月 12 日發售——如果也玩主機版，兩邊列表都跟進"
+       ]
+      },
+      {
+       "type": "achieve",
+       "heading": "正式版完整成就列表（41 個）",
+       "body": "正式版全部 41 個成就，直接取自 Steam 官方列表。百分比表示已解鎖該成就的玩家佔比。稀有度分級：常見 = 50% 以上玩家，少見 = 10–49.9%，稀有 = 低於 10%。勾選成就即可記錄進度——儲存在你的瀏覽器中。",
+       "ui": {
+        "heading": "正式版完整成就列表（41 個）",
+        "body": "正式版全部 41 個成就，直接取自 Steam 官方列表。百分比表示已解鎖該成就的玩家佔比。稀有度分級：常見 = 50% 以上玩家，少見 = 10–49.9%，稀有 = 低於 10%。勾選成就即可記錄進度——儲存在你的瀏覽器中。",
+        "search": "搜尋成就…",
+        "all": "全部",
+        "common": "常見",
+        "uncommon": "少見",
+        "rare": "稀有",
+        "hidden": "隱藏",
+        "count": "顯示 {n} / {t} 個",
+        "done": "已完成 {n}/{t}（{p}%）",
+        "reset": "重設進度",
+        "empty": "沒有符合的成就。",
+        "hiddenTag": "隱藏",
+        "hiddenDesc": "隱藏成就——解鎖後才會顯示描述。",
+        "nameCol": "成就",
+        "descCol": "描述",
+        "playersCol": "玩家佔比",
+        "iconCol": "圖示"
+       },
+       "achievements": [
+        {
+         "i": 0,
+         "name": "高級鉗工",
+         "desc": "獲得老鉗工的高級鉗工證書。",
+         "pct": 64.2,
+         "tier": "common",
+         "hidden": 0,
+         "icon": "ach-00.webp"
+        },
+        {
+         "i": 1,
+         "name": "再見了，北方！",
+         "desc": "再見了，牢籠。",
+         "pct": 62.2,
+         "tier": "common",
+         "hidden": 0,
+         "icon": "ach-01.webp"
+        },
+        {
+         "i": 2,
+         "name": "好狗好狗",
+         "desc": "來福現在很喜歡你〜",
+         "pct": 46.2,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-02.webp"
+        },
+        {
+         "i": 3,
+         "name": "好基友",
+         "desc": "阿光什麼的，最喜歡了〜——汪隊長",
+         "pct": 44.0,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-03.webp"
+        },
+        {
+         "i": 4,
+         "name": "公平！公平！還是他媽的公平！",
+         "desc": "將汪隊長的秘密公諸於世。",
+         "pct": 42.0,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-04.webp"
+        },
+        {
+         "i": 5,
+         "name": "談心大師",
+         "desc": "用你的三寸不爛之舌勸住國偉。",
+         "pct": 41.3,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-05.webp"
+        },
+        {
+         "i": 6,
+         "name": "推理大師",
+         "desc": "真相只有一個！",
+         "pct": 39.4,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-06.webp"
+        },
+        {
+         "i": 7,
+         "name": "報童",
+         "desc": "啦啦啦〜我是賣報的小行家〜",
+         "pct": 39.4,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-07.webp"
+        },
+        {
+         "i": 8,
+         "name": "密碼專家",
+         "desc": "",
+         "pct": 38.9,
+         "tier": "uncommon",
+         "hidden": 1,
+         "icon": "ach-08.webp"
+        },
+        {
+         "i": 9,
+         "name": "妙手空空",
+         "desc": "",
+         "pct": 35.8,
+         "tier": "uncommon",
+         "hidden": 1,
+         "icon": "ach-09.webp"
+        },
+        {
+         "i": 10,
+         "name": "摸金校尉",
+         "desc": "國偉死亡後摸走他身上的錢。",
+         "pct": 35.0,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-10.webp"
+        },
+        {
+         "i": 11,
+         "name": "助人為樂",
+         "desc": "拆散了一對情侶，也許是好事……",
+         "pct": 34.4,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-11.webp"
+        },
+        {
+         "i": 12,
+         "name": "正義必勝",
+         "desc": "幫助豆蔻解除危機。",
+         "pct": 34.2,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-12.webp"
+        },
+        {
+         "i": 13,
+         "name": "船票",
+         "desc": "沉船口我來了！",
+         "pct": 31.5,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-13.webp"
+        },
+        {
+         "i": 14,
+         "name": "My precious!",
+         "desc": "那是我的寶貝！",
+         "pct": 24.5,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-14.webp"
+        },
+        {
+         "i": 15,
+         "name": "白骨",
+         "desc": "",
+         "pct": 23.8,
+         "tier": "uncommon",
+         "hidden": 1,
+         "icon": "ach-15.webp"
+        },
+        {
+         "i": 16,
+         "name": "舊時代的惡臭",
+         "desc": "賈老爺死了，南城的家族勢力即將消亡。",
+         "pct": 22.3,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-16.webp"
+        },
+        {
+         "i": 17,
+         "name": "中年愛情故事",
+         "desc": "讓劉五金和魚嬸兒言歸於好。",
+         "pct": 22.2,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-17.webp"
+        },
+        {
+         "i": 18,
+         "name": "嘴疾手快",
+         "desc": "成功阻止肥貓開槍。",
+         "pct": 21.0,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-18.webp"
+        },
+        {
+         "i": 19,
+         "name": "謝幕",
+         "desc": "完成任意重要結局。",
+         "pct": 20.5,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-19.webp"
+        },
+        {
+         "i": 20,
+         "name": "沉船之謎",
+         "desc": "",
+         "pct": 20.2,
+         "tier": "uncommon",
+         "hidden": 1,
+         "icon": "ach-20.webp"
+        },
+        {
+         "i": 21,
+         "name": "重要結局 - 塵封的真相",
+         "desc": "在薛軍的審判中，眾人得知了隱瞞十年的真相。",
+         "pct": 17.4,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-21.webp"
+        },
+        {
+         "i": 22,
+         "name": "視財如命",
+         "desc": "收下阮府管家的賄賂。",
+         "pct": 17.2,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-22.webp"
+        },
+        {
+         "i": 23,
+         "name": "新人出道",
+         "desc": "",
+         "pct": 16.4,
+         "tier": "uncommon",
+         "hidden": 1,
+         "icon": "ach-23.webp"
+        },
+        {
+         "i": 24,
+         "name": "處事圓滑",
+         "desc": "對所有人公開旺財的死訊後，向汪隊長道歉了。",
+         "pct": 15.9,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-24.webp"
+        },
+        {
+         "i": 25,
+         "name": "臂力驚人",
+         "desc": "哪來這麼大的魚？",
+         "pct": 15.6,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-25.webp"
+        },
+        {
+         "i": 26,
+         "name": "完美謝幕",
+         "desc": "解放北城工廠的群眾，建立一個全新的暗水城！",
+         "pct": 13.9,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-26.webp"
+        },
+        {
+         "i": 27,
+         "name": "神偷手",
+         "desc": "偷走劉五金的門票然後拿給梅毛斌。",
+         "pct": 13.1,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-27.webp"
+        },
+        {
+         "i": 28,
+         "name": "你這傢伙",
+         "desc": "毆打老王並且嫁禍給帝國守衛。",
+         "pct": 13.0,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-28.webp"
+        },
+        {
+         "i": 29,
+         "name": "釣魚高手",
+         "desc": "成功釣上30條魚！",
+         "pct": 11.9,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-29.webp"
+        },
+        {
+         "i": 30,
+         "name": "結局 - 逃離",
+         "desc": "",
+         "pct": 9.4,
+         "tier": "rare",
+         "hidden": 1,
+         "icon": "ach-30.webp"
+        },
+        {
+         "i": 31,
+         "name": "勞動致富",
+         "desc": "我們這些打工仔〜一生一世為錢幣做奴隸〜",
+         "pct": 9.2,
+         "tier": "rare",
+         "hidden": 0,
+         "icon": "ach-31.webp"
+        },
+        {
+         "i": 32,
+         "name": "重要結局 - 私刑",
+         "desc": "",
+         "pct": 9.2,
+         "tier": "rare",
+         "hidden": 1,
+         "icon": "ach-32.webp"
+        },
+        {
+         "i": 33,
+         "name": "專業吃貨",
+         "desc": "阮府的紅燒肉蓋飯，真香！",
+         "pct": 7.7,
+         "tier": "rare",
+         "hidden": 0,
+         "icon": "ach-33.webp"
+        },
+        {
+         "i": 34,
+         "name": "結局 - 無痛當爹",
+         "desc": "留在工廠和國偉媽在一起比翼雙飛。",
+         "pct": 6.6,
+         "tier": "rare",
+         "hidden": 0,
+         "icon": "ach-34.webp"
+        },
+        {
+         "i": 35,
+         "name": "勇氣的讚歌",
+         "desc": "",
+         "pct": 6.5,
+         "tier": "rare",
+         "hidden": 1,
+         "icon": "ach-35.webp"
+        },
+        {
+         "i": 36,
+         "name": "結局 - 正義赴死",
+         "desc": "在追尋真相的途中死亡。",
+         "pct": 5.7,
+         "tier": "rare",
+         "hidden": 0,
+         "icon": "ach-36.webp"
+        },
+        {
+         "i": 37,
+         "name": "重要結局 - 蝶夢如煙",
+         "desc": "",
+         "pct": 5.7,
+         "tier": "rare",
+         "hidden": 1,
+         "icon": "ach-37.webp"
+        },
+        {
+         "i": 38,
+         "name": "重要結局 - 審判降臨",
+         "desc": "螢火幫清除了豬籠城寨的有罪之人。",
+         "pct": 5.6,
+         "tier": "rare",
+         "hidden": 0,
+         "icon": "ach-38.webp"
+        },
+        {
+         "i": 39,
+         "name": "選擇的代價",
+         "desc": "",
+         "pct": 4.0,
+         "tier": "rare",
+         "hidden": 1,
+         "icon": "ach-39.webp"
+        },
+        {
+         "i": 40,
+         "name": "全成就",
+         "desc": "獲得全部成就。",
+         "pct": 1.4,
+         "tier": "rare",
+         "hidden": 0,
+         "icon": "ach-40.webp"
+        }
        ]
       }
      ]
@@ -4459,8 +5667,8 @@
     "ja": {
      "title": "キル・ザ・シャドウ実績ガイド",
      "metaTitle": "キル・ザ・シャドウ実績攻略（2026）",
-     "metaDescription": "キル・ザ・シャドウ実績の確定情報：無料デモには実績10個（EXP合計5,129）、製品版リストの発売後整理状況。",
-     "intro": "『キル・ザ・シャドウ』の実績集めは始まったばかり。本ページでは、これまでに検証済みの情報（デモの実績10個）と、整理中の完全リストの追い方をまとめます。",
+     "metaDescription": "キル・ザ・シャドウ実績：無料デモは10個（EXP合計5,129）、製品版は全41個の実績一覧＋進行状況トラッカーと解除率。",
+     "intro": "『キル・ザ・シャドウ』製品版にはSteam実績が41個、無料デモには別の10個があります。このページでは製品版の全実績を公式名称・説明・解除率付きで掲載し、チェックで進行状況を記録できます。",
      "sections": [
       {
        "type": "list",
@@ -4476,33 +5684,432 @@
       },
       {
        "type": "list",
-       "heading": "製品版（2026年8月5日）",
-       "body": "製品版は2026年8月5日に発売。実績リストは現在コミュニティが整理中です。",
+       "heading": "製品版：実績41個",
+       "body": "製品版は2026年8月5日に発売され、Steam実績41個を搭載しています（デモの10個とは別セット）。以下の名称と説明はすべてSteam公式リストに基づきます。",
        "items": [
-        "製品版にはデモとは別の実績セットがある",
-        "トラッカーはプレイヤーの解除に合わせて更新——SteamDB で最新リストを",
-        "信頼できる情報源が全実績を確認次第、完全チェックリストを公開します"
+        "実績41個、デモの10個とは別セット",
+        "名称と説明は5言語（英語・簡体/繁体中国語・日本語・韓国語）——Steam公式ローカライズ",
+        "解除率は64.2%（上級工匠）から1.4%（最レアのエンディング実績）まで",
+        "解除率10%未満のレア実績は11個、50%超のコモンは2個",
+        "10個はSteam上で非表示扱い——説明は解除すると公開されます"
        ]
       },
       {
        "type": "list",
-       "heading": "完全リストの追い方",
-       "body": "リストが埋まっていくのを追うのにおすすめの場所です。",
+       "heading": "進行状況を記録",
+       "body": "下のインタラクティブなリストを使いましょう：解除した実績にチェックを付け、レア度で絞り込み、名前で検索。進捗はこの端末のブラウザに保存されます。",
        "items": [
-        "SteamDB のキル・ザ・シャドウ実績統計ページ（app 2660230）",
-        "Steam コミュニティハブ——プレイヤー作成ガイドが最も速い",
-        "TrueSteamAchievements でコンプ率と統計を確認"
+        "任意の実績のチェックボックスをオンにすると完了——プログレスバーとカウントが即時更新",
+        "「レア」（解除率10%未満）で絞り込み、難しい目標から攻略",
+        "「非表示」フィルターで隠し実績10個だけ表示",
+        "検索はこのページの言語での実績名・説明に一致"
        ]
       },
       {
        "type": "list",
        "heading": "実績集めのチェックリスト",
-       "body": "完全リストの公開後に実績を埋めやすくする習慣——すべて検証済みのゲームシステムに基づきます。",
+       "body": "完全リストを埋めやすくする習慣——すべて検証済みのゲームシステムに基づきます。",
        "items": [
         "先に進む前に、すべての書類を読み、現場再現を完了させる",
         "分岐する選択でセーブ——時間巻き戻しで同じ時点から別の選択を試せる",
         "マルチエンディングはマルチ周回を意味する——初周はネタバレなしで、後続周回で取りこぼしを回収",
         "コンソール版は2026年8月12日発売——そちらでも遊ぶなら両方のリストを追跡"
+       ]
+      },
+      {
+       "type": "achieve",
+       "heading": "製品版 実績一覧（41個）",
+       "body": "製品版の実績は全部で41個。Steam公式リストから直接取得しています。パーセントは全プレイヤーのうち解除した人の割合。レア度：コモン＝50%以上、アンコモン＝10〜49.9%、レア＝10%未満。実績にチェックを付けて進捗を記録できます（ブラウザに保存）。",
+       "ui": {
+        "heading": "製品版 実績一覧（41個）",
+        "body": "製品版の実績は全部で41個。Steam公式リストから直接取得しています。パーセントは全プレイヤーのうち解除した人の割合。レア度：コモン＝50%以上、アンコモン＝10〜49.9%、レア＝10%未満。実績にチェックを付けて進捗を記録できます（ブラウザに保存）。",
+        "search": "実績を検索…",
+        "all": "すべて",
+        "common": "コモン",
+        "uncommon": "アンコモン",
+        "rare": "レア",
+        "hidden": "非表示",
+        "count": "{n} / {t} 件を表示",
+        "done": "達成 {n}/{t}（{p}%）",
+        "reset": "リセット",
+        "empty": "一致する実績がありません。",
+        "hiddenTag": "非表示",
+        "hiddenDesc": "非表示実績——解除すると説明が表示されます。",
+        "nameCol": "実績",
+        "descCol": "説明",
+        "playersCol": "プレイヤー",
+        "iconCol": "アイコン"
+       },
+       "achievements": [
+        {
+         "i": 0,
+         "name": "上級工匠",
+         "desc": "老いた職人から上級工匠証明書をもらった。",
+         "pct": 64.2,
+         "tier": "common",
+         "hidden": 0,
+         "icon": "ach-00.webp"
+        },
+        {
+         "i": 1,
+         "name": "さらば、北部よ！",
+         "desc": "さらば、鳥かごよ。",
+         "pct": 62.2,
+         "tier": "common",
+         "hidden": 0,
+         "icon": "ach-01.webp"
+        },
+        {
+         "i": 2,
+         "name": "よしよしいい子！",
+         "desc": "ボクはヒカルが大好きだ！",
+         "pct": 46.2,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-02.webp"
+        },
+        {
+         "i": 3,
+         "name": "男の友情",
+         "desc": "ヒカル、大好きだぞ - 汪班長",
+         "pct": 44.0,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-03.webp"
+        },
+        {
+         "i": 4,
+         "name": "公平なんざクソくらえ！",
+         "desc": "汪班長の秘密を公言した。",
+         "pct": 42.0,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-04.webp"
+        },
+        {
+         "i": 5,
+         "name": "説得の達人",
+         "desc": "見事な弁舌でクニハルを説得した。",
+         "pct": 41.3,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-05.webp"
+        },
+        {
+         "i": 6,
+         "name": "推理の達人",
+         "desc": "真実はいつもひとつ！",
+         "pct": 39.4,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-06.webp"
+        },
+        {
+         "i": 7,
+         "name": "新聞売り",
+         "desc": "号外～！俺は新聞売りの名人だ～！",
+         "pct": 39.4,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-07.webp"
+        },
+        {
+         "i": 8,
+         "name": "暗号解読専門家",
+         "desc": "",
+         "pct": 38.9,
+         "tier": "uncommon",
+         "hidden": 1,
+         "icon": "ach-08.webp"
+        },
+        {
+         "i": 9,
+         "name": "鮮やかな手さばき",
+         "desc": "",
+         "pct": 35.8,
+         "tier": "uncommon",
+         "hidden": 1,
+         "icon": "ach-09.webp"
+        },
+        {
+         "i": 10,
+         "name": "墓場泥棒",
+         "desc": "死んだクニハルから金銭を奪った。",
+         "pct": 35.0,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-10.webp"
+        },
+        {
+         "i": 11,
+         "name": "人助けの楽しさ",
+         "desc": "恋人を別れさせた。これでよかったはず…",
+         "pct": 34.4,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-11.webp"
+        },
+        {
+         "i": 12,
+         "name": "正義は必ず勝つ",
+         "desc": "リリーを窮地から救った。",
+         "pct": 34.2,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-12.webp"
+        },
+        {
+         "i": 13,
+         "name": "乗船券",
+         "desc": "いざ廃船埠頭へ！",
+         "pct": 31.5,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-13.webp"
+        },
+        {
+         "i": 14,
+         "name": "My precious!",
+         "desc": "俺の宝が！",
+         "pct": 24.5,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-14.webp"
+        },
+        {
+         "i": 15,
+         "name": "白骨",
+         "desc": "",
+         "pct": 23.8,
+         "tier": "uncommon",
+         "hidden": 1,
+         "icon": "ach-15.webp"
+        },
+        {
+         "i": 16,
+         "name": "旧時代の悪しき遺産",
+         "desc": "賈家当主が死に、南部の勢力が崩れていく。",
+         "pct": 22.3,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-16.webp"
+        },
+        {
+         "i": 17,
+         "name": "中年恋愛物語",
+         "desc": "バンノウが魚屋のおばさんと和解した。",
+         "pct": 22.2,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-17.webp"
+        },
+        {
+         "i": 18,
+         "name": "奇弁かつ俊敏",
+         "desc": "ビッグの発砲を止めた。",
+         "pct": 21.0,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-18.webp"
+        },
+        {
+         "i": 19,
+         "name": "幕引き",
+         "desc": "いずれかの重要エンドを見た。",
+         "pct": 20.5,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-19.webp"
+        },
+        {
+         "i": 20,
+         "name": "廃船の謎",
+         "desc": "",
+         "pct": 20.2,
+         "tier": "uncommon",
+         "hidden": 1,
+         "icon": "ach-20.webp"
+        },
+        {
+         "i": 21,
+         "name": "重要エンド ‐ 閉ざされた真実",
+         "desc": "薛グンジの裁判で、10年間も隠蔽されてきた真相が明かされた。",
+         "pct": 17.4,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-21.webp"
+        },
+        {
+         "i": 22,
+         "name": "金の亡者",
+         "desc": "阮家の執事頭から賄賂を受け取った。",
+         "pct": 17.2,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-22.webp"
+        },
+        {
+         "i": 23,
+         "name": "新人のお披露目",
+         "desc": "",
+         "pct": 16.4,
+         "tier": "uncommon",
+         "hidden": 1,
+         "icon": "ach-23.webp"
+        },
+        {
+         "i": 24,
+         "name": "世渡り上手",
+         "desc": "コタロウの死の真相を暴露して、汪隊長に謝罪する。",
+         "pct": 15.9,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-24.webp"
+        },
+        {
+         "i": 25,
+         "name": "驚きの怪力",
+         "desc": "こんなデカい魚がいるのか！？",
+         "pct": 15.6,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-25.webp"
+        },
+        {
+         "i": 26,
+         "name": "見事な幕引き",
+         "desc": "北部を解放し、新たな暗水城を作った！",
+         "pct": 13.9,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-26.webp"
+        },
+        {
+         "i": 27,
+         "name": "神業スリ師",
+         "desc": "バンノウから招待券を盗み、張ヘイキに渡した。",
+         "pct": 13.1,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-27.webp"
+        },
+        {
+         "i": 28,
+         "name": "クソ野郎",
+         "desc": "王先生を殴り、帝国の軍人に罪をなすりつける。",
+         "pct": 13.0,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-28.webp"
+        },
+        {
+         "i": 29,
+         "name": "釣り名人",
+         "desc": "魚を30匹釣った！",
+         "pct": 11.9,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-29.webp"
+        },
+        {
+         "i": 30,
+         "name": "離脱エンド ‐ 脱出",
+         "desc": "",
+         "pct": 9.4,
+         "tier": "rare",
+         "hidden": 1,
+         "icon": "ach-30.webp"
+        },
+        {
+         "i": 31,
+         "name": "労働は富を生む",
+         "desc": "俺ら下働きは一生金の奴隷さ～！",
+         "pct": 9.2,
+         "tier": "rare",
+         "hidden": 0,
+         "icon": "ach-31.webp"
+        },
+        {
+         "i": 32,
+         "name": "重要エンド ‐ 私刑",
+         "desc": "",
+         "pct": 9.2,
+         "tier": "rare",
+         "hidden": 1,
+         "icon": "ach-32.webp"
+        },
+        {
+         "i": 33,
+         "name": "食いしん坊",
+         "desc": "阮邸の豚の角煮丼は最高に美味い！",
+         "pct": 7.7,
+         "tier": "rare",
+         "hidden": 0,
+         "icon": "ach-33.webp"
+        },
+        {
+         "i": 34,
+         "name": "離脱エンド ‐ 父になる",
+         "desc": "工場に残り、クニハルの母と幸せに暮らした。",
+         "pct": 6.6,
+         "tier": "rare",
+         "hidden": 0,
+         "icon": "ach-34.webp"
+        },
+        {
+         "i": 35,
+         "name": "勇気の讃歌",
+         "desc": "",
+         "pct": 6.5,
+         "tier": "rare",
+         "hidden": 1,
+         "icon": "ach-35.webp"
+        },
+        {
+         "i": 36,
+         "name": "離脱エンド ‐ 正義のために死す",
+         "desc": "真相を追う途中で命を落とした。",
+         "pct": 5.7,
+         "tier": "rare",
+         "hidden": 0,
+         "icon": "ach-36.webp"
+        },
+        {
+         "i": 37,
+         "name": "重要エンド ‐ 蝶の夢煙の如く",
+         "desc": "",
+         "pct": 5.7,
+         "tier": "rare",
+         "hidden": 1,
+         "icon": "ach-37.webp"
+        },
+        {
+         "i": 38,
+         "name": "重要エンド ‐ 審判の到来",
+         "desc": "蛍火団が豚牢城砦のすべての罪人を一掃した。",
+         "pct": 5.6,
+         "tier": "rare",
+         "hidden": 0,
+         "icon": "ach-38.webp"
+        },
+        {
+         "i": 39,
+         "name": "選択の代償",
+         "desc": "",
+         "pct": 4.0,
+         "tier": "rare",
+         "hidden": 1,
+         "icon": "ach-39.webp"
+        },
+        {
+         "i": 40,
+         "name": "全実績達成",
+         "desc": "すべての実績を解除した。",
+         "pct": 1.4,
+         "tier": "rare",
+         "hidden": 0,
+         "icon": "ach-40.webp"
+        }
        ]
       }
      ],
@@ -4511,8 +6118,8 @@
     "ko": {
      "title": "킬 더 섀도우 업적 가이드",
      "metaTitle": "킬 더 섀도우 업적 가이드 (2026)",
-     "metaDescription": "킬 더 섀도우 업적에 대해 확인된 것: 무료 데모의 업적 10개(EXP 5,129), 출시 후 전체 목록 문서화 현황.",
-     "intro": "킬 더 섀도우 업적 수집은 이제 시작입니다. 이 페이지는 지금까지 검증된 정보(데모 업적 10개)와 전체 목록 추적 방법을 다룹니다.",
+     "metaDescription": "킬 더 섀도우 업적: 무료 데모 10개(EXP 5,129), 정식판 전체 41개 업적 목록 + 진행 추적기와 달성률.",
+     "intro": "킬 더 섀도우 정식판에는 Steam 업적 41개가, 무료 데모에는 별도의 10개가 있습니다. 이 페이지는 정식판 전체 업적을 공식 이름·설명·달성률과 함께 나열하고, 체크로 진행 상황을 기록할 수 있습니다.",
      "sections": [
       {
        "type": "list",
@@ -4528,33 +6135,432 @@
       },
       {
        "type": "list",
-       "heading": "정식판 (2026년 8월 5일)",
-       "body": "정식판은 2026년 8월 5일에 출시되었으며, 업적 목록은 현재 커뮤니티가 문서화 중입니다.",
+       "heading": "정식판: 업적 41개",
+       "body": "정식판은 2026년 8월 5일에 출시되었으며 Steam 업적 41개를 갖추고 있습니다 (데모의 10개와 별개). 아래 이름과 설명은 모두 Steam 공식 목록에 기반합니다.",
        "items": [
-        "정식판에는 데모와 별개의 업적 세트가 있습니다",
-        "트래커는 플레이어 달성에 맞춰 업데이트됩니다 — SteamDB에서 실시간 목록 확인",
-        "신뢰할 수 있는 출처가 모든 업적을 확인하면 여기에 전체 체크리스트를 공개합니다"
+        "업적 41개, 데모의 10개와 별개 세트",
+        "이름과 설명은 5개 언어 (영어·간체/번체 중국어·일본어·한국어) — Steam 공식 로컬라이제이션",
+        "달성률은 64.2% (고급 기술공)부터 1.4% (가장 희귀한 엔딩 업적)까지",
+        "달성률 10% 미만의 희귀 업적 11개, 50% 초과의 흔한 업적 2개",
+        "10개 업적은 Steam에서 숨김 처리 — 설명은 달성하면 공개됩니다"
        ]
       },
       {
        "type": "list",
-       "heading": "전체 목록 추적 방법",
-       "body": "목록이 채워져 가는 것을 따라가기 좋은 곳입니다.",
+       "heading": "진행 상황 기록",
+       "body": "아래 인터랙티브 체크리스트를 사용하세요: 달성한 업적에 체크하고, 희귀도로 필터링하거나 이름으로 검색. 진행 상황은 이 기기의 브라우저에 저장됩니다.",
        "items": [
-        "SteamDB의 킬 더 섀도우 업적 통계 페이지 (앱 2660230)",
-        "Steam 커뮤니티 허브 — 플레이어 작성 가이드가 가장 빠르게 업적을 정리",
-        "TrueSteamAchievements에서 컴플리트 통계와 퍼센트 확인"
+        "아무 업적이나 체크하면 완료로 표시 — 진행 바와 카운트가 즉시 업데이트",
+        "희귀(달성률 10% 미만) 필터로 가장 어려운 목표부터 공략",
+        "숨김 필터는 비밀 업적 10개만 표시",
+        "검색은 이 페이지 언어의 업적 이름과 설명에 일치"
        ]
       },
       {
        "type": "list",
        "heading": "업적 수집 체크리스트",
-       "body": "전체 목록이 공개된 뒤 업적을 완성하기 쉽게 만드는 습관 — 모두 검증된 게임 메커니즘에 근거합니다.",
+       "body": "전체 목록을 완성하기 쉽게 만드는 습관 — 모두 검증된 게임 메커니즘에 근거합니다.",
        "items": [
         "사건을 진행하기 전에 모든 문서를 읽고 현장 재구성을 완료하세요",
         "분기 선택에서 저장하세요 — 시간 되감기 메커니즘으로 같은 순간에서 다른 선택을 시도할 수 있습니다",
         "멀티 엔딩은 멀티 플레이스루를 의미합니다 — 첫 회차는 스포일러 없이, 이후 회차로 놓친 것을 채우세요",
         "콘솔판은 2026년 8월 12일 출시 — 콘솔에서도 플레이한다면 양쪽 목록을 모두 추적하세요"
+       ]
+      },
+      {
+       "type": "achieve",
+       "heading": "정식판 전체 업적 목록 (41개)",
+       "body": "정식판 업적 41개 전체를 Steam 공식 목록에서 직접 가져왔습니다. 퍼센트는 전체 플레이어 중 달성한 비율입니다. 희귀도: 흔함 = 50% 이상, 보통 = 10–49.9%, 희귀 = 10% 미만. 업적을 체크해 진행 상황을 기록하세요 (브라우저에 저장).",
+       "ui": {
+        "heading": "정식판 전체 업적 목록 (41개)",
+        "body": "정식판 업적 41개 전체를 Steam 공식 목록에서 직접 가져왔습니다. 퍼센트는 전체 플레이어 중 달성한 비율입니다. 희귀도: 흔함 = 50% 이상, 보통 = 10–49.9%, 희귀 = 10% 미만. 업적을 체크해 진행 상황을 기록하세요 (브라우저에 저장).",
+        "search": "업적 검색…",
+        "all": "전체",
+        "common": "흔함",
+        "uncommon": "보통",
+        "rare": "희귀",
+        "hidden": "숨김",
+        "count": "{n} / {t}개 표시",
+        "done": "달성 {n}/{t} ({p}%)",
+        "reset": "초기화",
+        "empty": "일치하는 업적이 없습니다.",
+        "hiddenTag": "숨김",
+        "hiddenDesc": "숨겨진 업적 — 달성하면 설명이 공개됩니다.",
+        "nameCol": "업적",
+        "descCol": "설명",
+        "playersCol": "플레이어",
+        "iconCol": "아이콘"
+       },
+       "achievements": [
+        {
+         "i": 0,
+         "name": "고급 기술공",
+         "desc": "늙은 기술공의 고급 기술공 자격증을 받았다.",
+         "pct": 64.2,
+         "tier": "common",
+         "hidden": 0,
+         "icon": "ach-00.webp"
+        },
+        {
+         "i": 1,
+         "name": "북부여, 잘 있거라!",
+         "desc": "잘 있어라, 이 감옥 같은 북부야.",
+         "pct": 62.2,
+         "tier": "common",
+         "hidden": 0,
+         "icon": "ach-01.webp"
+        },
+        {
+         "i": 2,
+         "name": "오구오구 우리 강아지",
+         "desc": "멍멍! (광혁이 형 짱!)",
+         "pct": 46.2,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-02.webp"
+        },
+        {
+         "i": 3,
+         "name": "브로맨스",
+         "desc": "광혁이라면 뭐든 좋아~ - 왕 반장 -",
+         "pct": 44.0,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-03.webp"
+        },
+        {
+         "i": 4,
+         "name": "그깟 공정 개나 줘 버려!",
+         "desc": "왕 반장의 비밀을 사람들에게 공개했다.",
+         "pct": 42.0,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-04.webp"
+        },
+        {
+         "i": 5,
+         "name": "달변가",
+         "desc": "뛰어난 언변으로 국위를 설득했다.",
+         "pct": 41.3,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-05.webp"
+        },
+        {
+         "i": 6,
+         "name": "진실을 꿰뚫는 자",
+         "desc": "진실은 언제나 하나!",
+         "pct": 39.4,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-06.webp"
+        },
+        {
+         "i": 7,
+         "name": "신문팔이 소년",
+         "desc": "호외요, 호외!",
+         "pct": 39.4,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-07.webp"
+        },
+        {
+         "i": 8,
+         "name": "암호 해독의 달인",
+         "desc": "",
+         "pct": 38.9,
+         "tier": "uncommon",
+         "hidden": 1,
+         "icon": "ach-08.webp"
+        },
+        {
+         "i": 9,
+         "name": "신이여, 용서하소서",
+         "desc": "",
+         "pct": 35.8,
+         "tier": "uncommon",
+         "hidden": 1,
+         "icon": "ach-09.webp"
+        },
+        {
+         "i": 10,
+         "name": "나쁜 손",
+         "desc": "국위가 죽은 뒤 그의 주머니까지 털어 갔다.",
+         "pct": 35.0,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-10.webp"
+        },
+        {
+         "i": 11,
+         "name": "돕는 기쁨",
+         "desc": "한 쌍의 연인을 갈라놓았다. 어쩌면 잘한 일일지도...",
+         "pct": 34.4,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-11.webp"
+        },
+        {
+         "i": 12,
+         "name": "사필귀정",
+         "desc": "연화가 위기를 극복하도록 도왔다.",
+         "pct": 34.2,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-12.webp"
+        },
+        {
+         "i": 13,
+         "name": "도망의 배표",
+         "desc": "침몰선 부두야, 내가 간다!",
+         "pct": 31.5,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-13.webp"
+        },
+        {
+         "i": 14,
+         "name": "마이 프레셔스!",
+         "desc": "그건 내 소중한 보물이야!",
+         "pct": 24.5,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-14.webp"
+        },
+        {
+         "i": 15,
+         "name": "백골의 흔적",
+         "desc": "",
+         "pct": 23.8,
+         "tier": "uncommon",
+         "hidden": 1,
+         "icon": "ach-15.webp"
+        },
+        {
+         "i": 16,
+         "name": "구시대의 종말",
+         "desc": "가 영감의 죽음으로 남부 가문들의 세력이 무너졌다.",
+         "pct": 22.3,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-16.webp"
+        },
+        {
+         "i": 17,
+         "name": "중년의 연애",
+         "desc": "유능한과 어향 이모가 다시 화해했다.",
+         "pct": 22.2,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-17.webp"
+        },
+        {
+         "i": 18,
+         "name": "혀는 총보다 강하다",
+         "desc": "함박이가 총을 쏘는 것을 막는 데 성공했다.",
+         "pct": 21.0,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-18.webp"
+        },
+        {
+         "i": 19,
+         "name": "피날레",
+         "desc": "중요 엔딩 중 하나를 달성했다.",
+         "pct": 20.5,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-19.webp"
+        },
+        {
+         "i": 20,
+         "name": "침몰선의 미스터리",
+         "desc": "",
+         "pct": 20.2,
+         "tier": "uncommon",
+         "hidden": 1,
+         "icon": "ach-20.webp"
+        },
+        {
+         "i": 21,
+         "name": "중요 엔딩-감춰진 진실",
+         "desc": "설군의 심판에서 사람들은 10년간 숨겨진 진실을 알게 되었다.",
+         "pct": 17.4,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-21.webp"
+        },
+        {
+         "i": 22,
+         "name": "돈에 눈먼 자",
+         "desc": "원부 집사의 뇌물을 흔쾌히 받아 챙겼다.",
+         "pct": 17.2,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-22.webp"
+        },
+        {
+         "i": 23,
+         "name": "첫걸음을 내딛다",
+         "desc": "",
+         "pct": 16.4,
+         "tier": "uncommon",
+         "hidden": 1,
+         "icon": "ach-23.webp"
+        },
+        {
+         "i": 24,
+         "name": "능숙한 처세술",
+         "desc": "봉구의 죽음에 관한 진실을 모두에게 공개한 뒤, 왕 반장에게 사과했다.",
+         "pct": 15.9,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-24.webp"
+        },
+        {
+         "i": 25,
+         "name": "압도적인 힘으로",
+         "desc": "이 큰 물고기가 어디서 나왔지?",
+         "pct": 15.6,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-25.webp"
+        },
+        {
+         "i": 26,
+         "name": "완벽한 피날레",
+         "desc": "북부를 해방하고 새로운 암수성을 건설했다!",
+         "pct": 13.9,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-26.webp"
+        },
+        {
+         "i": 27,
+         "name": "괴도 광혁",
+         "desc": "유능한의 입장권을 훔쳐 이상무에게 넘겼다.",
+         "pct": 13.1,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-27.webp"
+        },
+        {
+         "i": 28,
+         "name": "나는 네가 한 일을 알고 있다",
+         "desc": "왕 노인을 두들겨 패고 제국 경비에게 누명까지 씌웠다.",
+         "pct": 13.0,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-28.webp"
+        },
+        {
+         "i": 29,
+         "name": "낚시왕",
+         "desc": "물고기 30마리를 낚았다!",
+         "pct": 11.9,
+         "tier": "uncommon",
+         "hidden": 0,
+         "icon": "ach-29.webp"
+        },
+        {
+         "i": 30,
+         "name": "엔딩-탈출",
+         "desc": "",
+         "pct": 9.4,
+         "tier": "rare",
+         "hidden": 1,
+         "icon": "ach-30.webp"
+        },
+        {
+         "i": 31,
+         "name": "땀 흘려 얻은 빵 한 조각",
+         "desc": "우리 같은 노동자는 평생 돈의 노예일 뿐~",
+         "pct": 9.2,
+         "tier": "rare",
+         "hidden": 0,
+         "icon": "ach-31.webp"
+        },
+        {
+         "i": 32,
+         "name": "중요 엔딩-사적인 처벌",
+         "desc": "",
+         "pct": 9.2,
+         "tier": "rare",
+         "hidden": 1,
+         "icon": "ach-32.webp"
+        },
+        {
+         "i": 33,
+         "name": "밥심으로 버티는 자",
+         "desc": "원부? 돼지고기 덮밥 맛집이지!",
+         "pct": 7.7,
+         "tier": "rare",
+         "hidden": 0,
+         "icon": "ach-33.webp"
+        },
+        {
+         "i": 34,
+         "name": "엔딩-어쩌다 아빠",
+         "desc": "공장에 남아 국위 엄마와 함께 행복하게 살았다.",
+         "pct": 6.6,
+         "tier": "rare",
+         "hidden": 0,
+         "icon": "ach-34.webp"
+        },
+        {
+         "i": 35,
+         "name": "용기의 찬가",
+         "desc": "",
+         "pct": 6.5,
+         "tier": "rare",
+         "hidden": 1,
+         "icon": "ach-35.webp"
+        },
+        {
+         "i": 36,
+         "name": "엔딩-정의의 종말",
+         "desc": "진실을 좇다 목숨을 잃었다.",
+         "pct": 5.7,
+         "tier": "rare",
+         "hidden": 0,
+         "icon": "ach-36.webp"
+        },
+        {
+         "i": 37,
+         "name": "중요 엔딩-연기처럼 사라진 꿈",
+         "desc": "",
+         "pct": 5.7,
+         "tier": "rare",
+         "hidden": 1,
+         "icon": "ach-37.webp"
+        },
+        {
+         "i": 38,
+         "name": "중요 엔딩-심판의 날",
+         "desc": "반딧불이파가 저롱성채의 죄인들을 쓸어냈다.",
+         "pct": 5.6,
+         "tier": "rare",
+         "hidden": 0,
+         "icon": "ach-38.webp"
+        },
+        {
+         "i": 39,
+         "name": "선택의 무게",
+         "desc": "",
+         "pct": 4.0,
+         "tier": "rare",
+         "hidden": 1,
+         "icon": "ach-39.webp"
+        },
+        {
+         "i": 40,
+         "name": "모든 업적 달성",
+         "desc": "모든 진실을 꿰뚫었다.",
+         "pct": 1.4,
+         "tier": "rare",
+         "hidden": 0,
+         "icon": "ach-40.webp"
+        }
        ]
       }
      ]

@@ -1,0 +1,1124 @@
+{
+ "source": {
+  "name": "Steam Community — Kill The Shadow :: Achievements",
+  "url": "https://steamcommunity.com/stats/2660230/achievements/",
+  "fetched": "2026-08-08",
+  "note": "Official achievement names/descriptions from Steam (l=en, schinese, tchinese, japanese, koreana). Percent = share of all players who unlocked, per Steam. Hidden = no official description published."
+ },
+ "appid": 2660230,
+ "total": 41,
+ "tiers": {
+  "common": "50%+ of players",
+  "uncommon": "10–49.9%",
+  "rare": "<10%"
+ },
+ "achievements": [
+  {
+   "i": 0,
+   "pct": 64.2,
+   "tier": "common",
+   "hidden": 0,
+   "icon": "ach-00.webp",
+   "en": {
+    "name": "Senior Machinist",
+    "desc": "Obtained the Senior Machinist Certificate from the Old Machinist."
+   },
+   "zh-CN": {
+    "name": "高级钳工",
+    "desc": "获得老钳工的高级钳工证书。"
+   },
+   "zh-TW": {
+    "name": "高級鉗工",
+    "desc": "獲得老鉗工的高級鉗工證書。"
+   },
+   "ja": {
+    "name": "上級工匠",
+    "desc": "老いた職人から上級工匠証明書をもらった。"
+   },
+   "ko": {
+    "name": "고급 기술공",
+    "desc": "늙은 기술공의 고급 기술공 자격증을 받았다."
+   }
+  },
+  {
+   "i": 1,
+   "pct": 62.2,
+   "tier": "common",
+   "hidden": 0,
+   "icon": "ach-01.webp",
+   "en": {
+    "name": "Goodbye, North!",
+    "desc": "I'm outta here!"
+   },
+   "zh-CN": {
+    "name": "再见了，北方！",
+    "desc": "再见了，牢笼。"
+   },
+   "zh-TW": {
+    "name": "再見了，北方！",
+    "desc": "再見了，牢籠。"
+   },
+   "ja": {
+    "name": "さらば、北部よ！",
+    "desc": "さらば、鳥かごよ。"
+   },
+   "ko": {
+    "name": "북부여, 잘 있거라!",
+    "desc": "잘 있어라, 이 감옥 같은 북부야."
+   }
+  },
+  {
+   "i": 2,
+   "pct": 46.2,
+   "tier": "uncommon",
+   "hidden": 0,
+   "icon": "ach-02.webp",
+   "en": {
+    "name": "Who's a Good Boy?",
+    "desc": "Lucky likes you a lot!"
+   },
+   "zh-CN": {
+    "name": "好狗好狗",
+    "desc": "来福现在很喜欢你~"
+   },
+   "zh-TW": {
+    "name": "好狗好狗",
+    "desc": "來福現在很喜歡你〜"
+   },
+   "ja": {
+    "name": "よしよしいい子！",
+    "desc": "ボクはヒカルが大好きだ！"
+   },
+   "ko": {
+    "name": "오구오구 우리 강아지",
+    "desc": "멍멍! (광혁이 형 짱!)"
+   }
+  },
+  {
+   "i": 3,
+   "pct": 44.0,
+   "tier": "uncommon",
+   "hidden": 0,
+   "icon": "ach-03.webp",
+   "en": {
+    "name": "Homie for Life",
+    "desc": "Lucas is the man! —Captain Theo."
+   },
+   "zh-CN": {
+    "name": "好基友",
+    "desc": "阿光什么的，最喜欢了~——汪队长"
+   },
+   "zh-TW": {
+    "name": "好基友",
+    "desc": "阿光什麼的，最喜歡了〜——汪隊長"
+   },
+   "ja": {
+    "name": "男の友情",
+    "desc": "ヒカル、大好きだぞ - 汪班長"
+   },
+   "ko": {
+    "name": "브로맨스",
+    "desc": "광혁이라면 뭐든 좋아~ - 왕 반장 -"
+   }
+  },
+  {
+   "i": 4,
+   "pct": 42.0,
+   "tier": "uncommon",
+   "hidden": 0,
+   "icon": "ach-04.webp",
+   "en": {
+    "name": "Elementary, My Dear Watson",
+    "desc": "Revealed Captain Theo's secret to the public."
+   },
+   "zh-CN": {
+    "name": "公平！公平！还是他妈的公平！",
+    "desc": "将汪队长的秘密公之于众。"
+   },
+   "zh-TW": {
+    "name": "公平！公平！還是他媽的公平！",
+    "desc": "將汪隊長的祕密公諸於世。"
+   },
+   "ja": {
+    "name": "公平なんざクソくらえ！",
+    "desc": "汪班長の秘密を公言した。"
+   },
+   "ko": {
+    "name": "그깟 공정 개나 줘 버려!",
+    "desc": "왕 반장의 비밀을 사람들에게 공개했다."
+   }
+  },
+  {
+   "i": 5,
+   "pct": 41.3,
+   "tier": "uncommon",
+   "hidden": 0,
+   "icon": "ach-05.webp",
+   "en": {
+    "name": "Master Negotiator",
+    "desc": "Talked Rafe out of committing suicide."
+   },
+   "zh-CN": {
+    "name": "谈心大师",
+    "desc": "用你的三寸不烂之舌劝住了国伟。"
+   },
+   "zh-TW": {
+    "name": "談心大師",
+    "desc": "用你的三寸不爛之舌勸住國偉。"
+   },
+   "ja": {
+    "name": "説得の達人",
+    "desc": "見事な弁舌でクニハルを説得した。"
+   },
+   "ko": {
+    "name": "달변가",
+    "desc": "뛰어난 언변으로 국위를 설득했다."
+   }
+  },
+  {
+   "i": 6,
+   "pct": 39.4,
+   "tier": "uncommon",
+   "hidden": 0,
+   "icon": "ach-06.webp",
+   "en": {
+    "name": "Detective Lucas",
+    "desc": "There's only one truth!"
+   },
+   "zh-CN": {
+    "name": "推理大师",
+    "desc": "真相只有一个！"
+   },
+   "zh-TW": {
+    "name": "推理大師",
+    "desc": "真相只有一個！"
+   },
+   "ja": {
+    "name": "推理の達人",
+    "desc": "真実はいつもひとつ！"
+   },
+   "ko": {
+    "name": "진실을 꿰뚫는 자",
+    "desc": "진실은 언제나 하나!"
+   }
+  },
+  {
+   "i": 7,
+   "pct": 39.4,
+   "tier": "uncommon",
+   "hidden": 0,
+   "icon": "ach-07.webp",
+   "en": {
+    "name": "The Newspaper Boy",
+    "desc": "I run through the street, and deliver newspapers to everyone I meet!"
+   },
+   "zh-CN": {
+    "name": "报童",
+    "desc": "啦啦啦~ 我是卖报的小行家~"
+   },
+   "zh-TW": {
+    "name": "報童",
+    "desc": "啦啦啦〜我是賣報的小行家〜"
+   },
+   "ja": {
+    "name": "新聞売り",
+    "desc": "号外～！俺は新聞売りの名人だ～！"
+   },
+   "ko": {
+    "name": "신문팔이 소년",
+    "desc": "호외요, 호외!"
+   }
+  },
+  {
+   "i": 8,
+   "pct": 38.9,
+   "tier": "uncommon",
+   "hidden": 1,
+   "icon": "ach-08.webp",
+   "en": {
+    "name": "The Password Expert",
+    "desc": ""
+   },
+   "zh-CN": {
+    "name": "密码专家",
+    "desc": ""
+   },
+   "zh-TW": {
+    "name": "密碼專家",
+    "desc": ""
+   },
+   "ja": {
+    "name": "暗号解読専門家",
+    "desc": ""
+   },
+   "ko": {
+    "name": "암호 해독의 달인",
+    "desc": ""
+   }
+  },
+  {
+   "i": 9,
+   "pct": 35.8,
+   "tier": "uncommon",
+   "hidden": 1,
+   "icon": "ach-09.webp",
+   "en": {
+    "name": "Master Pickpocket",
+    "desc": ""
+   },
+   "zh-CN": {
+    "name": "妙手空空",
+    "desc": ""
+   },
+   "zh-TW": {
+    "name": "妙手空空",
+    "desc": ""
+   },
+   "ja": {
+    "name": "鮮やかな手さばき",
+    "desc": ""
+   },
+   "ko": {
+    "name": "신이여, 용서하소서",
+    "desc": ""
+   }
+  },
+  {
+   "i": 10,
+   "pct": 35.0,
+   "tier": "uncommon",
+   "hidden": 0,
+   "icon": "ach-10.webp",
+   "en": {
+    "name": "Tomb Raider",
+    "desc": "Took money from Rafe's corpse."
+   },
+   "zh-CN": {
+    "name": "摸金校尉",
+    "desc": "国伟死亡后并摸走他身上的钱。"
+   },
+   "zh-TW": {
+    "name": "摸金校尉",
+    "desc": "國偉死亡後摸走他身上的錢。"
+   },
+   "ja": {
+    "name": "墓場泥棒",
+    "desc": "死んだクニハルから金銭を奪った。"
+   },
+   "ko": {
+    "name": "나쁜 손",
+    "desc": "국위가 죽은 뒤 그의 주머니까지 털어 갔다."
+   }
+  },
+  {
+   "i": 11,
+   "pct": 34.4,
+   "tier": "uncommon",
+   "hidden": 0,
+   "icon": "ach-11.webp",
+   "en": {
+    "name": "A Pleasure to Help",
+    "desc": "Broke up a couple. Maybe it's for the best..."
+   },
+   "zh-CN": {
+    "name": "助人为乐",
+    "desc": "拆散了一对情侣，也许是好事……"
+   },
+   "zh-TW": {
+    "name": "助人為樂",
+    "desc": "拆散了一對情侶，也許是好事……"
+   },
+   "ja": {
+    "name": "人助けの楽しさ",
+    "desc": "恋人を別れさせた。これでよかったはず…"
+   },
+   "ko": {
+    "name": "돕는 기쁨",
+    "desc": "한 쌍의 연인을 갈라놓았다. 어쩌면 잘한 일일지도..."
+   }
+  },
+  {
+   "i": 12,
+   "pct": 34.2,
+   "tier": "uncommon",
+   "hidden": 0,
+   "icon": "ach-12.webp",
+   "en": {
+    "name": "Justice Will Prevail",
+    "desc": "Helped Lily out."
+   },
+   "zh-CN": {
+    "name": "正义必胜",
+    "desc": "帮助豆蔻解除危机。"
+   },
+   "zh-TW": {
+    "name": "正義必勝",
+    "desc": "幫助豆蔻解除危機。"
+   },
+   "ja": {
+    "name": "正義は必ず勝つ",
+    "desc": "リリーを窮地から救った。"
+   },
+   "ko": {
+    "name": "사필귀정",
+    "desc": "연화가 위기를 극복하도록 도왔다."
+   }
+  },
+  {
+   "i": 13,
+   "pct": 31.5,
+   "tier": "uncommon",
+   "hidden": 0,
+   "icon": "ach-13.webp",
+   "en": {
+    "name": "The Boat Tickets",
+    "desc": "The Shipwreck Wharf, Here I Come!"
+   },
+   "zh-CN": {
+    "name": "船票",
+    "desc": "沉船口我来了！"
+   },
+   "zh-TW": {
+    "name": "船票",
+    "desc": "沉船口我來了！"
+   },
+   "ja": {
+    "name": "乗船券",
+    "desc": "いざ廃船埠頭へ！"
+   },
+   "ko": {
+    "name": "도망의 배표",
+    "desc": "침몰선 부두야, 내가 간다!"
+   }
+  },
+  {
+   "i": 14,
+   "pct": 24.5,
+   "tier": "uncommon",
+   "hidden": 0,
+   "icon": "ach-14.webp",
+   "en": {
+    "name": "MY PRECIOUS!",
+    "desc": "THAT'S MINE!"
+   },
+   "zh-CN": {
+    "name": "My precious!",
+    "desc": "那是我的宝贝！"
+   },
+   "zh-TW": {
+    "name": "My precious!",
+    "desc": "那是我的寶貝！"
+   },
+   "ja": {
+    "name": "My precious!",
+    "desc": "俺の宝が！"
+   },
+   "ko": {
+    "name": "마이 프레셔스!",
+    "desc": "그건 내 소중한 보물이야!"
+   }
+  },
+  {
+   "i": 15,
+   "pct": 23.8,
+   "tier": "uncommon",
+   "hidden": 1,
+   "icon": "ach-15.webp",
+   "en": {
+    "name": "Skull and Bones",
+    "desc": ""
+   },
+   "zh-CN": {
+    "name": "白骨",
+    "desc": ""
+   },
+   "zh-TW": {
+    "name": "白骨",
+    "desc": ""
+   },
+   "ja": {
+    "name": "白骨",
+    "desc": ""
+   },
+   "ko": {
+    "name": "백골의 흔적",
+    "desc": ""
+   }
+  },
+  {
+   "i": 16,
+   "pct": 22.3,
+   "tier": "uncommon",
+   "hidden": 0,
+   "icon": "ach-16.webp",
+   "en": {
+    "name": "The Death of the Old Era",
+    "desc": "With the death of Master Bingley, the Four Families have largely lost their power in the South."
+   },
+   "zh-CN": {
+    "name": "旧时代的恶臭",
+    "desc": "贾老爷死了，南城的家族势力即将消亡。"
+   },
+   "zh-TW": {
+    "name": "舊時代的惡臭",
+    "desc": "賈老爺死了，南城的家族勢力即將消亡。"
+   },
+   "ja": {
+    "name": "旧時代の悪しき遺産",
+    "desc": "賈家当主が死に、南部の勢力が崩れていく。"
+   },
+   "ko": {
+    "name": "구시대의 종말",
+    "desc": "가 영감의 죽음으로 남부 가문들의 세력이 무너졌다."
+   }
+  },
+  {
+   "i": 17,
+   "pct": 22.2,
+   "tier": "uncommon",
+   "hidden": 0,
+   "icon": "ach-17.webp",
+   "en": {
+    "name": "The Middle-aged Love Story",
+    "desc": "Wendell Forge and Auntie Bass got back together."
+   },
+   "zh-CN": {
+    "name": "中年爱情故事",
+    "desc": "刘五金和鱼婶儿重归于好。"
+   },
+   "zh-TW": {
+    "name": "中年愛情故事",
+    "desc": "讓劉五金和魚嬸兒言歸於好。"
+   },
+   "ja": {
+    "name": "中年恋愛物語",
+    "desc": "バンノウが魚屋のおばさんと和解した。"
+   },
+   "ko": {
+    "name": "중년의 연애",
+    "desc": "유능한과 어향 이모가 다시 화해했다."
+   }
+  },
+  {
+   "i": 18,
+   "pct": 21.0,
+   "tier": "uncommon",
+   "hidden": 0,
+   "icon": "ach-18.webp",
+   "en": {
+    "name": "Quick Tongue, Fast Hand",
+    "desc": "Stopped Piglet from pulling the trigger."
+   },
+   "zh-CN": {
+    "name": "嘴疾手快",
+    "desc": "成功阻止了肥猫开枪。"
+   },
+   "zh-TW": {
+    "name": "嘴疾手快",
+    "desc": "成功阻止肥貓開槍。"
+   },
+   "ja": {
+    "name": "奇弁かつ俊敏",
+    "desc": "ビッグの発砲を止めた。"
+   },
+   "ko": {
+    "name": "혀는 총보다 강하다",
+    "desc": "함박이가 총을 쏘는 것을 막는 데 성공했다."
+   }
+  },
+  {
+   "i": 19,
+   "pct": 20.5,
+   "tier": "uncommon",
+   "hidden": 0,
+   "icon": "ach-19.webp",
+   "en": {
+    "name": "Ending",
+    "desc": "Complete one of the Major Endings."
+   },
+   "zh-CN": {
+    "name": "谢幕",
+    "desc": "完成任意重要结局。"
+   },
+   "zh-TW": {
+    "name": "謝幕",
+    "desc": "完成任意重要結局。"
+   },
+   "ja": {
+    "name": "幕引き",
+    "desc": "いずれかの重要エンドを見た。"
+   },
+   "ko": {
+    "name": "피날레",
+    "desc": "중요 엔딩 중 하나를 달성했다."
+   }
+  },
+  {
+   "i": 20,
+   "pct": 20.2,
+   "tier": "uncommon",
+   "hidden": 1,
+   "icon": "ach-20.webp",
+   "en": {
+    "name": "Secret of the Shipwreck",
+    "desc": ""
+   },
+   "zh-CN": {
+    "name": "沉船之谜",
+    "desc": ""
+   },
+   "zh-TW": {
+    "name": "沉船之謎",
+    "desc": ""
+   },
+   "ja": {
+    "name": "廃船の謎",
+    "desc": ""
+   },
+   "ko": {
+    "name": "침몰선의 미스터리",
+    "desc": ""
+   }
+  },
+  {
+   "i": 21,
+   "pct": 17.4,
+   "tier": "uncommon",
+   "hidden": 0,
+   "icon": "ach-21.webp",
+   "en": {
+    "name": "Major Ending: The Buried Truth",
+    "desc": "During Dorian's trial, everyone learned the truth that had been concealed for ten years."
+   },
+   "zh-CN": {
+    "name": "重要结局-尘封的真相",
+    "desc": "在薛军的审判中众人得知了隐瞒了十年的真相。"
+   },
+   "zh-TW": {
+    "name": "重要結局 - 塵封的真相",
+    "desc": "在薛軍的審判中，眾人得知了隱瞞十年的真相。"
+   },
+   "ja": {
+    "name": "重要エンド ‐ 閉ざされた真実",
+    "desc": "薛グンジの裁判で、10年間も隠蔽されてきた真相が明かされた。"
+   },
+   "ko": {
+    "name": "중요 엔딩-감춰진 진실",
+    "desc": "설군의 심판에서 사람들은 10년간 숨겨진 진실을 알게 되었다."
+   }
+  },
+  {
+   "i": 22,
+   "pct": 17.2,
+   "tier": "uncommon",
+   "hidden": 0,
+   "icon": "ach-22.webp",
+   "en": {
+    "name": "Money above All Else",
+    "desc": "Accepted the bribe from the Butler of Reed."
+   },
+   "zh-CN": {
+    "name": "视财如命",
+    "desc": "收下了阮府管家的贿赂。"
+   },
+   "zh-TW": {
+    "name": "視財如命",
+    "desc": "收下阮府管家的賄賂。"
+   },
+   "ja": {
+    "name": "金の亡者",
+    "desc": "阮家の執事頭から賄賂を受け取った。"
+   },
+   "ko": {
+    "name": "돈에 눈먼 자",
+    "desc": "원부 집사의 뇌물을 흔쾌히 받아 챙겼다."
+   }
+  },
+  {
+   "i": 23,
+   "pct": 16.4,
+   "tier": "uncommon",
+   "hidden": 1,
+   "icon": "ach-23.webp",
+   "en": {
+    "name": "A Newcomer Debuts",
+    "desc": ""
+   },
+   "zh-CN": {
+    "name": "新人出道",
+    "desc": ""
+   },
+   "zh-TW": {
+    "name": "新人出道",
+    "desc": ""
+   },
+   "ja": {
+    "name": "新人のお披露目",
+    "desc": ""
+   },
+   "ko": {
+    "name": "첫걸음을 내딛다",
+    "desc": ""
+   }
+  },
+  {
+   "i": 24,
+   "pct": 15.9,
+   "tier": "uncommon",
+   "hidden": 0,
+   "icon": "ach-24.webp",
+   "en": {
+    "name": "Smooth Talker",
+    "desc": "Apologized to Captain Theo after revealing the truth."
+   },
+   "zh-CN": {
+    "name": "处事圆滑",
+    "desc": "——潮汐海灵"
+   },
+   "zh-TW": {
+    "name": "處事圓滑",
+    "desc": "對所有人公開旺財的死訊後，向汪隊長道歉了。"
+   },
+   "ja": {
+    "name": "世渡り上手",
+    "desc": "コタロウの死の真相を暴露して、汪隊長に謝罪する。"
+   },
+   "ko": {
+    "name": "능숙한 처세술",
+    "desc": "봉구의 죽음에 관한 진실을 모두에게 공개한 뒤, 왕 반장에게 사과했다."
+   }
+  },
+  {
+   "i": 25,
+   "pct": 15.6,
+   "tier": "uncommon",
+   "hidden": 0,
+   "icon": "ach-25.webp",
+   "en": {
+    "name": "Arm of Steel",
+    "desc": "Where did such a big fish come from?"
+   },
+   "zh-CN": {
+    "name": "臂力惊人",
+    "desc": "哪来这么大的鱼？"
+   },
+   "zh-TW": {
+    "name": "臂力驚人",
+    "desc": "哪來這麼大的魚？"
+   },
+   "ja": {
+    "name": "驚きの怪力",
+    "desc": "こんなデカい魚がいるのか！？"
+   },
+   "ko": {
+    "name": "압도적인 힘으로",
+    "desc": "이 큰 물고기가 어디서 나왔지?"
+   }
+  },
+  {
+   "i": 26,
+   "pct": 13.9,
+   "tier": "uncommon",
+   "hidden": 0,
+   "icon": "ach-26.webp",
+   "en": {
+    "name": "Perfect Ending",
+    "desc": "Freed the North and built a brand-new Dark Tide City!"
+   },
+   "zh-CN": {
+    "name": "完美谢幕",
+    "desc": "解放工厂的群众，建立一个全新的暗水城！"
+   },
+   "zh-TW": {
+    "name": "完美謝幕",
+    "desc": "解放北城工廠的群眾，建立一個全新的暗水城！"
+   },
+   "ja": {
+    "name": "見事な幕引き",
+    "desc": "北部を解放し、新たな暗水城を作った！"
+   },
+   "ko": {
+    "name": "완벽한 피날레",
+    "desc": "북부를 해방하고 새로운 암수성을 건설했다!"
+   }
+  },
+  {
+   "i": 27,
+   "pct": 13.1,
+   "tier": "uncommon",
+   "hidden": 0,
+   "icon": "ach-27.webp",
+   "en": {
+    "name": "Master Thief",
+    "desc": "Stole Wendell's tickets and give them to Noah."
+   },
+   "zh-CN": {
+    "name": "神偷手",
+    "desc": "偷走刘五金的门票然后拿给梅毛斌。"
+   },
+   "zh-TW": {
+    "name": "神偷手",
+    "desc": "偷走劉五金的門票然後拿給梅毛斌。"
+   },
+   "ja": {
+    "name": "神業スリ師",
+    "desc": "バンノウから招待券を盗み、張ヘイキに渡した。"
+   },
+   "ko": {
+    "name": "괴도 광혁",
+    "desc": "유능한의 입장권을 훔쳐 이상무에게 넘겼다."
+   }
+  },
+  {
+   "i": 28,
+   "pct": 13.0,
+   "tier": "uncommon",
+   "hidden": 0,
+   "icon": "ach-28.webp",
+   "en": {
+    "name": "I See What You Did There",
+    "desc": "Beat up Dr. Cyrus and put the blame on the Imperial guard."
+   },
+   "zh-CN": {
+    "name": "你小子",
+    "desc": "殴打老王并且嫁祸给帝国守卫。"
+   },
+   "zh-TW": {
+    "name": "你這傢伙",
+    "desc": "毆打老王並且嫁禍給帝國守衛。"
+   },
+   "ja": {
+    "name": "クソ野郎",
+    "desc": "王先生を殴り、帝国の軍人に罪をなすりつける。"
+   },
+   "ko": {
+    "name": "나는 네가 한 일을 알고 있다",
+    "desc": "왕 노인을 두들겨 패고 제국 경비에게 누명까지 씌웠다."
+   }
+  },
+  {
+   "i": 29,
+   "pct": 11.9,
+   "tier": "uncommon",
+   "hidden": 0,
+   "icon": "ach-29.webp",
+   "en": {
+    "name": "The Fishing Master",
+    "desc": "Caught 30 fish!"
+   },
+   "zh-CN": {
+    "name": "钓鱼高手",
+    "desc": "成功钓上30条鱼！"
+   },
+   "zh-TW": {
+    "name": "釣魚高手",
+    "desc": "成功釣上30條魚！"
+   },
+   "ja": {
+    "name": "釣り名人",
+    "desc": "魚を30匹釣った！"
+   },
+   "ko": {
+    "name": "낚시왕",
+    "desc": "물고기 30마리를 낚았다!"
+   }
+  },
+  {
+   "i": 30,
+   "pct": 9.4,
+   "tier": "rare",
+   "hidden": 1,
+   "icon": "ach-30.webp",
+   "en": {
+    "name": "Ending: Escape",
+    "desc": ""
+   },
+   "zh-CN": {
+    "name": "结局-逃离",
+    "desc": ""
+   },
+   "zh-TW": {
+    "name": "結局 - 逃離",
+    "desc": ""
+   },
+   "ja": {
+    "name": "離脱エンド ‐ 脱出",
+    "desc": ""
+   },
+   "ko": {
+    "name": "엔딩-탈출",
+    "desc": ""
+   }
+  },
+  {
+   "i": 31,
+   "pct": 9.2,
+   "tier": "rare",
+   "hidden": 0,
+   "icon": "ach-31.webp",
+   "en": {
+    "name": "Hard Work Pays Off",
+    "desc": "A lifelong slave to money!"
+   },
+   "zh-CN": {
+    "name": "劳动致富",
+    "desc": "我哋呢班打工仔~ 一生一世为钱币做奴隶~"
+   },
+   "zh-TW": {
+    "name": "勞動致富",
+    "desc": "我們這些打工仔〜一生一世為錢幣做奴隸〜"
+   },
+   "ja": {
+    "name": "労働は富を生む",
+    "desc": "俺ら下働きは一生金の奴隷さ～！"
+   },
+   "ko": {
+    "name": "땀 흘려 얻은 빵 한 조각",
+    "desc": "우리 같은 노동자는 평생 돈의 노예일 뿐~"
+   }
+  },
+  {
+   "i": 32,
+   "pct": 9.2,
+   "tier": "rare",
+   "hidden": 1,
+   "icon": "ach-32.webp",
+   "en": {
+    "name": "Major Ending: The Lynching",
+    "desc": ""
+   },
+   "zh-CN": {
+    "name": "重要结局-私刑",
+    "desc": ""
+   },
+   "zh-TW": {
+    "name": "重要結局 - 私刑",
+    "desc": ""
+   },
+   "ja": {
+    "name": "重要エンド ‐ 私刑",
+    "desc": ""
+   },
+   "ko": {
+    "name": "중요 엔딩-사적인 처벌",
+    "desc": ""
+   }
+  },
+  {
+   "i": 33,
+   "pct": 7.7,
+   "tier": "rare",
+   "hidden": 0,
+   "icon": "ach-33.webp",
+   "en": {
+    "name": "The Foodie",
+    "desc": "Can never get enough of the Braised Pork Rice in Reed Mansion!"
+   },
+   "zh-CN": {
+    "name": "干饭人",
+    "desc": "阮府的红烧肉盖饭，真香！"
+   },
+   "zh-TW": {
+    "name": "專業吃貨",
+    "desc": "阮府的紅燒肉蓋飯，真香！"
+   },
+   "ja": {
+    "name": "食いしん坊",
+    "desc": "阮邸の豚の角煮丼は最高に美味い！"
+   },
+   "ko": {
+    "name": "밥심으로 버티는 자",
+    "desc": "원부? 돼지고기 덮밥 맛집이지!"
+   }
+  },
+  {
+   "i": 34,
+   "pct": 6.6,
+   "tier": "rare",
+   "hidden": 0,
+   "icon": "ach-34.webp",
+   "en": {
+    "name": "Ending: The Stepfather",
+    "desc": "Stayed in the factory and lived happily ever after with Rafe's Mom."
+   },
+   "zh-CN": {
+    "name": "结局-无痛当爹",
+    "desc": "留在工厂和国伟妈在一起双宿双飞。"
+   },
+   "zh-TW": {
+    "name": "結局 - 無痛當爹",
+    "desc": "留在工廠和國偉媽在一起比翼雙飛。"
+   },
+   "ja": {
+    "name": "離脱エンド ‐ 父になる",
+    "desc": "工場に残り、クニハルの母と幸せに暮らした。"
+   },
+   "ko": {
+    "name": "엔딩-어쩌다 아빠",
+    "desc": "공장에 남아 국위 엄마와 함께 행복하게 살았다."
+   }
+  },
+  {
+   "i": 35,
+   "pct": 6.5,
+   "tier": "rare",
+   "hidden": 1,
+   "icon": "ach-35.webp",
+   "en": {
+    "name": "Hymn of Courage",
+    "desc": ""
+   },
+   "zh-CN": {
+    "name": "勇气的赞歌",
+    "desc": ""
+   },
+   "zh-TW": {
+    "name": "勇氣的讚歌",
+    "desc": ""
+   },
+   "ja": {
+    "name": "勇気の讃歌",
+    "desc": ""
+   },
+   "ko": {
+    "name": "용기의 찬가",
+    "desc": ""
+   }
+  },
+  {
+   "i": 36,
+   "pct": 5.7,
+   "tier": "rare",
+   "hidden": 0,
+   "icon": "ach-36.webp",
+   "en": {
+    "name": "Ending: To Die for Justice",
+    "desc": "Died in the pursuit of truth."
+   },
+   "zh-CN": {
+    "name": "结局-正义赴死",
+    "desc": "在追寻真相的路途中死亡。"
+   },
+   "zh-TW": {
+    "name": "結局 - 正義赴死",
+    "desc": "在追尋真相的途中死亡。"
+   },
+   "ja": {
+    "name": "離脱エンド ‐ 正義のために死す",
+    "desc": "真相を追う途中で命を落とした。"
+   },
+   "ko": {
+    "name": "엔딩-정의의 종말",
+    "desc": "진실을 좇다 목숨을 잃었다."
+   }
+  },
+  {
+   "i": 37,
+   "pct": 5.7,
+   "tier": "rare",
+   "hidden": 1,
+   "icon": "ach-37.webp",
+   "en": {
+    "name": "Major Ending: The Butterfly's Dream",
+    "desc": ""
+   },
+   "zh-CN": {
+    "name": "重要结局-蝶梦如烟",
+    "desc": ""
+   },
+   "zh-TW": {
+    "name": "重要結局 - 蝶夢如煙",
+    "desc": ""
+   },
+   "ja": {
+    "name": "重要エンド ‐ 蝶の夢煙の如く",
+    "desc": ""
+   },
+   "ko": {
+    "name": "중요 엔딩-연기처럼 사라진 꿈",
+    "desc": ""
+   }
+  },
+  {
+   "i": 38,
+   "pct": 5.6,
+   "tier": "rare",
+   "hidden": 0,
+   "icon": "ach-38.webp",
+   "en": {
+    "name": "Major Ending: The Reckoning",
+    "desc": "The Firefly Gang purged the guilty of the Walled City."
+   },
+   "zh-CN": {
+    "name": "重要结局-审判降临",
+    "desc": "萤火帮清洗了猪笼城寨的有罪之人。"
+   },
+   "zh-TW": {
+    "name": "重要結局 - 審判降臨",
+    "desc": "螢火幫清除了豬籠城寨的有罪之人。"
+   },
+   "ja": {
+    "name": "重要エンド ‐ 審判の到来",
+    "desc": "蛍火団が豚牢城砦のすべての罪人を一掃した。"
+   },
+   "ko": {
+    "name": "중요 엔딩-심판의 날",
+    "desc": "반딧불이파가 저롱성채의 죄인들을 쓸어냈다."
+   }
+  },
+  {
+   "i": 39,
+   "pct": 4.0,
+   "tier": "rare",
+   "hidden": 1,
+   "icon": "ach-39.webp",
+   "en": {
+    "name": "Choices Matter",
+    "desc": ""
+   },
+   "zh-CN": {
+    "name": "选择的代价",
+    "desc": ""
+   },
+   "zh-TW": {
+    "name": "選擇的代價",
+    "desc": ""
+   },
+   "ja": {
+    "name": "選択の代償",
+    "desc": ""
+   },
+   "ko": {
+    "name": "선택의 무게",
+    "desc": ""
+   }
+  },
+  {
+   "i": 40,
+   "pct": 1.4,
+   "tier": "rare",
+   "hidden": 0,
+   "icon": "ach-40.webp",
+   "en": {
+    "name": "Completionist",
+    "desc": "Unlocked all the achievements."
+   },
+   "zh-CN": {
+    "name": "全成就",
+    "desc": "获得全部成就。"
+   },
+   "zh-TW": {
+    "name": "全成就",
+    "desc": "獲得全部成就。"
+   },
+   "ja": {
+    "name": "全実績達成",
+    "desc": "すべての実績を解除した。"
+   },
+   "ko": {
+    "name": "모든 업적 달성",
+    "desc": "모든 진실을 꿰뚫었다."
+   }
+  }
+ ]
+}

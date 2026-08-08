@@ -220,6 +220,92 @@ document.addEventListener('DOMContentLoaded', function(){
     }, {rootMargin:'-15% 0px -70% 0px', threshold:0});
     tocTargets.forEach(function(s){ if (s) tocObs.observe(s); });
   }
+
+  /* ---- 成就进度追踪器（渐进增强：JS 没跑 = 页面完全等同于无追踪器）---- */
+  var ach = document.querySelector('.ach');
+  if (ach) {
+    var panel = ach.querySelector('.ach-panel');
+    var checkTh = ach.querySelector('.ach-check-th');
+    var arows = Array.prototype.slice.call(ach.querySelectorAll('tbody tr'));
+    var checks = Array.prototype.slice.call(ach.querySelectorAll('.ach-check'));
+    var progText = ach.querySelector('.ach-progress-text');
+    var progFill = ach.querySelector('.ach-progress-fill');
+    var empty = ach.querySelector('.ach-empty');
+    var countTpl = '';
+    var KEY = 'kts-ach-v1';
+    var saved = {};
+    try { saved = JSON.parse(localStorage.getItem(KEY) || '{}'); } catch(e) { saved = {}; }
+    function save(){ try { localStorage.setItem(KEY, JSON.stringify(saved)); } catch(e){} }
+    function chipState(){
+      var st = 'all';
+      var on = ach.querySelector('.ach-chip.on');
+      if (on) st = on.getAttribute('data-v');
+      return st;
+    }
+    function matches(tr, chip, q){
+      if (chip === 'hidden' && tr.getAttribute('data-hidden') !== '1') return false;
+      if (chip === 'common' && tr.getAttribute('data-tier') !== 'common') return false;
+      if (chip === 'uncommon' && tr.getAttribute('data-tier') !== 'uncommon') return false;
+      if (chip === 'rare' && tr.getAttribute('data-tier') !== 'rare') return false;
+      if (q) {
+        var name = tr.querySelector('.ach-name-cell'); var desc = tr.querySelector('.ach-desc-cell');
+        var hay = ((name?name.textContent:'') + ' ' + (desc?desc.textContent:'')).toLowerCase();
+        if (hay.indexOf(q) < 0) return false;
+      }
+      return true;
+    }
+    function apply(){
+      var chip = chipState();
+      var input = ach.querySelector('.ach-input');
+      var q = (input && input.value || '').trim().toLowerCase();
+      var shown = 0;
+      arows.forEach(function(tr){
+        var ok = matches(tr, chip, q);
+        tr.hidden = !ok;
+        if (ok) shown++;
+      });
+      if (empty) empty.hidden = shown > 0;
+    }
+    function refresh(){
+      var done = 0;
+      arows.forEach(function(tr, i){
+        var c = checks[i];
+        var on = !!saved[tr.getAttribute('data-i')];
+        if (c) c.checked = on;
+        tr.classList.toggle('ach-done', on);
+        if (on) done++;
+      });
+      var pct = arows.length ? Math.round(done / arows.length * 100) : 0;
+      var tpl = progText ? progText.getAttribute('data-tpl-done') : '';
+      if (progText) progText.textContent = tpl.replace('{n}', done).replace('{t}', arows.length).replace('{p}', pct);
+      if (progFill) progFill.style.width = pct + '%';
+      apply();
+    }
+    /* 渐进增强：JS 可用才露出交互层 */
+    if (panel) panel.removeAttribute('hidden');
+    if (checkTh) checkTh.removeAttribute('hidden');
+    checks.forEach(function(c){ c.removeAttribute('hidden'); });
+    if (ach) ach.addEventListener('click', function(e){
+      var check = e.target.closest('.ach-check');
+      if (check) {
+        var tr = check.closest('tr');
+        if (tr) saved[tr.getAttribute('data-i')] = check.checked ? 1 : 0;
+        save(); refresh(); return;
+      }
+      var chip = e.target.closest('.ach-chip');
+      if (chip) {
+        var grp = chip.closest('.ach-chips');
+        grp.querySelectorAll('.ach-chip').forEach(function(c){ c.classList.toggle('on', c === chip); });
+        refresh(); return;
+      }
+      if (e.target.closest('.ach-reset')) {
+        saved = {}; save(); refresh(); return;
+      }
+    });
+    var ainput = ach.querySelector('.ach-input');
+    if (ainput) ainput.addEventListener('input', function(){ apply(); });
+    refresh();
+  }
 });
 </script>
 </footer>
@@ -248,6 +334,40 @@ function renderSection(s, lang){
       const headRow = (s.columns||[]).map(c=>`<th>${esc(c)}</th>`).join("");
       const rows = (s.rows||[]).map(r=>`<tr>${r.map(c=>`<td>${esc(c)}</td>`).join("")}</tr>`).join("");
       return `<section class="dossier-sheet reveal" id="${id}"><div class="sheet-head"><span class="sheet-tag">${esc(s.tag||"FILE")}</span><h2>${esc(s.heading)}</h2></div>${s.body?`<p class="sheet-lead">${esc(s.body)}</p>`:""}<div class="file-table"><table><thead><tr>${headRow}</tr></thead><tbody>${rows}</tbody></table></div></section>`;
+    }
+    case "achieve": {
+      // 成就进度追踪器（2026-08-08）——渐进增强：
+      // 41 行成就表是完整 HTML 内容（爬虫/AI 读到全部），勾选列与控制面板默认 hidden，只有 JS 跑起来才显示。
+      // 名称/描述/百分比全部来自 Steam 官方，tier 由 pct 机械推导（不新增事实）。
+      const u = s.ui || {};
+      const chips = ["all","common","uncommon","rare","hidden"].map((v,i)=>
+        `<button type="button" class="ach-chip${i===0?" on":""}" data-v="${v}">${esc(u[v]||v)}</button>`).join("");
+      const rows = (s.achievements||[]).map(a=>{
+        const desc = a.hidden && u.hiddenDesc ? u.hiddenDesc : (a.desc||"");
+        return `<tr data-i="${a.i}" data-hidden="${a.hidden?1:0}" data-tier="${esc(a.tier)}" data-pct="${a.pct}">
+          <td class="ach-check-cell"><input type="checkbox" class="ach-check" aria-label="${esc(a.name)}" hidden></td>
+          <td class="ach-icon-cell"><img src="/images/${esc(a.icon)}" alt="" width="64" height="64" loading="lazy"></td>
+          <td class="ach-name-cell"><b>${esc(a.name)}</b>${a.hidden?` <span class="ach-hidden-tag">${esc(u.hiddenTag||"HIDDEN")}</span>`:""}</td>
+          <td class="ach-desc-cell">${esc(desc)}</td>
+          <td class="ach-pct-cell"><span class="ach-bar" aria-hidden="true"><i style="width:${a.pct}%"></i></span><span class="ach-pct-num">${a.pct}%</span></td>
+        </tr>`;
+      }).join("");
+      return `<section class="ach dossier-sheet reveal" id="${id}"><div class="sheet-head"><span class="sheet-tag">${esc(u.tag||"CASE FILE")}</span><h2>${esc(s.heading)}</h2></div>${s.body?`<p class="sheet-lead">${esc(s.body)}</p>`:""}
+        <div class="ach-panel" hidden>
+          <div class="ach-progress"><span class="ach-progress-text" data-tpl-done="${esc(u.done||"")}"></span>
+            <div class="ach-progress-track"><i class="ach-progress-fill"></i></div></div>
+          <div class="ach-controls">
+            <input type="search" class="ach-input" placeholder="${esc(u.search||"")}" aria-label="${esc(u.search||"")}">
+            <div class="ach-chips">${chips}</div>
+            <button type="button" class="ach-reset">${esc(u.reset||"")}</button>
+          </div>
+        </div>
+        <div class="file-table ach-table"><table>
+          <thead><tr><th class="ach-check-th" hidden><span aria-hidden="true">\u2713</span><span class="sr-only">${esc(u.nameCol||"")}</span></th>
+            <th class="ach-icon-th">${esc(u.iconCol||"")}</th><th>${esc(u.nameCol||"")}</th><th>${esc(u.descCol||"")}</th><th>${esc(u.playersCol||"")}</th></tr></thead>
+          <tbody>${rows}</tbody>
+        </table><p class="ach-empty" hidden>${esc(u.empty||"")}</p></div>
+      </section>`;
     }
     case "faq": {
       // 审问问答

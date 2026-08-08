@@ -6,6 +6,7 @@ import opencc
 import sys
 sys.path.insert(0, str(Path(__file__).parent))
 import ko_content as KO
+import achievements_section as ACH
 import walkthrough_v2 as WT
 import content_v2 as C2
 
@@ -826,6 +827,24 @@ for p in d["pages"]:
         s["labels"] = {}
         for lang, label in [("zh-CN", src_zh.get(s["label"], s["label"])), ("ja", src_ja.get(s["label"], s["label"])), ("ko", KO.SOURCES_LABELS.get(s["label"], s["label"]))]:
             s["labels"][lang] = label
+
+# ---------- 6) achievements page: append tracker section (5 语言官方数据) ----------
+for p in d["pages"]:
+    if p.get("slug") != "achievements":
+        continue
+    for lang in ACH.ACH_SECTIONS:
+        sec = ACH.ACH_SECTIONS[lang]
+        if lang == "en":
+            p["sections"] = p["sections"] + [sec]
+        else:
+            i18n = p.setdefault("i18n", {})
+            lv = i18n.setdefault(lang, {})
+            # 每语 sections 都对齐 en 结构；没有的语种从 en 兜底
+            secs = lv.get("sections", list(p["sections"]))
+            secs = list(secs) + [sec]
+            lv["sections"] = secs
+            i18n[lang] = lv
+
 
 # write
 (ROOT / "site.json").write_text(json.dumps(d, ensure_ascii=False, indent=1))

@@ -1509,8 +1509,8 @@
    "slug": "achievements",
    "title": "Kill The Shadow Achievements Guide",
    "metaTitle": "Kill The Shadow Achievements Guide (2026)",
-   "metaDescription": "What's confirmed about Kill The Shadow achievements: the free demo has 10 achievements (5,129 EXP), and how the full list is documented after launch.",
-   "intro": "Achievement hunting in Kill The Shadow is just getting started. This page covers what is verified so far — the demo's 10 achievements — and how to track the full list as it is documented.",
+   "metaDescription": "Kill The Shadow achievements: the demo's 10 (5,129 EXP) plus the full game's complete 41-achievement list with an interactive tracker and unlock rates.",
+   "intro": "Kill The Shadow launched with 41 Steam achievements, and the free demo has its own 10. This page lists every full-game achievement with official names, descriptions and unlock rates — check them off to track your progress.",
    "sections": [
     {
      "type": "list",
@@ -1526,28 +1526,31 @@
     },
     {
      "type": "list",
-     "heading": "The Full Game (August 5, 2026)",
-     "body": "The full release launched August 5, 2026. Its achievement list is being documented by the community right now.",
+     "heading": "The Full Game: 41 Achievements",
+     "body": "The full release launched August 5, 2026 with 41 Steam achievements — a separate set from the demo. All names and descriptions below come from Steam's official list.",
      "items": [
-      "The full game has its own achievement set separate from the demo",
-      "Tracking sites update as players earn achievements — check SteamDB for the live list",
-      "We will publish a complete checklist here once reliable sources confirm every achievement"
+      "41 achievements, separate from the demo's 10",
+      "Names and descriptions in 5 languages (English, Simplified/Traditional Chinese, Japanese, Korean) — official Steam localizations",
+      "Unlock rates range from 64.2% (Senior Machinist) down to 1.4% (the rarest ending achievement)",
+      "11 achievements sit under 10% unlock rate (Rare tier); 2 are above 50% (Common tier)",
+      "10 achievements are flagged Hidden on Steam — their descriptions are only revealed once you unlock them"
      ]
     },
     {
      "type": "list",
-     "heading": "How to Track the Full List",
-     "body": "Recommended places to follow the list as it fills in.",
+     "heading": "Track Your Progress",
+     "body": "Use the interactive checklist below: tick achievements as you earn them, filter by rarity or search by name. Progress is saved in your browser, on this device.",
      "items": [
-      "SteamDB achievement stats page for Kill The Shadow (app 2660230)",
-      "The Steam Community hub — player-written guides often list achievements fastest",
-      "TrueSteamAchievements for completionist stats and percentages"
+      "Tick the checkbox on any achievement to mark it done — the progress bar and counter update instantly",
+      "Filter to Rare (<10% unlock) to find the hardest targets first",
+      "The Hidden filter shows only the 10 secret achievements",
+      "Search matches achievement names and descriptions in the page's language"
      ]
     },
     {
      "type": "list",
      "heading": "Achievement-Hunting Checklist",
-     "body": "Simple habits that make the full list easier to complete once it is documented — all grounded in the game's verified mechanics.",
+     "body": "Habits that make the full list easier to complete — all grounded in the game's verified mechanics.",
      "items": [
       "Read every document and finish every scene reconstruction on a case before moving on",
       "Save at branching choices — the time-rewind mechanic lets you explore alternatives from the same moment",
@@ -1557,6 +1560,12 @@
     }
    ],
    "sources": [
+    {
+     "label": "Steam Community — Kill The Shadow Achievements",
+     "url": "https://steamcommunity.com/stats/2660230/achievements/",
+     "zh": "Steam 社区 — 杀死影子成就",
+     "ja": "Steam コミュニティ — キル・ザ・シャドウ実績"
+    },
     {
      "label": "SteamDB — Kill The Shadow Demo stats",
      "url": "https://steamdb.info/app/2947640/stats/",
@@ -1574,8 +1583,8 @@
     "zh": {
      "title": "杀死影子成就指南",
      "metaTitle": "杀死影子成就攻略（2026）",
-     "metaDescription": "杀死影子成就的已确认信息：免费 Demo 有 10 个成就（5,129 EXP），以及正式版成就列表的发售后整理进展。",
-     "intro": "《杀死影子》的成就收集才刚刚开始。本页汇总目前已核实的信息——Demo 的 10 个成就——以及如何跟进正在整理中的完整列表。",
+     "metaDescription": "杀死影子成就：免费 Demo 有 10 个（5,129 EXP），正式版完整 41 个成就列表 + 交互式进度追踪器与玩家解锁率。",
+     "intro": "《杀死影子》正式版带有 41 个 Steam 成就，免费 Demo 另有自己的 10 个。本页列出正式版全部成就的官方名称、描述与解锁率——勾选即可记录你的进度。",
      "sections": [
       {
        "type": "list",
@@ -1591,28 +1600,31 @@
       },
       {
        "type": "list",
-       "heading": "正式版（2026 年 8 月 5 日）",
-       "body": "正式版于 2026 年 8 月 5 日发售，成就列表正在被社区整理中。",
+       "heading": "正式版：41 个成就",
+       "body": "正式版于 2026 年 8 月 5 日发售，带有 41 个 Steam 成就——与 Demo 的 10 个相互独立。以下名称与描述均来自 Steam 官方列表。",
        "items": [
-        "正式版拥有独立于 Demo 的成就集",
-        "追踪站会随玩家解锁不断更新——到 SteamDB 查看实时列表",
-        "可靠来源确认全部成就后，我们会在这里发布完整清单"
+        "41 个成就，与 Demo 的 10 个相互独立",
+        "成就名称与描述共 5 种语言（英文、简/繁中文、日文、韩文）——均为 Steam 官方本地化",
+        "解锁率从 64.2%（高级钳工）到 1.4%（最稀有的结局成就）不等",
+        "11 个成就解锁率低于 10%（稀有档）；2 个高于 50%（常见档）",
+        "10 个成就被 Steam 标记为隐藏——描述需解锁后才会显示"
        ]
       },
       {
        "type": "list",
-       "heading": "如何跟进完整列表",
-       "body": "推荐以下位置跟进逐步补全的列表。",
+       "heading": "记录你的进度",
+       "body": "使用下方交互式清单：解锁后勾选成就，按稀有度筛选或按名称搜索。进度保存在你当前设备的浏览器中。",
        "items": [
-        "SteamDB 的 Kill The Shadow 成就统计页（app 2660230）",
-        "Steam 社区中心——玩家写的指南往往最快列出成就",
-        "TrueSteamAchievements 查看完成度统计与百分比"
+        "勾选任意成就即可标记完成——进度条与计数实时更新",
+        "筛选「稀有」（解锁率 <10%）优先攻克最难的目标",
+        "「隐藏」筛选只显示那 10 个隐藏成就",
+        "搜索会匹配本页语言下的成就名称与描述"
        ]
       },
       {
        "type": "list",
        "heading": "成就收集清单",
-       "body": "一些让完整列表更容易完成的小习惯——全部基于已核实的游戏机制。",
+       "body": "让完整列表更容易完成的小习惯——全部基于已核实的游戏机制。",
        "items": [
         "在案件上推进前，读完所有文档并完成每次现场重建",
         "在分支选择处存档——时间回溯机制让你能从同一时刻尝试不同选项",
@@ -1625,8 +1637,8 @@
     "ja": {
      "title": "キル・ザ・シャドウ実績ガイド",
      "metaTitle": "キル・ザ・シャドウ実績攻略（2026）",
-     "metaDescription": "キル・ザ・シャドウ実績の確定情報：無料デモには実績10個（EXP合計5,129）、製品版リストの発売後整理状況。",
-     "intro": "『キル・ザ・シャドウ』の実績集めは始まったばかり。本ページでは、これまでに検証済みの情報（デモの実績10個）と、整理中の完全リストの追い方をまとめます。",
+     "metaDescription": "キル・ザ・シャドウ実績：無料デモは10個（EXP合計5,129）、製品版は全41個の実績一覧＋進行状況トラッカーと解除率。",
+     "intro": "『キル・ザ・シャドウ』製品版にはSteam実績が41個、無料デモには別の10個があります。このページでは製品版の全実績を公式名称・説明・解除率付きで掲載し、チェックで進行状況を記録できます。",
      "sections": [
       {
        "type": "list",
@@ -1642,28 +1654,31 @@
       },
       {
        "type": "list",
-       "heading": "製品版（2026年8月5日）",
-       "body": "製品版は2026年8月5日に発売。実績リストは現在コミュニティが整理中です。",
+       "heading": "製品版：実績41個",
+       "body": "製品版は2026年8月5日に発売され、Steam実績41個を搭載しています（デモの10個とは別セット）。以下の名称と説明はすべてSteam公式リストに基づきます。",
        "items": [
-        "製品版にはデモとは別の実績セットがある",
-        "トラッカーはプレイヤーの解除に合わせて更新——SteamDB で最新リストを",
-        "信頼できる情報源が全実績を確認次第、完全チェックリストを公開します"
+        "実績41個、デモの10個とは別セット",
+        "名称と説明は5言語（英語・簡体/繁体中国語・日本語・韓国語）——Steam公式ローカライズ",
+        "解除率は64.2%（上級工匠）から1.4%（最レアのエンディング実績）まで",
+        "解除率10%未満のレア実績は11個、50%超のコモンは2個",
+        "10個はSteam上で非表示扱い——説明は解除すると公開されます"
        ]
       },
       {
        "type": "list",
-       "heading": "完全リストの追い方",
-       "body": "リストが埋まっていくのを追うのにおすすめの場所です。",
+       "heading": "進行状況を記録",
+       "body": "下のインタラクティブなリストを使いましょう：解除した実績にチェックを付け、レア度で絞り込み、名前で検索。進捗はこの端末のブラウザに保存されます。",
        "items": [
-        "SteamDB のキル・ザ・シャドウ実績統計ページ（app 2660230）",
-        "Steam コミュニティハブ——プレイヤー作成ガイドが最も速い",
-        "TrueSteamAchievements でコンプ率と統計を確認"
+        "任意の実績のチェックボックスをオンにすると完了——プログレスバーとカウントが即時更新",
+        "「レア」（解除率10%未満）で絞り込み、難しい目標から攻略",
+        "「非表示」フィルターで隠し実績10個だけ表示",
+        "検索はこのページの言語での実績名・説明に一致"
        ]
       },
       {
        "type": "list",
        "heading": "実績集めのチェックリスト",
-       "body": "完全リストの公開後に実績を埋めやすくする習慣——すべて検証済みのゲームシステムに基づきます。",
+       "body": "完全リストを埋めやすくする習慣——すべて検証済みのゲームシステムに基づきます。",
        "items": [
         "先に進む前に、すべての書類を読み、現場再現を完了させる",
         "分岐する選択でセーブ——時間巻き戻しで同じ時点から別の選択を試せる",
