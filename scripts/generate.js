@@ -307,6 +307,44 @@ document.addEventListener('DOMContentLoaded', function(){
     refresh();
   }
 });
+
+  /* ---- 案件进度追踪器（渐进增强：JS 没跑 = 页面等同于改动前）---- */
+  document.querySelectorAll('.cl').forEach(function(cl){
+    var panel = cl.querySelector('.cl-panel');
+    var items = Array.prototype.slice.call(cl.querySelectorAll('.cl-list li'));
+    var checks = Array.prototype.slice.call(cl.querySelectorAll('.cl-check'));
+    var progText = cl.querySelector('.cl-progress-text');
+    var progFill = cl.querySelector('.cl-progress-fill');
+    var KEY = cl.getAttribute('data-storage') || 'kts-cl-v1';
+    var saved = {};
+    try { saved = JSON.parse(localStorage.getItem(KEY) || '{}'); } catch(e) { saved = {}; }
+    function save(){ try { localStorage.setItem(KEY, JSON.stringify(saved)); } catch(e){} }
+    function refresh(){
+      var done = 0;
+      items.forEach(function(li, i){
+        var c = checks[i];
+        var on = !!saved[String(li.getAttribute('data-i'))];
+        if (c) c.checked = on;
+        li.classList.toggle('cl-done', on);
+        if (on) done++;
+      });
+      var pct = items.length ? Math.round(done / items.length * 100) : 0;
+      var tpl = progText ? progText.getAttribute('data-tpl-done') : '';
+      if (progText) progText.textContent = tpl.replace('{n}', done).replace('{t}', items.length).replace('{p}', pct);
+      if (progFill) progFill.style.width = pct + '%';
+    }
+    if (panel) panel.removeAttribute('hidden');
+    cl.addEventListener('click', function(e){
+      var check = e.target.closest('.cl-check');
+      if (check) {
+        var li = check.closest('li');
+        if (li) saved[li.getAttribute('data-i')] = check.checked ? 1 : 0;
+        save(); refresh(); return;
+      }
+      if (e.target.closest('.cl-reset')) { saved = {}; save(); refresh(); return; }
+    });
+    refresh();
+  });
 </script>
 </footer>
 <a class="back-top" href="#" aria-label="Top">${SVG.up}</a>
@@ -367,6 +405,22 @@ function renderSection(s, lang){
             <th class="ach-icon-th">${esc(u.iconCol||"")}</th><th>${esc(u.nameCol||"")}</th><th>${esc(u.descCol||"")}</th><th>${esc(u.playersCol||"")}</th></tr></thead>
           <tbody>${rows}</tbody>
         </table><p class="ach-empty" hidden>${esc(u.empty||"")}</p></div>
+      </section>`;
+    }
+    case "checklist": {
+      // 案件进度追踪器（2026-08-09）——渐进增强：
+      // 检查点列表是完整 HTML（爬虫/AI 读到全部），勾选框与控制面板默认 hidden，JS 跑起来才显示。
+      // 数据：items = 检查点标题数组（机械提取自已有内容，不新增事实）；storage = localStorage key。
+      const u = s.ui || {};
+      const items = (s.items||[]).map((it,i)=>
+        `<li data-i="${i}"><input type="checkbox" class="cl-check" id="cl-${lang}-${i}" hidden><label for="cl-${lang}-${i}"><span class="cl-box" aria-hidden="true"></span><span class="cl-text">${esc(it)}</span></label></li>`).join("");
+      return `<section class="cl dossier-sheet reveal" id="${id}" data-storage="${esc(s.storage||"")}"><div class="sheet-head"><span class="sheet-tag">${esc(u.tag||"CASE LOG")}</span><h2>${esc(s.heading)}</h2></div>${s.body?`<p class="sheet-lead">${esc(s.body)}</p>`:""}
+        <div class="cl-panel" hidden>
+          <div class="cl-progress"><span class="cl-progress-text" data-tpl-done="${esc(u.done||"")}"></span>
+            <div class="cl-progress-track"><i class="cl-progress-fill"></i></div></div>
+          <div class="cl-controls"><button type="button" class="cl-reset">${esc(u.reset||"")}</button></div>
+        </div>
+        <ul class="cl-list">${items}</ul>
       </section>`;
     }
     case "faq": {

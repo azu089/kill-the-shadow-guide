@@ -10,6 +10,37 @@ import achievements_section as ACH
 import walkthrough_v2 as WT
 import content_v2 as C2
 
+# ================= checklist 追踪器（2026-08-09） =================
+# 案件进度追踪器：walkthrough 用 Part 标题、cases 用案件名作检查点，
+# 全部机械提取自已有内容，零新增事实。勾选持久化 localStorage（渐进增强）。
+CL_UI_WALK = {
+  "en":  {"heading":"Walkthrough Progress","body":"Tick off each part as you finish it. Progress is saved in this browser only — nothing is uploaded. The full walkthrough below stays on the page; checking boxes just helps you track where you are.","tag":"CASE LOG","done":"Progress: {n}/{t} done ({p}%)","reset":"Reset progress"},
+  "zh":  {"heading":"全流程进度","body":"每完成一部分就勾选它。进度仅保存在当前浏览器，不会上传。下方完整攻略保持不变——勾选只是帮你记住玩到哪。","tag":"案件进度","done":"进度：已完成 {n}/{t}（{p}%）","reset":"重置进度"},
+  "ja":  {"heading":"攻略の進行度","body":"各パートをクリアしたらチェック。進捗はこのブラウザだけに保存され、アップロードはされません。下の完全な攻略はそのまま残ります。","tag":"進行記録","done":"進捗：{t} 中 {n} 完了（{p}%）","reset":"リセット"},
+  "ko":  {"heading":"공략 진행도","body":"각 파트를 끝내면 체크하세요. 진행 상황은 이 브라우저에만 저장되며 업로드되지 않습니다. 아래 전체 공략은 그대로 유지됩니다.","tag":"진행 기록","done":"진행: {t} 중 {n} 완료 ({p}%)","reset":"초기화"},
+}
+CL_UI_CASES = {
+  "en":  {"heading":"Case Progress","body":"Track which cases you have cracked. Saved in this browser only.","tag":"CASE FILE","done":"Cases solved: {n}/{t} ({p}%)","reset":"Reset progress"},
+  "zh":  {"heading":"案件进度","body":"记录你已经破获的案件。仅保存在当前浏览器。","tag":"案件档案","done":"已破获：{n}/{t}（{p}%）","reset":"重置进度"},
+  "ja":  {"heading":"事件の進捗","body":"解決した事件を記録。このブラウザだけに保存されます。","tag":"事件ファイル","done":"解決済み：{t} 中 {n}（{p}%）","reset":"リセット"},
+  "ko":  {"heading":"사건 진행도","body":"해결한 사건을 기록하세요. 이 브라우저에만 저장됩니다.","tag":"사건 파일","done":"해결: {t} 중 {n} ({p}%)","reset":"초기화"},
+}
+def _inject_cl(sections, storage, ui, mode):
+    items = []
+    if mode == "cases":
+        t = next((x for x in sections if x.get("type") == "table"), None)
+        if t: items = [r[0] for r in t.get("rows", []) if r]
+    else:
+        for sec in sections:
+            if sec.get("type") in ("steps", "list") and sec.get("heading"):
+                items.append(sec["heading"])
+    if not items: return
+    sections.insert(0, {"type": "checklist", "storage": storage,
+                        "ui": {k: v for k, v in ui.items() if k not in ("heading", "body")},
+                        "heading": ui.get("heading", ""), "body": ui.get("body", ""),
+                        "items": items})
+
+
 ROOT = Path(__file__).parent
 # 始终从已提交的原始站点数据重建（幂等）；site.json 是输出文件
 BASE = ROOT / "site.base.json"
@@ -760,6 +791,10 @@ for p in d["pages"]:
         ko = ko_wt
         p["sections"] = list(en_wt["sections"])
         p["title"] = en_wt["title"]; p["metaTitle"] = en_wt["metaTitle"]; p["metaDescription"] = en_wt["metaDescription"]; p["intro"] = en_wt["intro"]
+        _inject_cl(p["sections"], "kts-walkthrough-v1", CL_UI_WALK["en"], "parts")
+        _inject_cl(zh["sections"], "kts-walkthrough-v1", CL_UI_WALK["zh"], "parts")
+        _inject_cl(ja["sections"], "kts-walkthrough-v1", CL_UI_WALK["ja"], "parts")
+        _inject_cl(ko_wt["sections"], "kts-walkthrough-v1", CL_UI_WALK["ko"], "parts")
 
     # how-to-play: append verified first-15-minutes section
     if p["slug"] == "how-to-play":
@@ -775,6 +810,11 @@ for p in d["pages"]:
         ja = dict(ja); ja["sections"] = list(ja.get("sections", [])) + list(WT.CASES_JA)
         if ko is not None:
             ko = dict(ko); ko["sections"] = list(ko.get("sections", [])) + list(WT.CASES_KO)
+        _inject_cl(p["sections"], "kts-cases-v1", CL_UI_CASES["en"], "cases")
+        _inject_cl(zh["sections"], "kts-cases-v1", CL_UI_CASES["zh"], "cases")
+        _inject_cl(ja["sections"], "kts-cases-v1", CL_UI_CASES["ja"], "cases")
+        if ko is not None:
+            _inject_cl(ko["sections"], "kts-cases-v1", CL_UI_CASES["ko"], "cases")
     # faq: append verified Q&A
     if p["slug"] == "faq":
         zh = dict(zh); ja = dict(ja)
