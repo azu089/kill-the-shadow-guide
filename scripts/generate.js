@@ -147,7 +147,9 @@ function header(lang, active){
   const prefix = lang === DEF ? "" : `/${lang}`;
   const guideItems = DATA.pages.map(p => {
     const m = metaOf(p.slug);
-    return `<a href="${prefix}/${p.slug}" class="${p.slug===active?"active":""}"><span class="nav-ic">${SVG[m.icon]}</span><span>${esc(pageOf(p,lang).title)}</span></a>`;
+    const _t = pageOf(p,lang).title;
+    const _disp = _t.replace(/\s*Kill The Shadow\s*/g," ").replace(/\s+/g," ").trim() || _t;
+    return `<a href="${prefix}/${p.slug}" class="${p.slug===active?"active":""}"><span class="nav-ic">${SVG[m.icon]}</span><span>${esc(_disp)}</span></a>`;
   }).join("");
   return `<header class="site-header">
   <div class="container header-inner">
