@@ -182,6 +182,10 @@
   },
   "awinVerification": "awin",
   "affiliates": {
+   "fanatical.com": {
+    "type": "wrap",
+    "template": "https://www.awin1.com/cread.php?awinmid=118821&awinaffid=3026091&ued={url}"
+   },
    "gamersgate.com": {
     "type": "param",
     "param": "aff",
