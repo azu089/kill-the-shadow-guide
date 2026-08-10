@@ -749,7 +749,12 @@ TIPS_EXTRA_KO = [
 ]
 
 EXTRAS = {
-  "walkthrough": (WALKTHROUGH_EXTRA_EN, WALKTHROUGH_EXTRA_ZH, WALKTHROUGH_EXTRA_JA, WALKTHROUGH_EXTRA_KO),
+  "walkthrough": (
+      WALKTHROUGH_EXTRA_EN + [WT.P2_TIMELINE_EN, WT.P2_CHOICES_EN],
+      WALKTHROUGH_EXTRA_ZH + [WT.P2_TIMELINE_ZH, WT.P2_CHOICES_ZH],
+      WALKTHROUGH_EXTRA_JA + [WT.P2_TIMELINE_JA, WT.P2_CHOICES_JA],
+      WALKTHROUGH_EXTRA_KO + [WT.P2_TIMELINE_KO, WT.P2_CHOICES_KO],
+  ),
   "investigation": (INVESTIGATION_EXTRA_EN, INVESTIGATION_EXTRA_ZH, INVESTIGATION_EXTRA_JA, INVESTIGATION_EXTRA_KO),
   "cases": (CASES_EXTRA_EN, CASES_EXTRA_ZH, CASES_EXTRA_JA, CASES_EXTRA_KO),
   "tips-and-tricks": (TIPS_EXTRA_EN, TIPS_EXTRA_ZH, TIPS_EXTRA_JA, TIPS_EXTRA_KO),
@@ -783,10 +788,10 @@ for p in d["pages"]:
         src_ja[s["label"]] = s.get("ja", s["label"])
     # walkthrough: use deep verified structure (walkthrough_v2) as base
     if p["slug"] == "walkthrough":
-        zh_wt = {"title":"杀死影子全流程：第一章 · 工厂（深度攻略）","metaTitle":"杀死影子全流程：第一章 · 工厂（2026）","metaDescription":"杀死影子第一章深度攻略：序章警察局、老机械师、泰迪之死、父亲的秘密、西奥队长记忆与收尾，含全部关键抉择。","intro":"这份第一章攻略覆盖从警察局序章到工厂区收尾的完整流程，基于已核实的结构（intoindiegames 流程 + 官方资料）用自己的话重写。因为选择会改变结果，你的流程可能略有不同——把它当作地图而非唯一答案。","sections":list(WT.WALKTHROUGH["sections"]["zh-CN"])}
-        ja_wt = {"title":"キル・ザ・シャドウ 攻略：第1章 ファクトリー（完全版）","metaTitle":"キル・ザ・シャドウ 攻略：第1章 ファクトリー（2026）","metaDescription":"キル・ザ・シャドウ第1章の完全攻略：警察署の序章、老機械工、テディの死、父の秘密、テオ船長の記憶と締めくくり、重要選択も網羅。","intro":"この第1章攻略は、警察署の序章から工場地区の締めくくりまでの完全な流れをカバーします。検証済みの構成（intoindiegames の攻略と公式資料）に基づき、独自の文章で書き直しました。選択によって結果は変わります。","sections":list(WT.WALKTHROUGH["sections"]["ja"])}
-        ko_wt = {"title":"킬 더 섀도우 워크스루: 1장 — 공장 (심층)","metaTitle":"킬 더 섀도우 워크스루: 1장 — 공장 (2026)","metaDescription":"킬 더 섀도우 1장 심층 공략: 경찰서 프롤로그, 늙은 기계공, 테디의 죽음, 아버지의 비밀, 테오 선장의 기억과 마무리, 핵심 선택까지.","intro":"이 1장 공략은 경찰서 프롤로그부터 공장 지구 마무리까지의 전체 흐름을 다룹니다. 검증된 구조(intoindiegames 워크스루 + 공식 자료)를 바탕으로 자체 문장으로 다시 썼습니다. 선택에 따라 결과가 달라질 수 있습니다.","sections":list(WT.WALKTHROUGH["sections"]["ko"])}
-        en_wt = {"title":"Kill The Shadow Walkthrough: Chapter 1 — The Factory (Full Guide)","metaTitle":"Kill The Shadow Walkthrough: Chapter 1 — The Factory (2026)","metaDescription":"Full Kill The Shadow Chapter 1 walkthrough: police station prologue, the Old Machinist, Teddy's death, Father's Secret and Captain Theo's memories.","intro":"This Chapter 1 walkthrough covers the full route from the police station prologue to the Factory's closing beats. It is rewritten in our own words from a verified structure (intoindiegames' walkthrough and official material). Because choices change outcomes, treat it as a map, not the only path.","sections":list(WT.WALKTHROUGH["sections"]["en"])}
+        zh_wt = {"title":"杀死影子全流程：第1-2章 · 工厂与猪笼城寨","metaTitle":"杀死影子全流程攻略：第1-2章（2026）","metaDescription":"杀死影子第1-2章完整攻略：警察局序章、工厂案、猪笼城寨、芦苇村闪回与伪造的遗书，含全部关键抉择。","intro":"这份攻略覆盖第1-2章：从警察局序章与工厂案件，到猪笼城寨、芦苇村闪回与伪造的遗书。基于已核实的结构（intoindiegames 流程 + 官方资料）用自己的话重写。因为选择会改变结果，把它当作地图而非唯一答案。","sections":list(WT.WALKTHROUGH["sections"]["zh-CN"])}
+        ja_wt = {"title":"キル・ザ・シャドウ 攻略：第1-2章 ファクトリーと猪籠城","metaTitle":"キル・ザ・シャドウ攻略：第1-2章（2026）","metaDescription":"キル・ザ・シャドウ第1-2章の完全攻略：警察署の序章、工場事件、猪籠城、リード村の回想と偽造された遺書、重要選択も網羅。","intro":"この攻略は第1-2章をカバーします：警察署の序章と工場事件から、猪籠城、リード村の回想、偽造された遺書まで。検証済みの構成（intoindiegames の攻略と公式資料）に基づき、独自の文章で書き直しました。選択によって結果は変わります。","sections":list(WT.WALKTHROUGH["sections"]["ja"])}
+        ko_wt = {"title":"킬 더 섀도우 공략: 1-2장 — 공장과 돼지우리 성곽 도시","metaTitle":"킬 더 섀도우 공략: 1-2장 (2026)","metaDescription":"킬 더 섀도우 1-2장 완전 공략: 경찰서 프롤로그, 공장 사건, 돼지우리 성곽 도시, 리드 마을 회상과 위조된 유서, 핵심 선택까지.","intro":"이 공략은 1-2장을 다룹니다: 경찰서 프롤로그와 공장 사건부터 돼지우리 성곽 도시, 리드 마을 회상, 위조된 유서까지. 검증된 구조(intoindiegames 워크스루 + 공식 자료)를 바탕으로 자체 문장으로 다시 썼습니다. 선택에 따라 결과가 달라질 수 있습니다.","sections":list(WT.WALKTHROUGH["sections"]["ko"])}
+        en_wt = {"title":"Kill The Shadow Walkthrough: Chapters 1 & 2 — Factory & Pig Cage City (Full Guide)","metaTitle":"Kill The Shadow Walkthrough: Chapters 1 & 2 (2026)","metaDescription":"Full Kill The Shadow walkthrough for Chapters 1 & 2: the Factory prologue, Pig Cage Walled City, the Reed Village flashback and the forged suicide note.","intro":"This walkthrough covers Chapters 1 & 2: from the police station prologue and the Factory case to the Pig Cage Walled City, the Reed Village flashback and the forged suicide note. It is rewritten in our own words from verified structures (intoindiegames' walkthrough and official material). Because choices change outcomes, treat it as a map, not the only path.","sections":list(WT.WALKTHROUGH["sections"]["en"])}
         zh = dict(zh_wt); ja = dict(ja_wt); ko_wt = dict(ko_wt)
         ko = ko_wt
         p["sections"] = list(en_wt["sections"])
@@ -795,6 +800,14 @@ for p in d["pages"]:
         _inject_cl(zh["sections"], "kts-walkthrough-v1", CL_UI_WALK["zh"], "parts")
         _inject_cl(ja["sections"], "kts-walkthrough-v1", CL_UI_WALK["ja"], "parts")
         _inject_cl(ko_wt["sections"], "kts-walkthrough-v1", CL_UI_WALK["ko"], "parts")
+        # Chapter 2 source (verified via intoindiegames Part 2 + community playthrough notes)
+        p.setdefault("sources", []).append({
+          "label": "Into Indie Games — Kill the Shadow Walkthrough Part 2",
+          "url": "https://intoindiegames.com/walkthroughs/kill-the-shadow-walkthrough-part-2-pig-cage-walled-city-beginning-to-the-forged-suicide-note/",
+          "zh": "Into Indie Games — 杀死影子流程攻略第二部分",
+          "ja": "Into Indie Games — キル・ザ・シャドウ攻略パート2"
+        })
+
 
     # how-to-play: append verified first-15-minutes section
     if p["slug"] == "how-to-play":
