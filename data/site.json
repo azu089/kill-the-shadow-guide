@@ -8812,6 +8812,17 @@
     },
     {
      "type": "list",
+     "heading": "Compare prices across stores",
+     "body": "isThereAnyDeal tracks live prices across Steam, Gamesplanet, GamersGate and other authorized stores so you can compare in one place.",
+     "items": [
+      "Steam — the official storefront and home of the 10% launch discount",
+      "Gamesplanet — authorized retailer with regional activation limits",
+      "GamersGate — authorized retailer, 10% off launch price",
+      "isThereAnyDeal — live price comparison across all tracked stores"
+     ]
+    },
+    {
+     "type": "list",
      "heading": "The Straight Answer",
      "body": "What you need to know before buying.",
      "items": [
@@ -8898,6 +8909,15 @@
       "zh-CN": "GamersGate — Kill The Shadow (Steam key, authorized retailer)",
       "ja": "GamersGate — Kill The Shadow (Steam key, authorized retailer)",
       "ko": "GamersGate — Kill The Shadow (Steam key, authorized retailer)"
+     }
+    },
+    {
+     "label": "isThereAnyDeal — Kill The Shadow prices",
+     "url": "https://isthereanydeal.com/game/kill-the-shadow/info/",
+     "labels": {
+      "zh-CN": "isThereAnyDeal — Kill The Shadow prices",
+      "ja": "isThereAnyDeal — Kill The Shadow prices",
+      "ko": "isThereAnyDeal — Kill The Shadow prices"
      }
     }
    ],
