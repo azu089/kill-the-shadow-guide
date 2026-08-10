@@ -180,12 +180,7 @@
     "explore": "어둠의 도시에서 벌어지는 사건을 직접 조사하세요"
    }
   },
-  "awinVerification": "awin",
   "affiliates": {
-   "fanatical.com": {
-    "type": "wrap",
-    "template": "https://www.awin1.com/cread.php?awinmid=118821&awinaffid=3026091&ued={url}"
-   },
    "gamersgate.com": {
     "type": "param",
     "param": "aff",
