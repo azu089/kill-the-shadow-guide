@@ -644,6 +644,7 @@ function renderPage(lang, page){
       </aside>
       <article class="dossier-main">
         ${sections2}
+        ${renderAmazonAffiliate(lang)}
         ${sources ? `<div class="sources reveal"><b>${esc(s.sources)}</b><ul>${sources}</ul>${affNote}</div>` : ""}
         <div class="related reveal">
           <b>${esc(s.moreGuides)}</b>
