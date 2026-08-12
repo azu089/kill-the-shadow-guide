@@ -23,6 +23,8 @@ const today = new Date().toISOString().slice(0,10);
 const urlOf = KIT.createUrl({ domain: DATA.site.domain, defaultLang: DEF });
 const LM = KIT.createLastmod({ manifestPath: path.join(ROOT,"data",".lastmod.json"), today });
 const HERO_SET = "/images/hero-640.jpg 640w, /images/hero-1280.jpg 1280w, /images/hero.jpg 1600w";
+const UPDATED_LABEL = { en:"Updated", "zh-CN":"更新于", "zh-TW":"更新於", ja:"更新日", ko:"업데이트" };
+const updLabel = lang => UPDATED_LABEL[lang] || "Updated";
 const LANG_META = {
   "en":    { flag: "🇬🇧", name: "English",  html: "en" },
   "zh-CN": { flag: "🇨🇳", name: "简体中文", html: "zh-CN" },
@@ -633,7 +635,7 @@ function renderPage(lang, page){
           <span class="cm-tag">${esc(s.caseFile)}</span>
           <div class="cm-row"><span class="cm-k">${esc(lang==="en"?"Case No.":lang==="ja"?"事件番号":lang==="ko"?"사건 번호":"案件编号")}</span><b>${esc(page.meta?.id || page.slug.toUpperCase())}</b></div>
           <div class="cm-row"><span class="cm-k">${esc(lang==="en"?"Category":lang==="ja"?"分類":lang==="ko"?"분류":"分类")}</span><b>${esc(t.title.split(":")[0].split("—")[0].trim())}</b></div>
-          <div class="cm-row"><span class="cm-k">${esc(s.updated)}</span><b>${today}</b></div>
+          <div class="cm-row"><span class="cm-k">${esc(updLabel(lang))}</span><b>${today}</b></div>
           <div class="cm-stamp">${esc(s.sealed)}</div>
         </div>
         <div class="cta-box reveal">
