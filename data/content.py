@@ -1525,6 +1525,7 @@ P("update-log",
            ["2024 (July)", "Demo released", "Free demo on Steam with 10 achievements (app 2947640)"],
            ["May 2025", "Publishing deal announced", "NEOWIZ announces a global publishing deal; the released Steam version is published by Phoenix Game"],
            ["August 5, 2026", "Full release on Steam", "Windows launch at $16.99 / £14.99 / €16.99 with 10% launch discount until August 19"],
+           ["August 8, 2026", "Update 24628065", "Quick Save (F5) / Quick Load (F6), 3D clue search drag-speed setting, cassette tapes with songs by The Gentle Rogues at the Factory, Rewind sensitivity + A/D controls, part-time job improvements and more fixes"],
            ["August 12, 2026", "Console release (announced)", "PS5 / Xbox Series X|S versions announced by press coverage"]
        ]},
       {"type": "list", "heading": "About the Launch Discount",
