@@ -16,17 +16,27 @@ jobs:
         with:
           node-version: "22"
 
-      - name: Build
-        run: node scripts/generate.js
+      - name: Build (data chain + generator)
+        # 数据链：site.base.json -> build_content.py -> site.json -> generate.js。
+        # site.json 必须与数据链的确定性输出一致（漂移即失败），再构建 public/。
+        run: |
+          python3 -c "import opencc" 2>/dev/null || python3 -m pip install --quiet --break-system-packages opencc
+          python3 data/build_content.py
+          git diff --exit-code -- data/site.json || { echo "site.json drifted from the data chain: run python3 data/build_content.py and commit the regenerated file"; exit 1; }
+          node scripts/generate.js
 
       - name: Audit
-        run: node scripts/lib/audit.js .
+        run: |
+          node scripts/lib/audit.js .
+          node scripts/audit-commercial-gates.mjs
+          node scripts/audit-consent.mjs
 
       - name: Assert no drift
         # 构建应当是幂等的：同一份输入重跑两次，产物必须一致。
         # 不一致说明生成器里混进了时间戳/随机数这类非确定性因素。
+        # 注：UTC 午夜跨越会让直接输出的「今天」日期变化——同一分钟内重跑不受影响。
         run: |
-          find public -name '*.html' | sort | xargs shasum > /tmp/a.sha
+          find public -type f -print0 | sort -z | xargs -0 shasum -a 256 > /tmp/a.sha
           node scripts/generate.js >/dev/null
-          find public -name '*.html' | sort | xargs shasum > /tmp/b.sha
-          diff /tmp/a.sha /tmp/b.sha && echo "✓ 构建确定性 OK"
+          find public -type f -print0 | sort -z | xargs -0 shasum -a 256 > /tmp/b.sha
+          diff -u /tmp/a.sha /tmp/b.sha && echo "✓ 构建确定性 OK"

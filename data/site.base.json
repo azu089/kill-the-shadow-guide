@@ -21,6 +21,7 @@
    "ja"
   ],
   "defaultLanguage": "en",
+  "consentStorageKey": "kts_consent_v1",
   "i18n": {
    "zh": {
     "name": "杀死影子攻略站",

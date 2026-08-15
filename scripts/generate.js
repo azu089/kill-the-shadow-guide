@@ -34,6 +34,14 @@ const ADSENSE_SERVING_ENABLED = Boolean(
 const adsenseScript = () => ADSENSE_SERVING_ENABLED
   ? `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${esc(ADSENSE_CLIENT_ID)}" crossorigin="anonymous"></script>`
   : "";
+// Adsterra：consent-gated。只从配置里解析 src + containerId 供同意脚本动态加载，
+// 绝不在静态 HTML 里输出 provider 脚本（默认/拒绝/撤回后零请求的硬边界）。
+const ADSTERRA_MARKUP = String(DATA.site.adsterra || "");
+const ADSTERRA_SRC = (ADSTERRA_MARKUP.match(/src="([^"]*effectivecpmnetwork\.com[^"]*)"/) || [])[1] || "";
+const ADSTERRA_CONTAINER_ID = (ADSTERRA_MARKUP.match(/id="(container-[^"]*)"/) || [])[1] || "";
+if (ADSTERRA_MARKUP && (!ADSTERRA_SRC || !ADSTERRA_CONTAINER_ID)) {
+  throw new Error("data/site.json adsterra markup must include one provider src and one container id");
+}
 const LANGS = DATA.site.languages || ["en"];
 const DEF = DATA.site.defaultLanguage || "en";
 const CSS_V = crypto.createHash("md5").update(fs.readFileSync(path.join(ROOT,"templates","style.css"),"utf8")).digest("hex").slice(0,8);
@@ -150,8 +158,6 @@ ${adsenseMeta}${awin}
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Chakra+Petch:wght@600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="/css/style.css?v=${CSS_V}" />${slug === "index" ? "\n" + KIT.heroPreload({ srcset: HERO_SET, sizes: "100vw" }) : ""}
 <script type="application/ld+json">${ld}</script>
-${DATA.site.gaId ? `<script async src="https://www.googletagmanager.com/gtag/js?id=${esc(DATA.site.gaId)}"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${esc(DATA.site.gaId)}');</script>` : ""}
 </head>
 <body>`;
 }
@@ -195,6 +201,75 @@ function header(lang, active){
   </div>
 </header>`;
 }
+/* ================= 同意/隐私控件（5 语） =================
+ * 默认关闭：GA4 与 Adsterra 的 provider 脚本绝不出现在静态 HTML，
+ * 只有用户显式接受后由 consent 脚本动态加载（每页每 provider 至多一次）。
+ * 控件：接受 / 拒绝 / 设置(管理) / 保存 / 撤回；原生 <dialog> 模态焦点圈闭、
+ * Escape 关闭并归还焦点；44×44 目标；偏好存 localStorage（kts_consent_v1）。
+ */
+const CONSENT_UI = {
+  en: { title: "Privacy choices", body: "Google Analytics (GA4) for analytics and the Adsterra (effectivecpmnetwork) advertising placement on this site stay blocked until you choose. After you accept, they may process IP, device, page, referrer, approximate-region and cookie-or-identifier data for analytics, advertising, fraud prevention and reporting.", change: "You can change or withdraw your choice at any time.", accept: "Accept analytics & ads", reject: "Reject optional services", settings: "Privacy settings", dialog: "Privacy settings", analytics: "Analytics (Google Analytics / GA4)", advertising: "Advertising (Adsterra / effectivecpmnetwork)", save: "Save choices", withdraw: "Withdraw all", close: "Close", policy: "Privacy policy and provider links", adBlocked: "Optional ad blocked until you accept advertising." },
+  "zh-CN": { title: "隐私选择", body: "在您作出选择前，本站的 Google Analytics（GA4）分析与 Adsterra（effectivecpmnetwork）广告位均保持阻止。接受后，它们可能为分析、广告、防欺诈和报告处理 IP、设备、页面、来源、大致地区以及 Cookie 或类似标识符。", change: "您可以随时更改或撤回选择。", accept: "接受分析与广告", reject: "拒绝可选服务", settings: "隐私设置", dialog: "隐私设置", analytics: "分析（Google Analytics / GA4）", advertising: "广告（Adsterra / effectivecpmnetwork）", save: "保存选择", withdraw: "全部撤回", close: "关闭", policy: "隐私政策与服务商链接", adBlocked: "接受广告前，可选广告保持阻止。" },
+  "zh-TW": { title: "隱私選擇", body: "在您做出選擇前，本站的 Google Analytics（GA4）分析與 Adsterra（effectivecpmnetwork）廣告位都會維持封鎖。接受後，它們可能為分析、廣告、防詐欺與報告處理 IP、裝置、頁面、來源、大致地區，以及 Cookie 或類似識別碼。", change: "您可以隨時變更或撤回選擇。", accept: "接受分析與廣告", reject: "拒絕選用服務", settings: "隱私設定", dialog: "隱私設定", analytics: "分析（Google Analytics / GA4）", advertising: "廣告（Adsterra / effectivecpmnetwork）", save: "儲存選擇", withdraw: "全部撤回", close: "關閉", policy: "隱私政策與服務商連結", adBlocked: "接受廣告前，選用廣告維持封鎖。" },
+  ja: { title: "プライバシー設定", body: "選択するまで、本サイトの Google Analytics（GA4）分析と Adsterra（effectivecpmnetwork）広告枠はブロックされます。許可すると、分析、広告、不正防止、レポートのため IP、端末、ページ、参照元、おおよその地域、Cookie や類似識別子を処理する場合があります。", change: "選択はいつでも変更・撤回できます。", accept: "分析と広告を許可", reject: "任意サービスを拒否", settings: "プライバシー設定", dialog: "プライバシー設定", analytics: "分析（Google Analytics / GA4）", advertising: "広告（Adsterra / effectivecpmnetwork）", save: "選択を保存", withdraw: "すべて撤回", close: "閉じる", policy: "プライバシーポリシーと事業者リンク", adBlocked: "広告を許可するまで任意広告はブロックされます。" },
+  ko: { title: "개인정보 선택", body: "선택하기 전에는 이 사이트의 Google Analytics(GA4) 분석과 Adsterra(effectivecpmnetwork) 광고 영역이 차단됩니다. 허용하면 분석, 광고, 사기 방지 및 보고를 위해 IP, 기기, 페이지, 유입 경로, 대략적 지역, 쿠키나 유사 식별자를 처리할 수 있습니다.", change: "선택은 언제든 변경하거나 철회할 수 있습니다.", accept: "분석 및 광고 허용", reject: "선택 서비스 거부", settings: "개인정보 설정", dialog: "개인정보 설정", analytics: "분석 (Google Analytics / GA4)", advertising: "광고 (Adsterra / effectivecpmnetwork)", save: "선택 저장", withdraw: "모두 철회", close: "닫기", policy: "개인정보 처리방침 및 공급자 링크", adBlocked: "광고를 허용하기 전까지 선택 광고가 차단됩니다." },
+};
+function consentAdMount(lang){
+  if (!ADSTERRA_SRC) return "";
+  const u = CONSENT_UI[lang] || CONSENT_UI.en;
+  return `<div class="adsterra-mount" data-adsterra-mount><p class="native-ad-consent-note">${esc(u.adBlocked)}</p></div>`;
+}
+function consentUi(lang){
+  const u = CONSENT_UI[lang] || CONSENT_UI.en;
+  const prefix = lang === DEF ? "" : `/${lang}`;
+  const adConfig = ADSTERRA_SRC ? { src: ADSTERRA_SRC, containerId: ADSTERRA_CONTAINER_ID } : null;
+  const cfg = JSON.stringify({
+    storageKey: DATA.site.consentStorageKey || "kts_consent_v1",
+    gaId: DATA.site.gaId || "",
+    adsterra: adConfig,
+  }).replace(/</g, "\\u003c");
+  return `<button type="button" class="privacy-settings-button" data-consent-settings aria-haspopup="dialog" aria-controls="consent-dialog-${esc(lang)}" aria-expanded="false">${esc(u.settings)}</button>
+<section class="consent-banner" data-consent-banner role="dialog" aria-modal="false" aria-labelledby="consent-title-${esc(lang)}">
+  <div><h2 id="consent-title-${esc(lang)}">${esc(u.title)}</h2><p>${esc(u.body)}</p><p>${esc(u.change)} <a href="${prefix}/privacy">${esc(u.policy)}</a>.</p></div>
+  <div class="consent-actions"><button type="button" class="btn btn-primary" data-consent-accept>${esc(u.accept)}</button><button type="button" class="btn" data-consent-reject>${esc(u.reject)}</button><button type="button" class="consent-link" data-consent-open>${esc(u.settings)}</button></div>
+</section>
+<dialog id="consent-dialog-${esc(lang)}" class="consent-dialog" data-consent-dialog aria-labelledby="consent-dialog-title-${esc(lang)}">
+  <div class="consent-panel"><div class="consent-panel-head"><h2 id="consent-dialog-title-${esc(lang)}">${esc(u.dialog)}</h2><button type="button" class="consent-close" data-consent-close aria-label="${esc(u.close)}">×</button></div>
+  <p class="consent-detail">${esc(u.body)} ${esc(u.change)} <a href="${prefix}/privacy">${esc(u.policy)}</a>.</p>
+  <label><input type="checkbox" data-consent-analytics /> <span>${esc(u.analytics)}</span></label>
+  <label><input type="checkbox" data-consent-advertising /> <span>${esc(u.advertising)}</span></label>
+  <div class="consent-actions"><button type="button" class="btn btn-primary" data-consent-save>${esc(u.save)}</button><button type="button" class="btn" data-consent-withdraw>${esc(u.withdraw)}</button></div></div>
+</dialog>
+<script>
+(function(){
+  var cfg=${cfg}, banner=document.querySelector('[data-consent-banner]'), dialog=document.querySelector('[data-consent-dialog]');
+  var analytics=document.querySelector('[data-consent-analytics]'), advertising=document.querySelector('[data-consent-advertising]');
+  var current=null, gaLoaded=false, adLoaded=false, lastFocus=null;
+  function read(){try{var v=JSON.parse(localStorage.getItem(cfg.storageKey));return v&&typeof v.analytics==='boolean'&&typeof v.advertising==='boolean'?v:null;}catch(_){return null;}}
+  function persist(v){var reload=!!(current&&((current.analytics&&!v.analytics)||(current.advertising&&!v.advertising)));current=v;try{localStorage.setItem(cfg.storageKey,JSON.stringify(v));}catch(_){} apply(v);banner.hidden=true;close();if(reload&&location.protocol.indexOf('http')===0)location.reload();}
+  function clearGaCookies(){document.cookie.split(';').forEach(function(row){var n=row.split('=')[0].trim();if(n==='_ga'||n.indexOf('_ga_')===0)document.cookie=n+'=; Max-Age=0; path=/; SameSite=Lax';});}
+  function loadGa(){if(!cfg.gaId||gaLoaded||document.getElementById('kts-ga4-script'))return;window['ga-disable-'+cfg.gaId]=false;window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){dataLayer.push(arguments);};window.gtag('js',new Date());window.gtag('config',cfg.gaId);var s=document.createElement('script');s.id='kts-ga4-script';s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id='+encodeURIComponent(cfg.gaId);document.head.appendChild(s);gaLoaded=true;}
+  function blockGa(){if(cfg.gaId)window['ga-disable-'+cfg.gaId]=true;var s=document.getElementById('kts-ga4-script');if(s)s.remove();gaLoaded=false;clearGaCookies();}
+  function ensureAdContainer(){if(!cfg.adsterra)return null;var mount=document.querySelector('[data-adsterra-mount]');if(!mount)return null;var c=document.getElementById(cfg.adsterra.containerId);if(!c){c=document.createElement('div');c.id=cfg.adsterra.containerId;mount.appendChild(c);}return c;}
+  function loadAd(){if(!cfg.adsterra||adLoaded||document.getElementById('kts-adsterra-script'))return;if(!ensureAdContainer())return;var note=document.querySelector('.native-ad-consent-note');if(note)note.remove();var s=document.createElement('script');s.id='kts-adsterra-script';s.async=true;s.setAttribute('data-cfasync','false');s.src=cfg.adsterra.src;document.body.appendChild(s);adLoaded=true;}
+  function blockAd(){var s=document.getElementById('kts-adsterra-script');if(s)s.remove();if(cfg.adsterra){var c=document.getElementById(cfg.adsterra.containerId);if(c)c.remove();}adLoaded=false;}
+  function apply(v){window.KTS_CONSENT_ANALYTICS=v.analytics===true;window.KTS_CONSENT_ADVERTISING=v.advertising===true;v.analytics?loadGa():blockGa();v.advertising?loadAd():blockAd();}
+  function close(){if(dialog.open)dialog.close();document.querySelector('[data-consent-settings]').setAttribute('aria-expanded','false');if(lastFocus&&lastFocus.focus)lastFocus.focus();}
+  function open(){var v=current||{analytics:false,advertising:false};lastFocus=document.activeElement;analytics.checked=v.analytics;advertising.checked=v.advertising;if(!dialog.open)dialog.showModal();document.querySelector('[data-consent-settings]').setAttribute('aria-expanded','true');dialog.querySelector('[data-consent-close]').focus();}
+  document.querySelector('[data-consent-accept]').addEventListener('click',function(){persist({analytics:true,advertising:true});});
+  document.querySelector('[data-consent-reject]').addEventListener('click',function(){persist({analytics:false,advertising:false});});
+  document.querySelector('[data-consent-open]').addEventListener('click',open);document.querySelector('[data-consent-settings]').addEventListener('click',open);
+  document.querySelector('[data-consent-close]').addEventListener('click',close);
+  dialog.addEventListener('cancel',function(e){e.preventDefault();close();});
+  dialog.addEventListener('keydown',function(e){if(e.key!=='Tab')return;var items=Array.prototype.slice.call(dialog.querySelectorAll('button:not([disabled]),a[href],input:not([disabled])')).filter(function(el){return el.offsetParent!==null;});if(!items.length)return;var first=items[0],last=items[items.length-1];if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus();}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus();}});
+  document.querySelector('[data-consent-save]').addEventListener('click',function(){persist({analytics:analytics.checked,advertising:advertising.checked});});
+  document.querySelector('[data-consent-withdraw]').addEventListener('click',function(){persist({analytics:false,advertising:false});});
+  document.addEventListener('keydown',function(e){if(e.key!=='Escape'||dialog.open||banner.hidden||!banner.contains(document.activeElement))return;banner.hidden=true;document.querySelector('[data-consent-settings]').focus();});
+  current=read();if(current){banner.hidden=true;apply(current);}else{banner.hidden=false;blockGa();blockAd();}
+})();
+</script>`;
+}
+
 function footer(lang){
   const s = siteI18n(lang);
   const prefix = lang === DEF ? "" : `/${lang}`;
@@ -216,7 +291,8 @@ function footer(lang){
         <p>${esc(s.footerSource)} · ${today}</p>
       </div>
     </div>
-    ${adsenseScript()}\n    ${DATA.site.adsterra ? DATA.site.adsterra : ""}
+    ${adsenseScript()}
+    ${consentAdMount(lang)}
   </div>
 ${KIT.decisionEventsScript()}
 <script>
@@ -373,6 +449,7 @@ document.addEventListener('DOMContentLoaded', function(){
   });
 </script>
 </footer>
+${consentUi(lang)}
 <a class="back-top" href="#" aria-label="Top">${SVG.up}</a>
 </body></html>`;
 }
@@ -662,6 +739,20 @@ function renderStatic(lang, slug, title, body){
 const T5 = (lang, zhCN, zhTW, ja, ko, en) =>
   lang === "zh-CN" ? zhCN : lang === "zh-TW" ? zhTW : lang === "ja" ? ja : lang === "ko" ? ko : en;
 
+/* ================= 隐私政策（5 语，consent 修复 2026-08-16） =================
+ * 必须准确披露：GA4 与 Adsterra/effectivecpmnetwork 用途、本地偏好存储（kts_consent_v1）、
+ * Cookie/本地存储、IP/设备/网络处理边界、默认关闭、撤回方式；不写匿名/无 PII 绝对化表述；
+ * 明确本站同意控件是自有偏好控制、不是 Google 认证 CMP。
+ */
+const PRIV_H2 = "font-size:1.05rem;margin:18px 0 8px";
+const PRIVACY_POLICY = {
+  en: `<p class="sec-body">This is a game guide website and we respect visitor privacy. This policy explains what we collect and how it is used.</p><h2 style="${PRIV_H2}">Optional services and consent</h2><p>This site offers two optional third-party services that stay blocked until you choose: Google Analytics (GA4) for audience analytics and reporting, and one Adsterra (effectivecpmnetwork) advertising placement. With no stored choice, after reject, and after withdraw plus reload, neither service is requested on any page. If you accept, GA4 may process your IP address, browser and device information, the pages you visit, the referring page, an approximate region, and cookies or similar identifiers for analytics and reporting; Adsterra may process the same categories for advertising, fraud prevention and reporting. Reject keeps both blocked. This site's consent control is a first-party preference control, not a Google-certified CMP.</p><h2 style="${PRIV_H2}">Your choices and local storage</h2><p>The always-visible Privacy settings button offers accept, reject, manage, save and withdraw. Your choice is stored only in this browser's localStorage under the key <code>kts_consent_v1</code>; nothing is uploaded. Withdrawal blocks future GA4 and Adsterra requests on this site and removes accessible GA cookies where the browser permits. The achievement and case progress trackers also save only in this browser (keys <code>kts-ach-v1</code> and <code>kts-cl-v1</code>).</p><h2 style="${PRIV_H2}">Cookies and identifiers</h2><p>After you accept, Google Analytics and Adsterra may set cookies or similar identifiers on your device. You can block or delete cookies in your browser settings, and you can opt out of Google Analytics with the <a href="https://tools.google.com/dlpage/gaoptout" rel="noopener">Google Analytics opt-out browser add-on</a>.</p><h2 style="${PRIV_H2}">Google AdSense</h2><p>Google AdSense account metadata and ads.txt are configured, but the AdSense serving script stays gated off unless serving, provider readiness and certified CMP readiness are all explicitly enabled; configuration does not mean that AdSense ads are currently serving.</p><h2 style="${PRIV_H2}">Third-party services</h2><p>Fonts are loaded from Google Fonts and the site is served through Cloudflare's CDN. These providers may record standard access logs (such as IP address, user agent and time) and follow their own retention policies, which we do not control. Review the policies of the providers we use: <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a> (Google Analytics and AdSense), <a href="https://policies.google.com/technologies/ads" rel="noopener">Google Ads technologies</a>, <a href="https://adsterra.com/privacy-policy/" rel="noopener">Adsterra Privacy Policy</a>, <a href="https://developers.google.com/fonts/faq" rel="noopener">Google Fonts FAQ</a> and <a href="https://www.cloudflare.com/privacypolicy/" rel="noopener">Cloudflare Privacy Policy</a>.</p><h2 style="${PRIV_H2}">Contact</h2><p>For privacy questions, email <a href="mailto:contact@${esc(DATA.site.domain)}">contact@${esc(DATA.site.domain)}</a>.</p><p style="margin-top:14px;opacity:.75">Effective date: ${today}</p>`,
+  "zh-CN": `<p class="sec-body">本网站是游戏攻略站，我们重视访问者隐私。以下说明我们收集什么、如何使用。</p><h2 style="${PRIV_H2}">可选服务与同意</h2><p>本站提供两项默认保持阻止的可选第三方服务：用于受众分析与报告的 Google Analytics（GA4），以及一个 Adsterra（effectivecpmnetwork）广告位。在没有保存选择、点击拒绝或撤回并刷新后，本站不会在任何页面请求这两项服务。接受后，GA4 可能处理您的 IP 地址、浏览器与设备信息、您访问的页面、来源页面、大致地区以及 Cookie 或类似标识符，用于分析与报告；Adsterra 可能为广告、防欺诈和报告处理相同类别。拒绝会继续阻止两者。本站的同意控件是本站自有的偏好控制，并非 Google 认证的 CMP。</p><h2 style="${PRIV_H2}">您的选择与本地存储</h2><p>始终可见的「隐私设置」按钮提供接受、拒绝、管理、保存与撤回。您的选择仅保存在当前浏览器的 localStorage 的 <code>kts_consent_v1</code> 键中，不会上传。撤回后，本站会阻止后续 GA4 与 Adsterra 请求，并在浏览器允许时删除可访问的 GA Cookie。成就与案件进度追踪器也只在本地保存（<code>kts-ach-v1</code> / <code>kts-cl-v1</code>）。</p><h2 style="${PRIV_H2}">Cookie 与标识符</h2><p>接受后，Google Analytics 与 Adsterra 可能在您的设备上设置 Cookie 或类似标识符。您可以在浏览器设置中阻止或删除 Cookie，也可以安装 <a href="https://tools.google.com/dlpage/gaoptout" rel="noopener">Google Analytics 停用浏览器插件</a> 选择退出 Google Analytics。</p><h2 style="${PRIV_H2}">Google AdSense</h2><p>Google AdSense 账户元数据与 ads.txt 已配置，但只有在投放、服务商就绪和认证 CMP 就绪三个条件都被明确开启时，才会加载 AdSense 投放脚本；已配置不代表 AdSense 广告目前正在投放。</p><h2 style="${PRIV_H2}">第三方服务</h2><p>字体来自 Google Fonts，站点由 Cloudflare CDN 提供服务。这些服务商可能记录标准访问日志（如 IP 地址、用户代理与时间），并遵循各自的保留政策；我们无法控制其保留期限。请查看相关隐私政策：<a href="https://policies.google.com/privacy" rel="noopener">Google 隐私政策</a>（Google Analytics 与 AdSense）、<a href="https://policies.google.com/technologies/ads" rel="noopener">Google 广告技术</a>、<a href="https://adsterra.com/privacy-policy/" rel="noopener">Adsterra 隐私政策</a>、<a href="https://developers.google.com/fonts/faq" rel="noopener">Google Fonts FAQ</a> 与 <a href="https://www.cloudflare.com/privacypolicy/" rel="noopener">Cloudflare 隐私政策</a>。</p><h2 style="${PRIV_H2}">联系我们</h2><p>如有隐私问题，请发邮件至 <a href="mailto:contact@${esc(DATA.site.domain)}">contact@${esc(DATA.site.domain)}</a>。</p><p style="margin-top:14px;opacity:.75">生效日期：${today}</p>`,
+  "zh-TW": `<p class="sec-body">本網站是遊戲攻略站，我們重視訪問者隱私。以下說明我們收集什麼、如何使用。</p><h2 style="${PRIV_H2}">選用服務與同意</h2><p>本站提供兩項預設保持封鎖的選用第三方服務：用於受眾分析與報告的 Google Analytics（GA4），以及一個 Adsterra（effectivecpmnetwork）廣告位。在沒有儲存選擇、點擊拒絕或撤回並重新整理後，本站不會在任何頁面請求這兩項服務。接受後，GA4 可能處理您的 IP 位址、瀏覽器與裝置資訊、您造訪的頁面、來源頁面、大致地區以及 Cookie 或類似識別碼，用於分析與報告；Adsterra 可能為廣告、防詐欺與報告處理相同類別。拒絕會繼續封鎖兩者。本站的同意控件是本站自有的偏好控制，並非 Google 認證的 CMP。</p><h2 style="${PRIV_H2}">您的選擇與本地儲存</h2><p>永遠可見的「隱私設定」按鈕提供接受、拒絕、管理、儲存與撤回。您的選擇僅儲存在目前瀏覽器的 localStorage 的 <code>kts_consent_v1</code> 鍵中，不會上傳。撤回後，本站會封鎖後續 GA4 與 Adsterra 請求，並在瀏覽器允許時刪除可存取的 GA Cookie。成就與案件進度追蹤器也只在本地儲存（<code>kts-ach-v1</code> / <code>kts-cl-v1</code>）。</p><h2 style="${PRIV_H2}">Cookie 與識別碼</h2><p>接受後，Google Analytics 與 Adsterra 可能在您的裝置上設定 Cookie 或類似識別碼。您可以在瀏覽器設定中封鎖或刪除 Cookie，也可以安裝 <a href="https://tools.google.com/dlpage/gaoptout" rel="noopener">Google Analytics 停用瀏覽器外掛</a> 選擇退出 Google Analytics。</p><h2 style="${PRIV_H2}">Google AdSense</h2><p>Google AdSense 帳戶後設資料與 ads.txt 已設定，但只有在投放、服務商就緒與認證 CMP 就緒三個條件都被明確開啟時，才會載入 AdSense 投放指令碼；已設定不代表 AdSense 廣告目前正在投放。</p><h2 style="${PRIV_H2}">第三方服務</h2><p>字型來自 Google Fonts，網站由 Cloudflare CDN 提供服務。這些服務商可能記錄標準存取記錄（如 IP 位址、使用者代理與時間），並遵循各自的保留政策；我們無法控制其保留期限。請查看相關隱私政策：<a href="https://policies.google.com/privacy" rel="noopener">Google 隱私政策</a>（Google Analytics 與 AdSense）、<a href="https://policies.google.com/technologies/ads" rel="noopener">Google 廣告技術</a>、<a href="https://adsterra.com/privacy-policy/" rel="noopener">Adsterra 隱私政策</a>、<a href="https://developers.google.com/fonts/faq" rel="noopener">Google Fonts FAQ</a> 與 <a href="https://www.cloudflare.com/privacypolicy/" rel="noopener">Cloudflare 隱私政策</a>。</p><h2 style="${PRIV_H2}">聯絡我們</h2><p>如有隱私問題，請寄電子郵件至 <a href="mailto:contact@${esc(DATA.site.domain)}">contact@${esc(DATA.site.domain)}</a>。</p><p style="margin-top:14px;opacity:.75">生效日期：${today}</p>`,
+  ja: `<p class="sec-body">本サイトはゲーム攻略サイトです。訪問者のプライバシーを尊重します。以下、収集内容と利用方法を説明します。</p><h2 style="${PRIV_H2}">任意サービスと同意</h2><p>本サイトには、選択するまでブロックされる任意の第三者サービスが 2 つあります：分析・レポート用の Google Analytics（GA4）と、1 つの Adsterra（effectivecpmnetwork）広告枠です。選択を保存していない場合、拒否した場合、撤回して再読み込みした場合、どのページでもこれらのサービスにはリクエストしません。許可すると、GA4 は分析・レポートのため IP アドレス、ブラウザー・端末情報、閲覧ページ、参照元、おおよその地域、Cookie や類似の識別子を処理する場合があります。Adsterra は広告、不正防止、レポートのため同じ種類を処理する場合があります。拒否すると両方をブロックします。本サイトの同意設定は本サイト独自の設定機能であり、Google 認定の CMP ではありません。</p><h2 style="${PRIV_H2}">設定とローカル保存</h2><p>常時表示される「プライバシー設定」ボタンから、許可、拒否、管理、保存、全撤回ができます。選択はこのブラウザーの localStorage の <code>kts_consent_v1</code> キーにのみ保存され、アップロードされません。撤回後は今後の GA4 と Adsterra リクエストをブロックし、ブラウザーが許す範囲で GA Cookie を削除します。実績・事件の進捗トラッカーもローカルのみに保存します（<code>kts-ach-v1</code> / <code>kts-cl-v1</code>）。</p><h2 style="${PRIV_H2}">Cookie と識別子</h2><p>許可後、Google Analytics と Adsterra は Cookie や類似の識別子を設定する場合があります。ブラウザー設定で Cookie をブロック・削除できるほか、<a href="https://tools.google.com/dlpage/gaoptout" rel="noopener">Google Analytics オプトアウトアドオン</a>で Google Analytics を無効化できます。</p><h2 style="${PRIV_H2}">Google AdSense</h2><p>Google AdSense のアカウントメタデータと ads.txt は設定済みですが、配信、プロバイダー準備、認定 CMP 準備の 3 条件がすべて明示的に有効化されない限り、AdSense 配信スクリプトは読み込まれません。設定済みであることは、現在 AdSense 広告が配信中であることを意味しません。</p><h2 style="${PRIV_H2}">第三者サービス</h2><p>フォントは Google Fonts から、サイトは Cloudflare の CDN から提供されています。これらの事業者は標準的なアクセスログ（IP アドレス・ユーザーエージェント・時刻など）を記録し、それぞれの保存ポリシーに従います。保存期間を当サイトが管理することはできません。関連するプライバシーポリシーをご確認ください：<a href="https://policies.google.com/privacy" rel="noopener">Google プライバシーポリシー</a>（Google Analytics と AdSense）、<a href="https://policies.google.com/technologies/ads" rel="noopener">Google 広告テクノロジー</a>、<a href="https://adsterra.com/privacy-policy/" rel="noopener">Adsterra プライバシーポリシー</a>、<a href="https://developers.google.com/fonts/faq" rel="noopener">Google Fonts FAQ</a>、<a href="https://www.cloudflare.com/privacypolicy/" rel="noopener">Cloudflare プライバシーポリシー</a>。</p><h2 style="${PRIV_H2}">お問い合わせ</h2><p>プライバシーに関する質問は <a href="mailto:contact@${esc(DATA.site.domain)}">contact@${esc(DATA.site.domain)}</a> まで。</p><p style="margin-top:14px;opacity:.75">発効日：${today}</p>`,
+  ko: `<p class="sec-body">이 사이트는 게임 공략 사이트이며 방문자의 개인정보를 소중히 여깁니다. 수집 항목과 사용 방식을 설명합니다.</p><h2 style="${PRIV_H2}">선택 서비스 및 동의</h2><p>이 사이트에는 선택하기 전까지 차단되는 선택형 제3자 서비스가 두 가지 있습니다: 분석·보고용 Google Analytics(GA4)와 Adsterra(effectivecpmnetwork) 광고 영역 하나입니다. 선택을 저장하지 않았거나 거부했거나 철회 후 다시 불러온 경우 어떤 페이지에서도 이 서비스에 요청하지 않습니다. 허용하면 GA4는 분석 및 보고를 위해 IP 주소, 브라우저·기기 정보, 방문 페이지, 유입 경로, 대략적 지역, 쿠키나 유사 식별자를 처리할 수 있습니다. Adsterra는 광고, 사기 방지 및 보고를 위해 같은 범주를 처리할 수 있습니다. 거부하면 둘 다 계속 차단됩니다. 이 사이트의 동의 설정은 사이트 자체 선택 설정이며 Google 인증 CMP가 아닙니다.</p><h2 style="${PRIV_H2}">선택 및 로컬 저장</h2><p>항상 보이는 개인정보 설정 버튼에서 허용, 거부, 관리, 저장, 모두 철회를 선택할 수 있습니다. 선택은 이 브라우저의 localStorage의 <code>kts_consent_v1</code> 키에만 저장되며 업로드되지 않습니다. 철회 후에는 향후 GA4 및 Adsterra 요청을 차단하고 브라우저가 허용하는 GA 쿠키를 삭제합니다. 업적·사건 진행 추적기도 로컬에만 저장합니다(<code>kts-ach-v1</code> / <code>kts-cl-v1</code>).</p><h2 style="${PRIV_H2}">쿠키 및 식별자</h2><p>허용한 뒤 Google Analytics와 Adsterra는 기기에 쿠키나 유사 식별자를 설정할 수 있습니다. 브라우저 설정에서 쿠키를 차단·삭제할 수 있고, <a href="https://tools.google.com/dlpage/gaoptout" rel="noopener">Google Analytics 차단 부가기능</a>으로 Google Analytics를 거부할 수 있습니다.</p><h2 style="${PRIV_H2}">Google AdSense</h2><p>Google AdSense 계정 메타데이터와 ads.txt는 설정되어 있지만, 게재, 공급자 준비, 인증 CMP 준비의 세 조건이 모두 명시적으로 활성화되지 않으면 AdSense 게재 스크립트는 로드되지 않습니다. 설정되었다고 해서 현재 AdSense 광고가 게재 중이라는 뜻은 아닙니다.</p><h2 style="${PRIV_H2}">제3자 서비스</h2><p>글꼴은 Google Fonts에서, 사이트는 Cloudflare CDN으로 제공됩니다. 이 사업자들은 표준 접속 로그(IP 주소, 사용자 에이전트, 시간 등)를 기록하고 각자의 보존 정책을 따르며, 보존 기간을 당사가 통제할 수 없습니다. 관련 개인정보 처리방침을 확인하세요: <a href="https://policies.google.com/privacy" rel="noopener">Google 개인정보처리방침</a>(Google Analytics 및 AdSense), <a href="https://policies.google.com/technologies/ads" rel="noopener">Google 광고 기술</a>, <a href="https://adsterra.com/privacy-policy/" rel="noopener">Adsterra 개인정보 처리방침</a>, <a href="https://developers.google.com/fonts/faq" rel="noopener">Google Fonts FAQ</a>, <a href="https://www.cloudflare.com/privacypolicy/" rel="noopener">Cloudflare 개인정보 처리방침</a>.</p><h2 style="${PRIV_H2}">문의</h2><p>개인정보 관련 질문은 <a href="mailto:contact@${esc(DATA.site.domain)}">contact@${esc(DATA.site.domain)}</a>로 보내주세요.</p><p style="margin-top:14px;opacity:.75">발효일: ${today}</p>`,
+};
+
 function genStatic(lang){
   const s = siteI18n(lang);
   const dir = path.join(OUT, lang === DEF ? "" : lang);
@@ -698,12 +789,8 @@ function genStatic(lang){
       "This site is unofficial and not affiliated with Phoenix Game or the developers.")
   }</li></ul></section>`;
   writePage(path.join(dir,"about.html"), "about", lang, renderStatic(lang,"about",s.aboutTitle,aboutBody + `<section class="card dossier">` + KIT.editorialPolicy(lang, { siteName: s.name, contactEmail: `contact@${DATA.site.domain}` }) + `</section>`));
-  // privacy
-  const pBody = lang==="ja" ? `<p class="sec-body">このサイトはゲーム攻略サイトです。訪問者のプライバシーを尊重しています。</p><h2 style="font-size:1.05rem;margin:18px 0 8px">収集する情報</h2><p>Google Analytics（GA4）で匿名のアクセス統計（ページビュー、流入元、端末タイプ、おおよその地域）を取得しています。氏名・メールアドレスなどの個人情報は収集しません。</p><h2 style="font-size:1.05rem;margin:18px 0 8px">Cookie</h2><p>Google Analytics はセッション統計のため Cookie を使用します。ブラウザで無効化できます。</p><h2 style="font-size:1.05rem;margin:18px 0 8px">お問い合わせ</h2><p><a href="mailto:contact@${esc(DATA.site.domain)}">contact@${esc(DATA.site.domain)}</a></p>`
-    : lang==="ko" ? `<p class="sec-body">이 사이트는 게임 공략 사이트로, 방문자의 프라이버시를 존중합니다.</p><h2 style="font-size:1.05rem;margin:18px 0 8px">수집 정보</h2><p>Google Analytics(GA4)로 익명의 접속 통계(페이지뷰, 유입 경로, 기기 유형, 대략적인 지역)를 수집합니다. 이름·이메일 등 개인정보는 수집하지 않습니다.</p><h2 style="font-size:1.05rem;margin:18px 0 8px">쿠키</h2><p>Google Analytics는 세션 통계를 위해 쿠키를 사용합니다. 브라우저에서 비활성화할 수 있습니다.</p><h2 style="font-size:1.05rem;margin:18px 0 8px">문의</h2><p><a href="mailto:contact@${esc(DATA.site.domain)}">contact@${esc(DATA.site.domain)}</a></p>`
-    : lang==="zh-TW" ? `<p class="sec-body">本網站為遊戲攻略網站，尊重訪客隱私。</p><h2 style="font-size:1.05rem;margin:18px 0 8px">收集的資訊</h2><p>我們使用 Google Analytics（GA4）收集匿名流量統計：瀏覽量、來源、裝置類型與大致地區。我們不收集姓名、電子郵件等個人資料。</p><h2 style="font-size:1.05rem;margin:18px 0 8px">Cookie</h2><p>Google Analytics 會使用 Cookie 進行會話統計，可在瀏覽器中停用。</p><h2 style="font-size:1.05rem;margin:18px 0 8px">聯絡</h2><p><a href="mailto:contact@${esc(DATA.site.domain)}">contact@${esc(DATA.site.domain)}</a></p>`
-    : lang==="zh-CN" ? `<p class="sec-body">本网站为游戏攻略网站，尊重访客隐私。</p><h2 style="font-size:1.05rem;margin:18px 0 8px">收集的信息</h2><p>我们使用 Google Analytics（GA4）收集匿名流量统计：浏览量、来源、设备类型与大致地区。我们不收集姓名、邮箱等个人资料。</p><h2 style="font-size:1.05rem;margin:18px 0 8px">Cookie</h2><p>Google Analytics 会使用 Cookie 进行会话统计，可在浏览器中停用。</p><h2 style="font-size:1.05rem;margin:18px 0 8px">联系</h2><p><a href="mailto:contact@${esc(DATA.site.domain)}">contact@${esc(DATA.site.domain)}</a></p>`
-    : `<p class="sec-body">This is a game guide website and we respect visitor privacy.</p><h2 style="font-size:1.05rem;margin:18px 0 8px">What we collect</h2><p>We use Google Analytics (GA4) for anonymous traffic statistics: page views, referrers, device types and approximate regions. We do not collect names, email addresses or any personally identifiable information.</p><h2 style="font-size:1.05rem;margin:18px 0 8px">Cookies</h2><p>Google Analytics sets cookies for session statistics. You can disable cookies in your browser.</p><h2 style="font-size:1.05rem;margin:18px 0 8px">Contact</h2><p><a href="mailto:contact@${esc(DATA.site.domain)}">contact@${esc(DATA.site.domain)}</a></p>`;
+  // privacy（5 语完整披露：provider 用途、本地偏好存储、Cookie/存储、IP/设备/网络边界、默认关闭、撤回；非 Google 认证 CMP）
+  const pBody = PRIVACY_POLICY[lang] || PRIVACY_POLICY.en;
   writePage(path.join(dir,"privacy.html"), "privacy", lang, renderStatic(lang,"privacy",s.privacyTitle,pBody));
   // contact
   const cBody = lang==="ja" ? `<p class="sec-body">お問い合わせ：<a href="mailto:contact@${esc(DATA.site.domain)}">contact@${esc(DATA.site.domain)}</a></p><p style="margin-top:10px">通常 2〜3 営業日以内に返信します。</p>`

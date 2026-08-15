@@ -23,6 +23,7 @@
    "ko"
   ],
   "defaultLanguage": "en",
+  "consentStorageKey": "kts_consent_v1",
   "i18n": {
    "en": {
     "name": "Kill The Shadow Guide",
