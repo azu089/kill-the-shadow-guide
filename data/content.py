@@ -86,7 +86,7 @@ GAME = {
     ],
     "stats": [
         {"value": "Aug 5", "label": "Steam release"},
-        {"value": "10万+", "label": "Wishlists before launch"},
+        {"value": "100K+", "label": "Wishlists before launch"},
         {"value": "Multi", "label": "Endings"},
         {"value": "2.5D", "label": "Pixel art noir"},
         {"value": "$16.99", "label": "On Steam"},

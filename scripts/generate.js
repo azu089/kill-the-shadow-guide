@@ -802,7 +802,7 @@ function gen404(){
   const s = siteI18n(DEF);
   const list = DATA.pages.slice(0,6).map(p=>`<a class="btn btn-ghost" href="/${p.slug}">${esc(pageOf(p,DEF).title)}</a>`).join("");
   const body = `<main class="container" style="padding-top:60px;text-align:center"><section class="card dossier" style="max-width:600px;margin:0 auto"><span class="evidence-tag">ERROR // 404</span><h1>${esc(s.navHome)} — 404</h1><p style="margin:12px 0 20px">${esc(DEF==="en"?"The page you are looking for does not exist. Open a case file instead:":"ページが見つかりません。事件ファイルを開いてください。")}</p><div style="display:flex;flex-wrap:wrap;gap:10px;justify-content:center">${list}</div></section></main>`;
-  fs.writeFileSync(path.join(OUT,"404.html"), `<!DOCTYPE html><html lang="${LANG_META[DEF].html}"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>404 — Not Found</title><meta name="robots" content="noindex"><link rel="icon" type="image/svg+xml" href="/favicon.svg" /><link rel="apple-touch-icon" href="/apple-touch-icon.png" /><link rel="stylesheet" href="/css/style.css?v=${CSS_V}"></head><body>${header(DEF,"")}${body}${footer(DEF)}</body></html>`);
+  fs.writeFileSync(path.join(OUT,"404.html"), `<!DOCTYPE html><html lang="${LANG_META[DEF].html}"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>404 - ${esc(s.name)}</title><meta name="robots" content="noindex"><link rel="icon" type="image/svg+xml" href="/favicon.svg" /><link rel="apple-touch-icon" href="/apple-touch-icon.png" /><link rel="stylesheet" href="/css/style.css?v=${CSS_V}"></head><body>${header(DEF,"")}${body}${footer(DEF)}</body></html>`);
 }
 
 /* ---------- JSON-LD ---------- */
